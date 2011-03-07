@@ -1,7 +1,7 @@
 <?php
 require('fonctions/config.php');
 ?>
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr"> 
  
 <head> 
@@ -10,17 +10,16 @@ require('fonctions/config.php');
  
 <body> 
 	<!--[if lte IE 7]>
-      <link rel="stylesheet" href="css/styles-ie.css" />
-      <div class="alert-ie">
+		<link rel="stylesheet" href="css/styles-ie.css" />
+		<div class="alert-ie">
 			<p>
 				<strong>Attention ! </strong> Votre navigateur (Internet Explorer 6 ou 7) présente de sérieuses lacunes en terme de sécurité et de performances, dues à son obsolescence.<br>
 				En conséquence, ce site sera consultable mais de manière moins optimale qu'avec un navigateur récent comme (<a href="http://www.browserforthebetter.com/download.html">Internet Explorer 8+</a>, <a href="http://www.mozilla-europe.org/fr/firefox/">Firefox</a>, <a href="http://www.google.com/chrome?hl=fr">Chrome</a>, <a href="http://www.apple.com/fr/safari/download/">Safari</a>,...)
 			</p>
-      </div>
-    <![endif]--> 
-	
-	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) } </style> 
+		</div>
 	<![endif]--> 
+	
+	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 		<section class="banniere menu ombre">
 			<header role="banner">
@@ -40,10 +39,7 @@ require('fonctions/config.php');
 
 			<div id="bandeau">
 				<h1><a>Agence web - Création site web en Charente | Charente-Maritime et France</a></h1>
-				<aside class="reseaux_sociaux">
-					<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Retrouvez l'agence web Kryzalead sur Twitter" /><span>Twitter</span></a>
-					<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
-				</aside>
+				
 			</div>
 		</section>
 		
@@ -97,13 +93,13 @@ require('fonctions/config.php');
 					<a href="#link1"><img src="images/footer/avatar-jd.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
 					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
 			</div>
-				<div id="cadre_ombre">	</div>
+				<div id="cadre_ombre"></div>
 			</section>
 			
 		</div><!-- Fin content -->
 
 	<footer>
-
+		
 		<section  id="equipe">
 			<h1>L'équipe</h1>
 				<ul>
@@ -124,12 +120,17 @@ require('fonctions/config.php');
 		</section>
 		
 		<section id="contact">
-				<h1>Un projet? Une idée?</h1>
+				<h1>Un projet? Un commentaire?</h1>
 		
 					<!-- FORM CONTACT a toi de jouer-->
-		
 		</section>
 		
+
+			<aside class="reseaux_sociaux">
+					<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
+					<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Retrouvez l'agence web Kryzalead sur Twitter" /><span>Twitter</span></a>
+			</aside>
+			
 		
 		<div id="mentions">
 			<p>
