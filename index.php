@@ -19,7 +19,7 @@ require('fonctions/config.php');
       </div>
     <![endif]--> 
 	
-	<!--[if lte IE 6]> <style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }	</style> 
+	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) } </style> 
 	<![endif]--> 
 
 		<section class="banniere menu ombre">
@@ -48,63 +48,59 @@ require('fonctions/config.php');
 		</section>
 		
 		<div id="content"><!-- Debut content -->
-
-
-			
-		<section id="presentation">
-			<div class="colonne" id="colonne_1">
-				<h1>L'agence en quelques mots</h1>
-					<p>
-						<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <u>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</u>.
-						<q>Votre projet est à l'état de cocon? nous sommes là pour l'aider à s'envoler</q>
-						<a href="agence.html">L'agence >></a>
-					</p>
-			</div>
-			
-			<div class="colonne" id="colonne_2">
-				<h1>Projet(s) en cours</h1>
-					<p>
-						<?php
-							$handle = fopen('includes/works.txt','r');
-							$content = fread($handle,300);
-							fclose($handle);
-							echo $content;
-						?>			
-				</p>
-			</div>		
-			
-			<div class="colonne" id="colonne_3">
-				<h1>Votre devis GRATUIT</h1>
-					<p>
-						En cours
-					</p>
-			</div>		
-			
-			<div class="colonne" id="colonne_4">
-				<h1>Nous contacter</h1>
-					<div id="adresse">
-						<ul>
-							<li><span>Agence Kryzalead</span></li>
-							<li>16220 Ecuras // 17000 La Rochelle</li>
-							<li>Tél: 05 45 .. .. ..</li>
-							<li>Email: <a href="#">Contact@Kryzalead.fr</a></li>
-							<li>n'hésitez plus à nous contacter.</li>
-						</ul>
+			<section id="presentation">
+				<div class="colonne" id="colonne_1">
+					<h1>L'agence en quelques mots</h1>
+						<p>
+							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <u>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</u>.
+							<q>Votre projet est à l'état de cocon? nous sommes là pour l'aider à s'envoler</q>
+							<a href="agence.html">L'agence >></a>
+						</p>
 				</div>
+				
+				<div class="colonne" id="colonne_2">
+					<h1>Projet(s) en cours</h1>
+						<p>
+							<?php
+								$handle = fopen('includes/works.txt','r');
+								$content = fread($handle,300);
+								fclose($handle);
+								echo $content;
+							?>			
+					</p>
+				</div>		
+				
+				<div class="colonne" id="colonne_3">
+					<h1>Votre devis GRATUIT</h1>
+						<p>
+							En cours
+						</p>
+				</div>		
+				
+				<div class="colonne" id="colonne_4">
+					<h1>Nous contacter</h1>
+						<div id="adresse">
+							<ul>
+								<li><span>Agence Kryzalead</span></li>
+								<li>16220 Ecuras // 17000 La Rochelle</li>
+								<li>Tél: 05 45 .. .. ..</li>
+								<li>Email: <a href="#">Contact@Kryzalead.fr</a></li>
+								<li>n'hésitez plus à nous contacter.</li>
+							</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="slideshow">
+				<div id="slide" class="nivoSlider">
+					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
+					<a href="#link1"><img src="images/footer/avatar-jd.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
+					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
 			</div>
-		</section>
-
-		<section class="slideshow">
-			<div id="slide" class="nivoSlider">
-				<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
-				<a href="#link1"><img src="images/footer/avatar-jd.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
-				<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
-		</div>
-			<div id="cadre_ombre">	</div>
-		</section>
-
+				<div id="cadre_ombre">	</div>
+			</section>
 			
-	</div><!-- Fin content -->
+		</div><!-- Fin content -->
 
 	<footer>
 
