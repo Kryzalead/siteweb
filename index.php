@@ -48,7 +48,7 @@
 		<div id="content"><!-- Debut content -->
 			<section class="menu">
 				<header role="banner">
-					<h1><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.jpg" alt="Kryzalead agence web" width="350" /></a></h1>
+					<h1><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="350" /></a></h1>
 						<nav class="navigation">
 							<ul>
 								<li><a href="#">Accueil</a></li>
