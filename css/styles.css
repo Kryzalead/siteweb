@@ -98,7 +98,7 @@ strong {font-weight: bold;}
   -webkit-box-shadow:0 0px 35px -10px #000;
   -moz-box-shadow:0 0px 35px -10px #000;
   box-shadow:0 0px 35px -10px #000;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#777777', Direction=160 Strength=5); zoom: 1; }
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#777777', Direction=160 Strength=5); zoom: 1;}
 
 .animer{ 
   -webkit-transition: all .5s;
