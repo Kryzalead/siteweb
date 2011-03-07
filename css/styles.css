@@ -116,14 +116,14 @@ section.banniere{
   background-color:#202021;
   border-bottom:5px solid #669900; 
   margin:0 auto;
-  height:60px;}
+  height:150px;}
 
 #bandeau{
   width:1000px;
   margin:0 auto;}
   
 #bandeau h1{
-  color:#FFF;
+  color:#444;
   padding-top:20px;
   font-size:1em;
   letter-spacing:2px;
@@ -146,8 +146,8 @@ section.menu header{
   width:1000px;
   margin:0 auto;}
 
-section.menu header img {
-  margin-top:30px;
+section.menu header img{
+  margin-top:6px;
   position:absolute;}
 
 header nav.navigation ul{ 
@@ -160,8 +160,8 @@ header nav.navigation li{
   font-size: 1.6em;
   list-style-type:none;}
   
-header nav.navigation a {
-  color:#444;
+header nav.navigation a{
+  color:#FFF;
   font-size:0.8em;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;

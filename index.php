@@ -35,7 +35,22 @@
 	<!--[if lte IE 6]> <style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }	</style> 
 	<![endif]--> 
 
-		<section class="banniere ombre animer">
+		<section class="banniere menu ombre">
+			<header role="banner">
+				<h1><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="400" /></a></h1>
+					<nav class="navigation">
+						<ul>
+							<li><a href="#">Accueil</a></li>
+							<li><a href="agence.html">L'agence</a></li>
+							<li><a href="#">Réalisations</a></li>
+							<li><a href="#">Les Packs</a></li>
+							<li><a href="#">Devis gratuit</a></li>
+							<li><a href="#">Contact</a></li>
+					<!--	<li><a href="#">Le Blog</a></li>-->
+						</ul>
+					</nav>
+				</header>
+
 			<div id="bandeau">
 				<h1><a>Agence web - Création site web en Charente | Charente-Maritime et France</a></h1>
 				<aside class="reseaux_sociaux">
@@ -46,22 +61,7 @@
 		</section>
 		
 		<div id="content"><!-- Debut content -->
-			<section class="menu">
-				<header role="banner">
-					<h1><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="350" /></a></h1>
-						<nav class="navigation">
-							<ul>
-								<li><a href="#">Accueil</a></li>
-								<li><a href="agence.html">L'agence</a></li>
-								<li><a href="#">Réalisations</a></li>
-								<li><a href="#">Les Packs</a></li>
-								<li><a href="#">Devis gratuit</a></li>
-								<li><a href="#">Contact</a></li>
-						<!--	<li><a href="#">Le Blog</a></li>-->
-							</ul>
-						</nav>
-					</header>
-			</section>
+
 
 			
 		<section id="presentation">
@@ -76,13 +76,13 @@
 			
 			<div class="colonne" id="colonne_2">
 				<h1>Projet(s) en cours</h1>
-				<p>
-					<?php
-					$handle = fopen('includes/works.txt','r');
-					$content = fread($handle,300);
-					fclose($handle);
-					echo $content;
-					?>			
+					<p>
+						<?php
+							$handle = fopen('includes/works.txt','r');
+							$content = fread($handle,300);
+							fclose($handle);
+							echo $content;
+						?>			
 				</p>
 			</div>		
 			
@@ -101,7 +101,7 @@
 							<li>16220 Ecuras // 17000 La Rochelle</li>
 							<li>Tél: 05 45 .. .. ..</li>
 							<li>Email: <a href="#">Contact@Kryzalead.fr</a></li>
-							<li><span class="">n'hésitez plus à nous contacter.</span></li>
+							<li>n'hésitez plus à nous contacter.</li>
 						</ul>
 				</div>
 			</div>
@@ -121,25 +121,32 @@
 
 	<footer>
 
-			<section  id="equipe">
-				<h1>L'équipe</h1>
-					<ul>
-						<li><img src="images/footer/avatar-jd.jpg" alt="Intégrateur web et webdesigner" title="Intégrateur web et webdesigner" /><span>Intégrateur web et webdesigner</span>Jean-Damien Demay<a href="cv/webmestre-jd.pdf" class="cv" target="_blank">Mon CV</a></li>
-						<li><img src="images/footer/avatar-jo.jpg" alt="Développeur web" title="Développeur web" /><span>Développeur web</span>Jonathan Arana<a href="cv/webmestre-jo.pdf" class="cv" target="_blank">Mon CV</a></li>
-						<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
-			</section>
-			
-			<section id="blog">
-				<h1>Actu Blog</h1>
-					<ul>
-						<li>01</li>
-						<li>02</li>
-						<li>03</li>
-						<li>04</li>
-						<li>05</li>
-					</ul>
-			</section>
-
+		<section  id="equipe">
+			<h1>L'équipe</h1>
+				<ul>
+					<li><img src="images/footer/avatar-jd.jpg" alt="Intégrateur web et webdesigner" title="Intégrateur web et webdesigner" /><span>Intégrateur web et webdesigner</span>Jean-Damien Demay<a href="cv/webmestre-jd.pdf" class="cv" target="_blank">Mon CV</a></li>
+					<li><img src="images/footer/avatar-jo.jpg" alt="Développeur web" title="Développeur web" /><span>Développeur web</span>Jonathan Arana<a href="cv/webmestre-jo.pdf" class="cv" target="_blank">Mon CV</a></li>
+					<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
+		</section>
+		
+		<section id="blog">
+			<h1>Actu Blog</h1>
+				<ul>
+					<li>01</li>
+					<li>02</li>
+					<li>03</li>
+					<li>04</li>
+					<li>05</li>
+				</ul>
+		</section>
+		
+		<section id="contact">
+				<h1>Un projet? Une idée?</h1>
+		
+					<!-- FORM CONTACT a toi de jouer-->
+		
+		</section>
+		
 		
 		<div id="mentions">
 			<p>
