@@ -1,0 +1,124 @@
+/*----------------------------------*/
+/*------ Custom Slide -----*/
+/*---------------------------------*/
+
+/* The Nivo Slider styles */
+.nivoSlider img {
+	top:0;
+	left:0;
+	position:absolute;}
+	
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;}
+	
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;}
+	
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#111;
+	color:#fff;
+	opacity:0.8;
+	width:100%;
+	z-index:89;}
+	
+.nivo-caption p {
+	font:normal 1.2em 'Opificio_rg';
+	color:#669900;
+	padding:5px 10px;
+	margin:0;}
+	
+.nivo-caption a {
+	display:inline !important;}
+	
+.nivo-html-caption {
+    display:none;}
+	
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+	display:block;
+	width:50px;
+	height:50px;
+	background:url('../images/fleches.png') 0 0 no-repeat;
+	text-indent:-9999px;
+	border:0;}
+	
+a.nivo-nextNav {background-position:-50px 0;right:-20px;}
+a.nivo-prevNav {left:-25px;}
+
+a.nivo-prevNav:hover{background-position:0 -52px;}
+a.nivo-nextNav:hover{background-position:-50px -52px;}
+	
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;}
+	
+.nivo-controlNav a.active {
+	font-weight:bold;}
+
+#cadre_ombre{
+	z-index:2;
+	margin-top:-80px;
+	position:absolute;
+    width:1000px;
+    height:40px;
+	background:url('../images/ombre_projets.png') 0 0px no-repeat;}
+
+.nivoSlider {
+	z-index:5;
+	position:relative;
+	margin:0 auto;
+	margin-bottom:70px;
+    width:900px;
+    height:250px;
+
+	border:7px solid #FFF; 
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+
+	-webkit-box-shadow:0 0px 35px -10px #000;
+	-moz-box-shadow:0 0px 35px -10px #000;
+	box-shadow:0 0 35px -10px #000;}
+	
+#slide .nivo-controlNav { 
+	position:absolute;
+	margin-left:400px;
+	bottom:-50px;}
+	
+#slide .nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url('../images/rond-slide.png') 0 0 no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:4px;
+	float:left;}
+
+#slide .nivo-controlNav a.active {
+	background-position:0 -22px;}	
+
+#slide a {display:block; /* IE Fix */}

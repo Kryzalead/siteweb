@@ -1,0 +1,80 @@
+/* ----------------------------- */
+/*       Styles IE 6/7       */
+/* ----------------------------- */
+div.alert-ie {
+  width:100%;
+  float:left !important;
+  background-color:#202021;
+  font-size: 1em;
+  color: #FFF;
+  padding-left:20px;}
+
+div.alert-ie strong {
+  color: #0099FF;}
+  
+div.alert-ie a{
+  color: #0099FF;}
+  
+div.alert-ie a:hover{
+  color: #669900;}
+
+  
+/* ------------------------------ */
+/*         HEADER            */
+/* ---------------------------- */
+header nav.navigation ul{
+  display:block;
+  text-align:right;
+  margin-top:10px;}
+  
+header nav.navigation a {
+  font-size:0.8em;}
+  
+header nav.navigation a:hover, header nav.navigation a:focus {
+  text-decoration: none;
+  color:#669900;
+  border-bottom:20px solid #669900;}  
+  
+  
+
+/* ------------------------------ */
+/*        BANNIERE         */
+/* ---------------------------- */
+section.banniere{
+  clear:both;
+  width:100%;}
+
+#bandeau div{
+  width:1000px;
+  margin:0 auto;}  
+  
+#bandeau div h1{
+  padding:10px 0 5px;
+  font-size:1em;
+  letter-spacing:2px;
+  cursor:default;}  
+  
+aside.reseaux_sociaux{
+  float: right !important;
+  margin:-58px 70px 0 0;}
+
+aside.reseaux_sociaux span{
+  font-weight:bold;}  
+  
+.reseaux_sociaux a:hover img, .reseaux_sociaux a:focus img {
+  width:6%}  
+
+
+/* ------------------------------ */
+/*          FOOTER            */
+/* ---------------------------- */
+footer{
+  border-top:3px solid #669900; 
+  width:100%;
+  background:url('../images/footer/footer-motif.png') 0 0 repeat;
+  height:450px;}
+  
+#equipe {padding-top:15px;width:400px;}
+	#equipe li a.cv{font:normal 1.2em 'Opificio_rg';width:60px;padding:0;margin-top:30px;}
+
+#equipe {margin:0 120px 30px;width:400px;}
