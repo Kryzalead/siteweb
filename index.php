@@ -13,18 +13,7 @@ require('fonctions/config.php');
 
 		<section class="banniere menu ombre">
 			<header role="banner">
-				<h1><a href="index.php" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="400" /></a></h1>
-					<nav class="navigation">
-						<ul>
-							<li><a href="index.php">Accueil</a></li>
-							<li><a href="agence.html">L'agence</a></li>
-							<li><a href="#">Réalisations</a></li>
-							<li><a href="#">Les Packs</a></li>
-							<li><a href="#">Devis gratuit</a></li>
-							<li><a href="#">Contact</a></li>
-					<!--	<li><a href="#">Le Blog</a></li>-->
-						</ul>
-					</nav>
+				<?php include('includes/header.php');?>
 				</header>
 
 			<div id="bandeau">
