@@ -1,0 +1,314 @@
+/* ----------------------------- */
+/*            RESET             */
+/* ----------------------------- */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
+
+
+/* ----------------------------- */
+/*  STYLES DE BASE  */
+/* ---------------------------- */
+ @font-face {
+    font-family: 'super_police_bold';
+    src: url('../fonts/steelfish_bd-webfont.eot');
+    src: url('../fonts/steelfish_bd-webfont.eot?iefix') format('eot'),
+			url('../fonts/steelfish_bd-webfont.woff') format('woff'),
+			url('../fonts/steelfish_bd-webfont.ttf') format('truetype'),
+			url('../fonts/steelfish_bd-webfont.svg') format('svg');
+					font-weight: normal;font-style: normal;}
+
+@font-face {
+    font-family: 'super_police_rg';
+    src: url('../fonts/steelfish_rg-webfont.eot');
+    src: url('../fonts/steelfish_rg-webfont.eot') format('eot'),
+			url('../fonts/steelfish_rg-webfont.woff') format('woff'),
+			url('../fonts/steelfish_rg-webfont.ttf') format('truetype'),
+			url('../fonts/steelfish_rg-webfont.svg') format('svg');
+					font-weight: normal;font-style: normal;}
+		
+@font-face {
+    font-family: 'Opificio_rg';
+		src: url('../fonts/opificio-webfont.eot');
+		src: url('../fonts/opificio-webfont.eot?iefix') format('eot'),
+			 url('../fonts/opificio-webfont.woff') format('woff'),
+			 url('../fonts/opificio-webfont.ttf') format('truetype'),
+			 url('../fonts/opificio-webfont.svg#webfontrbChTaLI') format('svg');
+				font-weight: normal;font-style: normal;}			
+
+html {font-size: 100%;}
+  
+body {
+  margin: 0; 
+  padding: 0; 
+  font-family: "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;}
+  
+/* ------------------------------ */
+/*              LIENS             */
+/* ----------------------------- */
+a {text-decoration: none; font-family:Arial} 
+a:focus, a:active {outline: none;} 
+a img {border: none;} 
+
+/* ------------------------------ */
+/*        TITRES Hx          */
+/* ----------------------------- */
+h1 { 
+  display: inline-block;
+  font-weight: normal;}
+  
+h1 a, h1 a:visited {
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;  }
+  
+h1 a:hover, h1 a:focus {
+  text-decoration: none;
+  outline: none;
+  text-shadow: 0 0 15px #111;}
+
+h2 {font-size: 1.5em;} 
+ 
+
+/* ------------------------------ */
+/*    PARAGRAPHE     */
+/* ---------------------------- */
+p {margin: .75em 0;} 
+ 
+ 
+/* ------------------------------ */
+/*  ~ TYPE EN-LIGNE  */
+/* ---------------------------- */
+figure{display: inline-block; vertical-align: top;}
+strong {font-weight: bold;}
+
+.color{color:#669900}
+ 
+ 
+/* ------------------------------ */
+/*           BLOCS              */
+/* ---------------------------- */
+.ombre{
+  -webkit-box-shadow:0 0px 35px -10px #000;
+  -moz-box-shadow:0 0px 35px -10px #000;
+  box-shadow:0 0px 35px -10px #000;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#777777', Direction=160 Strength=5); zoom: 1;}
+
+.animer{ 
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;}
+
+.animer a:hover{color:#669900} 
+  
+  
+/* ------------------------------ */
+/*        BANNIERE         */
+/* ---------------------------- */
+section.banniere{
+  background-color:#202021;
+  border-bottom:5px solid #669900; 
+  margin:0 auto;
+  height:150px;}
+
+#bandeau{
+  width:1000px;
+  margin:0 auto;}
+  
+#bandeau h1{
+  text-align:right;
+  color:#444;
+  padding-top:20px;
+  font-size:1em;
+  letter-spacing:2px;
+  cursor:default;}
+  
+  
+/* ----------------------------------- */
+/*       HEADER MENU       */
+/* --------------------------------- */
+section.menu header{
+  height:150px;
+  width:1000px;
+  margin:0 auto;}
+
+section.menu header img{
+  margin-top:6px;
+  position:absolute;}
+
+header nav.navigation ul{ 
+  margin-top:-10px;
+  text-align:right;}
+  
+header nav.navigation li{
+  display:inline;
+  padding:0 8px;
+  font-size: 1.6em;
+  list-style-type:none;}
+  
+header nav.navigation a{
+  color:#FFF;
+  font-size:0.8em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;}
+  
+header nav.navigation a:hover, header nav.navigation a:focus {
+  text-decoration:none;
+  color:#669900;
+  border-bottom:25px solid #669900;}
+  
+  
+/* ------------------------------ */
+/*         CONTENT          */
+/* ---------------------------- */
+#content {
+  width:1000px;
+  margin:0 auto;}
+  
+  
+/* ------------------------------ */
+/*        COLONNES       */
+/* --------------------------- */   
+.colonne {float:left;width:249px;height:200px;margin:40px 0 120px;}
+	.colonne h1{font:normal 1.3em Helvetica;padding-bottom:5px;margin:0 0 5px 20px;border-bottom:1px solid #999;width:225px;}
+		.colonne p{padding:0 15px;text-align:justify;font-size:1em;color:#777}
+			.colonne q{display:block;}
+				.colonne a{display:block;color:#555;font:bold 1.2em 'Opificio_rg';padding:7px 10px}
+				.colonne a:hover{display:block;color:#669900;margin-left:5px;}
+
+				
+#colonne_4 #adresse ul{list-style-type:none;margin:0;padding-left:15px;font-size:1em;color:#777}
+	#colonne_4 #adresse li span{color:#669900;font-size:1.3em;letter-spacing:1px;padding:10px 40px 20px;display:block;}
+	#colonne_4 #adresse li{line-height:24px;}
+		#colonne_4 #adresse a{color:#555;font:bold 1em Arial;margin:0}
+		#colonne_4 #adresse a:hover{color:#669900;font-size:1.1em}  
+  
+  
+/* ------------------------------ */
+/*       SLIDESHOW       */
+/* ---------------------------- */
+section.slideshow{
+  width:1000px;
+  margin:0 auto;
+  clear:both;}
+  
+  
+/* ------------------------------- */
+/*    PRESENTATION   */
+/* ----------------------------- */ 
+section#presentation{
+  margin:100px auto 30px;
+  clear:both;
+  height:230px;
+  width:1000px;}
+
+  
+/* ---------------------------------------------- */
+/*  P      MENTIONS LEGALES      */
+/* -------------------------------------------- */
+
+
+
+
+
+/* ------------------------------ */
+/*          FOOTER            */
+/* ---------------------------- */
+footer{
+  border-top:3px solid #669900; 
+  width:100%;
+  background:url('../images/footer/footer-motif.png') 0 0 repeat;}
+
+footer p{color:#999;}
+footer a {color: #669900;}
+footer a:hover{text-decoration:underline;}
+footer #centrer_footer{width:1200px;margin: 0 auto;}
+
+section#equipe{margin:0 50px 20px 0;width:410px;display:inline-block}
+	section#equipe h1{font:bold 1.8em 'Opificio_rg';width:410px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}
+		section#equipe img{float:left;border:1px dashed #BBB; width:90px;margin-right:10px;}
+			section#equipe span{display: block;padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
+				section#equipe ul{list-style-type:none;}
+					section#equipe li{color:#999;margin-bottom:15px;}
+					section#equipe li a{display: block;width:55px;color:#0099FF;font-size:1.1em;}
+							section#equipe li a.cv{font:normal 1.2em 'Opificio_rg';width:60px;padding:30px 0 0 100px;}
+							section#equipe li a:hover.cv{font-weight:bold;}
+
+
+section#blog{width:320px;margin-right:50px;display:inline-block;vertical-align:top;}						
+	section#blog h1{font:bold 1.8em 'Opificio_rg';width:320px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}			
+		section#blog ul{list-style-type:none;}
+			section#blog li{color:#999;margin-bottom:15px}
+			section#blog li a{display:block;width:55px;color:#0099FF;font-size:1.1em;}
+				section#blog span{display:block;padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
+
+				
+section#contact{width:360px;display:inline-block;vertical-align:top;}		
+	section#contact h1{font:bold 1.8em 'Opificio_rg';width:360px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}	
+
+
+aside.reseaux_sociaux{float:right;margin:10px;width:200px;background-image:url('../images/suivez-nous.png');background-position:right top;background-repeat:no-repeat;height:100px;}
+aside.reseaux_sociaux span{display:none;}
+.twitter:hover span{position:absolute;display:inline;margin:110px 0 0 -40px;}
+.facebook:hover span{position:absolute;display:inline;margin:110px 0 0 -50px;}
+aside.reseaux_sociaux:hover a:hover{text-decoration:none;font-size:1.1em;color:#669900;}
+aside.reseaux_sociaux img {margin:70px 0 0 20px;width:45px;-moz-transition: all 0.3s;-webkit-transition: all 0.3s;transition: all 0.3s;}
+.reseaux_sociaux a:hover img, .reseaux_sociaux a:focus img {-moz-transform: rotate(20deg);-webkit-transform: rotate(20deg);transform: rotate(20deg);}    
+			
+#mentions{width:520px;margin:0 auto;height:30px}
+	#mentions p{border-top:1px solid #777;text-align:center;padding-top:7px}	
+
+
+	
+	
+/* -------------------------------- */
+/*       WEB MOBILE       */
+/* ------------------------------ */
+@media (max-width: 640px) { 
+ 
+ /* passer tous les éléments de largeur fixe en largeur automatique */ 
+ body, element1, element2 { 
+   width: auto !important; 
+   margin: auto !important; 
+   padding: auto !important;  } 
+ 
+ /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */ 
+ img, table, td, blockquote, code, pre, textarea, input, object, embed, video { 
+   max-width: 100% !important;  } 
+ 
+ /* gestion des mots longs */ 
+ textarea, table, td, th, code, pre, samp { 
+   word-wrap: break-word; /* césure forcée */ 
+   white-space: pre-line; /* passage à la ligne spécifique pour les éléments à châsse fixe */  } 
+ 
+ /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */ 
+ element1, element2 { 
+   float: none !important; 
+   width: auto !important } 
+ 
+ /* masquer les éléments superflus */ 
+ .hide_mobile { 
+   display: none !important; } 
+ 
+ /* Un message personnalisé */ 
+ body:before { 
+   content: "Version mobile du site"; 
+   display: block; 
+   color: #777; 
+   text-align: center; 
+   font-style: italic; } 
+} 
+
+@media only screen and (max-device-width:640px) and (orientation:landscape)  {
+	body {
+	-webkit-text-size-adjust: 70% !important;}
+}

@@ -12,5 +12,5 @@
 	  <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles.css" /> 
 	  <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles_slide.css" /> 
  
-    <!--[if IE]><link rel="stylesheet" href="styles-ie.css" /><script src="scripts/html5-ie.js"></script><![endif]--> 
-	<!--[if lte IE 8]><script type="text/javascript" src="scripts/roundies.js"></script><![endif]-->
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE]><script type="text/javascript" src="scripts/roundies.js"></script><![endif]-->

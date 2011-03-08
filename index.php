@@ -101,46 +101,48 @@ require('fonctions/config.php');
 		</div><!-- Fin content -->
 
 	<footer>
-		<div id="test">
+		<div id="centrer_footer">
 			
 		
-		<section  id="equipe">
-			<h1>L'équipe</h1>
-				<ul>
-					<li><img src="images/footer/avatar-jd.jpg" alt="Intégrateur web et webdesigner" title="Intégrateur web et webdesigner" /><span>Intégrateur web et webdesigner</span>Jean-Damien Demay<a href="cv/webmestre-jd.pdf" class="cv" target="_blank">Mon CV</a></li>
-					<li><img src="images/footer/avatar-jo.jpg" alt="Développeur web" title="Développeur web" /><span>Développeur web</span>Jonathan Arana<a href="cv/webmestre-jo.pdf" class="cv" target="_blank">Mon CV</a></li>
-					<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
-		</section>
-		
-		<section id="blog">
-			<h1>Actu Blog</h1>
-				<ul>
-					<li>01</li>
-					<li>02</li>
-					<li>03</li>
-					<li>04</li>
-					<li>05</li>
-				</ul>
-		</section>
-		
-		<section id="contact">
-				<h1>Un projet? Un commentaire?</h1>
-		
-					<!-- FORM CONTACT a toi de jouer-->
-		</section>
-		</div>
+			<section  id="equipe">
+				<h1>L'équipe</h1>
+					<ul>
+						<li><img src="images/footer/avatar-jd.jpg" alt="Intégrateur web et webdesigner" title="Intégrateur web et webdesigner" /><span>Intégrateur web et webdesigner</span>Jean-Damien Demay<a href="cv/webmestre-jd.pdf" class="cv" target="_blank">Mon CV</a></li>
+						<li><img src="images/footer/avatar-jo.jpg" alt="Développeur web" title="Développeur web" /><span>Développeur web</span>Jonathan Arana<a href="cv/webmestre-jo.pdf" class="cv" target="_blank">Mon CV</a></li>
+						<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
+					</ul>
+			</section>
+			
+			<section id="blog">
+				<h1>Actu Blog</h1>
+					<ul>
+						<li>01</li>
+						<li>02</li>
+						<li>03</li>
+						<li>04</li>
+						<li>05</li>
+					</ul>
+			</section>
+			
+			<section id="contact">
+					<h1>Un projet? Un commentaire?</h1>
+			
+						<!-- FORM CONTACT a toi de jouer-->
+			</section>
 
-			<aside class="reseaux_sociaux">
+
+		<!--	<aside class="reseaux_sociaux">
 					<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
 					<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Retrouvez l'agence web Kryzalead sur Twitter" /><span>Twitter</span></a>
-			</aside>
-			
+			</aside>-->
+	
 		
 		<div id="mentions">
 			<p>
 				&copy; 2011 Kryzalead &middot; <a href="mentions-legales.html">Mentions Légales</a> &middot; <a href="plan.html">Plan du site</a> &middot; <a href="w3c.html">Valide W3C</a> &middot; <a href="#bandeau">Haut de page</a>
 			</p> 
 		</div>
+			</div>
 	</footer>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
