@@ -99,6 +99,8 @@ require('fonctions/config.php');
 		</div><!-- Fin content -->
 
 	<footer>
+		<div id="test">
+			
 		
 		<section  id="equipe">
 			<h1>L'équipe</h1>
@@ -124,7 +126,7 @@ require('fonctions/config.php');
 		
 					<!-- FORM CONTACT a toi de jouer-->
 		</section>
-		
+		</div>
 
 			<aside class="reseaux_sociaux">
 					<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
