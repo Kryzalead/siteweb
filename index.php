@@ -67,10 +67,12 @@ require('fonctions/config.php');
 				</div>		
 				
 				<div class="colonne" id="colonne_3">
-					<h1>Votre devis GRATUIT</h1>
+					<h1>Votre devis GRATUIT en ligne</h1>
 						<p>
-							En cours
+							Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entierement gratuit et personnalisé</strong>?
+							Cliquez sur le lien ci-dessous est remplissez le formulaire afin que nous puissions vous retourner <u>votre devis par mail</u>.
 						</p>
+						<a href="devis/devis.php">Faites rapidement votre devis >></a>
 				</div>		
 				
 				<div class="colonne" id="colonne_4">

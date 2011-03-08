@@ -237,22 +237,23 @@ footer{
   background:url('../images/footer/footer-motif.png') 0 0 repeat;
   height:440px;}
 
+
 footer p{color:#999;}
 footer a {color: #669900;}
 footer a:hover{text-decoration:underline;}
 
-section#equipe{margin:0 60px 20px 100px;width:410px;float:left;}
+section#equipe{margin:0 50px 20px 0px;width:410px;display: inline-block;border:1px solid green; }
 	section#equipe h1{font:bold 1.8em 'Opificio_rg';width:410px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}
-		section#equipe img{float:left;border:1px dashed #BBB; width:90px;margin-right:10px;}
+		section#equipe img{border:1px dashed #BBB; width:90px;margin-right:10px;}
 			section#equipe ul{list-style-type:none;}
 				section#equipe li{color:#999;margin-bottom:15px}
-				section#equipe li a{display:block;width:55px;color:#0099FF;font-size:1.1em;}
-					section#equipe span{display:block;padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
-						section#equipe li a.cv{font:normal 1.2em 'Opificio_rg';width:60px;padding:30px 0 0 100px;}
+			
+					section#equipe span{padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
+						section#equipe li a.cv{float:left;font:normal 1.2em 'Opificio_rg';padding:50px 0 0 0px;}
 						section#equipe li a:hover.cv{font-weight:bold;}
 
 
-section#blog{width:290px;float:left;margin-right:60px;}						
+section#blog{width:290px;margin-right:50px;display: inline-block;border:1px solid green;}						
 	section#blog h1{font:bold 1.8em 'Opificio_rg';width:290px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}			
 		section#blog ul{list-style-type:none;}
 			section#blog li{color:#999;margin-bottom:15px}
@@ -260,7 +261,7 @@ section#blog{width:290px;float:left;margin-right:60px;}
 				section#blog span{display:block;padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
 
 				
-section#contact{width:350px;float:left;border:1px solid yellow; }		
+section#contact{width:350px;display: inline-block;border:1px solid yellow; }		
 	section#contact h1{font:bold 1.8em 'Opificio_rg';width:350px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}	
 
 
