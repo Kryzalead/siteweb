@@ -39,7 +39,7 @@
 	z-index:89;}
 	
 .nivo-caption p {
-	font:normal 1.2em 'Opificio_rg';
+	font:normal 1.2em 'oO';
 	color:#669900;
 	padding:5px 10px;
 	margin:0;}
@@ -80,17 +80,16 @@ a.nivo-nextNav:hover{background-position:-50px -52px;}
 
 #cadre_ombre{
 	z-index:2;
-	margin-top:-80px;
+	margin-top:-10px;
 	position:absolute;
     width:1000px;
     height:40px;
-	background:url('../images/ombre_projets.png') 0 0px no-repeat;}
+	background:url('../images/ombre_projets.png') 0 0 no-repeat;}
 
 .nivoSlider {
 	z-index:5;
 	position:relative;
 	margin:0 auto;
-	margin-bottom:70px;
     width:900px;
     height:250px;
 

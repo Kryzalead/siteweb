@@ -8,34 +8,26 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cit
 
 /* ----------------------------- */
 /*  STYLES DE BASE  */
-/* ---------------------------- */
- @font-face {
-    font-family: 'super_police_bold';
-    src: url('../fonts/steelfish_bd-webfont.eot');
-    src: url('../fonts/steelfish_bd-webfont.eot?iefix') format('eot'),
-			url('../fonts/steelfish_bd-webfont.woff') format('woff'),
-			url('../fonts/steelfish_bd-webfont.ttf') format('truetype'),
-			url('../fonts/steelfish_bd-webfont.svg') format('svg');
-					font-weight: normal;font-style: normal;}
-
+/* ---------------------------- */	
 @font-face {
-    font-family: 'super_police_rg';
-    src: url('../fonts/steelfish_rg-webfont.eot');
-    src: url('../fonts/steelfish_rg-webfont.eot') format('eot'),
-			url('../fonts/steelfish_rg-webfont.woff') format('woff'),
-			url('../fonts/steelfish_rg-webfont.ttf') format('truetype'),
-			url('../fonts/steelfish_rg-webfont.svg') format('svg');
-					font-weight: normal;font-style: normal;}
-		
-@font-face {
-    font-family: 'Opificio_rg';
+    font-family: 'oO';
 		src: url('../fonts/opificio-webfont.eot');
 		src: url('../fonts/opificio-webfont.eot?iefix') format('eot'),
 			 url('../fonts/opificio-webfont.woff') format('woff'),
 			 url('../fonts/opificio-webfont.ttf') format('truetype'),
 			 url('../fonts/opificio-webfont.svg#webfontrbChTaLI') format('svg');
-				font-weight: normal;font-style: normal;}			
+				font-weight: normal;font-style: normal;}
 
+@font-face {
+    font-family: 'O_O';
+		src: url('../fonts/jellyka_cuttycupcakes-webfont.eot');
+		src: url('../fonts/jellyka_cuttycupcakes-webfont.eot?iefix') format('eot'),
+			url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
+			url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
+			url('../fonts/jellyka_cuttycupcakes-webfont.svg#webfontThIAGJgq') format('svg');
+				font-weight: normal;font-style: normal;}
+	
+	
 html {font-size: 100%;}
   
 body {
@@ -95,6 +87,8 @@ strong {font-weight: bold;}
 
 .color{color:#669900}
 .souligne{text-decoration:underline}
+.retour{display:block;}
+ 
  
 /* ------------------------------ */
 /*           BLOCS              */
@@ -142,7 +136,14 @@ header nav {
   bottom: 110px;
   font-size: 1.3em;}
   
-header nav a{
+header span.accroche { 
+  position:absolute;
+  margin:140px 0 0 -210px;
+  text-shadow:0 0 5px #555;
+  font:bold 2.4em 'O_O';
+  color:#669900;}
+   
+header nav a {
   color:#FFF; 
   margin:0 7px;
   -webkit-transition: all .5s;
@@ -151,6 +152,7 @@ header nav a{
   transition: all .5s;}
   
 header nav a:hover, header nav a:focus {
+font-family:arial; /* A faire...................................................*/
   color:#669900;
   border-bottom:25px solid #669900;}
   
@@ -159,99 +161,79 @@ header nav a:hover, header nav a:focus {
 /*          SLOGAN           */
 /* ---------------------------- */
 #slogan{
-  position:absolute;
-  margin:5px 0 0 195px;}
+  text-align:right;
+  padding:20px 50px 0 0;}
   
-#slogan h2 a{
-  font:normal 1.2em 'Opificio_rg';
-  color:#669900}
+#slogan h2 a{ 
+  font:bold 3.5em 'O_O';}
   
+
 /* ------------------------------ */
 /*         CONTENT          */
 /* ---------------------------- */
 #content {
   width:1000px;
   margin:0 auto;}
-  
-  
+
+
+/* ------------------------------- */
+/*    PRESENTATION   */
+/* ----------------------------- */ 
+section#presentation{
+  margin:80px auto 0;
+  width:1000px;}
+
+
 /* ------------------------------ */
 /*        COLONNES       */
 /* --------------------------- */   
-.colonne {float:left;width:246px;margin:40px 0 50px;}
+.colonne {display: inline-block;vertical-align:top;width:247px;margin:0;}
 	.colonne h1{font:normal 1.3em Helvetica;padding-bottom:5px;margin:0 0 5px 15px;border-bottom:1px solid #999;width:220px;}
 		.colonne p{padding:0 15px;text-align:justify;font-size:1em;color:#777;}
-			.colonne q{display:block;padding:5px 0;}
-				.colonne a{display:block;color:#555;font-size:1.2em;padding:7px 10px;text-decoration:underline;text-align:left;}
-				.colonne a:hover{display:block;color:#669900;margin-left:5px;}
-				
+			.colonne a{display:block;color:#555;font-size:1.2em;padding:8px 10px 0;text-decoration:underline;}
+			.colonne a:hover{display:block;color:#669900;margin-left:5px;}
+
 #colonne_4 #adresse ul{list-style-type:none;margin:0;padding-left:15px;font-size:1em;color:#777}
 	#colonne_4 #adresse li span{color:#669900;font-size:1.3em;letter-spacing:1px;padding:10px 40px 20px;display:block;}
 	#colonne_4 #adresse li{line-height:24px;}
-		#colonne_4 #adresse a{color:#555;font:bold 1em Arial;margin:0}
-		#colonne_4 #adresse a:hover{color:#669900;font-size:1.1em}  
-  
-  
+	#colonne_4 #adresse li a{display: inline-block}
+
+
 /* ------------------------------ */
 /*       SLIDESHOW       */
 /* ---------------------------- */
 section.slideshow{
   width:1000px;
-  margin:0 auto;
+  margin:40px auto 80px;
   clear:both;}
-  
-  
-/* ------------------------------- */
-/*    PRESENTATION   */
-/* ----------------------------- */ 
-section#presentation{
-  margin:100px auto 30px;
-  clear:both;
-  height:230px;
-  width:1000px;}
-
-  
-/* ---------------------------------------------- */
-/*  P      MENTIONS LEGALES      */
-/* -------------------------------------------- */
-
-
 
 
 
 /* ------------------------------ */
-/*          FOOTER            */
+/*              ACTU             */
 /* ---------------------------- */
-footer{
-  border-top:3px solid #669900; 
+section#actu{  
+  border-top:4px solid #669900; 
   width:100%;
+  margin:0 auto;
   background:url('../images/footer/footer-motif.png') 0 0 repeat;}
+  
+section#actu h1{
+  font-size:2em;
+  display:block;
+  color:#FFF}
 
-footer p{color:#999;}
-footer a {color: #669900;}
-footer a:hover{text-decoration:underline;}
-footer #centrer_footer{width:1200px;margin: 0 auto;}
-
-section#equipe{margin:0 50px 20px 0;width:410px;display:inline-block}
-	section#equipe h1{font:bold 1.8em 'Opificio_rg';width:410px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}
-		section#equipe img{float:left;border:1px dashed #BBB; width:90px;margin-right:10px;}
-			section#equipe span{display: block;padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
-				section#equipe ul{list-style-type:none;}
-					section#equipe li{color:#999;margin-bottom:15px;}
-					section#equipe li a{display: block;width:55px;color:#0099FF;font-size:1.1em;}
-							section#equipe li a.cv{font:normal 1.2em 'Opificio_rg';width:60px;padding:30px 0 0 100px;}
-							section#equipe li a:hover.cv{font-weight:bold;}
-
-
-section#blog{width:320px;margin-right:50px;display:inline-block;vertical-align:top;}						
-	section#blog h1{font:bold 1.8em 'Opificio_rg';width:320px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}			
-		section#blog ul{list-style-type:none;}
-			section#blog li{color:#999;margin-bottom:15px}
-			section#blog li a{display:block;width:55px;color:#0099FF;font-size:1.1em;}
-				section#blog span{display:block;padding-bottom:10px;color:#669900;font:normal 1.4em 'Opificio_rg';}
-
+.colonne_actu{margin:10px;width:395px;display:inline-block;vertical-align:top;}
+	.colonne_actu h1 {font:bold 1.8em 'oO';width:395px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;margin-bottom:20px}
+		.colonne_actu span {display: block;padding-bottom:10px;color:#669900;font:normal 1.4em 'oO';}
+			.colonne_actu ul {list-style-type:none;}
+				.colonne_actu li {color:#999;margin-bottom:15px}
+				.colonne_actu li a{display: block;color:#0099FF;font-size:1.1em;}
 				
-section#contact{width:360px;display:inline-block;vertical-align:top;}		
-	section#contact h1{font:bold 1.8em 'Opificio_rg';width:360px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}	
+
+#equipe img{float:left;border:1px dashed #BBB; width:90px;margin:0 10px;}
+	#equipe li a.cv{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
+	#equipe li a:hover.cv{font-weight:bold;}
 
 
 aside.reseaux_sociaux{float:right;margin:10px;width:200px;background-image:url('../images/suivez-nous.png');background-position:right top;background-repeat:no-repeat;height:100px;}
@@ -261,6 +243,20 @@ aside.reseaux_sociaux span{display:none;}
 aside.reseaux_sociaux:hover a:hover{text-decoration:none;font-size:1.1em;color:#669900;}
 aside.reseaux_sociaux img {margin:70px 0 0 20px;width:45px;-moz-transition: all 0.3s;-webkit-transition: all 0.3s;transition: all 0.3s;}
 .reseaux_sociaux a:hover img, .reseaux_sociaux a:focus img {-moz-transform: rotate(20deg);-webkit-transform: rotate(20deg);transform: rotate(20deg);}    
+
+
+
+/* ------------------------------ */
+/*          FOOTER            */
+/* ---------------------------- */
+footer{
+  display:inline-block;
+  width:100%;
+  background:url('../images/footer/footer-motif.png') 0 0 repeat;}
+
+footer p{color:#999;}
+footer a {color: #669900;}
+footer a:hover{text-decoration:underline;}
 			
 #mentions{width:520px;margin:0 auto;height:30px}
 	#mentions p{border-top:1px solid #777;text-align:center;padding-top:7px}	
