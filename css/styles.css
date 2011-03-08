@@ -242,7 +242,13 @@ footer p{color:#999;}
 footer a {color: #669900;}
 footer a:hover{text-decoration:underline;}
 
+<<<<<<< HEAD
 section#equipe{margin:0 50px 20px 0px;width:410px;display: inline-block;border:1px solid green; }
+=======
+footer #test{border: 1px solid red; width: 95%;margin: 0 auto}
+
+section#equipe{margin:0 60px 20px 100px;width:410px;display: inline-block;border: 1px solid blue}
+>>>>>>> origin/master
 	section#equipe h1{font:bold 1.8em 'Opificio_rg';width:410px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}
 		section#equipe img{border:1px dashed #BBB; width:90px;margin-right:10px;}
 			section#equipe ul{list-style-type:none;}
@@ -253,7 +259,11 @@ section#equipe{margin:0 50px 20px 0px;width:410px;display: inline-block;border:1
 						section#equipe li a:hover.cv{font-weight:bold;}
 
 
+<<<<<<< HEAD
 section#blog{width:290px;margin-right:50px;display: inline-block;border:1px solid green;}						
+=======
+section#blog{width:290px;display: inline-block;margin-right:60px;border: 1px solid green}						
+>>>>>>> origin/master
 	section#blog h1{font:bold 1.8em 'Opificio_rg';width:290px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;}			
 		section#blog ul{list-style-type:none;}
 			section#blog li{color:#999;margin-bottom:15px}
