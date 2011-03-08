@@ -9,17 +9,7 @@ require('fonctions/config.php');
 </head>
  
 <body> 
-	<!--[if lte IE 7]>
-		<link rel="stylesheet" href="css/styles-ie.css" />
-		<div class="alert-ie">
-			<p>
-				<strong>Attention ! </strong> Votre navigateur (Internet Explorer 6 ou 7) présente de sérieuses lacunes en terme de sécurité et de performances, dues à son obsolescence.<br>
-				En conséquence, ce site sera consultable mais de manière moins optimale qu'avec un navigateur récent comme (<a href="http://www.browserforthebetter.com/download.html">Internet Explorer 8+</a>, <a href="http://www.mozilla-europe.org/fr/firefox/">Firefox</a>, <a href="http://www.google.com/chrome?hl=fr">Chrome</a>, <a href="http://www.apple.com/fr/safari/download/">Safari</a>,...)
-			</p>
-		</div>
-	<![endif]--> 
-	
-	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
+	<?php include('includes/message-ie.html');?>
 
 		<section class="banniere menu ombre">
 			<header role="banner">
