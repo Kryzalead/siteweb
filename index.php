@@ -20,37 +20,36 @@ require('fonctions/config.php');
 	<![endif]--> 
 	
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
+	
+	<div id="wrapper"> <!-- DEBUT WRAPPER -->
 
-		<section class="banniere menu ombre">
-			<header role="banner">
-				<h1><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="400" /></a></h1>
-					<nav class="navigation">
-						<ul>
-							<li><a href="#">Accueil</a></li>
-							<li><a href="agence.html">L'agence</a></li>
-							<li><a href="#">Réalisations</a></li>
-							<li><a href="#">Les Packs</a></li>
-							<li><a href="#">Devis gratuit</a></li>
-							<li><a href="#">Contact</a></li>
-					<!--	<li><a href="#">Le Blog</a></li>-->
-						</ul>
-					</nav>
-				</header>
-
-			<div id="bandeau">
-				<h1><a>Agence web - Création site web en Charente | Charente-Maritime et France</a></h1>
+		<header role="banner">
+			<h1 id="logo"><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="400" /></a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="#">Accueil</a></li>
+						<li><a href="agence.html">L'agence</a></li>
+						<li><a href="#">Réalisations</a></li>
+						<li><a href="#">Les Packs</a></li>
+						<li><a href="#">Devis gratuit</a></li>
+						<li><a href="#">Contact</a></li>
+				<!--	<li><a href="#">Le Blog</a></li>-->
+					</ul>
+				</nav>
+		</header>
 				
-			</div>
-		</section>
+		<div id="slogan">
+			<h2><a>Agence web - Création de sites internet</a></h2>
+		</div>
 		
 		<div id="content"><!-- Debut content -->
 			<section id="presentation">
 				<div class="colonne" id="colonne_1">
 					<h1>L'agence en quelques mots</h1>
 						<p>
-							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <u>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</u>.
+							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <span class="souligne">esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</span>.
 							<q>Votre projet est à l'état de cocon? nous sommes là pour l'aider à s'envoler</q>
-							<a href="agence.html">L'agence >></a>
+							<a href="agence.html">L'agence</a>
 						</p>
 				</div>
 				
@@ -69,10 +68,10 @@ require('fonctions/config.php');
 				<div class="colonne" id="colonne_3">
 					<h1>Votre devis GRATUIT en ligne</h1>
 						<p>
-							Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entierement gratuit et personnalisé</strong>?
-							Cliquez sur le lien ci-dessous est remplissez le formulaire afin que nous puissions vous retourner <u>votre devis par mail</u>.
+							Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entièrement gratuit et personnalisé</strong>?
+							Cliquez sur le lien ci-dessous est remplissez le formulaire afin que nous puissions vous retourner votre devis par mail.
+							<a href="devis/devis.php">Faites rapidement votre devis</a>
 						</p>
-						<a href="devis/devis.php">Faites rapidement votre devis >></a>
 				</div>		
 				
 				<div class="colonne" id="colonne_4">
@@ -102,8 +101,7 @@ require('fonctions/config.php');
 
 	<footer>
 		<div id="centrer_footer">
-			
-		
+
 			<section  id="equipe">
 				<h1>L'équipe</h1>
 					<ul>
@@ -126,7 +124,7 @@ require('fonctions/config.php');
 			
 			<section id="contact">
 					<h1>Un projet? Un commentaire?</h1>
-			
+
 						<!-- FORM CONTACT a toi de jouer-->
 			</section>
 
@@ -137,13 +135,15 @@ require('fonctions/config.php');
 			</aside>-->
 	
 		
-		<div id="mentions">
-			<p>
-				&copy; 2011 Kryzalead &middot; <a href="mentions-legales.html">Mentions Légales</a> &middot; <a href="plan.html">Plan du site</a> &middot; <a href="w3c.html">Valide W3C</a> &middot; <a href="#bandeau">Haut de page</a>
-			</p> 
-		</div>
+			<div id="mentions">
+				<p>
+					&copy; 2011 Kryzalead &middot; <a href="mentions-legales.html">Mentions Légales</a> &middot; <a href="plan.html">Plan du site</a> &middot; <a href="w3c.html">Valide W3C</a> &middot; <a href="#bandeau">Haut de page</a>
+				</p> 
 			</div>
+		</div>
 	</footer>
+	
+	</div> <!-- FIN WRAPPER -->
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
 	 <script src="scripts/slide.js" type="text/javascript"></script>

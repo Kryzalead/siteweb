@@ -3,6 +3,8 @@
 /* ----------------------------- */
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
 
+/* reset TAGS */
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,ol,ul,li,fieldset,form,label,legend,table,caption{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
 
 /* ----------------------------- */
 /*  STYLES DE BASE  */
@@ -37,6 +39,7 @@ article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, s
 html {font-size: 100%;}
   
 body {
+  background-color:#FFF;
   margin: 0; 
   padding: 0; 
   font-family: "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;
@@ -50,7 +53,7 @@ body {
 /* ------------------------------ */
 /*              LIENS             */
 /* ----------------------------- */
-a {text-decoration: none; font-family:Arial} 
+a {text-decoration: none; font-family:Arial;outline: none;} 
 a:focus, a:active {outline: none;} 
 a img {border: none;} 
 
@@ -60,20 +63,22 @@ a img {border: none;}
 h1 { 
   display: inline-block;
   font-weight: normal;}
-  
-h1 a, h1 a:visited {
+ 
+h2 {  
+  display: inline-block;
+  font-weight: normal;} 
+ 
+ h2 a, h2 a:visited {
+  cursor:default;
   text-decoration: none;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
-  transition: all .5s;  }
+  transition: all .5s;}
   
-h1 a:hover, h1 a:focus {
+h2 a:hover, h2 a:focus {
   text-decoration: none;
-  outline: none;
-  text-shadow: 0 0 15px #111;}
-
-h2 {font-size: 1.5em;} 
+  text-shadow: 0 0 10px #444;}
  
 
 /* ------------------------------ */
@@ -89,13 +94,13 @@ figure{display: inline-block; vertical-align: top;}
 strong {font-weight: bold;}
 
 .color{color:#669900}
- 
+.souligne{text-decoration:underline}
  
 /* ------------------------------ */
 /*           BLOCS              */
 /* ---------------------------- */
 .ombre{
-  -webkit-box-shadow:0 0px 35px -10px #000;
+  -webkit-box-shadow: 0px 5px 20px #555;
   -moz-box-shadow:0 0px 35px -10px #000;
   box-shadow:0 0px 35px -10px #000;
   filter:progid:DXImageTransform.Microsoft.Shadow(color='#777777', Direction=160 Strength=5); zoom: 1;}
@@ -107,65 +112,61 @@ strong {font-weight: bold;}
   transition: all .5s;}
 
 .animer a:hover{color:#669900} 
-  
-  
-/* ------------------------------ */
-/*        BANNIERE         */
-/* ---------------------------- */
-section.banniere{
-  background-color:#202021;
-  border-bottom:5px solid #669900; 
-  margin:0 auto;
-  height:150px;}
+    
 
-#bandeau{
-  width:1000px;
-  margin:0 auto;}
-  
-#bandeau h1{
-  text-align:right;
-  color:#444;
-  padding-top:20px;
-  font-size:1em;
-  letter-spacing:2px;
-  cursor:default;}
-  
+/* ----------------------------------- */
+/*            WRAPPER           */
+/* --------------------------------- */	
+#wrapper {
+  margin:0 auto;
+  min-height: 1000px;}
   
 /* ----------------------------------- */
 /*       HEADER MENU       */
 /* --------------------------------- */
-section.menu header{
-  height:150px;
-  width:1000px;
-  margin:0 auto;}
+header{
+  border-bottom:6px solid #669900; 
+  background-color:#202021;
+  width:100%;
+  margin:0 auto;
+  height:150px;}
+  
+header #logo{
+  float:left;
+  margin-top:25px}
 
-section.menu header img{
-  margin-top:6px;
-  position:absolute;}
-
-header nav.navigation ul{ 
-  margin-top:-10px;
+header nav ul{
+  padding:10px 20px 0 0;
+  list-style-type:none;
   text-align:right;}
   
-header nav.navigation li{
+header nav li{
   display:inline;
-  padding:0 8px;
-  font-size: 1.6em;
-  list-style-type:none;}
+  padding:0 7px;
+  font-size: 1.3em;}
   
-header nav.navigation a{
+header nav a{
   color:#FFF;
-  font-size:0.8em;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;}
   
-header nav.navigation a:hover, header nav.navigation a:focus {
-  text-decoration:none;
+header nav a:hover, header nav a:focus {
   color:#669900;
   border-bottom:25px solid #669900;}
   
+ 
+/* ------------------------------ */
+/*          SLOGAN           */
+/* ---------------------------- */
+#slogan{
+  position:absolute;
+  margin:5px 0 0 195px;}
+  
+#slogan h2 a{
+  font:normal 1.2em 'Opificio_rg';
+  color:#669900}
   
 /* ------------------------------ */
 /*         CONTENT          */
@@ -178,13 +179,12 @@ header nav.navigation a:hover, header nav.navigation a:focus {
 /* ------------------------------ */
 /*        COLONNES       */
 /* --------------------------- */   
-.colonne {float:left;width:249px;height:200px;margin:40px 0 120px;}
-	.colonne h1{font:normal 1.3em Helvetica;padding-bottom:5px;margin:0 0 5px 20px;border-bottom:1px solid #999;width:225px;}
-		.colonne p{padding:0 15px;text-align:justify;font-size:1em;color:#777}
-			.colonne q{display:block;}
-				.colonne a{display:block;color:#555;font:bold 1.2em 'Opificio_rg';padding:7px 10px}
+.colonne {float:left;width:250px;height:200px;margin:40px 0 120px;}
+	.colonne h1{font:normal 1.3em Helvetica;padding-bottom:5px;margin:0 0 5px 15px;border-bottom:1px solid #999;width:220px;}
+		.colonne p{padding:0 15px;text-align:justify;font-size:1em;color:#777;}
+			.colonne q{display:block;padding:5px 0;}
+				.colonne a{display:block;color:#555;font-size:1.2em;padding:7px 10px;text-decoration:underline;text-align:left;}
 				.colonne a:hover{display:block;color:#669900;margin-left:5px;}
-
 				
 #colonne_4 #adresse ul{list-style-type:none;margin:0;padding-left:15px;font-size:1em;color:#777}
 	#colonne_4 #adresse li span{color:#669900;font-size:1.3em;letter-spacing:1px;padding:10px 40px 20px;display:block;}
