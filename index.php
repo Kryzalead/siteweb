@@ -8,48 +8,16 @@ require('fonctions/config.php');
     <?php include('includes/head.php');?>
 </head>
  
-<body> 
-<<<<<<< HEAD
-	<!--[if lte IE 7]>
-		<link rel="stylesheet" href="css/styles-ie.css" />
-		<div class="alert-ie">
-			<p>
-				<strong>Attention ! </strong> Votre navigateur (Internet Explorer 6 ou 7) présente de sérieuses lacunes en terme de sécurité et de performances, dues à son obsolescence.<br>
-				En conséquence, ce site sera consultable mais de manière moins optimale qu'avec un navigateur récent comme (<a href="http://www.browserforthebetter.com/download.html">Internet Explorer 8+</a>, <a href="http://www.mozilla-europe.org/fr/firefox/">Firefox</a>, <a href="http://www.google.com/chrome?hl=fr">Chrome</a>, <a href="http://www.apple.com/fr/safari/download/">Safari</a>,...)
-			</p>
-		</div>
-	<![endif]--> 
-	
+<body>
+	<?php include('includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
-	
+
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->
 
 		<header role="banner">
-			<h1 id="logo"><a href="index.html" title="Retour à l'accueil"><img src="images/logo-kryzalead.png" alt="Kryzalead agence web" width="400" /></a></h1>
-				<nav role="navigation">
-					<ul>
-						<li><a href="#">Accueil</a></li>
-						<li><a href="agence.html">L'agence</a></li>
-						<li><a href="#">Réalisations</a></li>
-						<li><a href="#">Les Packs</a></li>
-						<li><a href="#">Devis gratuit</a></li>
-						<li><a href="#">Contact</a></li>
-				<!--	<li><a href="#">Le Blog</a></li>-->
-					</ul>
-				</nav>
+			<?php include('includes/header.php');?>
 		</header>
-=======
-	<?php include('includes/message-ie.html');?>
 
-		<section class="banniere menu ombre">
-			<header role="banner">
-				<?php include('includes/header.php');?>
-				</header>
-
-			<div id="bandeau">
-				<h1><a>Agence web - Création site web en Charente | Charente-Maritime et France</a></h1>
->>>>>>> origin/master
-				
 		<div id="slogan">
 			<h2><a>Agence web - Création de sites internet</a></h2>
 		</div>

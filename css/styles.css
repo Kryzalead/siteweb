@@ -125,6 +125,7 @@ strong {font-weight: bold;}
 /*       HEADER MENU       */
 /* --------------------------------- */
 header{
+  position: relative;
   border-bottom:6px solid #669900; 
   background-color:#202021;
   width:100%;
@@ -135,18 +136,15 @@ header #logo{
   float:left;
   margin-top:25px}
 
-header nav ul{
-  padding:10px 20px 0 0;
-  list-style-type:none;
-  text-align:right;}
-  
-header nav li{
-  display:inline;
-  padding:0 7px;
+header nav {
+  position: absolute;
+  right:20px;
+  bottom: 110px;
   font-size: 1.3em;}
   
 header nav a{
-  color:#FFF;
+  color:#FFF; 
+  padding:0 7px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
@@ -179,7 +177,7 @@ header nav a:hover, header nav a:focus {
 /* ------------------------------ */
 /*        COLONNES       */
 /* --------------------------- */   
-.colonne {float:left;width:250px;height:200px;margin:40px 0 120px;}
+.colonne {float:left;width:246px;margin:40px 0 50px;}
 	.colonne h1{font:normal 1.3em Helvetica;padding-bottom:5px;margin:0 0 5px 15px;border-bottom:1px solid #999;width:220px;}
 		.colonne p{padding:0 15px;text-align:justify;font-size:1em;color:#777;}
 			.colonne q{display:block;padding:5px 0;}
