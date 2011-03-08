@@ -144,7 +144,7 @@ header nav {
   
 header nav a{
   color:#FFF; 
-  padding:0 7px;
+  margin:0 7px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
