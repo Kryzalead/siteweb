@@ -9,6 +9,7 @@ require('fonctions/config.php');
 </head>
  
 <body> 
+<<<<<<< HEAD
 	<!--[if lte IE 7]>
 		<link rel="stylesheet" href="css/styles-ie.css" />
 		<div class="alert-ie">
@@ -37,6 +38,17 @@ require('fonctions/config.php');
 					</ul>
 				</nav>
 		</header>
+=======
+	<?php include('includes/message-ie.html');?>
+
+		<section class="banniere menu ombre">
+			<header role="banner">
+				<?php include('includes/header.php');?>
+				</header>
+
+			<div id="bandeau">
+				<h1><a>Agence web - Création site web en Charente | Charente-Maritime et France</a></h1>
+>>>>>>> origin/master
 				
 		<div id="slogan">
 			<h2><a>Agence web - Création de sites internet</a></h2>
