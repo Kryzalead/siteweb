@@ -103,7 +103,7 @@ require('fonctions/config.php');
 			
 			<div class="colonne_actu" id="contact">
 				<h1>Un projet? Un commentaire?</h1>
-					<form action="contact.php" id="contact" method="post">
+					<form action="traitement.php" id="contact" method="post">
 						<fieldset>
 							<legend>Vos coordonnées</legend>
 								<ol>
