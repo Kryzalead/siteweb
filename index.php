@@ -103,7 +103,30 @@ require('fonctions/config.php');
 			
 			<div class="colonne_actu" id="contact">
 				<h1>Un projet? Un commentaire?</h1>
-					<!-- FORM CONTACT a toi de jouer-->
+					<form action="#" id="contact" method="post">
+						<fieldset>
+							<legend>Vos coordonnées</legend>
+								<ol>
+									<li>
+										<label for="nom">Nom</label>
+											<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
+									</li>
+									<li>
+										<label for="email">Email</label>
+											<input id="email" name="email" type="email" placeholder="example@domain.fr" required />
+									</li>
+								</ol>
+						</fieldset>
+							
+						<fieldset>
+							<legend>Votre message:</legend>
+								<textarea id="message" placeholder="Tapez votre message"></textarea>
+						</fieldset>
+
+						<fieldset>
+							<button type="submit">Envoyer</button>
+						</fieldset>
+					</form>
 			</div>
 
 	<!--<aside class="reseaux_sociaux">
