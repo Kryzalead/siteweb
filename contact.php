@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('fonctions/config.php');?>
+require('fonctions/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr"> 
