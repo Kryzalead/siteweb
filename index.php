@@ -103,7 +103,7 @@ require('fonctions/config.php');
 			
 			<div class="colonne_actu" id="contact">
 				<h1>Un projet? Un commentaire?</h1>
-					<form action="#" id="contact" method="post">
+					<form action="traitement.php" id="contact" method="post">
 						<fieldset>
 							<legend>Vos coordonnées</legend>
 								<ol>
@@ -120,11 +120,11 @@ require('fonctions/config.php');
 							
 						<fieldset>
 							<legend>Votre message:</legend>
-								<textarea id="message" placeholder="Tapez votre message"></textarea>
+								<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
 						</fieldset>
 
 						<fieldset>
-							<button type="submit">Envoyer</button>
+							<button type="submit" name="valid">Envoyer</button>
 						</fieldset>
 					</form>
 			</div>
