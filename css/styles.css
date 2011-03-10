@@ -1,10 +1,19 @@
-/* ----------------------------- */
-/*            RESET             */
-/* ----------------------------- */
+/* ----------------------------------------------------------- */
+/*					Nom : Site en maintenance				  			 */
+/*							 Date : 03-03-2011  						 		 */
+/*	 Auteurs: Demay Jean-Damien // Arana Jonathan    */
+/* 			  Entreprise : www.kryzalead.fr			 	  	    */
+/* 					 Edition: construction.css						    */
+/*									 Version: 1.0								   */
+/* --------------------------------------------------------- */
+
+/* --------------------- */
+/*          RESET          */
+/* ------------------ */
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
 
 /* reset TAGS */
-html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,ol,ul,li,fieldset,form,label,legend,table,caption{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+html,body,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,ol,ul,li,fieldset,form,label,legend,table,caption{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
 
 /* ----------------------------- */
 /*  STYLES DE BASE  */
@@ -139,7 +148,7 @@ header nav {
 header span.accroche { 
   position:absolute;
   margin:140px 0 0 -210px;
-  text-shadow:0 0 5px #555;
+  text-shadow:0 0 3px #555;
   font:bold 2.4em 'O_O';
   color:#669900;}
    
@@ -168,9 +177,9 @@ font-family:arial; /* A faire...................................................
   font:bold 3.5em 'O_O';}
   
 
-/* ------------------------------ */
-/*         CONTENT          */
-/* ---------------------------- */
+/* ------------------------ */
+/*        CONTENT          */
+/* --------------------- */
 #content {
   width:1000px;
   margin:0 auto;}
@@ -208,7 +217,6 @@ section.slideshow{
   clear:both;}
 
 
-
 /* ------------------------------ */
 /*              ACTU             */
 /* ---------------------------- */
@@ -239,15 +247,20 @@ section#actu h1{
 /* --------------------------------------------- */
 /*      STYLE FORM CONTACT COL3         */
 /* ------------------------------------------ */
-form#contact {border:1px solid 
-border:1px solid #fff;
-  background: #669900;
+.border_form{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;}
+
+form#contact {
+  border:1px solid #fff;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding:5px 20px;}
 
 form#contact fieldset {
+	
   border: none;
   margin-bottom: 10px;}
 
@@ -262,16 +275,15 @@ form#contact legend {
 
 form#contact ol li {
 	background:url('../images/footer/footer-motif.png') 0 0 repeat;
-	border-color: #DDD;
-	border-style: dashed;
+	border:none;
 	border-width: 1.5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 	line-height: 30px;
-	list-style: none;
+	list-style-type: none;
 	padding: 5px 10px;
-	margin-bottom: 2px;}
+	margin: 10px 0;}
 
 form#contact textarea{
 	padding:10px;
@@ -282,20 +294,21 @@ form#contact textarea{
 	height:100px;
 	overflow: hidden;
 	background:url('../images/footer/footer-motif.png') 0 0 repeat;
-	border-color: #DDD;
-	border-style: dashed;
-	border-width: 1.5px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;}
-
+	border:none;}
+	
 form#contact button[type=submit] {
 	width: 80px; height: 20px; float: right; padding: 0 10px; margin: 0 15px 0 0;
 	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
 	border: 1px solid #556f8c;
-	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
-	cursor: pointer;}	
+	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */}
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
+	/*cursor: pointer;}	*/
+	
+			form#contact input:not([type=radio]),
+	
+	
+	
+	
 	
 	
 
