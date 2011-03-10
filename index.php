@@ -13,7 +13,7 @@ require('fonctions/config.php');
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->
-
+		
 		<header role="banner">
 			<?php include('includes/header.php');?>
 		</header>
@@ -79,67 +79,65 @@ require('fonctions/config.php');
 
 		
 		<section id="actu">
-			<h1>Actu</h1>
-			
-			<div class="colonne_actu" id="equipe">
-				<h1>L'équipe</h1>
-					<ul>
-						<li><img src="images/footer/avatar-jd.jpg" alt="Intégrateur web et webdesigner" title="Intégrateur web et webdesigner" /><span>Intégrateur web et webdesigner</span>Jean-Damien Demay<a href="cv/webmestre-jd.pdf" class="cv" target="_blank">Mon CV</a></li>
-						<li><img src="images/footer/avatar-jo.jpg" alt="Développeur web" title="Développeur web" /><span>Développeur web</span>Jonathan Arana<a href="cv/webmestre-jo.pdf" class="cv" target="_blank">Mon CV</a></li>
-						<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
-					</ul>
-			</div>
-			
-			<div class="colonne_actu" id="blog">
-				<h1>Actu Blog</h1>
-					<ul>
-						<li>01</li>
-						<li>02</li>
-						<li>03</li>
-						<li>04</li>
-						<li>05</li>
-					</ul>
-			</div>
-			
-			<div class="colonne_actu" id="contact">
-				<h1>Un projet? Un commentaire?</h1>
-					<form action="traitement.php" id="contact" method="post">
-						<fieldset>
-							<legend>Vos coordonnées</legend>
-								<ol>
-									<li>
-										<label for="nom">Nom</label>
+			<div id="c_footer">
+				<div class="colonne_actu" id="equipe">
+					<h1>L'équipe</h1>
+						<ul>
+							<li><img src="images/footer/avatar-jd.jpg" alt="Intégrateur web et webdesigner" title="Intégrateur web et webdesigner" /><span>Intégrateur web et webdesigner</span>Jean-Damien Demay<a href="cv/webmestre-jd.pdf" class="cv" target="_blank">Mon CV</a></li>
+							<li><img src="images/footer/avatar-jo.jpg" alt="Développeur web" title="Développeur web" /><span>Développeur web</span>Jonathan Arana<a href="cv/webmestre-jo.pdf" class="cv" target="_blank">Mon CV</a></li>
+							<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
+						</ul>
+					</div>
+				
+			<!--	<div class="colonne_actu" id="blog">
+					<h1>Actu Blog</h1>
+						<ul>
+							<li>01</li>
+							<li>02</li>
+							<li>03</li>
+							<li>04</li>
+							<li>05</li>
+						</ul>
+				</div>-->
+				
+				<div class="colonne_actu" id="contact">
+					<h1>Un commentaire?</h1>
+						<form action="traitement.php" id="contact" method="post">
+							<fieldset>
+								<legend>Vos coordonnées</legend>
+									<ol>
+										<li>
 											<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
-									</li>
-									<li>
-										<label for="email">Email</label>
-											<input id="email" name="email" type="email" placeholder="example@domain.fr" required />
-									</li>
-								</ol>
-						</fieldset>
-							
-						<fieldset>
-							<legend>Votre message:</legend>
-								<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
-						</fieldset>
+										</li>
+										<li>
+											<input id="email" name="email" type="email" placeholder="Email" required />
+										</li>
+									</ol>
+							</fieldset>
+								
+							<fieldset>
+								<legend>Votre message</legend>
+									<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
+							</fieldset>
 
-						<fieldset>
-							<button type="submit" name="valid">Envoyer</button>
-						</fieldset>
-					</form>
+							<fieldset>
+								<button type="submit" name="valid">Envoyer</button>
+							</fieldset>
+						</form>
+				</div>
+					<!--<aside class="reseaux_sociaux">
+						<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
+						<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Retrouvez l'agence web Kryzalead sur Twitter" /><span>Twitter</span></a>
+					</aside>-->
 			</div>
+		</section>
 
-	<!--<aside class="reseaux_sociaux">
-				<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
-				<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Retrouvez l'agence web Kryzalead sur Twitter" /><span>Twitter</span></a>
-		</aside>-->
-	</section>
-	
-	
 	<footer role="contentinfo">
 		<div id="mentions">
+			
 			<p>
-				&copy; 2011 Kryzalead &middot; <a href="mentions-legales.html">Mentions Légales</a> &middot; <a href="plan.html">Plan du site</a> &middot; <a href="w3c.html">Valide W3C</a> &middot; <a href="#bandeau">Haut de page</a>
+				<span class="color">Kryzalead</span> - 16220 Ecuras - 17000 La Rochelle - Agence web 
+				<span style="padding-left:300px">&copy; 2011 - Kryzalead | <a href="mentions-legales.html">Mentions Légales</a> | <a href="plan.html">Plan du site</a> | <a href="w3c.html">Valide W3C</a> | <a href="#wrapper">Haut de page</a></span>
 			</p> 
 		</div>
 	</footer>
