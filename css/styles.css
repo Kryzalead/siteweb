@@ -236,7 +236,7 @@ section#actu h1{
 
 #c_footer{width:1000px;margin:0 auto;}  
   
-.colonne_actu{margin:15px 0 0 80px;width:400px;display:inline-block;vertical-align:top;}
+.colonne_actu{margin:15px 0 0 90px;width:400px;display:inline-block;vertical-align:top;}
 	.colonne_actu h1 {font:bold 1.8em 'oO';width:380px;color:#EEE;border-bottom:1px solid #EEE; text-shadow:0 0 5px #000;margin-bottom:20px;}
 		.colonne_actu span {display: block;padding-bottom:10px;color:#669900;font:normal 1.4em 'oO';}
 			.colonne_actu ul {list-style-type:none;}
@@ -244,15 +244,18 @@ section#actu h1{
 				.colonne_actu li a{display: block;color:#0099FF;font-size:1.1em;}
 				
 
-#equipe img{float:left;border:1px dashed #BBB; width:90px;margin:0 10px;}
-	#equipe li a.cv{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
-	#equipe li a:hover.cv{font-weight:bold;}
+#equipe{margin-bottom:10px}				
+	#equipe img{float:left;border:1px dashed #BBB; width:90px;margin:0 10px;}
+		#equipe li a.cv{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
+		#equipe li a:hover.cv{font-weight:bold;}
 
-	
+#contact{margin-left:350px;}
+
 /* --------------------------------------------- */
 /*      STYLE FORM CONTACT COL3         */
 /* ------------------------------------------ */
 form#contact {
+  margin:0 0 20px 0;
   width:340px;
   border:1px dotted #555;
   background-color:#333;
@@ -261,7 +264,6 @@ form#contact {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   padding:0 10px;
-  margin-bottom:20px;
   counter-reset: fieldsets;}
 
 form#contact fieldset {

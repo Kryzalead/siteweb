@@ -89,7 +89,7 @@ require('fonctions/config.php');
 						</ul>
 					</div>
 				
-			<!--	<div class="colonne_actu" id="blog">
+				<div class="colonne_actu" id="blog">
 					<h1>Actu Blog</h1>
 						<ul>
 							<li>01</li>
@@ -98,7 +98,7 @@ require('fonctions/config.php');
 							<li>04</li>
 							<li>05</li>
 						</ul>
-				</div>-->
+				</div>
 				
 				<div class="colonne_actu" id="contact">
 					<h1>Un commentaire?</h1>
