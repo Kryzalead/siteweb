@@ -135,28 +135,23 @@ header{
   margin:0 auto;
   height:150px;}
 
-#c_header{margin:0 auto;width:1000px;}
+header #c_header{
+  margin:0 auto;
+  width:1000px;}
   
 header #logo{
   float:left;
   margin-top:25px}
 
 header nav{
-  position: absolute;
-  right:20px;
+  text-align:right;
+  padding:10px 10px 0 0; 
   bottom: 110px;
   font-size: 1.3em;}
-  
-header span.accroche { 
-  position:absolute;
-  margin:140px 0 0 -210px;
-  text-shadow:0 0 3px #555;
-  font:bold 2.4em 'O_O';
-  color:#669900;}
    
 header nav a {
   color:#FFF; 
-  margin:0 7px;
+  margin:0 6px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
@@ -167,16 +162,23 @@ font-family:arial; /* A faire...................................................
   color:#669900;
   border-bottom:25px solid #669900;}
   
- 
+ header span.accroche { 
+  position:absolute;
+  margin:140px 0 0 -210px;
+  text-shadow:0 0 3px #555;
+  font:bold 2.4em 'O_O';
+  color:#669900;}
+  
+  
 /* ------------------------------ */
 /*          SLOGAN           */
 /* ---------------------------- */
 #slogan{
+  display:inline-block;
   text-align:right;
-  padding:20px 50px 0 0;}
+  padding:50px 0 0 140px ;}
   
-#slogan h2 a{ 
-  font:bold 3.5em 'O_O';}
+#slogan h2 a{font:bold 3.5em 'O_O';}
   
 
 /* ------------------------ */
@@ -191,7 +193,7 @@ font-family:arial; /* A faire...................................................
 /*    PRESENTATION   */
 /* ----------------------------- */ 
 section#presentation{
-  margin:80px auto 0;
+  margin:60px auto 0;
   width:1000px;}
 
 
