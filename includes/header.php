@@ -7,9 +7,13 @@
 			<a href="#">Les Packs</a>
 			<a href="#">Devis gratuit</a>
 	<!--	<a href="#">Le Blog</a>-->
+			<a href="#" id="contact">Contact</a>
 		</nav>
+		
 		<div id="formContainer">
-				<div id="formContact">
+				
+			
+			<div id="formContact">
 					<form method="post" action="traitement.php">
 						<p>Talk to me about anything. If you&rsquo;d like to work with me, or <br />
 							  even if you just need a hug, I&rsquo;ll get back to you shortly.</p>
@@ -33,6 +37,5 @@
 							  </p>
 					</form>
 				</div>	
-			<a href="#" id="contact">Contact</a>
-			</div>
+		</div>
 </div>

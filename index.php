@@ -7,9 +7,8 @@ require('fonctions/config.php');
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 500px;position:absolute;z-index: 10;top: 0;left: 800px}
+#formContainer{width: 550px;position:absolute;z-index: 10;top: 10;left: 660px}
 	#formContact{border: 1px solid red;background-color: #fff;display: none}
-	#contact{width: 50px,border:1px solid blue;height:20px;background-color: red;position: absolute;left: 400px}
 	</style>
 </head>
  
