@@ -6,6 +6,11 @@ require('fonctions/config.php');
  
 <head> 
     <?php include('includes/head.php');?>
+	<style type="text/css" media="all">
+#formContainer{width: 500px;position:absolute;z-index: 10;top: 0;left: 800px}
+	#formContact{border: 1px solid red;background-color: #fff;display: none}
+	#contact{width: 50px,border:1px solid blue;height:20px;background-color: red;position: absolute;left: 400px}
+	</style>
 </head>
  
 <body>
@@ -136,7 +141,6 @@ require('fonctions/config.php');
 						</form> 
 				</div> 
 					<div class="contact"></div>
-			</form>
 		</section>
 			
 		
@@ -169,8 +173,21 @@ require('fonctions/config.php');
 				});
 			}, 5000);
 		});
+		
+		
     </script>
-
+	<script type="text/javascript">
+	$(function(){
+		$('#contact').click(function(){
+			if($('#formContact').is(':hidden')){
+				$('#formContact').slideDown('slow');
+			}else{
+				$('#formContact').slideUp('slow');
+			}
+		});
+		return false;
+	})
+	</script>
 	
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
