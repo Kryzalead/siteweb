@@ -7,7 +7,7 @@ require('fonctions/config.php');
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 538px;position:absolute;z-index: 10;top: 5;left: 730px}
+	#formContainer{width: 538px;position:absolute;z-index: 10;top: 5;left: 730px}
 	#formContact{border: 1px solid blue;background-color: red;display: none}
 	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
 	#backgroundPopup{
@@ -17,8 +17,8 @@ require('fonctions/config.php');
 	height:100%; width:100%;
 	top:0; left:0;
 	background:#000;
-	z-index:9;
-	}    
+	z-index:9;}
+    
 	</style>
 </head>
  
@@ -83,7 +83,7 @@ require('fonctions/config.php');
 
 			<section class="slideshow">
 				<div id="slide" class="nivoSlider">
-					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
+					<a href="#link1"><img src="images/slider/pack-launch-web.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
 					<a href="#link1"><img src="images/footer/avatar-jd.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
 					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
 				</div>
@@ -118,10 +118,6 @@ require('fonctions/config.php');
 					</aside>-->
 		</section>
 		
-		
-			
-		
-
 	<footer role="contentinfo">
 		<div id="mentions">
 			<p>
