@@ -7,8 +7,9 @@ require('fonctions/config.php');
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 550px;position:absolute;z-index: 10;top: 10;left: 660px}
-	#formContact{border: 1px solid red;background-color: #fff;display: none}
+#formContainer{width: 540px;position:absolute;z-index: 10;top: 8;left: 660px}
+	#formContact{border: 1px solid blue;background-color: red;display: none}
+	#contact{background-color: red;border: 1px solid blue;border-bottom: none}
 	</style>
 </head>
  
@@ -108,39 +109,7 @@ require('fonctions/config.php');
 					</aside>-->
 		</section>
 		
-		<section id="contact">
-				<div id="contactForm"> 
-					<div class="loader"></div> 
-					<div class="bar"></div>
-					
-						<form action="traitement.php" class="contactForm" name="cform" method="post"> 
-							<p>Talk to me about anything. If you&rsquo;d like to work with me, or <br />even if you just need a hug, I&rsquo;ll get back to you shortly.</p> 
-							<div class="input_boxes"> 
-								<fieldset>
-									<legend>Vos coordonnées</legend>
-										<ol>
-											<li>
-												<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
-											</li>
-											<li>
-												<input id="email" name="email" type="email" placeholder="Email" required />
-											</li>
-										</ol>
-								</fieldset>
-								
-								<fieldset>
-									<legend>Votre message</legend>
-										<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
-								</fieldset>
-							 </div>   
-							 
-							<fieldset>
-								<button class="submit" type="submit" name="submit" onfocus="this.blur()">Envoyer</button>
-							</fieldset>					
-						</form> 
-				</div> 
-					<div class="contact"></div>
-		</section>
+		
 			
 		
 
@@ -183,8 +152,8 @@ require('fonctions/config.php');
 			}else{
 				$('#formContact').slideUp('slow');
 			}
+			return false;
 		});
-		return false;
 	})
 	</script>
 	
