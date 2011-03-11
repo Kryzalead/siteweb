@@ -7,8 +7,9 @@ require('fonctions/config.php');
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 550px;position:absolute;z-index: 10;top: 10;left: 660px}
-	#formContact{border: 1px solid red;background-color: #fff;display: none}
+#formContainer{width: 540px;position:absolute;z-index: 10;top: 8;left: 660px}
+	#formContact{border: 1px solid blue;background-color: red;display: none}
+	#contact{background-color: red;border: 1px solid blue;border-bottom: none}
 	</style>
 </head>
  
@@ -183,8 +184,8 @@ require('fonctions/config.php');
 			}else{
 				$('#formContact').slideUp('slow');
 			}
+			return false;
 		});
-		return false;
 	})
 	</script>
 	
