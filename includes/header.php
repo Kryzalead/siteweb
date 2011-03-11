@@ -38,4 +38,5 @@
 					</form>
 				</div>	
 		</div>
+		<div id="backgroundPopup">&nbsp;</div>
 </div>

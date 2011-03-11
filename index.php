@@ -7,9 +7,18 @@ require('fonctions/config.php');
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 540px;position:absolute;z-index: 10;top: 8;left: 660px}
+#formContainer{width: 538px;position:absolute;z-index: 10;top: 5;left: 730px}
 	#formContact{border: 1px solid blue;background-color: red;display: none}
-	#contact{background-color: red;border: 1px solid blue;border-bottom: none}
+	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
+	#backgroundPopup{
+	display:none;
+	position:fixed;
+	_position:absolute;
+	height:100%; width:100%;
+	top:0; left:0;
+	background:#000;
+	z-index:9;
+	}    
 	</style>
 </head>
  
@@ -149,8 +158,11 @@ require('fonctions/config.php');
 		$('#contact').click(function(){
 			if($('#formContact').is(':hidden')){
 				$('#formContact').slideDown('slow');
+				$('#backgroundPopup').css({'opacity':'0.7'});
+				$('#backgroundPopup').fadeIn('slow');
 			}else{
 				$('#formContact').slideUp('slow');
+				$('#backgroundPopup').fadeOut('slow');
 			}
 			return false;
 		});
