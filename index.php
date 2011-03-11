@@ -59,7 +59,7 @@ require('fonctions/config.php');
 							<ul>
 								<li><span>Agence Kryzalead</span></li>
 								<li>16220 Ecuras // 17000 La Rochelle</li>
-								<li>Tél: 05 45 .. .. ..</li>
+								<li>Tél: 05&nbsp;45&nbsp;..&nbsp;..&nbsp;..</li>
 								<li>Email:<a href="contact.php">contact@kryzalead.fr</a></li>
 								<li>n'hésitez plus à nous contacter.</li>
 							</ul>
@@ -77,9 +77,8 @@ require('fonctions/config.php');
 			</section>
 		</div><!-- Fin content -->
 
-		
 		<section id="actu">
-			<div id="c_footer">
+			<div id="c_actu">
 				<div class="colonne_actu" id="equipe">
 					<h1>L'équipe</h1>
 						<ul>
@@ -88,7 +87,7 @@ require('fonctions/config.php');
 							<li><img src="images/footer/avatar-kita.jpg" alt="Commerciale" title="Commerciale" /><span>Commerciale</span>Aurélie</li>
 						</ul>
 					</div>
-				
+
 				<div class="colonne_actu" id="blog">
 					<h1>Actu Blog</h1>
 						<ul>
@@ -99,42 +98,51 @@ require('fonctions/config.php');
 							<li>05</li>
 						</ul>
 				</div>
-				
-				<div class="colonne_actu" id="contact">
-					<h1>Un commentaire?</h1>
-						<form action="traitement.php" id="contact" method="post">
-							<fieldset>
-								<legend>Vos coordonnées</legend>
-									<ol>
-										<li>
-											<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
-										</li>
-										<li>
-											<input id="email" name="email" type="email" placeholder="Email" required />
-										</li>
-									</ol>
-							</fieldset>
-								
-							<fieldset>
-								<legend>Votre message</legend>
-									<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
-							</fieldset>
-
-							<fieldset>
-								<button type="submit" name="valid">Envoyer</button>
-							</fieldset>
-						</form>
-				</div>
 					<!--<aside class="reseaux_sociaux">
 						<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Retrouvez l'agence web Kryzalead sur Facebook" /><span>Facebook</span></a>
 						<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Retrouvez l'agence web Kryzalead sur Twitter" /><span>Twitter</span></a>
 					</aside>-->
-			</div>
 		</section>
+		
+		<section id="contact">
+				<div id="contactForm"> 
+					<div class="loader"></div> 
+					<div class="bar"></div>
+					
+						<form action="traitement.php" class="contactForm" name="cform" method="post"> 
+							<p>Talk to me about anything. If you&rsquo;d like to work with me, or <br />even if you just need a hug, I&rsquo;ll get back to you shortly.</p> 
+							<div class="input_boxes"> 
+								<fieldset>
+									<legend>Vos coordonnées</legend>
+										<ol>
+											<li>
+												<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
+											</li>
+											<li>
+												<input id="email" name="email" type="email" placeholder="Email" required />
+											</li>
+										</ol>
+								</fieldset>
+								
+								<fieldset>
+									<legend>Votre message</legend>
+										<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
+								</fieldset>
+							 </div>   
+							 
+							<fieldset>
+								<button class="submit" type="submit" name="submit" onfocus="this.blur()">Envoyer</button>
+							</fieldset>					
+						</form> 
+				</div> 
+					<div class="contact"></div>
+			</form>
+		</section>
+			
+		
 
 	<footer role="contentinfo">
 		<div id="mentions">
-			
 			<p>
 				<span class="color">Kryzalead</span> - 16220 Ecuras - 17000 La Rochelle - Agence web 
 				<span style="padding-left:300px">&copy; 2011 - Kryzalead | <a href="mentions-legales.html">Mentions Légales</a> | <a href="plan.html">Plan du site</a> | <a href="w3c.html">Valide W3C</a> | <a href="#wrapper">Haut de page</a></span>
@@ -145,7 +153,7 @@ require('fonctions/config.php');
 	</div> <!-- FIN WRAPPER -->
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-	 <script src="scripts/slide.js" type="text/javascript"></script>
+	<script src="scripts/slide.js" type="text/javascript"></script>	<script src="scripts/contact.js" type="text/javascript"></script> 
     <script type="text/javascript">
 		$(window).load(function() {
 			setTimeout(function(){
@@ -163,6 +171,7 @@ require('fonctions/config.php');
 		});
     </script>
 
+	
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
