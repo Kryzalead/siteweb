@@ -14,27 +14,32 @@
 				
 			
 			<div id="formContact">
-					<form method="post" action="traitement.php">
-						<p>Talk to me about anything. If you&rsquo;d like to work with me, or <br />
-							  even if you just need a hug, I&rsquo;ll get back to you shortly.</p>
-							  <p>
-								<label for="name">Name</label>
-								<span class="name-missing">Please enter your name</span><br />
-								<input type="text" value="" id="name" name="name" />
-							  </p>
-							  <p>
-								<label for="e-mail">E-mail</label>
-								<span class="email-missing">Please enter a valid e-mail</span><br />
-								<input type="text" value="" id="e-mail" name="email" />
-							  </p>
-							  <p>
-								<label for="message">Message</label>
-								<span class="message-missing">Say something!</span><br />
-								<textarea cols="" rows="" id="message" name="message"></textarea>
-							  </p>
-							  <p>
-								<input type="submit" name="valid" id="valid" value="envoyer"></input>	
-							  </p>
+				<h1>Un projet? Un commentaire?</h1>
+					<form action="traitement.php" method="post">
+						<fieldset>
+							<legend>Vos coordonnées</legend>
+								<ul>
+									<li>
+										<label for="nom">Nom</label>
+										<br />
+										<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
+									</li>
+									<li>
+										<label for="email">Email</label>
+										<br />
+										<input id="email" name="email" type="email" placeholder="example@domain.fr" required />
+									</li>
+								</ul>
+						</fieldset>
+							
+						<fieldset>
+							<legend>Votre message:</legend>
+							<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
+						</fieldset>
+
+						<fieldset>
+							<button type="submit" name="valid">Envoyer</button>
+						</fieldset>
 					</form>
 				</div>	
 		</div>

@@ -18,7 +18,13 @@ require('fonctions/config.php');
 	top:0; left:0;
 	background:#000;
 	z-index:9;
-	}    
+	}
+	
+	#formContact h1{margin-left: 50px}
+	#formContact form{margin-left: 50px}
+	#formContact label{}
+	#formContact input{width: 380px:height: 20px;padding: 2px}
+	#formContact textarea{width: 180px;height: 70px}
 	</style>
 </head>
  
