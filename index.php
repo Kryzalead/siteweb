@@ -5,8 +5,8 @@
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 538px;position:absolute;z-index: 10;top: 10;left: 100%;margin-left: 0px}
-	#formContact{border: 1px solid blue;background-color: red;display: block}
+#formContainer{width: 0px;position:absolute;z-index: 10;top: 10;left: 0;display: none;margin-left: 100%}
+	#formContact{border: 1px solid blue;background-color: red;}
 	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
 	#backgroundPopup{
 	display:none;
@@ -161,8 +161,8 @@
 	$(function(){
 		$('#contact').click(function(){
 			if($(this).hasClass('linkContact')){
-				$("#formContainer").animate({ 
-					marginLeft: "-=538px",
+				$("#formContainer").css('display','block').animate({ 
+					marginLeft: "-=538px",width: "538px",
 				}, 500 );
 				$('#backgroundPopup').css({"opacity": "0.7"});
 				$("#backgroundPopup").fadeIn("slow");
