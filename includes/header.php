@@ -10,7 +10,7 @@
 			<a href="contact.html" id="contact" class="linkContact">Contact</a>
 		</nav>
 		
-		<div id="formContainer" style="right:0px">
+		<div id="formContainer">
 
 			<div id="formContact">
 				<h1>Un projet? Un commentaire?</h1>

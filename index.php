@@ -6,7 +6,7 @@
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
 	
-	#formContainer{width: 0px;position:absolute;z-index: 10;top: 10;left: 0;display: none;margin-left: 100%}
+	#formContainer{width: 0px;position:fixed;_position:absolute;z-index: 10;top: 10;left: 0;display: none;margin-left: 100%;right:0px}
 	#formContact{border: 1px solid blue;background-color: red;}
 	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
 	#backgroundPopup{
