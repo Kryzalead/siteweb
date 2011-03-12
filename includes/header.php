@@ -19,12 +19,12 @@
 							<legend>Vos coordonnées</legend>
 								<ul>
 									<li>
-										<label for="nom">Nom</label>
+										<label for="nom" id="l_nom">Nom : </label><span class="msg_error">Vous souhaitez rester anonyme, n'ayez pas peur !!!</span>
 										<br />
 										<input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus />
 									</li>
 									<li>
-										<label for="email">Email</label>
+										<label for="email" id="l_email">Email : </label><span class="msg_error">Pas d'email? Mais on fait comment pour vous joindre</span>
 										<br />
 										<input id="email" name="email" type="email" placeholder="example@domain.fr" required />
 									</li>
@@ -32,7 +32,9 @@
 						</fieldset>
 							
 						<fieldset>
-							<legend>Votre message:</legend>
+							<legend></legend>
+							<label for="message" id="l_message">Votre message : </label><span class="msg_error">Vous inquiétez pas, il y a assez de place pour le message</span>
+							<br />
 							<textarea name="message" id="message" placeholder="Tapez votre message"></textarea>
 						</fieldset>
 

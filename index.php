@@ -20,7 +20,9 @@
 	
 	#formContact h1{margin-left: 50px}
 	#formContact form{margin-left: 50px}
+	#formContact ul{}
 	#formContact label{}
+	#formContact span{display: none}
 	#formContact input{width: 380px:height: 20px;padding: 2px}
 	#formContact textarea{width: 180px;height: 70px}
 	</style>
@@ -176,6 +178,45 @@
 				$("#backgroundPopup").fadeOut("slow");
 			}
 			return false;
+		});
+		
+		$('#formContact form').submit(function(){
+			var trigger = true;
+			var reg_mail = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+			
+			var name = $('#nom').val();
+			var email = $('#email').val();
+			var message = $('#message').val();
+			
+			if(name == '' || name.replace(' ','') == ''){
+				trigger = false;
+				$('#l_nom').next('span').show();
+			}
+			else{
+				$('#l_nom').next('span').hide();
+			}
+			
+			if(email == ''){
+				trigger = false;
+				$('#l_email').next('span').text('Pas d\'email? Mais on fait comment pour vous joindre').show();
+			}
+			else if(!email.match(reg_mail)){
+				trigger = false;
+				$('#l_email').next('span').text('Vous êtes sur de votre adresse').show();
+			}
+			else{
+				$('#l_email').next('span').hide();
+			}
+			
+			if(message == '' || message.replace(' ','') == ''){
+				trigger = false;
+				$('#l_message').next('span').show();
+			}
+			else{
+				$('#l_message').next('span').hide();
+			}
+			
+			return trigger;
 		});
 	})
 	</script>
