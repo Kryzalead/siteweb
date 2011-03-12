@@ -1,13 +1,11 @@
-<?php
-require('fonctions/config.php');
-?>
+<?php require('fonctions/config.php');?>
 <!DOCTYPE html>
 <html lang="fr"> 
  
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 538px;position:absolute;z-index: 10;top: 10;left: 0;margin-left: -538px}
+#formContainer{width: 538px;position:absolute;z-index: 10;top: 10;left: 100%;margin-left: 0px}
 	#formContact{border: 1px solid blue;background-color: red;display: block}
 	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
 	#backgroundPopup{
@@ -164,15 +162,18 @@ require('fonctions/config.php');
 		$('#contact').click(function(){
 			if($(this).hasClass('linkContact')){
 				$("#formContainer").animate({ 
-					marginLeft: "+=538px",
+					marginLeft: "-=538px",
 				}, 500 );
+				$('#backgroundPopup').css({"opacity": "0.7"});
+				$("#backgroundPopup").fadeIn("slow");
 				$(this).removeClass();
 			}
 			else{
 				$("#formContainer").animate({ 
-					marginLeft: "-=538px",
+					marginLeft: "+=538px",
 				}, 500 );
-				$(this).addClass('linkContact');	
+				$(this).addClass('linkContact');
+				$("#backgroundPopup").fadeOut("slow");
 			}
 			return false;
 		});
