@@ -1,9 +1,3 @@
-
-/* Positions the contact form so it doesn't interfere with any other content, as well as a z-index above any other elements on the page */	
-#contact {
-
-	z-index:1;}
-	
 /* Hides the whole contact form until needed */	
 #contactForm { /* style menu deoulant */
 	height:300px;

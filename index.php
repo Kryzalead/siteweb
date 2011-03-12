@@ -7,8 +7,8 @@ require('fonctions/config.php');
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-#formContainer{width: 538px;position:absolute;z-index: 10;top: 5;left: 730px}
-	#formContact{border: 1px solid blue;background-color: red;display: none}
+#formContainer{width: 538px;position:absolute;z-index: 10;top: 10;left: 0;margin-left: -538px}
+	#formContact{border: 1px solid blue;background-color: red;display: block}
 	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
 	#backgroundPopup{
 	display:none;
@@ -162,13 +162,17 @@ require('fonctions/config.php');
 	<script type="text/javascript">
 	$(function(){
 		$('#contact').click(function(){
-			if($('#formContact').is(':hidden')){
-				$('#formContact').slideDown('slow');
-				$('#backgroundPopup').css({'opacity':'0.7'});
-				$('#backgroundPopup').fadeIn('slow');
-			}else{
-				$('#formContact').slideUp('slow');
-				$('#backgroundPopup').fadeOut('slow');
+			if($(this).hasClass('linkContact')){
+				$("#formContainer").animate({ 
+					marginLeft: "+=538px",
+				}, 500 );
+				$(this).removeClass();
+			}
+			else{
+				$("#formContainer").animate({ 
+					marginLeft: "-=538px",
+				}, 500 );
+				$(this).addClass('linkContact');	
 			}
 			return false;
 		});

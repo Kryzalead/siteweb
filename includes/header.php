@@ -7,7 +7,7 @@
 			<a href="#">Les Packs</a>
 			<a href="#">Devis gratuit</a>
 	<!--	<a href="#">Le Blog</a>-->
-			<a href="contact.html" id="contact">Contact</a>
+			<a href="contact.html" id="contact" class="linkContact">Contact</a>
 		</nav>
 		
 		<div id="formContainer">

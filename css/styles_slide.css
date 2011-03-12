@@ -92,12 +92,10 @@ a.nivo-nextNav:hover{background-position:-50px -52px;}
 	margin:0 auto;
     width:900px;
     height:250px;
-
 	border:7px solid #FFF; 
 	border-radius:10px;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
-
 	-webkit-box-shadow:0 0px 35px -10px #000;
 	-moz-box-shadow:0 0px 35px -10px #000;
 	box-shadow:0 0 35px -10px #000;}
