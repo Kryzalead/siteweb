@@ -10,9 +10,8 @@
 			<a href="contact.html" id="contact" class="linkContact">Contact</a>
 		</nav>
 		
-		<div id="formContainer">
-				
-			
+		<div id="formContainer" style="right:0px">
+
 			<div id="formContact">
 				<h1>Un projet? Un commentaire?</h1>
 					<form action="traitement.php" method="post">
@@ -43,5 +42,5 @@
 					</form>
 				</div>	
 		</div>
-		<div id="backgroundPopup">&nbsp;</div>
+			<div id="backgroundPopup">&nbsp;</div>
 </div>
