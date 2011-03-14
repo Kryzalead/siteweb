@@ -6,25 +6,34 @@
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
 	
-	#formContainer{width: 0px;position:fixed;_position:absolute;z-index: 10;top: 10;left: 0;display: none;margin-left: 100%;right:0px}
-	#formContact{border: 1px solid blue;background-color: red;}
-	#contact{background-color: red;border: 1px solid blue;border-bottom: none;position: absolute;z-index: 11}
+	/* STYLE POSITION blockPush */
+	#formContainer {position:fixed; top:50px; right:-352px; }
+	
+	#formContainer{width: 400px; height:150px; background:url('images/contact/contact.png') 0 0 no-repeat;}
+	#formContainer:hover {cursor:pointer;}
+	
+	
+	#formContact {margin-left: 32px; padding: 10px 20px; height : 200px; width : 350px;}
+	#formContact img {border : none;}
+	#formContact ul {list-style-type: none;}
+	
 	#backgroundPopup{
-	display:none;
-	position:fixed;
-	_position:absolute;
-	height:100%; width:100%;
-	top:0; left:0;
-	background:#000;
-	z-index:9;}
+		display:none;
+		position:fixed;
+		_position:absolute;
+		height:100%; width:100%;
+		top:0; left:0;
+		background:#000;
+		z-index:9;}
 	
 	#formContact h1{margin-left: 50px}
-	#formContact form{margin-left: 50px}
-	#formContact ul{}
+	#formContact form{margin-left: 10px;color:#669900}
+	#formContact ul{list-style-type:none;}
 	#formContact label{}
 	#formContact span{display: none}
 	#formContact input{width: 380px:height: 20px;padding: 2px}
 	#formContact textarea{width: 180px;height: 70px}
+	
 	</style>
 </head>
  
@@ -159,67 +168,14 @@
 		
 		
     </script>
-	<script type="text/javascript">
-	$(function(){
-		$('#contact').click(function(){
-			if($(this).hasClass('linkContact')){
-				$("#formContainer").css('display','block').animate({ 
-					marginLeft: "-=538px",width: "538px",
-				}, 500 );
-				$('#backgroundPopup').css({"opacity": "0.7"});
-				$("#backgroundPopup").fadeIn("slow");
-				$(this).removeClass();
-			}
-			else{
-				$("#formContainer").animate({ 
-					marginLeft: "+=538px",
-				}, 500 );
-				$(this).addClass('linkContact');
-				$("#backgroundPopup").fadeOut("slow");
-			}
-			return false;
-		});
-		
-		$('#formContact form').submit(function(){
-			var trigger = true;
-			var reg_mail = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-			
-			var name = $('#nom').val();
-			var email = $('#email').val();
-			var message = $('#message').val();
-			
-			if(name == '' || name.replace(' ','') == ''){
-				trigger = false;
-				$('#l_nom').next('span').show();
-			}
-			else{
-				$('#l_nom').next('span').hide();
-			}
-			
-			if(email == ''){
-				trigger = false;
-				$('#l_email').next('span').text('Pas d\'email? Mais on fait comment pour vous joindre').show();
-			}
-			else if(!email.match(reg_mail)){
-				trigger = false;
-				$('#l_email').next('span').text('Vous êtes sur de votre adresse').show();
-			}
-			else{
-				$('#l_email').next('span').hide();
-			}
-			
-			if(message == '' || message.replace(' ','') == ''){
-				trigger = false;
-				$('#l_message').next('span').show();
-			}
-			else{
-				$('#l_message').next('span').hide();
-			}
-			
-			return trigger;
-		});
-	})
-	</script>
+	<script language="javascript" type="text/javascript"> 
+			jQuery(document).ready(function(){ 
+				var blockStatus = 0; var blockStatusMaxVal = 1; var blockStatusMinusVal = -352; var blockStatusOpenDuration = 500; var blockStatusCloseDuration = 500;
+					jQuery('#formContainer').click(function(){ 
+						if(blockStatus == 0) { jQuery(this).animate({right:blockStatusMaxVal},blockStatusOpenDuration); blockStatus = 1; 
+						} 
+							else { jQuery(this).animate({right:blockStatusMinusVal},blockStatusCloseDuration); blockStatus = 0; } }); });
+		</script> 
 	
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];

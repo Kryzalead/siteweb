@@ -7,12 +7,11 @@
 			<a href="#">Les Packs</a>
 			<a href="#">Devis gratuit</a>
 	<!--	<a href="#">Le Blog</a>-->
-			<a href="contact.html" id="contact" class="linkContact">Contact</a>
 		</nav>
 		
 		<div id="formContainer">
-
-			<div id="formContact">
+			<div id="formContact"> 
+			
 				<h1>Un projet? Un commentaire?</h1>
 					<form action="traitement.php" method="post">
 						<fieldset>
@@ -44,5 +43,5 @@
 					</form>
 				</div>	
 		</div>
-			<div id="backgroundPopup">&nbsp;</div>
+			<div id="backgroundPopup"></div>
 </div>
