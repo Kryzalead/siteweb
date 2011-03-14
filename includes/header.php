@@ -6,22 +6,22 @@
 			<a href="#">Réalisations</a>
 			<a href="#">Les Packs</a>
 			<a href="#">Devis gratuit</a>
-			<a href="#" class="modal">Contact</a>
+			<a href="#" class="popinContact">Contact</a>
 	<!--	<a href="#">Le Blog</a>-->
 		</nav>
 		<!--contact form-->
 
 <div id="contact">
-	<div id="close">Close</div>
+	<div id="close">Fermer</div>
 
-	<div id="contact_header">Contact</div>
-	<p class="success">Thanks! Your message has been sent.</p>
+	<h2 id="contact_header">Un projet, un commentaire ?</h2>
+	<p class="success">Merci, votre message a bien été envoyé</p>
 
-  <form action="send.php" method="post" name="contactForm" id="contactForm">
-  <p><input name="name" id="name" type="text" size="30" value="Your Name" /></p>
-  <p><input name="email" id="email" type="text" size="30" value="Your Email Address" /></p>
-  <p><textarea name="comment" id="comment" rows="5" cols="40">Enter your comment or query...</textarea></p>
-  <p><input type="submit" id="submit" name="submit" value="Send" /></p>
+  <form action="traitement.php" method="post" name="contactForm" id="contactForm">
+  <p><label for="nom" id="l_nom">Votre nom : </label><span class="error">Invalid username entered!</span><br /><input name="nom" id="nom" type="text" size="30" required /></p>
+  <p><label for="email" id="l_email">Votre email : </label><span class="error">Invalid email entered!</span><br /><input name="email" id="email" type="email" size="30" required /></p>
+  <p><label for="message" id="l_message">Votre message : </label><span class="error">Invalid message entered!</span><br /><textarea name="message" id="message" rows="5" cols="40" required></textarea></p>
+  <p><input type="submit" id="submit" name="submit" value="Envoyer" /></p>
  </form>
 </div>
 

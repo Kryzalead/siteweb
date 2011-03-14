@@ -31,10 +31,11 @@ border-radius:10px;
 -moz-border-radius:10px;
 -webkit-border-radius:10px;
 padding:20px;
+border: 1px solid #ccc;
 }
 
 #close {
-background:url(../images/close.png) no-repeat right;
+background:url(images/close.png) no-repeat right;
 cursor:pointer;
 font-family:arial, sans-serif;
 font-size:20px;
@@ -46,7 +47,7 @@ padding:5px 30px 5px 5px;
 }
 
 #contact_header {
-background:url(../images/envelope.png) no-repeat left;
+background:url(images/envelope.png) no-repeat left;
 font-family:arial, sans-serif;
 font-size:30px;
 font-weight:700;
@@ -61,7 +62,6 @@ background-color:#fff;
 color:#404040;
 font-size:10px;
 font-family:Verdana, Arial, sans-serif;
-text-transform:uppercase;
 border-radius:5px;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
@@ -74,7 +74,7 @@ background-color:#E0E0E0;
 border:1px solid #000;
 }
 
-input[type=text],textarea {
+input[type=text],input[type="email"],textarea {
 width:300px;
 }
 
@@ -82,7 +82,7 @@ width:300px;
 border:none;
 width:87px;
 height:41px;
-background-image:url(../images/submit.png);
+border: 1px solid #ccc 
 }
 
 #submit:hover {
@@ -91,15 +91,7 @@ cursor:pointer;
 
 /* alert messages */
 .success,.error {
-color:#000;
-display:none;
-font-size:15px;
-font-weight:700;
-border-radius:4px;
--moz-border-radius:4px;
--webkit-border-radius:4px;
-padding:5px 10px 5px 10px;
-margin-bottom: 10px;
+display: none
 }
 
 .success {
@@ -108,8 +100,7 @@ border:1px solid #0F0;
 }
 
 .error {
-background-color:#F66;
-border:1px solid red;
+color: red
 }
 	</style>
 </head>
@@ -248,74 +239,68 @@ border:1px solid red;
 	<script type="text/javascript">
 	$(function() {
 
-	// load the modal window
-	$('a.modal').click(function(){
+	// si clique sur le lien contact
+	$('a.popinContact').click(function(){
 
-		// scroll to top
+		// scroll to top (à voir l'utilité)
 		$('html, body').animate({scrollTop:0}, 'fast');
 
-		// before showing the modal window, reset the form incase of previous use.
-		$('.success, .error').hide();
+		// on fait apparaitre le form
 		$('form#contactForm').show();
 
-		// Reset all the default values in the form fields
-		$('#name').val('Your name');
-		$('#email').val('Your email address');
-		$('#comment').val('Enter your comment or query...');
-
-		//show the mask and contact divs
+		// on fait apparaitre le mask avec l'effet puis la div contact
 		$('#mask').show().animate({opacity: 0.7},500);
-		$('div#contact').fadeIn();
+		$('div#contact').fadeIn('slow');
 
-		// stop the modal link from doing its default action
+		// on bloque l'action du lien
 		return false;
 	});
 
-	// close the modal window is close div or mask div are clicked.
+	// fermeture de la div contact et du mask
 	$('div#close, div#mask').click(function() {
 		$('div#contact, div#mask').stop().fadeOut('slow');
 
 	});
-
-	$('#contactForm input').focus(function() {
-		$(this).val(' ');
-	});
-
-	// when the Submit button is clicked...
-	$('input#submit').click(function() {
-		//Inputed Strings
-		var username = $('#name').val(),
+	
+	// soumission du formulaire
+	$('#contactForm').submit(function() {
+		
+		//on récupère les valeurs des champs
+		var nom = $('#nom').val(),
 			email = $('#email').val(),
-			comment = $('#comment').val();
+			message = $('#message').val();
 
-		//Error Count
-		var error_count;
+		// variable pour gérer les erreurs
+		var trigger = true;
 
-		//Regex Strings
-		var username_regex = /^[a-z0-9_-]{3,16}$/,
+		// Expression régulière
+		var nom_regex = /^[a-zA-Z0-9_-]{3,16}$/,
 			email_regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
-			//Test Username
-			if(!username_regex.test(name)) {
-				$('#contact_header').after('<p class=error>Invalid username entered!</p>');
-				error_count += 1;
+			//Test champs Nom
+			if(!nom_regex.test(nom)) {
+				$('#l_nom').next('.error').show();
+				trigger = false;
 			}
+			else $('#l_nom').next('.error').hide();
 
-			//Test Email
+			//Test champs Email
 			if(!email_regex.test(email)) {
-				$('#contact_header').after('<p class=error>Invalid email entered!</p>');
-				error_count += 1;
+				$('#l_email').next('.error').show();
+				trigger = false;
 			}
-
-			//Blank Comment?
-			if(comment == '') {
-				$('#contact_header').after('<p class=error>No Comment was entered!</p>');
-				error_count += 1;
+			else $('#l_email').next('.error').hide();
+			
+			// test champs Message
+			if(message == '') {
+				$('#l_message').next('.error').show();
+				trigger = false;
 			}
-
-			//No Errors?
-			if(error_count === 0) {
-				$.ajax({
+			else $('#l_message').next('.error').hide();
+			
+			// si pas d'erreur
+			if(trigger) {
+				/*$.ajax({
 					type: "post",
 					url: "send.php",
 					data: "name=" + name + "&email=" + email + "&comment=" + comment,
@@ -329,12 +314,11 @@ border:1px solid red;
 						$('form#contactForm').fadeOut('slow');
 					}
 				});
+				*/
+				alert('c\'est bon');
 			}
-
-			else {
-                $('.error').show();
-            }
-
+		
+		// on bloque l'action du submit, pour éviter de renvoyer la page.
 		return false;
 	});
 
