@@ -5,35 +5,112 @@
 <head> 
     <?php include('includes/head.php');?>
 	<style type="text/css" media="all">
-	
-	/* STYLE POSITION blockPush */
-	#formContainer {position:fixed; top:50px; right:-352px; }
-	
-	#formContainer{width: 400px; height:150px; background:url('images/contact/contact.png') 0 0 no-repeat;}
-	#formContainer:hover {cursor:pointer;}
-	
-	
-	#formContact {margin-left: 32px; padding: 10px 20px; height : 200px; width : 350px;}
-	#formContact img {border : none;}
-	#formContact ul {list-style-type: none;}
-	
-	#backgroundPopup{
-		display:none;
-		position:fixed;
-		_position:absolute;
-		height:100%; width:100%;
-		top:0; left:0;
-		background:#000;
-		z-index:9;}
-	
-	#formContact h1{margin-left: 50px}
-	#formContact form{margin-left: 10px;color:#669900}
-	#formContact ul{list-style-type:none;}
-	#formContact label{}
-	#formContact span{display: none}
-	#formContact input{width: 380px:height: 20px;padding: 2px}
-	#formContact textarea{width: 180px;height: 70px}
-	
+	/*contact form*/
+#mask {
+background-color:#000;
+display:none;
+height:100%;
+left:0;
+position:fixed;
+top:0;
+width:100%;
+z-index:9000;
+border: 1px solid red
+}
+
+#contact {
+background-color:#fff;
+display:none;
+left:50%;
+margin-left:-300px;
+position:absolute;
+top:90px;
+width:600px;
+z-index:9999;
+border-radius:10px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+padding:20px;
+}
+
+#close {
+background:url(../images/close.png) no-repeat right;
+cursor:pointer;
+font-family:arial, sans-serif;
+font-size:20px;
+font-weight:700;
+line-height:24px;
+text-decoration:underline;
+text-align:right;
+padding:5px 30px 5px 5px;
+}
+
+#contact_header {
+background:url(../images/envelope.png) no-repeat left;
+font-family:arial, sans-serif;
+font-size:30px;
+font-weight:700;
+line-height:50px;
+padding:5px 5px 10px 60px;
+}
+
+/* form components */
+input,textarea {
+border:1px solid silver;
+background-color:#fff;
+color:#404040;
+font-size:10px;
+font-family:Verdana, Arial, sans-serif;
+text-transform:uppercase;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+margin:10px 0;
+padding:10px;
+}
+
+input:hover[type=text],input:focus[type=text],textarea:hover,textarea:focus {
+background-color:#E0E0E0;
+border:1px solid #000;
+}
+
+input[type=text],textarea {
+width:300px;
+}
+
+#submit {
+border:none;
+width:87px;
+height:41px;
+background-image:url(../images/submit.png);
+}
+
+#submit:hover {
+cursor:pointer;
+}
+
+/* alert messages */
+.success,.error {
+color:#000;
+display:none;
+font-size:15px;
+font-weight:700;
+border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+padding:5px 10px 5px 10px;
+margin-bottom: 10px;
+}
+
+.success {
+background-color:#9F6;
+border:1px solid #0F0;
+}
+
+.error {
+background-color:#F66;
+border:1px solid red;
+}
 	</style>
 </head>
  
@@ -168,15 +245,101 @@
 		
 		
     </script>
-	<script language="javascript" type="text/javascript"> 
-			jQuery(document).ready(function(){ 
-				var blockStatus = 0; var blockStatusMaxVal = 1; var blockStatusMinusVal = -352; var blockStatusOpenDuration = 500; var blockStatusCloseDuration = 500;
-					jQuery('#formContainer').click(function(){ 
-						if(blockStatus == 0) { jQuery(this).animate({right:blockStatusMaxVal},blockStatusOpenDuration); blockStatus = 1; 
-						} 
-							else { jQuery(this).animate({right:blockStatusMinusVal},blockStatusCloseDuration); blockStatus = 0; } }); });
-		</script> 
-	
+	<script type="text/javascript">
+	$(function() {
+
+	// load the modal window
+	$('a.modal').click(function(){
+
+		// scroll to top
+		$('html, body').animate({scrollTop:0}, 'fast');
+
+		// before showing the modal window, reset the form incase of previous use.
+		$('.success, .error').hide();
+		$('form#contactForm').show();
+
+		// Reset all the default values in the form fields
+		$('#name').val('Your name');
+		$('#email').val('Your email address');
+		$('#comment').val('Enter your comment or query...');
+
+		//show the mask and contact divs
+		$('#mask').show().animate({opacity: 0.7},500);
+		$('div#contact').fadeIn();
+
+		// stop the modal link from doing its default action
+		return false;
+	});
+
+	// close the modal window is close div or mask div are clicked.
+	$('div#close, div#mask').click(function() {
+		$('div#contact, div#mask').stop().fadeOut('slow');
+
+	});
+
+	$('#contactForm input').focus(function() {
+		$(this).val(' ');
+	});
+
+	// when the Submit button is clicked...
+	$('input#submit').click(function() {
+		//Inputed Strings
+		var username = $('#name').val(),
+			email = $('#email').val(),
+			comment = $('#comment').val();
+
+		//Error Count
+		var error_count;
+
+		//Regex Strings
+		var username_regex = /^[a-z0-9_-]{3,16}$/,
+			email_regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+			//Test Username
+			if(!username_regex.test(name)) {
+				$('#contact_header').after('<p class=error>Invalid username entered!</p>');
+				error_count += 1;
+			}
+
+			//Test Email
+			if(!email_regex.test(email)) {
+				$('#contact_header').after('<p class=error>Invalid email entered!</p>');
+				error_count += 1;
+			}
+
+			//Blank Comment?
+			if(comment == '') {
+				$('#contact_header').after('<p class=error>No Comment was entered!</p>');
+				error_count += 1;
+			}
+
+			//No Errors?
+			if(error_count === 0) {
+				$.ajax({
+					type: "post",
+					url: "send.php",
+					data: "name=" + name + "&email=" + email + "&comment=" + comment,
+					error: function() {
+						$('.error').hide();
+						$('#sendError').slideDown('slow');
+					},
+					success: function () {
+						$('.error').hide();
+						$('.success').slideDown('slow');
+						$('form#contactForm').fadeOut('slow');
+					}
+				});
+			}
+
+			else {
+                $('.error').show();
+            }
+
+		return false;
+	});
+
+});
+	</script>
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
