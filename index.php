@@ -4,104 +4,93 @@
  
 <head> 
     <?php include('includes/head.php');?>
+	
 	<style type="text/css" media="all">
-	/*contact form*/
-#mask {
-background-color:#000;
-display:none;
-height:100%;
-left:0;
-position:fixed;
-top:0;
-width:100%;
-z-index:9000;
-border: 1px solid red
-}
+		/*contact form*/
+			#mask {
+			background-color:#000;
+			display:none;
+			height:100%;
+			left:0;
+			position:fixed;
+			top:0;
+			width:100%;
+			z-index:9000;
+			border: 1px solid red}
 
-#contact {
-background-color:#fff;
-display:none;
-left:50%;
-margin-left:-300px;
-position:absolute;
-top:90px;
-width:600px;
-z-index:9999;
-border-radius:10px;
--moz-border-radius:10px;
--webkit-border-radius:10px;
-padding:20px;
-border: 1px solid #ccc;
-}
+			#contact {
+			background-color:#fff;
+			display:none;
+			left:50%;
+			margin-left:-300px;
+			position:absolute;
+			top:90px;
+			width:600px;
+			z-index:9999;
+			border-radius:10px;
+			-moz-border-radius:10px;
+			-webkit-border-radius:10px;
+			padding:20px;
+			border: 1px solid #ccc;}
 
-#close {
-background:url(images/close.png) no-repeat right;
-cursor:pointer;
-font-family:arial, sans-serif;
-font-size:20px;
-font-weight:700;
-line-height:24px;
-text-decoration:underline;
-text-align:right;
-padding:5px 30px 5px 5px;
-}
+			#close {
+			background:url(images/contact/close.png) no-repeat right;
+			cursor:pointer;
+			font-family:arial, sans-serif;
+			font-size:20px;
+			font-weight:700;
+			line-height:24px;
+			text-decoration:underline;
+			text-align:right;
+			padding:5px 30px 5px 5px;}
 
-#contact_header {
-background:url(images/envelope.png) no-repeat left;
-font-family:arial, sans-serif;
-font-size:30px;
-font-weight:700;
-line-height:50px;
-padding:5px 5px 10px 60px;
-}
+			#contact_header {
+			background:url(images/contact/envelope.png) no-repeat left;
+			font-family:arial, sans-serif;
+			font-size:30px;
+			font-weight:700;
+			line-height:50px;
+			padding:5px 5px 10px 60px;}
 
-/* form components */
-input,textarea {
-border:1px solid silver;
-background-color:#fff;
-color:#404040;
-font-size:10px;
-font-family:Verdana, Arial, sans-serif;
-border-radius:5px;
--moz-border-radius:5px;
--webkit-border-radius:5px;
-margin:10px 0;
-padding:10px;
-}
+			/* form components */
+			input,textarea {
+			border:1px solid silver;
+			background-color:#fff;
+			color:#404040;
+			font-size:10px;
+			font-family:Verdana, Arial, sans-serif;
+			border-radius:5px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			margin:10px 0;
+			padding:10px;}
 
-input:hover[type=text],input:focus[type=text],textarea:hover,textarea:focus {
-background-color:#E0E0E0;
-border:1px solid #000;
-}
+			input:hover[type=text],input:focus[type=text],textarea:hover,textarea:focus {
+			background-color:#E0E0E0;
+			border:1px solid #000;}
 
-input[type=text],input[type="email"],textarea {
-width:300px;
-}
+			input[type=text],input[type="email"],textarea {
+			width:300px;}
 
-#submit {
-border:none;
-width:87px;
-height:41px;
-border: 1px solid #ccc 
-}
+			#submit {
+			border:none;
+			width:87px;
+			height:41px;
+			border: 1px solid #ccc }
 
-#submit:hover {
-cursor:pointer;
-}
+			#submit:hover {
+			cursor:pointer;}
 
-/* alert messages */
-.success,.error {
-display: none
-}
+			/* alert messages */
+			.success,.error {
+			display: none}
 
-.success {
-background-color:#9F6;
-border:1px solid #0F0;
-}
+			.success {
+			background-color:#9F6;
+			border:1px solid #0F0;}
 
-.error {
-color: red
-}
+			.error {
+			color: red}
 	</style>
 </head>
  
@@ -166,9 +155,9 @@ color: red
 
 			<section class="slideshow">
 				<div id="slide" class="nivoSlider">
-					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
-					<a href="#link1"><img src="images/footer/avatar-jd.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
-					<a href="#link1"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead"/></a>
+					<a href="#link1"><img src="images/slider/pack-launch-web.jpg" alt="Pack 'Launch Web'" title="Pack 'Launch Web'" /></a>
+					<a href="#link2"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead" /></a>
+					<a href="#link2"><img src="images/kryzalead.jpg" alt="Logo-kryzalead" title="Logo-kryzalead" /></a>
 				</div>
 					<div id="cadre_ombre"></div>
 			</section>
@@ -201,10 +190,6 @@ color: red
 					</aside>-->
 		</section>
 		
-		
-			
-		
-
 	<footer role="contentinfo">
 		<div id="mentions">
 			<p>
@@ -217,7 +202,7 @@ color: red
 	</div> <!-- FIN WRAPPER -->
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-	<script src="scripts/slide.js" type="text/javascript"></script>	<script src="scripts/contact.js" type="text/javascript"></script> 
+    <script src="scripts/slide.js" type="text/javascript"></script>
     <script type="text/javascript">
 		$(window).load(function() {
 			setTimeout(function(){
@@ -232,97 +217,96 @@ color: red
                 pauseOnHover:true
 				});
 			}, 5000);
-		});
-		
-		
+		});	
     </script>
-	<script type="text/javascript">
-	$(function() {
-
-	// si clique sur le lien contact
-	$('a.popinContact').click(function(){
-
-		// scroll to top (à voir l'utilité)
-		$('html, body').animate({scrollTop:0}, 'fast');
-
-		// on fait apparaitre le form
-		$('form#contactForm').show();
-
-		// on fait apparaitre le mask avec l'effet puis la div contact
-		$('#mask').show().animate({opacity: 0.7},500);
-		$('div#contact').fadeIn('slow');
-
-		// on bloque l'action du lien
-		return false;
-	});
-
-	// fermeture de la div contact et du mask
-	$('div#close, div#mask').click(function() {
-		$('div#contact, div#mask').stop().fadeOut('slow');
-
-	});
 	
-	// soumission du formulaire
-	$('#contactForm').submit(function() {
-		
-		//on récupère les valeurs des champs
-		var nom = $('#nom').val(),
-			email = $('#email').val(),
-			message = $('#message').val();
+	<script type="text/javascript">
+		$(function() {
 
-		// variable pour gérer les erreurs
-		var trigger = true;
+		// si clique sur le lien contact
+		$('a.popinContact').click(function(){
 
-		// Expression régulière
-		var nom_regex = /^[a-zA-Z0-9_-]{3,16}$/,
-			email_regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+			// scroll to top (à voir l'utilité)
+			$('html, body').animate({scrollTop:0}, 'fast');
 
-			//Test champs Nom
-			if(!nom_regex.test(nom)) {
-				$('#l_nom').next('.error').show();
-				trigger = false;
-			}
-			else $('#l_nom').next('.error').hide();
+			// on fait apparaitre le form
+			$('form#contactForm').show();
 
-			//Test champs Email
-			if(!email_regex.test(email)) {
-				$('#l_email').next('.error').show();
-				trigger = false;
-			}
-			else $('#l_email').next('.error').hide();
+			// on fait apparaitre le mask avec l'effet puis la div contact
+			$('#mask').show().animate({opacity: 0.7},500);
+			$('div#contact').fadeIn('slow');
+
+			// on bloque l'action du lien
+			return false;
+			});
+
+			// fermeture de la div contact et du mask
+			$('div#close, div#mask').click(function() {
+				$('div#contact, div#mask').stop().fadeOut('slow');
+
+			});
 			
-			// test champs Message
-			if(message == '') {
-				$('#l_message').next('.error').show();
-				trigger = false;
-			}
-			else $('#l_message').next('.error').hide();
-			
-			// si pas d'erreur
-			if(trigger) {
-				/*$.ajax({
-					type: "post",
-					url: "send.php",
-					data: "name=" + name + "&email=" + email + "&comment=" + comment,
-					error: function() {
-						$('.error').hide();
-						$('#sendError').slideDown('slow');
-					},
-					success: function () {
-						$('.error').hide();
-						$('.success').slideDown('slow');
-						$('form#contactForm').fadeOut('slow');
+			// soumission du formulaire
+			$('#contactForm').submit(function() {
+				
+				//on récupère les valeurs des champs
+				var nom = $('#nom').val(),
+					email = $('#email').val(),
+					message = $('#message').val();
+
+				// variable pour gérer les erreurs
+				var trigger = true;
+
+				// Expression régulière
+				var nom_regex = /^[a-zA-Z0-9_-]{3,16}$/,
+					email_regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+					//Test champs Nom
+					if(!nom_regex.test(nom)) {
+						$('#l_nom').next('.error').show();
+						trigger = false;
 					}
-				});
-				*/
-				alert('c\'est bon');
-			}
-		
-		// on bloque l'action du submit, pour éviter de renvoyer la page.
-		return false;
-	});
+					else $('#l_nom').next('.error').hide();
 
-});
+					//Test champs Email
+					if(!email_regex.test(email)) {
+						$('#l_email').next('.error').show();
+						trigger = false;
+					}
+					else $('#l_email').next('.error').hide();
+					
+					// test champs Message
+					if(message == '') {
+						$('#l_message').next('.error').show();
+						trigger = false;
+					}
+					else $('#l_message').next('.error').hide();
+					
+					// si pas d'erreur
+					if(trigger) {
+						/*$.ajax({
+							type: "post",
+							url: "send.php",
+							data: "name=" + name + "&email=" + email + "&comment=" + comment,
+							error: function() {
+								$('.error').hide();
+								$('#sendError').slideDown('slow');
+							},
+							success: function () {
+								$('.error').hide();
+								$('.success').slideDown('slow');
+								$('form#contactForm').fadeOut('slow');
+							}
+						});
+						*/
+						alert('c\'est bon');
+					}
+				
+				// on bloque l'action du submit, pour éviter de renvoyer la page.
+				return false;
+			});
+
+		});
 	</script>
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
