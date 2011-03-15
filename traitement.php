@@ -1,32 +1,29 @@
 <?php
-session_start();
-require('fonctions/config.php');
-$erreur = array();
+$trigger = true;
 $regexMail = "#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#";
 
 if(isset($_POST['valid'])){
-    
     //traitement champ nom
     if(!empty($_POST['nom']) && strlen(trim($_POST['nom'])) > 0){
-        $nom = htmlspecialchars($_POST['nom']);
+        $nom = htmlspecialchars(strip_tags($_POST['nom']));
     }
-    else $erreur[] = 'Vous souhaitez rester anonyme, allez ne prennez pas peur !';
+    else $trigger = false;
     
     //traitement champ email
     if(!empty($_POST['email']) && strlen(trim($_POST['email'])) > 0){
         if(preg_match($regexMail,$_POST['email']))
-            $email = htmlspecialchars($_POST['email']);
-        else $erreur[] = 'Vous êtes sur de votre email?';    
+            $email = htmlspecialchars(strip_tags($_POST['email']));
+        else $trigger = false;    
     }
-    else $erreur[] = 'Pas d\'email? Mais on fait comment pour vous joindre';
+    else $trigger = false;
 
     //traitement message
     if(!empty($_POST['message']) && strlen(trim($_POST['message'])) > 0){
-		$message = stripslashes(htmlspecialchars($_POST['message']));
+		$message = htmlspecialchars(strip_tags($_POST['message']));
 	}
-	else $erreur[] = 'Vous inquiétez pas, il y a assez de place pour le message';
-    
-    if(empty($erreur)){
+	else $trigger = false;
+   
+    if($trigger){
         // préparation du mail
         $to = 'kryzalead@gmail.com';
         $subject = 'Demande info kryzalead';
@@ -40,21 +37,18 @@ if(isset($_POST['valid'])){
         $contenu = '<html><head><body>';
         $contenu .='<p>'.$message.'</p>';
         $contenu .= '</body></head></html>';
-        
         if(mail($to,$subject,$contenu,$headers)){
-            $_SESSION['info'] = 'Votre mail a bien été envoyé';
-            header('Location: contact.php');
+            echo 'ok';
         }
         else{
-            // a voir si on rempli les champs par default
-            //$_SESSION['post'] = $_POST;
-            $_SESSION['erreur'] = 'Une erreur est survenue pendant l\'envoi du mail, veuillez nous en excusez';
-            header('Location: contact.php');
+            return 'error';
         }
     }
     else{
-        $_SESSION['erreur'] = $erreur;
-        header('Location: contact.php');
+        return 'error';
     }
-}    
+}
+else return 'error';   
+
+
 ?>

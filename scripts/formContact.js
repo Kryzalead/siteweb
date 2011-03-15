@@ -40,43 +40,46 @@ $(function() {
 
 					//Test champs Nom
 					if(!nom_regex.test(nom)) {
-						$('#l_nom').next('.error').show();
+						$('#l_nom').next('.inputError').show();
 						trigger = false;
 					}
-					else $('#l_nom').next('.error').hide();
+					else $('#l_nom').next('.inputError').hide();
 
 					//Test champs Email
 					if(!email_regex.test(email)) {
-						$('#l_email').next('.error').show();
+						$('#l_email').next('.inputError').show();
 						trigger = false;
 					}
-					else $('#l_email').next('.error').hide();
+					else $('#l_email').next('.inputError').hide();
 					
 					// test champs Message
 					if(message == '') {
-						$('#l_message').next('.error').show();
+						$('#l_message').next('.inputError').show();
 						trigger = false;
 					}
-					else $('#l_message').next('.error').hide();
+					else $('#l_message').next('.inputError').hide();
 					
 					// si pas d'erreur
-					if(trigger) {
-						/*$.ajax({
+					if(trigger){
+						$.ajax({
 							type: "post",
-							url: "send.php",
-							data: "name=" + name + "&email=" + email + "&comment=" + comment,
-							error: function() {
-								$('.error').hide();
-								$('#sendError').slideDown('slow');
-							},
-							success: function () {
-								$('.error').hide();
-								$('.success').slideDown('slow');
-								$('form#contactForm').fadeOut('slow');
+							url: "traitement.php",
+							data: "nom=" + nom + "&email=" + email + "&message=" + message+"&valid=ok",
+							success: function (msg) {
+								if(msg == 'ok'){
+									$('.error').hide();
+									$('.success').slideDown('slow');
+									$('form#contactForm').fadeOut('slow');
+								}
+								else{
+									$('.inputError').hide();
+									$('.error').slideDown('slow');
+									$('form#contactForm').fadeOut('slow');
+								}
 							}
+								
+							
 						});
-						*/
-						alert('c\'est bon');
 					}
 				
 				// on bloque l'action du submit, pour éviter de renvoyer la page.
