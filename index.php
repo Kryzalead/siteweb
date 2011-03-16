@@ -62,7 +62,7 @@
 								<li><span>Agence Kryzalead</span></li>
 								<li>16220 Ecuras // 17000 La Rochelle</li>
 								<li>Tél: 05&nbsp;45&nbsp;..&nbsp;..&nbsp;..</li>
-								<li>Email:<a href="contact.php" class="email">contact@kryzalead.fr</a></li>
+								<li>Email:<a href="contact/index.php" class="popinContact">contact@kryzalead.fr</a></li>
 								<li>n'hésitez plus à nous contacter.</li>
 							</ul>
 						</div>
@@ -78,7 +78,7 @@
 					<a href="#link5"><img src="images/slider/pack-vitrine-10pages.jpg" alt="Pack 'Vitrine 10 pages'" title="Pack 'Vitrine 10 pages'" /></a>
 					<a href="#link6"><img src="images/slider/pack-catalogue.jpg" alt="Pack 'Catalogue'" title="Pack 'Catalogue'" /></a>
 					<a href="#link7"><img src="images/slider/pack-e-commerce.jpg" alt="Pack 'E-Commerce'" title="Pack 'E-Commerce'" /></a>
-					<a href="#link7"><img src="images/slider/pack-custom.jpg" alt="Pack 'Custom'" title="Pack Custom'" /></a>
+					<a href="#link7"><img src="images/slider/pack-custom.jpg" alt="Pack 'Custom'" title="Pack 'Custom'" /></a>
 				</div>
 					<div id="cadre_ombre"></div>
 			</section>
@@ -132,7 +132,7 @@
 				effect:'random',
                 animSpeed:1500,
                 pauseTime:6000,
-                startSlide:1,
+                startSlide:0,
                 directionNav:true,
                 controlNav:true,
                 keyboardNav:false,

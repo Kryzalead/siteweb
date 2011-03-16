@@ -121,17 +121,17 @@ section#presentation {margin:60px auto 0; width:1000px;}
 /* ------------------------ */
 /*        COLONNES       */
 /* --------------------- */   
-.presentation                     		 	{width: 100%; margin: 3.5em 0 0; }
-.presentation:after                  		{display: block; clear: both; }
-.presentation article                		{display: inline-block; vertical-align:top; width: 220px; margin-left:25px; }
-.presentation article h1           		{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777; width:220px; }
-.presentation article a              		{display: block; padding: 10px 15px 0px; color: #777; text-decoration: underline; }
-.presentation article a:hover        {color: #669900; margin-left:5px; font-size:1.1em; }
-.presentation article p            		{margin: 0; color:#777;text-align:justify; }
-.presentation article ul			      	{list-style-type:none; color:#777; }
-.presentation article li			      	{line-height:1.8em; }
-.presentation article li span		    {color:#669900; font-size:1.2em; margin:0 0 15px 20px; display:block; letter-spacing:1px;}
-.presentation article a.email			{display:inline; padding:0 10px; }        
+.presentation                     		 			{width: 100%; margin: 3.5em 0 0; }
+.presentation:after                  				{display: block; clear: both; }
+.presentation article                				{display: inline-block; vertical-align:top; width: 220px; margin-left:25px; }
+.presentation article h1           				{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777; width:220px; }
+.presentation article a              				{display: block; padding: 10px 15px 0px; color: #777; text-decoration: underline; }
+.presentation article a:hover				{color: #669900; margin-left:5px; font-size:1.1em; }
+.presentation article p            				{margin: 0; color:#777;text-align:justify; }
+.presentation article ul			      			{list-style-type:none; color:#777; }
+.presentation article li			      			{line-height:1.8em; }
+.presentation article li span					{color:#669900; font-size:1.2em; margin:0 0 15px 20px; display:block; letter-spacing:1px;}
+.presentation article a.popinContact	{display:inline; padding:0 10px; }        
 
 
 /* ------------------------ */
