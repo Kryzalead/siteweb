@@ -95,13 +95,14 @@ header #logo													{float:left;margin-top:22px;}
 header nav														{text-align:right;bottom:110px;font-size:1.3em;padding:10px 10px 0 0;}
 header nav a													{color:#FFF;-webkit-transition:all .5s;-moz-transition:all .5s;-o-transition:all .5s;transition:all .5s;margin:0 6px;}
 header nav a:hover,header nav a:focus		{font-family:arial;color:#690;border-bottom:25px solid #690;}
-header span.accroche									{position:absolute;text-shadow:0 0 3px #555;font:bold 2.4em 'O_O';color:#690;margin:140px 0 0 -210px;}
+header span.accroche									{position:absolute;text-shadow:0 0 3px #555;font:bold 2.4em 'O_O';color:#690;margin:135px 0 0 -255px;}
+header .suivez-nous										{position:absolute;margin:17px 00px 0 650px;}
   
   
 /* ----------------------- */
 /*          SLOGAN         */
 /* --------------------- */
-#slogan					{display:inline-block; text-align:right; padding:50px 0 0 140px; }
+#slogan					{display:inline-block; text-align:right; padding:70px 0 0 140px; }
 #slogan h2 a			{font:bold 3.5em 'O_O'; }
   
 
