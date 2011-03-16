@@ -8,7 +8,8 @@
 <meta name="google-site-verification" content="" />  <!-- A FAIRE -->
 <meta name="viewport" content="width=device-width" />
 
-<link rel="shortcut icon" type="image/x-icon" href="#" /> <!-- a faire -->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png" /> <!-- a faire -->
+	<!--<link rel="icon" type="image/gif" href="favicon.gif"/>-->
 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles.css" /> 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles_slide.css" /> 
