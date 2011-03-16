@@ -1,9 +1,4 @@
-<?php 
-session_start();
-$token = md5(uniqid(rand(), true));
-$_SESSION['token']['contact'] = $token;
-require('fonctions/config.php');
-?>
+<?php require('fonctions/config.php');?>
 <!DOCTYPE html>
 <html lang="fr"> 
  
@@ -12,10 +7,12 @@ require('fonctions/config.php');
 </head>
  
 <body>
+
 	<?php include('includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->
+		<div id="mask"></div>
 		
 		<header role="banner">
 			<?php include('includes/header.php');?>
