@@ -1,4 +1,9 @@
-<?php require('fonctions/config.php');?>
+<?php 
+session_start();
+$token = md5(uniqid(rand(), true));
+$_SESSION['token']['contact'] = $token;
+require('fonctions/config.php');
+?>
 <!DOCTYPE html>
 <html lang="fr"> 
  

@@ -29,7 +29,8 @@ $(function() {
 				//on récupère les valeurs des champs
 				var nom = $('#nom').val(),
 					email = $('#email').val(),
-					message = $('#message').val();
+					message = $('#message').val(),
+					token = $('#token').val();
 
 				// variable pour gérer les erreurs
 				var trigger = true;
@@ -64,7 +65,7 @@ $(function() {
 						$.ajax({
 							type: "post",
 							url: "traitement.php",
-							data: "nom=" + nom + "&email=" + email + "&message=" + message+"&valid=ok",
+							data: "nom=" + nom + "&email=" + email + "&message=" + message+"&valid=ok"+"&token="+token,
 							success: function (msg) {
 								if(msg == 'ok'){
 									$('.error').hide();
