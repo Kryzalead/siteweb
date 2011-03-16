@@ -193,12 +193,13 @@ aside.reseaux_sociaux img {margin:70px 0 0 20px;width:45px;-moz-transition: all 
 /* ------------------------- */
 /*            FOOTER           */
 /* ---------------------- */
-footer							{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
-footer p,a					{color:#999;}
-footer a:hover			{text-decoration:underline;color:#690;}
-#mentions					{width:1000px;margin:0 auto;}
-#mentions p				{text-align:left;font-size:0.85em;}
-
+footer								{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
+footer p,a						{color:#999;}
+footer a:hover				{text-decoration:underline;color:#690;}
+#mentions						{width:1000px;margin:0 auto;}
+#mentions p					{text-align:left;font-size:0.85em;}
+#mentions span.ml		{padding-left:235px;}
+.w3c								{float:right;}
 
 	
 /* ------------------------- */
