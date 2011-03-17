@@ -5,7 +5,7 @@
 			<a href="<?php echo ROOT;?>agence.html">L'agence</a>
 			<a href="#">Réalisations</a>
 			<a href="#">Les Packs</a>
-			<a href="#">Devis gratuit</a>
+			<a href="<?php echo ROOT;?>devis/">Devis gratuit</a>
 			<a href="<?php echo ROOT;?>contact/" class="popinContact">Contact</a>
 	<!--	<a href="#">Le Blog</a>-->
 		</nav>
