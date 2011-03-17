@@ -1,17 +1,9 @@
 <?php
-session_start();
 $trigger = true;
 $regexMail = "#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#";
 
 if(isset($_POST['valid'])){
-    
-	if(!empty($_POST['token'])){
-		if($_SESSION['contact']['token'] != $_POST['token'])
-			echo $trigger = false;
-	}
-	else $trigger = false;
-	
-	//traitement champ nom
+    //traitement champ nom
     if(!empty($_POST['nom']) && strlen(trim($_POST['nom'])) > 0){
         $nom = htmlspecialchars(strip_tags($_POST['nom']));
     }

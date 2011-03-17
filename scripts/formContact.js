@@ -29,8 +29,7 @@ $(function() {
 				//on récupère les valeurs des champs
 				var nom = $('#nom').val(),
 					email = $('#email').val(),
-					message = $('#message').val(),
-					token = $('#token').val();
+					message = $('#message').val();
 
 				// variable pour gérer les erreurs
 				var trigger = true;
