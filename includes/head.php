@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles.css" /> 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles_slide.css" /> 
+<link rel="stylesheet" type="text/css" href="zoombox.css" />
 
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script type="text/javascript" src="scripts/roundies.js"></script><![endif]-->

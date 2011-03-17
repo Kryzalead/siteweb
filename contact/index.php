@@ -10,10 +10,17 @@ require('../fonctions/config.php');
  
 <head> 
     <?php include('../includes/head.php');?>
+	
+	<style type="text/css">
+		#contactnojs								{width:650px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;}
+		#contactnojs img.img-form		{float:right;display:inline-block;margin-top:100px;}
+		#contactnojs	h2						{font:normal 4.5em 'O_O';}
+
+	</style>
+		
 </head>
  
 <body>
-
 	<?php include('../includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
@@ -24,7 +31,7 @@ require('../fonctions/config.php');
 		</header>
 
 		<div id="slogan">
-			<h2><a>Votre projet est à l'état de cocon?<span class="retour"></span>
+			<h2><a>Votre projet est à l'état de cocon?<br/>
 			Nous sommes là pour l'aider à s'envoler.</a></h2>
 		</div>
 		
@@ -41,7 +48,7 @@ require('../fonctions/config.php');
             }
             ?>
             <div id="contactnojs"><!--contact form-->
-                <h2 id="contact_header">Un projet ? un commentaire ?</h2>
+                <h2 id="contact_header">Un commentaire ?</h2>
                 <img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
                 <p class="success">Merci, votre message a bien été envoyé!</p>
                 <p class="error">Une erreur est survenue lors de l'envois du message</p>

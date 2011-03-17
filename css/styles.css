@@ -174,8 +174,8 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 input,textarea								{border:1px solid silver;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px;overflow:hidden}
 textarea:hover,input:hover			{background-color:#c8e789;border:1px dashed #690;}
 input[type=text],input[type="email"],textarea		{max-width:275px;max-height:220px;}
-input:hover[type=submit] 										{background-color:#c8e789;color:#690;font: bold 1.1em Arial;}
-
+input:hover[type=submit] 										{background-color:#c8e789;color:#690;font: bold 1em Arial;}
+input[type=submit] 													{width:80px;cursor:pointer;}
 
 
 /*aside.reseaux_sociaux{float:right;margin:10px 0;width:190px;background-image:url('../images/suivez-nous.png');background-position:right top;background-repeat:no-repeat;height:100px;}

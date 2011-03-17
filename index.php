@@ -40,16 +40,12 @@ require('fonctions/config.php');
 				</article>
 				
 				<article>
-					<h1>Projet(s) en cours</h1>
-						<p>
+					<h1>Les offres du moment</h1>
+						<p>Nous vous proposons en ce moment : </p>
 							<?php
-								$handle = fopen('includes/works.txt','r');
-								$content = fread($handle,300);
-								fclose($handle);
-								echo $content;
-							?>			
-						</p>
-				</article>		
+								// include('fonctions/news_offres.php');
+							?>
+				</article>
 				
 				<article>
 					<h1>Votre devis GRATUIT en ligne</h1>
@@ -61,17 +57,16 @@ require('fonctions/config.php');
 				</article>		
 				
 				<article>
-					<h1>Nous contacter</h1>
-						<div id="adresse">
-							<ul>
-								<li><span>Agence Kryzalead</span></li>
-								<li>16220 Ecuras // 17000 La Rochelle</li>
-								<li>Tél: 05&nbsp;45&nbsp;..&nbsp;..&nbsp;..</li>
-								<li>Email:<a href="<?php echo ROOT;?>contact/index.php" class="popinContact">contact@kryzalead.fr</a></li>
-								<li>n'hésitez plus à nous contacter.</li>
-							</ul>
-						</div>
-				</article>
+					<h1>Projet(s) en cours</h1>
+						<p>
+							<?php
+								$handle = fopen('includes/works.txt','r');
+								$content = fread($handle,300);
+								fclose($handle);
+								echo $content;
+							?>			
+						</p>
+				</article>		
 			</section>
 
 			<section class="slideshow">
