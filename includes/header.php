@@ -23,6 +23,7 @@
 					<p><label for="nom" id="l_nom">Votre nom : </label><span class="inputError">Nom d'utilisateur incorrect!</span><br /><input name="nom" id="nom" type="text" size="30" required /></p>
 					<p><label for="email" id="l_email">Votre email : </label><span class="inputError">Email incorrect!</span><br /><input name="email" id="email" type="email" size="30" required /></p>
 					<p><label for="message" id="l_message">Votre message : </label><span class="inputError">Message incorrect!</span><br /><textarea name="message" id="message" rows="5" cols="40" required></textarea></p>
-					<p><input type="submit" id="submit" name="submit" value="Envoyer" /></p>
+					<p><input type="hidden" name="token" id="token" value="<?php echo $token;?>" /></p>
+                    <p><input type="submit" id="submit" name="submit" value="Envoyer" /></p>
 				</form>
 </div><!--end contact form-->
