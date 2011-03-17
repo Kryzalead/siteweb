@@ -7,7 +7,6 @@
 </head>
  
 <body>
-
 	<?php include('includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
