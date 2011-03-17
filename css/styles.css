@@ -124,7 +124,8 @@ section#presentation {margin:60px auto 0; width:1000px;}
 .presentation article h1           				{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777; width:220px; }
 .presentation article a              				{display: block; padding: 10px 15px 0px; color: #777; text-decoration: none;font-weight:bold; }
 .presentation article a:hover				{color: #690; margin-left:3px; }
-.presentation article img						{}
+.presentation article a.fleche				{float:right;margin-right:93px;}
+.presentation article a:hover.fleche				{margin-right:87px;background-image:url('images/fleche-verte.png') 0 0 no-repeat}
 .presentation article p            				{margin: 0; color:#777;text-align:justify; }
 .presentation article ul			      			{list-style-type:none; color:#777; }
 .presentation article li			      			{line-height:1.8em; }
