@@ -61,9 +61,9 @@ require('fonctions/config.php');
 						<p>
 							<?php
 								$handle = fopen('includes/works.txt','r');
-								$content = fread($handle,300);
-								fclose($handle);
-								echo $content;
+								$content = fread($handle,999);
+									fclose($handle);
+									echo $content;
 							?>			
 						</p>
 				</article>		
@@ -94,7 +94,7 @@ require('fonctions/config.php');
 	
 	</div> <!-- FIN WRAPPER -->
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="<?php echo ROOT;?>scripts/slide.js" type="text/javascript"></script>
     <script type="text/javascript">
 		$(window).load(function() {
@@ -113,6 +113,15 @@ require('fonctions/config.php');
 		});	
     </script>
 	<script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
+	<script type="text/javascript" src="<?php echo ROOT;?>scripts/zoombox.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(function(){
+			$('a.zoombox').zoombox();
+		});
+		//]]>
+	</script>
+	
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
