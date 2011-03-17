@@ -38,7 +38,7 @@ html,body,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,co
 	
 	
 html	{font-size:100%;}
-body	{background-color:#FFF;font-family:"Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;font-size:0.8em;line-height:1.4;color:#444;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;margin:0;padding:0;}
+body	{background-color:#FFF;font-family:"Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;font-size:0.8em;line-height:1.4;color:#444;-webkit-font-smoothing: antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;margin:0;padding:0;}
   
 /* ------------------------- */
 /*              LIENS             */
@@ -70,7 +70,6 @@ strong 			{font-weight: bold;}
 
 .color_green	{color:#690}
 .souligne		{text-decoration:underline}
-.retour			{display:block;}
  
  
 /* ------------------------ */
@@ -118,20 +117,18 @@ header .suivez-nous										{margin:19px 0 0 245px;}
 section#presentation {margin:60px auto 0; width:1000px;}
 
 
-/* ------------------------ */
-/*        COLONNES       */
-/* --------------------- */   
+/*   COLONNES    */
 .presentation                     		 			{width: 100%; margin: 3.5em 0 0; }
 .presentation:after                  				{display: block; clear: both; }
 .presentation article                				{display: inline-block; vertical-align:top; width: 220px; margin-left:25px; }
 .presentation article h1           				{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777; width:220px; }
-.presentation article a              				{display: block; padding: 10px 15px 0px; color: #777; text-decoration: underline; }
-.presentation article a:hover				{color: #669900; margin-left:5px; font-size:1.1em; }
+.presentation article a              				{display: block; padding: 10px 15px 0px; color: #777; text-decoration: none;font-weight:bold; }
+.presentation article a:hover				{color: #690; margin-left:3px; }
+.presentation article img						{}
 .presentation article p            				{margin: 0; color:#777;text-align:justify; }
 .presentation article ul			      			{list-style-type:none; color:#777; }
 .presentation article li			      			{line-height:1.8em; }
-.presentation article li span					{color:#669900; font-size:1.2em; margin:0 0 15px 20px; display:block; letter-spacing:1px;}
-.presentation article a.popinContact	{display:inline; padding:0 10px; }        
+.presentation article li span					{color:#690;font-size:1.2em; margin:0 0 15px 20px; display:block; letter-spacing:1px;}
 
 
 /* ------------------------ */
@@ -199,7 +196,7 @@ footer a:hover				{text-decoration:underline;color:#690;}
 #mentions						{width:1000px;margin:0 auto;}
 #mentions p					{text-align:left;font-size:0.85em;}
 #mentions span.ml		{padding-left:235px;}
-.w3c								{float:right;}
+.w3c								{float:right;margin:-3px 0 0 10px}
 
 	
 /* ------------------------- */
