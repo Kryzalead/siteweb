@@ -35,16 +35,14 @@ require('fonctions/config.php');
 					<h1>L'agence en quelques mots</h1>
 						<p>
 							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</strong>.
-							<a href="<?php echo ROOT;?>agence.html">L'agence <img src="images/fleche.png" width="32" height="21" alt="fleche-agence" class="fleche"></a>
+							<a href="<?php echo ROOT;?>agence.html" class="fleche">L'agence</a>
 						</p>
 				</article>
 				
 				<article>
 					<h1>Les offres du moment</h1>
-						<p>Nous vous proposons en ce moment : </p>
-							<?php
-								// include('fonctions/news_offres.php');
-							?>
+						<p>A ne pas loupez : </p>
+							<?php	// include('fonctions/news_offres.php');?>
 				</article>
 				
 				<article>
@@ -58,15 +56,13 @@ require('fonctions/config.php');
 				
 				<article>
 					<h1>Projet(s) en cours</h1>
-						<p>
-							<?php
-								$handle = fopen('includes/works.txt','r');
-								$content = fread($handle,999);
-									fclose($handle);
-									echo $content;
-							?>			
-						</p>
-				</article>		
+						<?php
+							$handle = fopen('includes/works.txt','r');
+							$content = fread($handle,999);
+								fclose($handle);
+								echo $content;
+						?>
+				</article>
 			</section>
 
 			<section class="slideshow">

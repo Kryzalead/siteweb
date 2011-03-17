@@ -1,10 +1,10 @@
 <div id="zoombox-cadre">
-		<p>Cliquer sur les liens pour faire apparaitre un aperçu en image.</p>
+		<p>Cliquez sur les liens pour faire apparaitre un aperçu en image</p>
 	<div id="liens">
-		<a class="zoombox zgallery1" alt="Kryzalead.fr" title="Agence web Kryzalead" href="images/zoombox/projets/kryzalead.png">ww.kryzalead.fr</a>
+		<a class="zoombox zgallery1" title="Agence web Kryzalead" href="images/zoombox/projets/kryzalead.png">www.kryzalead.fr</a>
 		<p>Agence web implantée Charente et Charente-Maritime par 2 jeunes bien motivés</p>
 
-		<a class="zoombox zgallery1" alt="Kryzalead.fr" title="Agence web Kryzalead 2" href="images/zoombox/projets/kryzalead-2.png">ww.kryzalead.fr - suite</a>
-		<p>Agence web Kryzalead Kryza's workflow !!!</p>
+		<a class="zoombox zgallery1" title="Agence web Kryzalead 2" href="images/zoombox/projets/kryzalead-2.png">www.kryzalead.fr - suite</a>
+		<p>Agence web Kryzalead Kryza's workflow!!!</p>
 	</div>
 </div>

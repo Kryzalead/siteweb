@@ -58,5 +58,5 @@
 
 
 /* ************************************************************* */
-#liens p 		{color:#555;text-align:left;font-size:0.80em;}
+#liens p 		{color:#555;text-align:left;font:normal 0.85em Arial;color:#777;}
 #liens a 		{display:block;color:#690;border-top:1px solid silver;}
