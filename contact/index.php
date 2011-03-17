@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 <?php require('../fonctions/config.php');?>
+=======
+<?php
+session_start();
+$token = md5(uniqid(rand(), true));
+$_SESSION['contact']['token'] = $token;
+require('../fonctions/config.php');
+?>
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="fr"> 
  
@@ -23,6 +32,20 @@
 		</div>
 		
 		<div id="content"><!-- Debut content -->
+<<<<<<< HEAD
+=======
+            <?php
+            if(!empty($_SESSION['contact']['info']))
+                echo htmlspecialchars($_SESSION['contact']['info']);
+
+            if(!empty($_SESSION['contact']['erreur'])){
+                 echo '<ul>';
+                 foreach($_SESSION['contact']['erreur'] as $erreur)
+                    echo '<li>'.$erreur.'</li>';
+                echo '</ul>';    
+            }
+            ?>
+>>>>>>> origin/master
             <div id="contactnojs"><!--contact form-->
                 <h2 id="contact_header">Un projet ? un commentaire ?</h2>
                 <img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
@@ -32,7 +55,12 @@
 					<p><label for="nom" id="l_nom">Votre nom : </label><span class="inputError">Nom d'utilisateur incorrect!</span><br /><input name="nom" id="nom" type="text" size="30" required /></p>
 					<p><label for="email" id="l_email">Votre email : </label><span class="inputError">Email incorrect!</span><br /><input name="email" id="email" type="email" size="30" required /></p>
 					<p><label for="message" id="l_message">Votre message : </label><span class="inputError">Message incorrect!</span><br /><textarea name="message" id="message" rows="5" cols="40" required></textarea></p>
+<<<<<<< HEAD
 					<p><input type="submit" id="submit" name="submit" value="Envoyer" /></p>
+=======
+					<p><input type="hidden" name="token" id="token" value="<?php echo $token;?>" /></p>
+                    <p><input type="submit" id="valid" name="valid" value="Envoyer" /></p>
+>>>>>>> origin/master
 				</form>
             </div><!--end contact form-->
         </div><!-- Fin content -->
@@ -59,5 +87,11 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 	</script>-->
+<<<<<<< HEAD
+=======
+    <?php
+    $_SESSION['contact']['erreur'] = $_SESSION['contact']['info'] = array();
+    ?>
+>>>>>>> origin/master
 	</body>
 </html>
