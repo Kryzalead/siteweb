@@ -30,7 +30,7 @@
 					<h1>L'agence en quelques mots</h1>
 						<p>
 							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <span class="souligne">esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</span>.
-							<a href="agence.html">L'agence</a>
+							<a href="<?php echo ROOT;?>agence.html">L'agence</a>
 						</p>
 				</article>
 				
@@ -51,7 +51,7 @@
 						<p>
 							Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entièrement gratuit et personnalisé ?</strong>
 							<span class="retour"></span>Remplissez le formulaire en quelques clics afin que nous puissions vous le retourner par mail.
-							<a href="devis/devis.php">Faites votre devis en ligne</a>
+							<a href="<?php echo ROOT;?>devis/devis.php">Faites votre devis en ligne</a>
 						</p>
 				</article>		
 				
@@ -62,7 +62,7 @@
 								<li><span>Agence Kryzalead</span></li>
 								<li>16220 Ecuras // 17000 La Rochelle</li>
 								<li>Tél: 05&nbsp;45&nbsp;..&nbsp;..&nbsp;..</li>
-								<li>Email:<a href="contact/index.php" class="popinContact">contact@kryzalead.fr</a></li>
+								<li>Email:<a href="<?php echo ROOT;?>contact/index.php" class="popinContact">contact@kryzalead.fr</a></li>
 								<li>n'hésitez plus à nous contacter.</li>
 							</ul>
 						</div>
@@ -71,14 +71,14 @@
 
 			<section class="slideshow">
 				<div id="slide" class="nivoSlider">
-					<a href="#link1"><img src="images/slider/pack-launch-web.jpg" alt="Pack 'Launch Web'" title="Pack 'Launch Web'" /></a>
-					<a href="#link2"><img src="images/slider/pack-vitrine-1page.jpg" alt="Pack 'Vitrine 1 page'" title="Pack 'Vitrine 1 page'" /></a>
-					<a href="#link3"><img src="images/slider/pack-vitrine-3pages.jpg" alt="Pack 'Vitrine 3 pages'" title="Pack 'Vitrine 3 pages'" /></a>
-					<a href="#link4"><img src="images/slider/pack-vitrine-5pages.jpg" alt="Pack 'Vitrine 5 pages'" title="Pack 'Vitrine 5 pages'" /></a>
-					<a href="#link5"><img src="images/slider/pack-vitrine-10pages.jpg" alt="Pack 'Vitrine 10 pages'" title="Pack 'Vitrine 10 pages'" /></a>
-					<a href="#link6"><img src="images/slider/pack-catalogue.jpg" alt="Pack 'Catalogue'" title="Pack 'Catalogue'" /></a>
-					<a href="#link7"><img src="images/slider/pack-e-commerce.jpg" alt="Pack 'E-Commerce'" title="Pack 'E-Commerce'" /></a>
-					<a href="#link7"><img src="images/slider/pack-custom.jpg" alt="Pack 'Custom'" title="Pack 'Custom'" /></a>
+					<a href="#link1"><img src="<?php echo ROOT;?>images/slider/pack-launch-web.jpg" alt="Pack 'Launch Web'" title="Pack 'Launch Web'" /></a>
+					<a href="#link2"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-1page.jpg" alt="Pack 'Vitrine 1 page'" title="Pack 'Vitrine 1 page'" /></a>
+					<a href="#link3"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-3pages.jpg" alt="Pack 'Vitrine 3 pages'" title="Pack 'Vitrine 3 pages'" /></a>
+					<a href="#link4"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-5pages.jpg" alt="Pack 'Vitrine 5 pages'" title="Pack 'Vitrine 5 pages'" /></a>
+					<a href="#link5"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-10pages.jpg" alt="Pack 'Vitrine 10 pages'" title="Pack 'Vitrine 10 pages'" /></a>
+					<a href="#link6"><img src="<?php echo ROOT;?>images/slider/pack-catalogue.jpg" alt="Pack 'Catalogue'" title="Pack 'Catalogue'" /></a>
+					<a href="#link7"><img src="<?php echo ROOT;?>images/slider/pack-e-commerce.jpg" alt="Pack 'E-Commerce'" title="Pack 'E-Commerce'" /></a>
+					<a href="#link7"><img src="<?php echo ROOT;?>images/slider/pack-custom.jpg" alt="Pack 'Custom'" title="Pack 'Custom'" /></a>
 				</div>
 					<div id="cadre_ombre"></div>
 			</section>
@@ -95,7 +95,7 @@
 	</div> <!-- FIN WRAPPER -->
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-    <script src="scripts/slide.js" type="text/javascript"></script>
+    <script src="<?php echo ROOT;?>scripts/slide.js" type="text/javascript"></script>
     <script type="text/javascript">
 		$(window).load(function() {
 			setTimeout(function(){
@@ -112,7 +112,7 @@
 			}, 5000);
 		});	
     </script>
-	<script type="text/javascript" src="scripts/formContact.js"></script>
+	<script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
