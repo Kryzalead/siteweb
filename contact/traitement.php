@@ -15,21 +15,21 @@ if(isset($_POST['valid'])){
     if(!empty($_POST['nom']) && strlen(trim($_POST['nom'])) > 0){
         $nom = htmlspecialchars(strip_tags($_POST['nom']));
     }
-    else $erreur[] = 'Vous souhaitez restez anonyme?N\'ayez pas peur.';
+    else $erreur[] = 'Vous n\'avez pas entré de Nom.';
     
     //traitement champ email
     if(!empty($_POST['email']) && strlen(trim($_POST['email'])) > 0){
         if(preg_match($regexMail,$_POST['email']))
             $email = htmlspecialchars(strip_tags($_POST['email']));
-        else $erreur[] = 'Vous êtes sûr de votre email.';    
+        else $erreur[] = 'Etes vous sûr de votre email?';    
     }
-    else $erreur[] = 'Pas d\'email, on vous contacte comment?';
+    else $erreur[] = 'Vous n\'avez pas entré d\'email.';
 
     //traitement message
     if(!empty($_POST['message']) && strlen(trim($_POST['message'])) > 0){
 		$message = htmlspecialchars(strip_tags($_POST['message']));
 	}
-	else $erreur[] = 'Vous inquiétez pas, il y a assez de place!';
+	else $erreur[] = 'Vous n\'avez pas entré de message.';
    
     if(empty($erreur)){
         // préparation du mail
@@ -60,6 +60,4 @@ if(isset($_POST['valid'])){
     }
 }
 else header('Location: ../index.php');   
-
-
 ?>
