@@ -51,7 +51,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
         #floatLeft input{margin-top: 5px;margin-left: 30px}
         #descType{width: 400px;height: 100px;border: 1px solid red;margin-left: 280px;padding: 5px}
         #descType p{margin: 0}
-        #descTypePro,#descTypeVitrine,#descTypeCommerce{display: none;}
+        
         .clear{clear: both}
         
         /* Style de la liste des étapes*/
@@ -86,9 +86,6 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 		
 		<div id="content"><!-- Debut content -->
             <div id="formDevis">
-                <?php
-				print_r($_SESSION['erreur']);
-				?>
 				<form method="post" action="traitement.php" id="formSteps">
                 <fieldset>
                     <legend>Vos coordonnées</legend>
@@ -289,7 +286,10 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                 });
                 
                 
-                // Effet pour le choix du type de site
+                $('#desctypePro').hide();
+				$('#desctypeVitrine').hide();
+				$('#desctypeCommerce').hide();
+				// Effet pour le choix du type de site
                 $('.typeSite').click(function(){
                     var idType = $(this).attr('id');
                     $('#descType p').empty();
@@ -316,5 +316,8 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 	</script>-->
+	<?php
+	$_SESSION['post'] = array();
+	?>
     </body>
 </html>

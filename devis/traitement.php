@@ -126,7 +126,7 @@ if(!empty($_POST['valid'])){
     else $start = 'Pas de limite de temps';
     
     // traitement du budget
-    if(!empty($_POST['budget']) && strlen(trim($_POST['nom'])) > 0){
+    if(!empty($_POST['budget']) && strlen(trim($_POST['budget'])) > 0){
         if(is_numeric($_POST['budget']))
             $budget = htmlspecialchars($_POST['budget']);
         else $erreur[] = 'Le budget ne doit contenir que des chiffres';    
@@ -164,11 +164,30 @@ if(!empty($_POST['valid'])){
     else $img = 'Pas de choix';
     
     if(empty($erreur)){
-        echo 'good';
+        echo 'civiilte : '.$civilite;
+        echo '<br />statut : '.$statut;
+        echo '<br />nom : '.$nom;
+        echo '<br />prenom : '.$prenom;
+        echo '<br />email : '.$email;
+        echo '<br />tel : '.$tel;
+        echo '<br />desc : '.$desc;
+        echo '<br />contact : '.$contact;
+        echo '<br />type : '.$type;
+        echo '<br />nbrePage : '.$nbrePage;
+        echo '<br />options : '.print_r($options);
+        echo '<br />maintenace : '.$maintenance;
+        echo '<br />start : '.$start;
+        echo '<br />nbrePage : '.$nbrePage;
+        echo '<br />budget : '.$budget;
+        echo '<br />design : '.$design;
+        echo '<br />logo : '.$logo;
+        echo '<br />flash : '.$flash;
+        echo '<br />contenu : '.$contenu;
+        echo '<br />img : '.$img;
     }
     else{
         $_SESSION['post'] = $_POST;
-        $_SESSION['erreur'] = $erreur;
+        $_SESSION['devis']['erreur'] = $erreur;
         header('Location: index.php');
     }
 }
