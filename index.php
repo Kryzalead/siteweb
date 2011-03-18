@@ -35,16 +35,14 @@ require('fonctions/config.php');
 					<h1>L'agence en quelques mots</h1>
 						<p>
 							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</strong>.
-							<a href="<?php echo ROOT;?>agence.html">L'agence <img src="images/fleche.png" width="32" height="21" alt="fleche-agence" class="fleche"></a>
+							<a href="<?php echo ROOT;?>agence.html" class="fleche">L'agence</a>
 						</p>
 				</article>
 				
 				<article>
 					<h1>Les offres du moment</h1>
-						<p>Nous vous proposons en ce moment : </p>
-							<?php
-								// include('fonctions/news_offres.php');
-							?>
+						<p>A ne pas loupez : </p>
+							<?php	// include('fonctions/news_offres.php');?>
 				</article>
 				
 				<article>
@@ -58,15 +56,13 @@ require('fonctions/config.php');
 				
 				<article>
 					<h1>Projet(s) en cours</h1>
-						<p>
-							<?php
-								$handle = fopen('includes/works.txt','r');
-								$content = fread($handle,300);
+						<?php
+							$handle = fopen('includes/works.txt','r');
+							$content = fread($handle,999);
 								fclose($handle);
 								echo $content;
-							?>			
-						</p>
-				</article>		
+						?>
+				</article>
 			</section>
 
 			<section class="slideshow">
@@ -94,7 +90,7 @@ require('fonctions/config.php');
 	
 	</div> <!-- FIN WRAPPER -->
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="<?php echo ROOT;?>scripts/slide.js" type="text/javascript"></script>
     <script type="text/javascript">
 		$(window).load(function() {
@@ -113,6 +109,15 @@ require('fonctions/config.php');
 		});	
     </script>
 	<script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
+	<script type="text/javascript" src="<?php echo ROOT;?>scripts/zoombox.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(function(){
+			$('a.zoombox').zoombox();
+		});
+		//]]>
+	</script>
+	
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
