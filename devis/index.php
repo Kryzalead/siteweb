@@ -86,7 +86,10 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 		
 		<div id="content"><!-- Debut content -->
             <div id="formDevis">
-                <form method="post" action="traitement.php" id="formSteps">
+                <?php
+				print_r($_SESSION['erreur']);
+				?>
+				<form method="post" action="traitement.php" id="formSteps">
                 <fieldset>
                     <legend>Vos coordonnées</legend>
                         <p>

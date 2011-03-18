@@ -107,16 +107,6 @@ if(!empty($_POST['valid'])){
         $maintenance = htmlspecialchars($_POST['maintenance']);
     else $erreur[] = 'Merci de préciser si vous souhaitez nous confier ou non la maintenance de votre site';
     
-    // traitement du multilangue
-    if($_POST['lang'] != '')
-        $lang = htmlspecialchars($_POST['lang']);
-    else $lang = 'Pas de multilingue';
-    
-    // traitement des traduction
-    if($_POST['trad'] != '')
-        $trad = htmlspecialchars($_POST['trad']);
-    else $trad = 'Pas de fichier de traduction';
-    
     //traitement du démarage du site
     if($_POST['start'] > 0){
         switch($_POST['start']){
@@ -179,8 +169,8 @@ if(!empty($_POST['valid'])){
     else{
         $_SESSION['post'] = $_POST;
         $_SESSION['erreur'] = $erreur;
-        header('Location: devis.php');
+        header('Location: index.php');
     }
 }
-else header('Location: devis.php');
+else header('Location: index.php');
 ?>
