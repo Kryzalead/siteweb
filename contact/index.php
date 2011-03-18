@@ -15,7 +15,8 @@ require('../fonctions/config.php');
 		#contactnojs								{width:650px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;}
 		#contactnojs img.img-form		{float:right;display:inline-block;margin-top:100px;}
 		#contactnojs	h2						{font:normal 4.5em 'O_O';}
-
+		#contactnojs .inputError{display: inline}
+		#contactnojs .success,#contactnojs .error{display: block}
 	</style>
 		
 </head>
@@ -36,26 +37,35 @@ require('../fonctions/config.php');
 		</div>
 		
 		<div id="content"><!-- Debut content -->
-            <?php
-            if(!empty($_SESSION['contact']['info']))
-                echo htmlspecialchars($_SESSION['contact']['info']);
-
-            if(!empty($_SESSION['contact']['erreur'])){
-                 echo '<ul>';
-                 foreach($_SESSION['contact']['erreur'] as $erreur)
-                    echo '<li>'.$erreur.'</li>';
-                echo '</ul>';    
-            }
-            ?>
             <div id="contactnojs"><!--contact form-->
+				<?php
+				if(!empty($_SESSION['contact']['info']))
+					echo '<p class="success">'.htmlspecialchars($_SESSION['contact']['info']).'</p>';
+				
+				if(!empty($_SESSION['contact']['erreur']['send']))
+				    echo '<p class="error">'.htmlspecialchars($_SESSION['contact']['erreur']['send']).'</p>';
+				?>
                 <h2 id="contact_header">Un commentaire ?</h2>
                 <img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
-                <p class="success">Merci, votre message a bien été envoyé!</p>
-                <p class="error">Une erreur est survenue lors de l'envois du message</p>
 				<form action="traitement.php" method="post" name="contactForm" id="contactForm">
-					<p><label for="nom" id="l_nom">Votre nom : </label><span class="inputError">Nom d'utilisateur incorrect!</span><br /><input name="nom" id="nom" type="text" size="30" required /></p>
-					<p><label for="email" id="l_email">Votre email : </label><span class="inputError">Email incorrect!</span><br /><input name="email" id="email" type="email" size="30" required /></p>
-					<p><label for="message" id="l_message">Votre message : </label><span class="inputError">Message incorrect!</span><br /><textarea name="message" id="message" rows="5" cols="40" required></textarea></p>
+					<p><label for="nom" id="l_nom">Votre nom : </label>
+					<?php
+					if(!empty($_SESSION['contact']['erreur']['nom']))
+						echo '<span class="inputError">'.$_SESSION['contact']['erreur']['nom'].'</span>';
+					?>	
+					<br /><input name="nom" id="nom" type="text" size="30" required /></p>
+					<p><label for="email" id="l_email">Votre email : </label>
+					<?php
+					if(!empty($_SESSION['contact']['erreur']['email']))
+						echo '<span class="inputError">'.$_SESSION['contact']['erreur']['email'].'</span>';
+					?>
+					<br /><input name="email" id="email" type="email" size="30" required /></p>
+					<p><label for="message" id="l_message">Votre message : </label>
+					<?php
+					if(!empty($_SESSION['contact']['erreur']['message']))
+						echo '<span class="inputError">'.$_SESSION['contact']['erreur']['message'].'</span>';
+					?>
+					<br /><textarea name="message" id="message" rows="5" cols="40" required></textarea></p>
 					<p><input type="hidden" name="token" id="token" value="<?php echo $token;?>" /></p>
                     <p><input type="submit" id="valid" name="valid" value="Envoyer" /></p>
 				</form>
