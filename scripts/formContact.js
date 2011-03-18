@@ -64,7 +64,7 @@ $(function() {
 					if(trigger){
 						$.ajax({
 							type: "post",
-							url: "traitement.php",
+							url: "/projets/kryzalead/siteweb/traitement.php",
 							data: "nom=" + nom + "&email=" + email + "&message=" + message+"&valid=ok",
 							success: function (msg) {
 								if(msg == 'ok'){

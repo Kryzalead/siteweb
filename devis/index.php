@@ -262,6 +262,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 	</div> <!-- FIN WRAPPER -->
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
     <script type="text/javascript" src="<?php echo ROOT;?>scripts/formSteps.js"></script>
     <script type="text/javascript">
             $(function(){
