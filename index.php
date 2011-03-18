@@ -32,7 +32,7 @@ require('fonctions/config.php');
 		
 			<section class="presentation">
 				<article>
-					<h1>L'agence en quelques mots ---test---</h1>
+					<h1>L'agence en quelques mots</h1>
 						<p>
 							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</strong>.
 							<a href="<?php echo ROOT;?>agence.html" class="fleche">L'agence</a>
