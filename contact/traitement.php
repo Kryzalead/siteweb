@@ -15,21 +15,21 @@ if(isset($_POST['valid'])){
     if(!empty($_POST['nom']) && strlen(trim($_POST['nom'])) > 0){
         $nom = htmlspecialchars(strip_tags($_POST['nom']));
     }
-    else $erreur[] = 'Vous n\'avez pas entré de Nom.';
+    else $erreur['nom'] = 'Vous n\'avez pas entré de Nom.';
     
     //traitement champ email
     if(!empty($_POST['email']) && strlen(trim($_POST['email'])) > 0){
         if(preg_match($regexMail,$_POST['email']))
             $email = htmlspecialchars(strip_tags($_POST['email']));
-        else $erreur[] = 'Etes vous sûr de votre email?';    
+        else $erreur['email'] = 'Etes vous sûr de votre email?';    
     }
-    else $erreur[] = 'Vous n\'avez pas entré d\'email.';
+    else $erreur['email'] = 'Vous n\'avez pas entré d\'email.';
 
     //traitement message
     if(!empty($_POST['message']) && strlen(trim($_POST['message'])) > 0){
 		$message = htmlspecialchars(strip_tags($_POST['message']));
 	}
-	else $erreur[] = 'Vous n\'avez pas entré de message.';
+	else $erreur['message'] = 'Vous n\'avez pas entré de message.';
    
     if(empty($erreur)){
         // préparation du mail
@@ -50,7 +50,7 @@ if(isset($_POST['valid'])){
             header('Location: index.php');
         }
         else{
-           $_SESSION['contact']['erreur'] = array('Une erreur est survenue lors de l\'envoi du mail');
+           $_SESSION['contact']['erreur']['send'] = 'Une erreur est survenue lors de l\'envoi du mail';
            header('Location: index.php');
         }
     }
