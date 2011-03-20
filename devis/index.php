@@ -35,12 +35,16 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 <head> 
     <?php include('../includes/head.php');?>
     <style type="text/css" media="all">
-    .descInput{display: block;width: 250px;float: left}
-        .inputRadio input{margin-left: 30px;margin-top: 5px}
+		section#form_devis {clear:both;}
+		section#form_devis h2 a {font:normal 2em 'oO';padding:40px 0px 15px;display:block;}
+		section#form_devis p {color:#777;text-align:justify;width:700px;}
+			 
+		.descInput{display: block;width: 250px;float: left}
+        .inputRadio input{margin-left: 30px;margin-top:5px;}
         .infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
         .infobulle label span{width: 200px;position: absolute;padding: 5px;display: none;top:20px;left:40px;background:#eee;border:1px solid #999;padding:3px;font-size:0.9em;z-index: 10}
         input[type="text"],select,textarea{width: 250px}
-        input[type="radio"]{margin-right: 5px}
+        input[type="radio"]{margin-right: 5px;}
         input[type="checkbox"]{margin-right: 5px}
         
         input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;-moz-border-radius: 5px;}
@@ -61,30 +65,31 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
         #steps li.current { color:#000;}
         
         /* Style des boutons précédent et suivant*/
-        .prev, .next { background-color:#b0232a; padding:5px 10px; color:#fff; text-decoration:none;}
-        .prev:hover, .next:hover { background-color:#000; text-decoration:none;}
+        .prev, .next {background-color:#690; padding:5px 10px; color:#fff; text-decoration:none;}
+        .prev:hover, .next:hover {background-color:#670; text-decoration:none;}
         .prev { float:left;}
         .next { float:right;}
     </style>
 </head>
  
 <body>
-
 	<?php include('../includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->
-		
+
 		<header role="banner">
 			<?php include('../includes/header.php');?>
 		</header>
-
-		<div id="slogan">
-			<h2><a>Votre projet est à l'état de cocon?<span class="retour"></span>
-			Nous sommes là pour l'aider à s'envoler.</a></h2>
-		</div>
 		
 		<div id="content"><!-- Debut content -->
+		
+		<section id="form_devis">
+			<h2 class="animer"><a>Faites gratuitement votre devis en ligne</a></h2>
+			<p>
+				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiezien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
+			</p>
+
             <div id="formDevis">
 				<form method="post" action="traitement.php" id="formSteps">
                 <fieldset>
@@ -250,7 +255,8 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
             </form>
             </div>
         </div><!-- Fin content -->
-
+	</section>
+		
 		<section class="actu">
 			<?php include('../includes/actu.php');?>
 		</section>
