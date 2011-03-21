@@ -44,7 +44,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
         .infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
         .infobulle label span{width: 200px;position: absolute;padding: 5px;display: none;top:20px;left:40px;background:#eee;border:1px solid #999;padding:3px;font-size:0.9em;z-index: 10}
         input[type="text"],select,textarea{width: 250px}
-        input[type="radio"]{margin-right: 5px;}
+		input[type="radio"]{margin-right: 5px;}
         input[type="checkbox"]{margin-right: 5px}
         
         input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;-moz-border-radius: 5px;}
@@ -53,22 +53,26 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
         
         #floatLeft{float: left;margin-left: 30px;}
         #floatLeft input{margin-top: 5px;margin-left: 30px}
-        #descType{width: 400px;height: 100px;border: 1px solid red;margin-left: 280px;padding: 5px}
+        #descType{width: 400px;height: 70px;border: 1px dashed #690;margin: 0 0 30px 280px;padding: 5px}
         #descType p{margin: 0}
         
         .clear{clear: both}
         
         /* Style de la liste des étapes*/
-        #steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+        #steps {list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
         #steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
         #steps li span {font-size:11px; display:block;}
         #steps li.current { color:#000;}
         
         /* Style des boutons précédent et suivant*/
-        .prev, .next {background-color:#690; padding:5px 10px; color:#fff; text-decoration:none;}
-        .prev:hover, .next:hover {background-color:#670; text-decoration:none;}
-        .prev { float:left;}
-        .next { float:right;}
+        .prev, .next {padding:5px 10px; color:#690; text-decoration:underline;font:bold 1.5em 'oO'}
+        .prev:hover, .next:hover {text-decoration:underline;color:#670;letter-spacing:1px;}
+        .prev {float:left;}
+        .next {float:right;}
+		
+		/* Style FORM */
+		#formDevis {color:#777}
+		#formDevis legend {font-size:1.3em;padding:20px 0;text-decoration:underline;color:#690}
     </style>
 </head>
  
@@ -87,7 +91,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 		<section id="form_devis">
 			<h2 class="animer"><a>Faites gratuitement votre devis en ligne</a></h2>
 			<p>
-				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiezien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
+				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiez bien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
 			</p>
 
             <div id="formDevis">
