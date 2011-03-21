@@ -1,37 +1,65 @@
 <?php
 session_start();
-$erreur = array();
-$regexMail = "#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#";
+$valid = true;
+$fields = 	array(	'nom'=>array('type'=>'text','required'=>1,'regexValidation'=>'nom','msgErreur'=>array('empty'=>'Vous n\'avez pas entré de Nom.','regex'=>'Veuillez entrer un nom valide')),
+					'email'=>array('type'=>'text','required'=>1,'regexValidation'=>'email','msgErreur'=>array('empty'=>'Vous n\'avez pas entré d\'email.','regex'=>'Etes vous sûr de votre email?')),
+					'message'=>array('type'=>'text','required'=>1,'msgErreur'=>array('empty'=>'Vous n\'avez pas entré de message.'))
+			);
+$regex = array(
+			'nom'=>"#^[a-zA-Z]{3,16}$#",
+			'email'=>"#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#"
+		);			
 
-if(isset($_POST['valid'])){
+if(!empty($_POST['contactnojs']['valid'])){
     
-	if(!empty($_POST['token'])){
-		if($_SESSION['contact']['token'] != $_POST['token'])
-            header('Location: ../index.php');
-	}
-	else  header('Location: ../index.php');
+	unset($_POST['contactnojs']['valid']);
 	
-	//traitement champ nom
-    if(!empty($_POST['nom']) && strlen(trim($_POST['nom'])) > 0){
-        $nom = htmlspecialchars(strip_tags($_POST['nom']));
-    }
-    else $erreur['nom'] = 'Vous n\'avez pas entré de Nom.';
-    
-    //traitement champ email
-    if(!empty($_POST['email']) && strlen(trim($_POST['email'])) > 0){
-        if(preg_match($regexMail,$_POST['email']))
-            $email = htmlspecialchars(strip_tags($_POST['email']));
-        else $erreur['email'] = 'Etes vous sûr de votre email?';    
-    }
-    else $erreur['email'] = 'Vous n\'avez pas entré d\'email.';
-
-    //traitement message
-    if(!empty($_POST['message']) && strlen(trim($_POST['message'])) > 0){
-		$message = htmlspecialchars(strip_tags($_POST['message']));
+	
+	if(!empty($_POST['contactnojs']['token'])){
+		if($_SESSION['contactnojs']['token'] != $_POST['contactnojs']['token']){
+            $_SESSION['contactnojs']['token'] = array();
+			header('Location: index.php');
+		}
 	}
-	else $erreur['message'] = 'Vous n\'avez pas entré de message.';
+	else {
+		$_SESSION['contactnojs']['token'] = array();
+		header('Location: index.php');
+	}
+	
+	foreach($_POST['contactnojs'] as $key=>$value){
+		$flag = true;
+		if($fields[$key]['type'] == 'text'){
+			if($fields[$key]['required'] == 1){
+				if($value == '' || strlen(trim($value)) == 0){
+					$erreur[$key] = $fields[$key]['msgErreur']['empty'];
+					$flag = false;
+				}
+			}
+			else{
+				if($value == '' && strlen(trim($value)) == 0){
+					$erreur[$key] = $fields[$key]['msgErreur']['empty'];
+					$flag = false;
+				}	
+			}
+			
+			if($flag && !empty($fields[$key]['regexValidation'])){
+				if(!preg_match($regex[$fields[$key]['regexValidation']],$value)){
+					$erreur[$key] = $fields[$key]['msgErreur']['regex'];
+					$flag = false;
+				}	
+			}
+		}
+		
+		if($flag)
+			$$key = htmlspecialchars($value);
+		else{
+			$_SESSION['contactnojs']['erreur'] = $erreur;
+			$valid = false;	
+			header('Location: index.php');
+		}
+	}
    
-    if(empty($erreur)){
+    if($valid){
         // préparation du mail
         $to = 'kryzalead@gmail.com';
         $subject = 'Demande info kryzalead';
@@ -46,16 +74,16 @@ if(isset($_POST['valid'])){
         $contenu .='<p>'.$message.'</p>';
         $contenu .= '</body></head></html>';
         if(mail($to,$subject,$contenu,$headers)){
-            $_SESSION['contact']['info'] = 'Merci de votre mail.';
+            $_SESSION['contactnojs']['info'] = 'Merci de votre mail.';
             header('Location: index.php');
         }
         else{
-           $_SESSION['contact']['erreur']['send'] = 'Une erreur est survenue lors de l\'envoi du mail';
+           $_SESSION['contactnojs']['erreur']['send'] = 'Une erreur est survenue lors de l\'envoi du mail';
            header('Location: index.php');
         }
     }
     else{
-        $_SESSION['contact']['erreur'] = $erreur;
+        $_SESSION['contactnojs']['erreur'] = $erreur;
         header('Location: index.php');
     }
 }
