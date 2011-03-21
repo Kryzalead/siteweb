@@ -44,9 +44,10 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
         .infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
         .infobulle label span{width: 200px;position: absolute;padding: 5px;display: none;top:20px;left:40px;background:#eee;border:1px solid #999;padding:3px;font-size:0.9em;z-index: 10}
         input[type="text"],select,textarea{width: 250px}
-		input[type="radio"]{margin-right: 5px;}
+		input[type="radio"]{margin:0 5px;}
         input[type="checkbox"]{margin-right: 5px}
-        
+        input[type="submit"]{margin: 25px 0 0 370px}
+		
         input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;-moz-border-radius: 5px;}
         select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;}
         input:hover,textarea:hover{background-color: #eee}
@@ -58,13 +59,13 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
         
         .clear{clear: both}
         
-        /* Style de la liste des étapes*/
-        #steps {list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
-        #steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+			/* Style de la liste des étapes*/
+        #steps {list-style:none; width:450px; margin:40px 40px 20px;overflow:hidden; padding:0px;border-top:1px solid silver;border-bottom:1px solid silver}
+        #steps li {font-size:24px; float:left; padding:10px 30px; color:#b0b1b3;}
         #steps li span {font-size:11px; display:block;}
-        #steps li.current { color:#000;}
+        #steps li.current { color:#690;}
         
-        /* Style des boutons précédent et suivant*/
+			/* Style des boutons précédent et suivant*/
         .prev, .next {padding:5px 10px; color:#690; text-decoration:underline;font:bold 1.5em 'oO'}
         .prev:hover, .next:hover {text-decoration:underline;color:#670;letter-spacing:1px;}
         .prev {float:left;}
@@ -183,7 +184,6 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                             <div class="infobulle">      
                                 <input type="checkbox" name="optNewsletter" id="optNewsletter" <?php if($optNewsletter == 'on') echo 'checked="checked"';?>/><label for="optNewsletter" id="optNewsletter">Newsletter<span>Pour prévenir vos visiteurs des nouveautés de votre site</span></label>
                             </div>
-                            <div class="clear"></div>
                             <div class="infobulle">      
                                 <input type="checkbox" name="optGalerie" id="optGalerie" <?php if($optGalerie == 'on') echo 'checked="checked"';?>/><label for="optGalerie" id="optgalerie">Galerie photo/produits<span>Pour présenter vos produits en ligne</span></label>
                             </div>    
@@ -218,14 +218,13 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                         </p>
                         <p>
                             <label for="budget" id="l_budget" class="descInput">Votre budget :</label>
-                            <input type="text" name="budget" id="budget" value="<?php echo $budget;?>"/>
+                            <input type="text" name="budget" id="budget" value="<?php echo $budget;?> €"/>
                         </p>
                 </fieldset>
                 <fieldset>
                     <legend>Son contenu</legend>
                     <p>
-                        Cette partie concerne des informations supplémentaires sur votre site<br />
-                        Dans le cas, des fichiers fournis, ceux ci vont seront demandés lors de notre entretien
+                        -----------A refaire------------
                     </p>
                     <p class="inputRadio">
                         Design :<br />
@@ -238,11 +237,11 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                         <input type="radio" name="logo" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo" id="l_logo" >Je vous fournirais le logo </label><br />
                         <input type="radio" name="logo" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo" id="l_needLogo">J'ai besoin d'un logo</label><br />
                     </p>
-                    <p class="inputRadio">
+                  <!--  <p class="inputRadio">
                         Animation flash :<br />
                         <input type="radio" name="flash" value="non" id="noFlash" <?php if($flash == 'non') echo 'checked="checked"';?> /><label for="noFlash" id="l_noFlash">Je n'ai pas besoin d'animation en flash</label><br />
                         <input type="radio" name="flash" value="oui" id="flash" <?php if($flash == 'oui') echo 'checked="checked"';?> /><label for="flash" id="l_flash">J'ai besoin de quelques éléments en flash</label><br />
-                    </p>
+                    </p>-->
                     <p class="inputRadio">
                         Contenu :<br />
                         <input type="radio" name="contenu" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" id="l_noContenu">J'ai besoin d'aide pour la création de contenu</label><br />
