@@ -83,7 +83,7 @@ strong 				{font-weight: bold;}
 /* --------------------------- */
 /*            WRAPPER           */
 /* ------------------------- */	
-#wrapper {margin:0 auto; min-height: 1000px;}
+#wrapper {margin:0 auto; min-height: 800px;}
   
 /* --------------------------- */
 /*       HEADER MENU       */
@@ -122,7 +122,7 @@ section#presentation {margin:60px auto 0; width:1000px;}
 .presentation:after                  				{display: block; clear: both; }
 .presentation article                				{display: inline-block; vertical-align:top; width: 220px; margin-left:25px; }
 .presentation article h1           				{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777; width:220px; }
-.presentation article a              				{display: block; padding: 10px 15px 0px; color: #777; text-decoration: underline;font-weight:bold; }
+.presentation article a             				{display: block; padding: 10px 15px 0px; color: #777; text-decoration: underline;font-weight:bold; }
 .presentation article a:hover				{color: #690; margin-left:3px; }
 .presentation article p            				{margin: 0; color:#777;text-align:justify; }
 .presentation article ul			      			{list-style-type:none; color:#777; }
@@ -139,17 +139,17 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 /* ------------------------ */
 /*              ACTU             */
 /* ---------------------- */
-#c_actu							{width:1000px;margin:0 auto;}
+#c_actu						{width:1000px;margin:0 auto;}
   
 .actu								{width: 100%; background:url('../images/footer/footer-motif.png') 0 0 repeat; border-top:4px solid #690;}
 .actu:after       				{display: block; clear: both; } 
 .actu article					{margin:20px 50px 20px 0;width:400px;display:inline-block;vertical-align:top;}
-.actu article h1 				{font:bold 1.8em 'oO';width:380px;color:#EEE;border-bottom:1px solid #EEE;text-shadow:0 0 5px #000;margin-bottom:20px;}
+.actu article h1 			{font:bold 1.8em 'oO';width:380px;color:#EEE;border-bottom:1px solid #EEE;text-shadow:0 0 5px #000;margin-bottom:20px;}
 .actu article span 			{display: block;padding-bottom:10px;color:#690;font:normal 1.4em 'oO';}
 .actu article ul 				{list-style-type:none; color:#777;}
 .actu article li 				{margin-bottom:15px}
 .actu article li a				{display: block;color:#09F;font-size:1.1em;}
-.actu li a.cv						{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
+.actu li a.cv					{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
 .actu li a:hover.cv			{font-weight:bold;}
 .actu img						{float:left;border:1px dashed #BBB; width:90px;margin:0 10px;}
 
@@ -157,21 +157,21 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 /* -------------------------------------- */
 /*      STYLE FORM CONTACT         */
 /* ---------------------------------- */
-#contact											{background-color:#fff;display:none;left:50%;margin-left:-300px;position:absolute;top:90px;width:600px;z-index:9999;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:20px;}
+#contact										{background-color:#fff;display:none;left:50%;margin-left:-300px;position:absolute;top:90px;width:600px;z-index:9999;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:20px;}
 #contact img.img-form				{float:right;display:inline-block;margin-top:20px;}
-#contact	h2									{font:normal 4.5em 'O_O';}
-#close	a											{background:url('../images/contact/close.png') no-repeat right;cursor:pointer;font:bold 1.5em Arial;color:#202021;text-decoration:none;float:right;padding:5px 30px 5px 5px;}
-#close	a:hover								{background:url('../images/contact/close2.png') no-repeat right;color:#ea0f00;font-size:1.7em;text-decoration:underline;}
+#contact	h2								{font:normal 4.5em 'O_O';}
+#close	a										{background:url('../images/contact/close.png') no-repeat right;cursor:pointer;font:bold 1.5em Arial;color:#202021;text-decoration:none;float:right;padding:5px 30px 5px 5px;}
+#close	a:hover							{background:url('../images/contact/close2.png') no-repeat right;color:#ea0f00;font-size:1.7em;text-decoration:underline;}
 #contact_header							{background:url('../images/contact/symbole.png') no-repeat left;font-family:arial, sans-serif;padding:25px 5px 10px 60px;}
 .success,.inputError,.error				{display:none;}
-.success											{background-color:#9F6;border:1px solid #0F0;}
+.success										{background-color:#9F6;border:1px solid #0F0;}
 .inputError,.error							{color:red;}
 #mask											{background-color:#202021; display:none; height:100%; position:fixed; width:100%; z-index:9000; }
 input,textarea								{border:1px solid silver;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px;overflow:hidden}
 textarea:hover,input:hover			{background-color:#c8e789;border:1px dashed #690;}
 input[type=text],input[type="email"],textarea		{max-width:275px;max-height:220px;}
-input:hover[type=submit] 										{background-color:#c8e789;color:#690;font: bold 1em Arial;}
-input[type=submit] 													{width:80px;cursor:pointer;}
+input:hover[type=submit] 									{background-color:#c8e789;color:#690;font: bold 1em Arial;}
+input[type=submit] 											{width:80px;cursor:pointer;}
 
 
 /*aside.reseaux_sociaux{float:right;margin:10px 0;width:190px;background-image:url('../images/suivez-nous.png');background-position:right top;background-repeat:no-repeat;height:100px;}
@@ -184,21 +184,21 @@ aside.reseaux_sociaux img {margin:70px 0 0 20px;width:45px;-moz-transition: all 
 
 
 
-/* ------------------------- */
+/* ----------------------- */
 /*            FOOTER           */
-/* ---------------------- */
+/* -------------------- */
 footer								{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
 footer p,a						{color:#999;}
-footer a:hover				{text-decoration:underline;color:#690;}
+footer a:hover					{text-decoration:underline;color:#690;}
 #mentions						{width:1000px;margin:0 auto;}
 #mentions p					{text-align:left;font-size:0.85em;}
-#mentions span.ml		{padding-left:235px;}
-.w3c								{float:right;margin:-3px 0 0 10px}
+#mentions span.ml			{padding-left:235px;}
+.w3c									{float:right;margin:-3px 0 0 10px}
 
 	
-/* ------------------------- */
-/*       WEB MOBILE       */
-/* ---------------------- */
+/* ------------------------ */
+/*        WEB MOBILE         */
+/* --------------------- */
 @media (max-width: 640px) { 
  
  /* passer tous les éléments de largeur fixe en largeur automatique */ 
