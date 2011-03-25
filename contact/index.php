@@ -1,7 +1,7 @@
 <?php
 session_start();
 $token = md5(uniqid(rand(), true));
-$_SESSION['contact']['token'] = $token;
+$_SESSION['contactnojs']['token'] = $token;
 require('../fonctions/config.php');
 ?>
 
@@ -39,35 +39,35 @@ require('../fonctions/config.php');
 		<div id="content"><!-- Debut content -->
             <div id="contactnojs"><!--contact form-->
 				<?php
-				if(!empty($_SESSION['contact']['info']))
-					echo '<p class="success">'.htmlspecialchars($_SESSION['contact']['info']).'</p>';
+				if(!empty($_SESSION['contactnojs']['info']))
+					echo '<p class="success">'.htmlspecialchars($_SESSION['contactnojs']['info']).'</p>';
 				
-				if(!empty($_SESSION['contact']['erreur']['send']))
-				    echo '<p class="error">'.htmlspecialchars($_SESSION['contact']['erreur']['send']).'</p>';
+				if(!empty($_SESSION['contactnojs']['erreur']['send']))
+				    echo '<p class="error">'.htmlspecialchars($_SESSION['contactnojs']['erreur']['send']).'</p>';
 				?>
                 <h2 id="contact_header">Un commentaire ?</h2>
                 <img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
-				<form action="traitement.php" method="post" name="contactForm" id="contactForm">
-					<p><label for="nom" id="l_nom">Votre nom : </label>
+				<form action="traitement.php" method="post" name="contactFormNoJs" id="contactForm">
+					<p><label for="contactNoJsNom" id="l_contactNoJsNom">Votre nom : </label>
 					<?php
-					if(!empty($_SESSION['contact']['erreur']['nom']))
-						echo '<span class="inputError">'.$_SESSION['contact']['erreur']['nom'].'</span>';
+					if(!empty($_SESSION['contactnojs']['erreur']['nom']))
+						echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['nom'].'</span>';
 					?>	
-					<br /><input name="nom" id="nom" type="text" size="30" required /></p>
-					<p><label for="email" id="l_email">Votre email : </label>
+					<br /><input name="contactnojs[nom]" id="contactNoJsNom" type="text" size="30" required /></p>
+					<p><label for="contactNoJsEmail" id="l_contactNoJsEmail">Votre email : </label>
 					<?php
-					if(!empty($_SESSION['contact']['erreur']['email']))
-						echo '<span class="inputError">'.$_SESSION['contact']['erreur']['email'].'</span>';
+					if(!empty($_SESSION['contactnojs']['erreur']['email']))
+						echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['email'].'</span>';
 					?>
-					<br /><input name="email" id="email" type="email" size="30" required /></p>
-					<p><label for="message" id="l_message">Votre message : </label>
+					<br /><input name="contactnojs[email]" id="contactNoJsEmail" type="email" size="30" required /></p>
+					<p><label for="contactNoJs[message]" id="l_contactNoJsmessage">Votre message : </label>
 					<?php
-					if(!empty($_SESSION['contact']['erreur']['message']))
-						echo '<span class="inputError">'.$_SESSION['contact']['erreur']['message'].'</span>';
+					if(!empty($_SESSION['contactnojs']['erreur']['message']))
+						echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['message'].'</span>';
 					?>
-					<br /><textarea name="message" id="message" rows="5" cols="40" required></textarea></p>
-					<p><input type="hidden" name="token" id="token" value="<?php echo $token;?>" /></p>
-                    <p><input type="submit" id="valid" name="valid" value="Envoyer" /></p>
+					<br /><textarea name="contactnojs[message]" id="contactNoJsmessage" rows="5" cols="40" required></textarea></p>
+					<p><input type="hidden" name="contactnosjs[token]" id="contactNoJsToken" value="<?php echo $token;?>" /></p>
+                    <p><input type="submit" id="contactNoJsValid" name="contactnojs[valid]" value="Envoyer" /></p>
 				</form>
             </div><!--end contact form-->
         </div><!-- Fin content -->
@@ -94,6 +94,6 @@ require('../fonctions/config.php');
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 	</script>-->
-    <?php $_SESSION['contact']['erreur'] = $_SESSION['contact']['info'] = array();?>
+    <?php $_SESSION['contactnojs']['erreur'] = $_SESSION['contactnojs']['info'] = array();?>
     </body>
 </html>
