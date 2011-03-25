@@ -64,7 +64,7 @@ require('../fonctions/config.php');
 						if(!empty($_SESSION['contactnojs']['erreur']['message']))
 							echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['message'].'</span>';
 					?>
-					<br /><textarea name="contactnojs[message]"  rows="5" cols="40" required></textarea></p>
+					<br /><textarea name="contactnojs[message]"  id="contactNoJsMessage" rows="5" cols="40" required></textarea></p>
 					<p><input type="hidden" name="contactnosjs[token]"  value="<?php echo $token;?>" /></p>
                     <p><input type="submit" id="contactNoJsValid" name="contactnojs[valid]" value="Envoyer" /></p>
 				</form>

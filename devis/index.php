@@ -54,7 +54,6 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiez bien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
 			</p>
 
-            <div id="formDevis">
 				<form method="post" action="traitement.php" id="formSteps">
                 <fieldset>
                     <legend>Vos coordonnées</legend>
@@ -222,7 +221,6 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                     </p>
                 </fieldset> 
             </form>
-            </div>
         </div><!-- Fin content -->
 	</section>
 		
