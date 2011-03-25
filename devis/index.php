@@ -70,11 +70,11 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                         </p>
                         <p>
                             <label for="nom" id="l_nom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
-                            <input type="text" name="nom" id="nom" value="<?php echo $nom;?>"/>
+                            <input type="text" name="nom" id="devisNom" value="<?php echo $nom;?>"/>
                         </p>
                         <p>
                             <label for="prenom" id="l_prenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
-                            <input type="text" name="prenom" id="prenom" value="<?php echo $prenom;?>"/>
+                            <input type="text" name="prenom" id="devisPrenom" value="<?php echo $prenom;?>"/>
                         </p>
                         <p>
                             <span class="descInput">Vous souhaitez être contacté par<span class="asterisk">*</span>:</span>
@@ -84,7 +84,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                         </p>
                         <p>
                             <label for="email" id="l_email" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
-                            <input type="text" name="email" id="email" value="<?php echo $email;?>" />
+                            <input type="text" name="email" id="devisEmail" value="<?php echo $email;?>" />
                         </p>
                         <p>
                             <label for="tel" id="l_tel" class="descInput">Votre téléphone :</label>
