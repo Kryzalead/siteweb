@@ -10,14 +10,6 @@ require('../fonctions/config.php');
  
 <head> 
     <?php include('../includes/head.php');?>
-	
-	<style type="text/css">
-		#contactnojs								{width:650px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;}
-		#contactnojs img.img-form		{float:right;display:inline-block;margin-top:100px;}
-		#contactnojs	h2						{font:normal 4.5em 'O_O';}
-		#contactnojs .inputError			{display: inline}
-		#contactnojs .success,#contactnojs .error	{display: block}
-	</style>
 </head>
  
 <body>
@@ -36,7 +28,7 @@ require('../fonctions/config.php');
 		</div>
 		
 		<div id="content"><!-- Debut content -->
-            <div id="contactnojs"><!--contact form-->
+            <div id="contactNoJs"><!--contact form-->
 				<?php
 					if(!empty($_SESSION['contactnojs']['info']))
 						echo '<p class="success">'.htmlspecialchars($_SESSION['contactnojs']['info']).'</p>';
