@@ -35,7 +35,8 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 <head> 
     <?php include('../includes/head.php');?>
     <style type="text/css" media="all">
-    .descInput{display: block;width: 250px;float: left}
+	#slogan h3 {cursor:default;text-decoration:none;-webkit-transition:all .5s ease-in;-moz-transition:all .5s ease-in;-o-transition:all .5s ease-in;transition:all .5s ease-in;}
+		.descInput{display: block;width: 250px;float: left}
         .inputRadio input{margin-left: 30px;margin-top: 5px}
         .infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
         .infobulle label span{width: 200px;position: absolute;padding: 5px;display: none;top:20px;left:40px;background:#eee;border:1px solid #999;padding:3px;font-size:0.9em;z-index: 10}
@@ -80,8 +81,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 		</header>
 
 		<div id="slogan">
-			<h2><a>Votre projet est à l'état de cocon?<span class="retour"></span>
-			Nous sommes là pour l'aider à s'envoler.</a></h2>
+			<h3 style="margin:50px 0 30px -400px"><a>Faites gratuitement votre devis en ligne</h3>
 		</div>
 		
 		<div id="content"><!-- Debut content -->
