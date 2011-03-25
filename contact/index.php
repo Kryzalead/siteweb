@@ -15,10 +15,9 @@ require('../fonctions/config.php');
 		#contactnojs								{width:650px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;}
 		#contactnojs img.img-form		{float:right;display:inline-block;margin-top:100px;}
 		#contactnojs	h2						{font:normal 4.5em 'O_O';}
-		#contactnojs .inputError{display: inline}
-		#contactnojs .success,#contactnojs .error{display: block}
+		#contactnojs .inputError			{display: inline}
+		#contactnojs .success,#contactnojs .error	{display: block}
 	</style>
-		
 </head>
  
 <body>
@@ -39,31 +38,31 @@ require('../fonctions/config.php');
 		<div id="content"><!-- Debut content -->
             <div id="contactnojs"><!--contact form-->
 				<?php
-				if(!empty($_SESSION['contactnojs']['info']))
-					echo '<p class="success">'.htmlspecialchars($_SESSION['contactnojs']['info']).'</p>';
-				
-				if(!empty($_SESSION['contactnojs']['erreur']['send']))
-				    echo '<p class="error">'.htmlspecialchars($_SESSION['contactnojs']['erreur']['send']).'</p>';
+					if(!empty($_SESSION['contactnojs']['info']))
+						echo '<p class="success">'.htmlspecialchars($_SESSION['contactnojs']['info']).'</p>';
+					
+					if(!empty($_SESSION['contactnojs']['erreur']['send']))
+						echo '<p class="error">'.htmlspecialchars($_SESSION['contactnojs']['erreur']['send']).'</p>';
 				?>
                 <h2 id="contact_header">Un commentaire ?</h2>
                 <img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
 				<form action="traitement.php" method="post" name="contactFormNoJs" id="contactForm">
 					<p><label for="contactNoJsNom" id="l_contactNoJsNom">Votre nom : </label>
 					<?php
-					if(!empty($_SESSION['contactnojs']['erreur']['nom']))
-						echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['nom'].'</span>';
+						if(!empty($_SESSION['contactnojs']['erreur']['nom']))
+							echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['nom'].'</span>';
 					?>	
 					<br /><input name="contactnojs[nom]" id="contactNoJsNom" type="text" size="30" required /></p>
 					<p><label for="contactNoJsEmail" id="l_contactNoJsEmail">Votre email : </label>
 					<?php
-					if(!empty($_SESSION['contactnojs']['erreur']['email']))
-						echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['email'].'</span>';
+						if(!empty($_SESSION['contactnojs']['erreur']['email']))
+							echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['email'].'</span>';
 					?>
 					<br /><input name="contactnojs[email]" id="contactNoJsEmail" type="email" size="30" required /></p>
 					<p><label for="contactNoJs[message]" id="l_contactNoJsmessage">Votre message : </label>
 					<?php
-					if(!empty($_SESSION['contactnojs']['erreur']['message']))
-						echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['message'].'</span>';
+						if(!empty($_SESSION['contactnojs']['erreur']['message']))
+							echo '<span class="inputError">'.$_SESSION['contactnojs']['erreur']['message'].'</span>';
 					?>
 					<br /><textarea name="contactnojs[message]" id="contactNoJsmessage" rows="5" cols="40" required></textarea></p>
 					<p><input type="hidden" name="contactnosjs[token]" id="contactNoJsToken" value="<?php echo $token;?>" /></p>

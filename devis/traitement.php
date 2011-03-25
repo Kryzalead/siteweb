@@ -77,6 +77,10 @@ if(!empty($_POST['valid'])){
             case '3':
                 $nbrePage = 'Plus de 10 pages';
                 break;
+            case '4':
+                break;               
+				$nbrePage = 'Je ne sais pas';
+                break;
             default:
                 break;
         }

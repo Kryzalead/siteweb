@@ -35,43 +35,46 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 <head> 
     <?php include('../includes/head.php');?>
     <style type="text/css" media="all">
-		section#form_devis {clear:both;}
+		section#form_devis {clear:both;margin-bottom:20px;}
 		section#form_devis h2 a {font:normal 2em 'oO';padding:40px 0px 15px;display:block;}
-		section#form_devis p {color:#777;text-align:justify;width:700px;}
-			 
-		.descInput{display: block;width: 250px;float: left}
-        .inputRadio input{margin-left: 30px;margin-top:5px;}
+		section#form_devis p {color:#777;text-align:justify;width:640px;}
+		legend {font-size:0.8em; vertical-align:super; color:#c9276d;}
+		
+		.asterisk {font-size:0.7em; vertical-align:super; color:#555; font-weight:bold}
+		.little{font-size:0.75em;}
+		
+		.descInput{display: block;width: 250px;float: left;}
+        .inputRadio input{margin:5px 0 0 30px}
         .infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
-        .infobulle label span{width: 200px;position: absolute;padding: 5px;display: none;top:20px;left:40px;background:#eee;border:1px solid #999;padding:3px;font-size:0.9em;z-index: 10}
+        .infobulle label span{width: 200px;position: absolute;display: none;padding: 5px;top:20px;left:70px;background:#d2e8a5;border:1px solid #999;font-size:0.9em;z-index: 10;text-align:center}
         input[type="text"],select,textarea{width: 250px}
 		input[type="radio"]{margin:0 5px;}
         input[type="checkbox"]{margin-right: 5px}
         input[type="submit"]{margin: 25px 0 0 370px}
 		
         input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;-moz-border-radius: 5px;}
-        select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;}
-        input:hover,textarea:hover{background-color: #eee}
+        select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;padding: 2px;color:#690;font:bold 1em 'oO';width:165px;text-align:center;}
         
-        #floatLeft{float: left;margin-left: 30px;}
-        #floatLeft input{margin-top: 5px;margin-left: 30px}
-        #descType{width: 400px;height: 70px;border: 1px dashed #690;margin: 0 0 30px 280px;padding: 5px}
-        #descType p{margin: 0}
-        
+        #floatLeft {float: left;margin-bottom:15px;}
+        #floatLeft input{margin:10px 0 0px 30px;}
+        #descType {width:400px; border:1px dashed #690;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; margin-left: 300px;}
+		#descType p{ text-align:center; padding:30px;}
+		
         .clear{clear: both}
         
 			/* Style de la liste des étapes*/
         #steps {list-style:none; width:450px; margin:40px 40px 20px;overflow:hidden; padding:0px;border-top:1px solid silver;border-bottom:1px solid silver}
         #steps li {font-size:24px; float:left; padding:10px 30px; color:#b0b1b3;}
         #steps li span {font-size:11px; display:block;}
-        #steps li.current { color:#690;}
+        #steps li.current { color:#690;font-weight:bold;}
         
 			/* Style des boutons précédent et suivant*/
-        .prev, .next {padding:5px 10px; color:#690; text-decoration:underline;font:bold 1.5em 'oO'}
-        .prev:hover, .next:hover {text-decoration:underline;color:#670;letter-spacing:1px;}
+		.prev, .next {font:bold 1.3em 'oO';border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;-moz-border-radius:10px;-webkit-border-radius:10px; border-radius:10px;background-color:#D2E8A5; padding:5px 20px; color:#690; text-decoration:none;}
+        .prev:hover, .next:hover {font-weight:bold;background-color:#d2e8a5; text-decoration:none; color:#777;}
         .prev {float:left;}
         .next {float:right;}
 		
-		/* Style FORM */
+			/* Style FORM */
 		#formDevis {color:#777}
 		#formDevis legend {font-size:1.3em;padding:20px 0;text-decoration:underline;color:#690}
     </style>
@@ -100,32 +103,32 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                 <fieldset>
                     <legend>Vos coordonnées</legend>
                         <p>
-                            <span class="descInput">Votre civilité* :</span>
+                            <span class="descInput">Votre civilité<span class="asterisk">*</span>:</span>
                             <label for="mlle" id="l_mlle">Mlle</label><input type="radio" name="civilite" value="Mlle" id="mlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
                             <label for="mme" id="l_mme">Mme</label><input type="radio" name="civilite" value="Mme" id="mme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
                             <label for="mr" id="l_mr">Mr</label><input type="radio" name="civilite" value="Mr" id="mr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
                         </p>
                         <p>
-                            <span class="descInput">Votre statut* :</span> 
+                            <span class="descInput">Votre statut<span class="asterisk">*</span>:</span> 
                             <label for="particulier" id="l_particulier">Particulier</label><input type="radio" name="statut" value="Particulier" id="particulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
                             <label for="professionnel" id="l_professionnel">Professionnel</label><input type="radio" name="statut" value="Professionnel" id="professionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
                         </p>
                         <p>
-                            <label for="nom" id="l_nom" class="descInput">Votre nom* :</label>
+                            <label for="nom" id="l_nom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
                             <input type="text" name="nom" id="nom" value="<?php echo $nom;?>"/>
                         </p>
                         <p>
-                            <label for="prenom" id="l_prenom" class="descInput">Votre prénom* :</label>
+                            <label for="prenom" id="l_prenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
                             <input type="text" name="prenom" id="prenom" value="<?php echo $prenom;?>"/>
                         </p>
                         <p>
-                            <span class="descInput">Vous souhaitez être contacté par* :</span>
+                            <span class="descInput">Vous souhaitez être contacté par<span class="asterisk">*</span>:</span>
                             <label for="contactMail" id="l_contactMail">E-mail</label><input type="radio" name="contact" value="email" id="contactMail" class="contact" <?php if($contact == 'email') echo 'checked="checked"';?>/>
                             <label for="contactTel" id="l_contactTel">Téléphone</label><input type="radio" name="contact" value="tel" id="contactTel" class="contact" <?php if($contact == 'tel') echo 'checked="checked"';?>/>
                             <label for="contactBoth" id="l_contactBoth">Les deux</label><input type="radio" name="contact" value="both" id="contactBoth" class="contact"<?php if($contact == 'both') echo 'checked="checked"';?>/>
                         </p>
                         <p>
-                            <label for="email" id="l_email" class="descInput">Votre e-mail* :</label>
+                            <label for="email" id="l_email" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
                             <input type="text" name="email" id="email" value="<?php echo $email;?>" />
                         </p>
                         <p>
@@ -136,23 +139,27 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                             <label for="desc" id="l_desc" class="descInput">Description de votre activité :</label>
                             <textarea id="desc" name="desc" cols="25" rows="5"><?php echo $desc;?></textarea>
                         </p>
+						<p>
+							<span class="asterisk">*</span>: <span class="little">Les champs doivent être remplis</span>
+						</p>
                 </fieldset>
                 <fieldset>
                     <legend>Votre site</legend>
                         <p class="inputRadio">
                             <div id="floatLeft">
-                                <span class="descInput">Type de votre site* :</span><br />
+                                <span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
+								
+								<input class="typeSite" type="radio" name="type" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
+                                <span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
+                                <label for="typeVitrine" id="l_typeVitrine">Site Vitrine : </label><br />
+								
                                 <input class="typeSite" type="radio" name="type" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
                                 <span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
                                 <label for="typePro" id="l_typePro">Site Professionnel : </label><br />
                                 
-                                <input class="typeSite" type="radio" name="type" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
-                                <span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
-                                <label for="typeVitrine" id="l_typeVitrine">Site Vitrine : </label><br />
-                                
                                 <input class="typeSite" type="radio" name="type" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
                                 <span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
-                                <label for="typeCommerce" id="l_typeCommerce">Site e-commerce : </label><br />
+                                <label for="typeCommerce" id="l_typeCommerce">Site E-commerce : </label><br />
                             </div>
                             <div id="descType">
                                 <p>
@@ -162,52 +169,52 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                         </p>
                         <div class="clear"></div>
                         <p>
-                            <label for="nbrePage" id="l_nbrePage" class="descInput">Nombre de page* :</label>
+                            <label for="nbrePage" id="l_nbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
                             <select name="nbrePage" id="nbrePage">
                                 <option value="0">- - Choisir - -</option>
                                 <option value="1" <?php if($nbrePage == '1') echo 'selected="selected"';?>>Inférieur à 5 pages</option>
                                 <option value="2" <?php if($nbrePage == '2') echo 'selected="selected"';?>>Entre 5 à 10 pages</option>
                                 <option value="3" <?php if($nbrePage == '3') echo 'selected="selected"';?>>Plus de 10 pages</option>
+                                <option value="4" <?php if($nbrePage == '4') echo 'selected="selected"';?>>Je ne sais pas</option>
                             </select>
                         </p>
                         <p>
                             Options principales souhaitées :<br />
                             <div class="infobulle">
-                                <input type="checkbox" name="optAdmin" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin" id="optAdmin">Site administrable<span>Modifier vous mêmes vos pages</span></label>   
+                                <input type="checkbox" name="optAdmin" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin" id="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
                             </div>
                             <div class="infobulle">    
-                                <input type="checkbox" name="optReserve" id="optReserve" <?php if($optReserve == 'on') echo 'checked="checked"';?>/><label for="optReserve" id="optReserve">Espace réservé<span>Protéger certaines pages par identification</span></label>
+                                <input type="checkbox" name="optReserve" id="optReserve" <?php if($optReserve == 'on') echo 'checked="checked"';?>/><label for="optReserve" id="optReserve">Espace réservé<span>Protéger certaines pages via une identification (login et mot de passe)</span></label>
                             </div>
                             <div class="infobulle">  
-                                <input type="checkbox" name="optContact" id="optContact" <?php if($optContact == 'on') echo 'checked="checked"';?>/><label for="optContact" id="optContact">Formulaire de contact<span>Pour que vos visiteurs puissent vous contacter</span></label>
+                                <input type="checkbox" name="optContact" id="optContact" <?php if($optContact == 'on') echo 'checked="checked"';?>/><label for="optContact" id="optContact">Formulaire de contact<span>Permettez à vos visiteurs de vous contacter</span></label>
                             </div>    
                             <div class="infobulle">      
-                                <input type="checkbox" name="optNewsletter" id="optNewsletter" <?php if($optNewsletter == 'on') echo 'checked="checked"';?>/><label for="optNewsletter" id="optNewsletter">Newsletter<span>Pour prévenir vos visiteurs des nouveautés de votre site</span></label>
+                                <input type="checkbox" name="optNewsletter" id="optNewsletter" <?php if($optNewsletter == 'on') echo 'checked="checked"';?>/><label for="optNewsletter" id="optNewsletter">Newsletter<span>Prévenez vos visiteurs des dernières nouveautés de votre site</span></label>
                             </div>
                             <div class="infobulle">      
-                                <input type="checkbox" name="optGalerie" id="optGalerie" <?php if($optGalerie == 'on') echo 'checked="checked"';?>/><label for="optGalerie" id="optgalerie">Galerie photo/produits<span>Pour présenter vos produits en ligne</span></label>
+                                <input type="checkbox" name="optGalerie" id="optGalerie" <?php if($optGalerie == 'on') echo 'checked="checked"';?>/><label for="optGalerie" id="optgalerie">Galerie photo/produits<span>Présentez vos produits en ligne</span></label>
                             </div>    
                             <div class="infobulle">      
-                                <input type="checkbox" name="optBoutique" id="optBoutique" <?php if($optBoutique == 'on') echo 'checked="checked"';?>/><label for="optBoutique" id="optBoutique">Boutique en ligne<span>Pour vendre vos produits en ligne</span></label>
+                                <input type="checkbox" name="optBoutique" id="optBoutique" <?php if($optBoutique == 'on') echo 'checked="checked"';?>/><label for="optBoutique" id="optBoutique">Boutique en ligne<span>Vendez vos produits en ligne</span></label>
                             </div>    
                             <div class="infobulle">      
-                                <input type="checkbox" name="optForum" id="optForum" <?php if($optForum == 'on') echo 'checked="checked"';?>/><label for="optForum" id="optForum">Forum de discussions<span>Pour discuter avec vos visiteurs</span></label>
+                                <input type="checkbox" name="optForum" id="optForum" <?php if($optForum == 'on') echo 'checked="checked"';?>/><label for="optForum" id="optForum">Forum de discussions<span>Discutez avec vos visiteurs</span></label>
                             </div>    
                             <div class="infobulle">      
-                                <input type="checkbox" name="optStats" id="optStats" <?php if($optStats == 'on') echo 'checked="checked"';?>/><label for="optStats" id="optStats">Statistiques<span>Pour connaitre les statistiques de votre site</span></label>
+                                <input type="checkbox" name="optStats" id="optStats" <?php if($optStats == 'on') echo 'checked="checked"';?>/><label for="optStats" id="optStats">Statistiques<span>Connaître les statistiques de votre site (nombre de visites)</span></label>
                             </div>
                             <div class="clear"></div>    
                         </p>
-                        <p>
-                            <label for="maintenance" id="l_maintenance" class="descInput">Désirez vous nous confiez <br />la maintenance de votre site* :</label>
+                        <p style="margin-top:20px;">
+                            <label for="maintenance" id="l_maintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
                             <select name="maintenance" id="maintenance">
                                 <option value="">- - Choisir - -</option>
                                 <option value="oui" <?php if($maintenance == 'oui') echo 'selected="selected"';?>>Oui</option>
                                 <option value="non" <?php if($maintenance == 'non') echo 'selected="selected"';?>>Non</option>
                             </select>
                         </p>
-                        <br />
-                        <p>
+                        <p style="margin-top:20px;">
                             <label for="start" id="l_start" class="descInput">Démarrage de votre site :</label>
                             <select name="start" id="start">
                                 <option value="0">- - Choisir --</option>
@@ -224,18 +231,18 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                 <fieldset>
                     <legend>Son contenu</legend>
                     <p>
-                        -----------A refaire------------
+                       	Informations complémentaires pour votre futur site internet.
                     </p>
                     <p class="inputRadio">
                         Design :<br />
-                        <input type="radio" name="design" value="non" id="noDesign" <?php if($design == 'non') echo 'checked="checked"';?> /><label for="noDesign" id="l_noDesign">Je n'ai pas de design</label><br />
-                        <input type="radio" name="design" value="oui" id="design" <?php if($design == 'oui') echo 'checked="checked"';?>><label for="design" id="l_design">Je vous fournirais le design </label>(Un fichier Photoshop PSD ou fireworks PNG vous sera demandé)<br />
+							<input type="radio" name="design" value="non" id="noDesign" <?php if($design == 'non') echo 'checked="checked"';?> /><label for="noDesign" id="l_noDesign">Je vous confie la création du design</label><br />
+							<input type="radio" name="design" value="oui" id="design" <?php if($design == 'oui') echo 'checked="checked"';?>><label for="design" id="l_design">Je vous fournirai le design </label><span class="legend">*</span><br />
                     </p>
                     <p class="inputRadio">
                         Logo :<br />
-                        <input type="radio" name="logo" value="non" id="noLogo" <?php if($logo == 'non') echo 'checked="checked"';?> /><label for="noLogo" id="l_noLogo">Je n'ai pas besoin de logo</label><br />
-                        <input type="radio" name="logo" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo" id="l_logo" >Je vous fournirais le logo </label><br />
-                        <input type="radio" name="logo" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo" id="l_needLogo">J'ai besoin d'un logo</label><br />
+						<input type="radio" name="logo" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo" id="l_needLogo">Je vous confie la création du logo</label><br />
+                        <input type="radio" name="logo" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo" id="l_logo" >Je vous fournirai le logo </label><span class="legend">*</span><br />
+						<input type="radio" name="logo" value="non" id="noLogo" <?php if($logo == 'non') echo 'checked="checked"';?> /><label for="noLogo" id="l_noLogo">Je n'ai pas besoin de logo</label><br />
                     </p>
                   <!--  <p class="inputRadio">
                         Animation flash :<br />
@@ -243,16 +250,19 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
                         <input type="radio" name="flash" value="oui" id="flash" <?php if($flash == 'oui') echo 'checked="checked"';?> /><label for="flash" id="l_flash">J'ai besoin de quelques éléments en flash</label><br />
                     </p>-->
                     <p class="inputRadio">
-                        Contenu :<br />
-                        <input type="radio" name="contenu" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" id="l_noContenu">J'ai besoin d'aide pour la création de contenu</label><br />
-                        <input type="radio" name="contenu" value="oui" id="contenu" <?php if($contenu == 'oui') echo 'checked="checked"';?> /><label for="contenu" id="l_contenu">Je fournis le contenu de mon site</label><br />
+                        Contenu (textes) :<br />
+                        <input type="radio" name="contenu" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" id="l_noContenu">Je vous confie la création du contenu</label><br />                       
+					   <input type="radio" name="contenu" value="oui" id="contenu" <?php if($contenu == 'oui') echo 'checked="checked"';?> /><label for="contenu" id="l_contenu">Je fournai le contenu du site </label><span class="legend">*</span><br />
                     </p>
                     <p class="inputRadio">
                         Images :<br />
-                        <input type="radio" name="img" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage" id="l_noImage">Je n'ai pas besoin d'images</label><br />
-                        <input type="radio" name="img" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image" id="l_image">Je vous fournirais les images</label><br />
-                        <input type="radio" name="img" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage" id="l_needImage">Je vous confie la tâche de trouver des images pour mon site</label><br />
-                        <input type="submit" name="valid" id="valid" value="Envoyer" />
+						<input type="radio" name="img" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage" id="l_needImage">Je vous confie la création des images</label><br />
+                        <input type="radio" name="img" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image" id="l_image">Je vous fournirai les images</label><span class="legend">*</span><br />
+						<input type="radio" name="img" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage" id="l_noImage">Je n'ai pas besoin d'images</label><br />
+					  <p style="padding-top:20px;">
+							<span class="legend">*</span> : <span class="little">Le(s) fichier(s) Photoshop .PSD, Fireworks .PNG, Illustrator .AI, texte(s) .TXT .RTF .DOC sera(ont) demandé(s) lors de notre entretien.</span>
+						</p>
+						<input type="submit" name="valid" id="valid" value="Envoyer" />
                     </p>
                 </fieldset> 
             </form>
