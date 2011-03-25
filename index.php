@@ -16,7 +16,9 @@ require('fonctions/config.php');
 	<?php include('includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
-	<div id="wrapper"> <!-- DEBUT WRAPPER -->		
+	<div id="wrapper"> <!-- DEBUT WRAPPER -->
+		<div id="mask"></div>
+		
 		<header role="banner">
 			<?php include('includes/header.php');?>
 		</header>
