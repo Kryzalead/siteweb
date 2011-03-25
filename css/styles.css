@@ -167,9 +167,9 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 .success											{background-color:#9F6;border:1px solid #0F0;}
 .inputError,.error							{color:red;}
 #mask											{background-color:#202021; display:none; height:100%; position:fixed; width:100%; z-index:9000;}
-#nom,#email,#message 				{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
+#nom,#email,#message 				{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
 #nom:hover,#email:hover,#message:hover	{background-color:#c8e789;}
-#message										{width:290px;max-width:330px;height:100px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:5px;overflow:hidden}
+#message										{width:290px;max-width:330px;height:100px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:5px;overflow:hidden}
 #valid												{width:80px;cursor:pointer;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#d2e8a5}
 #valid:hover									{background-color:#c8e789;color:#690;font: bold 1em Arial;}
 
@@ -179,9 +179,9 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 #contactNoJs	h2						{font:normal 4.5em 'O_O';}
 #contactNoJs .inputError			{display: inline}
 #contactNoJs .success,#contactNoJs .error	{display: block}
-#contactNoJsNom,#contactNoJsEmail 			{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
+#contactNoJsNom,#contactNoJsEmail 			{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
 #contactNoJsMessage:hover,#contactNoJsNom:hover,#contactNoJsEmail:hover		{background-color:#c8e789;}
-#contactNoJsMessage										{width:300px;max-width:325px;height:140px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:5px;overflow:hidden}
+#contactNoJsMessage										{width:300px;max-width:325px;height:140px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:5px;overflow:hidden}
 #contactNoJsValid											{width:80px;cursor:pointer;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#d2e8a5}
 #contactNoJsValid:hover									{background-color:#c8e789;color:#690;font: bold 1em Arial;}
 
@@ -209,20 +209,20 @@ section#form_devis legend {font-size:1.3em;padding:20px 0;text-decoration:underl
 
 .descInput{display: block;width: 250px;float: left;}
 .inputRadio input{margin:5px 0 0 30px}
-.infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
+.infobulle{margin-left: 60px;float: left;width:200px;margin-top: 10px;position: relative}
 .infobulle label span{width: 200px;position: absolute;display: none;padding: 5px;top:20px;left:70px;background:#d2e8a5;border:1px solid #999;font-size:0.9em;z-index: 10;text-align:center}
-input[type="text"],select,textarea{width: 250px}
+input[type="text"],select,textarea{width:250px}
 input[type="radio"]{margin:0 5px;}
 input[type="checkbox"]{margin-right: 5px}
 input[type="submit"]{margin: 25px 0 0 370px}
 
-input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;-moz-border-radius: 5px;}
+input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-style:solid;border-width:1px;padding:2px;max-height:150px;max-width:250px;-moz-border-radius: 5px;-webkit-border-radius:5px;border-radius:5px;}
 select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;padding: 2px;color:#690;font:bold 1em 'oO';width:165px;text-align:center;}
 
 #floatLeft {float: left;margin-bottom:15px;}
 #floatLeft input{margin:10px 0 0px 30px;}
-#descType {width:400px; border:1px dashed #690;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; margin-left: 250px;}
-#descType p{ text-align:center; padding:30px;}
+#descType {width:400px; height:100px;border:1px dashed #690;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; margin-left: 250px;}
+#descType p{max-width:400px;text-align:center;border:1px solid red; }
 
 	/* Style de la liste des étapes*/
 #steps {list-style:none; width:450px; margin:40px 40px 20px;overflow:hidden; padding:0px;border-top:1px solid silver;border-bottom:1px solid silver}
@@ -231,7 +231,7 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 #steps li.current { color:#690;font-weight:bold;}
 
 	/* Style des boutons précédent et suivant*/
-.prev, .next {font:bold 1.3em 'oO';border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;-moz-border-radius:10px;-webkit-border-radius:10px; border-radius:10px;background-color:#D2E8A5; padding:5px 20px; color:#690; text-decoration:none;}
+.prev, .next {font:bold 1.3em 'oO';border-color:#7C7C7C #CECECE #CECECE #7C7C7C;-moz-border-radius:10px;-webkit-border-radius:10px; border-radius:10px;background-color:#D2E8A5; padding:5px 20px; color:#690; text-decoration:none;}
 .prev:hover, .next:hover {font-weight:bold;background-color:#d2e8a5; text-decoration:none; color:#777;}
 .prev {float:left;}
 .next {float:right;}
