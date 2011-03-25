@@ -34,50 +34,6 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
  
 <head> 
     <?php include('../includes/head.php');?>
-    <style type="text/css" media="all">
-		section#form_devis {clear:both;margin-bottom:20px;}
-		section#form_devis h2 a {font:normal 2em 'oO';padding:40px 0px 15px;display:block;}
-		section#form_devis p {color:#777;text-align:justify;width:640px;}
-		legend {font-size:0.8em; vertical-align:super; color:#c9276d;}
-		
-		.asterisk {font-size:0.7em; vertical-align:super; color:#555; font-weight:bold}
-		.little{font-size:0.75em;}
-		
-		.descInput{display: block;width: 250px;float: left;}
-        .inputRadio input{margin:5px 0 0 30px}
-        .infobulle{margin-left: 60px;float: left;width: 200px;margin-top: 10px;position: relative}
-        .infobulle label span{width: 200px;position: absolute;display: none;padding: 5px;top:20px;left:70px;background:#d2e8a5;border:1px solid #999;font-size:0.9em;z-index: 10;text-align:center}
-        input[type="text"],select,textarea{width: 250px}
-		input[type="radio"]{margin:0 5px;}
-        input[type="checkbox"]{margin-right: 5px}
-        input[type="submit"]{margin: 25px 0 0 370px}
-		
-        input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;border-style:solid;border-width:1px;padding: 2px;-moz-border-radius: 5px;}
-        select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;padding: 2px;color:#690;font:bold 1em 'oO';width:165px;text-align:center;}
-        
-        #floatLeft {float: left;margin-bottom:15px;}
-        #floatLeft input{margin:10px 0 0px 30px;}
-        #descType {width:400px; border:1px dashed #690;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; margin-left: 300px;}
-		#descType p{ text-align:center; padding:30px;}
-		
-        .clear{clear: both}
-        
-			/* Style de la liste des étapes*/
-        #steps {list-style:none; width:450px; margin:40px 40px 20px;overflow:hidden; padding:0px;border-top:1px solid silver;border-bottom:1px solid silver}
-        #steps li {font-size:24px; float:left; padding:10px 30px; color:#b0b1b3;}
-        #steps li span {font-size:11px; display:block;}
-        #steps li.current { color:#690;font-weight:bold;}
-        
-			/* Style des boutons précédent et suivant*/
-		.prev, .next {font:bold 1.3em 'oO';border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;-moz-border-radius:10px;-webkit-border-radius:10px; border-radius:10px;background-color:#D2E8A5; padding:5px 20px; color:#690; text-decoration:none;}
-        .prev:hover, .next:hover {font-weight:bold;background-color:#d2e8a5; text-decoration:none; color:#777;}
-        .prev {float:left;}
-        .next {float:right;}
-		
-			/* Style FORM */
-		#formDevis {color:#777}
-		#formDevis legend {font-size:1.3em;padding:20px 0;text-decoration:underline;color:#690}
-    </style>
 </head>
  
 <body>
