@@ -166,13 +166,12 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 .success,.inputError,.error				{display:none;}
 .success											{background-color:#9F6;border:1px solid #0F0;}
 .inputError,.error							{color:red;}
-#mask											{background-color:#202021; display:none; height:100%; position:fixed; width:100%; z-index:9000; }
-input,textarea								{border:1px solid silver;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px;overflow:hidden}
-textarea:hover,input:hover			{background-color:#c8e789;border:1px dashed #690;}
-input[type=text],input[type="email"] {width:170px;height:7px;}
-textarea														{max-width:275px;max-height:220px;}
-input:hover[type=submit] 						{background-color:#c8e789;color:#690;font: bold 1em Arial;}
-input[type=submit] 									{width:80px;cursor:pointer;}
+#mask											{background-color:#202021; display:none; height:100%; position:fixed; width:100%; z-index:9000;}
+#contactNoJsMessage:hover,#contactNoJsNom:hover,#contactNoJsEmail:hover			{background-color:#c8e789;border:1px dashed #690;}
+#contactNoJsNom,#contactNoJsEmail 			{width:170px;height:20px;border:1px solid silver;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px;overflow:hidden}
+#contactNoJsMessage										{max-width:275px;max-height:220pxborder:1px solid silver;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px;overflow:hidden}
+#contactNoJsValid											{width:80px;cursor:pointer;}
+#contactNoJsValid:hover									{background-color:#c8e789;color:#690;font: bold 1em Arial;}
 
 
 
@@ -191,7 +190,7 @@ aside.reseaux_sociaux img {margin:70px 0 0 20px;width:45px;-moz-transition: all 
 section#form_devis {clear:both;margin-bottom:20px;}
 section#form_devis h2 a {font:normal 2em 'oO';padding:40px 0px 15px;display:block;}
 section#form_devis p {color:#777;text-align:justify;width:640px;}
-legend {font-size:0.8em; vertical-align:super; color:#c9276d;}
+section#form_devis legend {font-size:1.3em;padding:20px 0;text-decoration:underline;color:#690}
 
 .asterisk {font-size:0.7em; vertical-align:super; color:#555; font-weight:bold}
 .little{font-size:0.75em;}
@@ -226,10 +225,6 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 .prev:hover, .next:hover {font-weight:bold;background-color:#d2e8a5; text-decoration:none; color:#777;}
 .prev {float:left;}
 .next {float:right;}
-
-	/* Style FORM */
-#formDevis {color:#777}
-#formDevis legend {font-size:1.3em;padding:20px 0;text-decoration:underline;color:#690}
 
 
 /* ---------------------- */
