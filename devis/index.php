@@ -105,7 +105,7 @@
                                 <span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
 								
 								<input class="typeSite" type="radio" name="type" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
-                                <span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
+                                <span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer votre image ou de la developper</span>
                                 <label for="typeVitrine" id="l_typeVitrine">Site Vitrine : </label><br />
 								
                                 <input class="typeSite" type="radio" name="type" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
@@ -113,7 +113,7 @@
                                 <label for="typePro" id="l_typePro">Site Professionnel : </label><br />
                                 
                                 <input class="typeSite" type="radio" name="type" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
-                                <span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
+                                <span id="desctypeCommerce">Pour un site catalogue d'achat, commandes, livraisons, paiements via votre site</span>
                                 <label for="typeCommerce" id="l_typeCommerce">Site E-commerce : </label><br />
                             </div>
                             <div id="descType">
