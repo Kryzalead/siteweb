@@ -53,49 +53,45 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 			<p>
 				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiez bien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
 			</p>
-<<<<<<< HEAD
-=======
-
->>>>>>> 30b9b8343212f4d628c58e6bacd0f98967a67283
-				<form method="post" action="traitement.php" id="formSteps">
+				<form method="post" action="test.php" id="formSteps">
                 <fieldset>
                     <legend>Vos coordonnées</legend>
                         <p>
                             <span class="descInput">Votre civilité<span class="asterisk">*</span>:</span>
-                            <label for="mlle" id="l_mlle">Mlle</label><input type="radio" name="civilite" value="Mlle" id="mlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
-                            <label for="mme" id="l_mme">Mme</label><input type="radio" name="civilite" value="Mme" id="mme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
-                            <label for="mr" id="l_mr">Mr</label><input type="radio" name="civilite" value="Mr" id="mr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
+                            <label for="mlle" id="l_mlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="mlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
+                            <label for="mme" id="l_mme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="mme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
+                            <label for="mr" id="l_mr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="mr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
                         </p>
                         <p>
                             <span class="descInput">Votre statut<span class="asterisk">*</span>:</span> 
-                            <label for="particulier" id="l_particulier">Particulier</label><input type="radio" name="statut" value="Particulier" id="particulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
-                            <label for="professionnel" id="l_professionnel">Professionnel</label><input type="radio" name="statut" value="Professionnel" id="professionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
+                            <label for="particulier" id="l_particulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="particulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
+                            <label for="professionnel" id="l_professionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="professionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
                         </p>
                         <p>
                             <label for="nom" id="l_nom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
-                            <input type="text" name="nom" id="nom" value="<?php echo $nom;?>"/>
+                            <input type="text" name="devis[nom]" id="nom" value="<?php echo $nom;?>"/>
                         </p>
                         <p>
                             <label for="prenom" id="l_prenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
-                            <input type="text" name="prenom" id="prenom" value="<?php echo $prenom;?>"/>
+                            <input type="text" name="devis[prenom]" id="prenom" value="<?php echo $prenom;?>"/>
                         </p>
                         <p>
                             <span class="descInput">Vous souhaitez être contacté par<span class="asterisk">*</span>:</span>
-                            <label for="contactMail" id="l_contactMail">E-mail</label><input type="radio" name="contact" value="email" id="contactMail" class="contact" <?php if($contact == 'email') echo 'checked="checked"';?>/>
-                            <label for="contactTel" id="l_contactTel">Téléphone</label><input type="radio" name="contact" value="tel" id="contactTel" class="contact" <?php if($contact == 'tel') echo 'checked="checked"';?>/>
-                            <label for="contactBoth" id="l_contactBoth">Les deux</label><input type="radio" name="contact" value="both" id="contactBoth" class="contact"<?php if($contact == 'both') echo 'checked="checked"';?>/>
+                            <label for="contactMail" id="l_contactMail">E-mail</label><input type="radio" name="devis[contact]" value="email" id="contactMail" class="contact" <?php if($contact == 'email') echo 'checked="checked"';?>/>
+                            <label for="contactTel" id="l_contactTel">Téléphone</label><input type="radio" name="devis[contact]" value="tel" id="contactTel" class="contact" <?php if($contact == 'tel') echo 'checked="checked"';?>/>
+                            <label for="contactBoth" id="l_contactBoth">Les deux</label><input type="radio" name="devis[contact]" value="both" id="contactBoth" class="contact"<?php if($contact == 'both') echo 'checked="checked"';?>/>
                         </p>
                         <p>
                             <label for="email" id="l_email" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
-                            <input type="text" name="email" id="email" value="<?php echo $email;?>" />
+                            <input type="text" name="devis[email]" id="email" value="<?php echo $email;?>" />
                         </p>
                         <p>
                             <label for="tel" id="l_tel" class="descInput">Votre téléphone :</label>
-                            <input type="text" name="tel" id="tel" value="<?php echo $tel;?>" disabled="disabled" />
+                            <input type="text" name="devis[tel]" id="tel" value="<?php echo $tel;?>" disabled="disabled" />
                         </p>
                         <p>
                             <label for="desc" id="l_desc" class="descInput">Description de votre activité :</label>
-                            <textarea id="desc" name="desc" cols="25" rows="5"><?php echo $desc;?></textarea>
+                            <textarea id="desc" name="devis[desc]" cols="25" rows="5"><?php echo $desc;?></textarea>
                         </p>
 						<p>
 							<span class="asterisk">*</span>: <span class="little">Les champs doivent être remplis</span>
@@ -220,7 +216,7 @@ $img = !empty($_SESSION['post']['img']) ? htmlspecialchars($_SESSION['post']['im
 					  <p style="padding-top:20px;">
 							<span class="legend">*</span> : <span class="little">Le(s) fichier(s) Photoshop .PSD, Fireworks .PNG, Illustrator .AI, texte(s) .TXT .RTF .DOC sera(ont) demandé(s) lors de notre entretien.</span>
 						</p>
-						<input type="submit" name="valid" id="valid" value="Envoyer" />
+						<input type="submit" name="devis[valid]" id="valid" value="Envoyer" />
                     </p>
                 </fieldset> 
             </form>
