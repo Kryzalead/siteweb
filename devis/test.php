@@ -242,7 +242,76 @@ if(!empty($_POST[$formName]['valid'])){
     }
         
     if($valid){
-        echo 'form ok';
+        // préparation du mail
+        $to = 'contact@alternative-webdesign.fr';
+        $subject = 'Demande Alternative Webdesign';
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        // En-têtes additionnels
+        $headers .= 'From: "'.$nom.'" <"'.$email.'">' . "\r\n";
+        $headers .= 'Reply-To: "'.$nom.'" <"'.$email.'">' . "\r\n";
+        
+        $mail = '<html><head><style type="text/css">';
+        $mail .= 'table{border-collapse: collapse;}';
+        $mail .= 'tr,td{border: 1px solid black;text-align: center}';
+        $mail .= 'td.oui{color: green}';
+        $mail .= 'td.non{color: red}';
+        $mail .='</style>';
+        $mail .='<body>';
+        $mail .='Civilité : '.$civilite.' '.$nom.' '.$prenom;
+        $mail .='<br />Statut : '.$statut;
+        $mail .='<br />e-mail : '.$email;
+        $mail .='<br />Téléphone : '.$tel;
+        $mail .='<br />Description de son activité : '.$desc;
+        
+        $mail.='<br /><hr />';
+        $mail .='<br />Je souhaiterai un site '.$type.' comprenant '.$nbrePage;
+        $mail .='<br />Je souhaiterai comme options : ';
+        if(!empty($checkVal)){
+            $mail .='<table><thead><tr>';
+            $mail .='<th>Administration</th>';
+            $mail .='<th>Espace Réservé</th>';
+            $mail .='<th>Form contact</th>';
+            $mail .='<th>Newsletter</th>';
+            $mail .='<th>Galerie</th>';
+            $mail .='<th>Boutique</th>';
+            $mail .='<th>Forum</th>';
+            $mail .='<th>Statistiques</th>';
+            $mail .='</thead><tbody><tr>';
+            $mail .= in_array('optAdmin',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optReserve',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optContact',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optNewsletter',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optGalerie',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optBoutique',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optForum',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .= in_array('optStats',$checkVal) ? '<td class="oui">oui</td>' : '<td class="non">non</td>';
+            $mail .='</tr></tbody></table>';
+        }
+        else
+            $mail .= 'Aucun choix';
+            
+        $mail .= '<br />Maintenance du site : '.$maintenance;
+        $mail .= '<br />Départ du site : '.$start;
+        $mail .= '<br />Mon budget : '.$budget.' euros.';
+        
+        $mail .= '<br /><hr />';
+        $mail .= '<br />Le design : '.$design;
+        $mail .= '<br />Le logo : '.$logo;
+        $mail .= '<br />Le contenu : '.$contenu;
+        $mail .= '<br />Les images : '.$img;
+        
+        $mail .='</body></html>';
+        
+        if(mail($to,$subject,$mail,$headers)){
+			$_SESSION[$formName]['info'] = 'Votre devis a bien été envoyé';
+			header('Location: index.php');
+		}
+		else{
+			$_SESSION[$formName]['post'] = $_POST[$formName];
+			$_SESSION[$formName]['erreur']['send'] = 'Une erreur est survenue pendant l\'envoi du mail, veuillez nous en excusez';
+			header('Location: index.php');
+        }
     }
     else{
         $_SESSION[$formName]['post'] = $_POST[$formName];

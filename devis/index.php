@@ -51,6 +51,13 @@
 				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiez bien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
 			</p>
 				<form method="post" action="test.php" id="formSteps">
+				<?php
+				if(!empty($_SESSION['devis']['erreur']['send']))
+					echo '<span id="devisMsgSend">'.$_SESSION['devis']['erreur']['send'].'</span>';
+					
+				if(!empty($_SESSION['devis']['info']))
+					echo '<span id="devisMsgInfo">'.$_SESSION['devis']['info'].'</span>';
+				?>
                 <fieldset>
                     <legend>Vos coordonnées</legend>
                         <p>
@@ -299,7 +306,7 @@
 		  })();
 	</script>-->
 	<?php
-	$_SESSION['devis']['post'] = $_SESSION['devis']['erreur'] = array();
+	$_SESSION['devis']['post'] = $_SESSION['devis']['erreur'] = $_SESSION['devis']['info'] = array();
 	?>
     </body>
 </html>
