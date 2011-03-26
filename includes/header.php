@@ -1,5 +1,5 @@
 <div id="mask"></div>
-<div id="c_header">
+<div class="c_header animer">
 	<h1 id="logo"><a href="<?php echo ROOT;?>index.php" title="Retour à l'accueil"><img src="<?php echo ROOT;?>images/logo-kryzalead.png" alt="Kryzalead agence web" title="Retour Accueil - Agence web Kryzalead" width="450"><span class="accroche">Agence web - Création de sites internet</span></a></h1>
 		<nav role="navigation">
 			<a href="<?php echo ROOT;?>index.php">Accueil</a>
@@ -8,14 +8,13 @@
 			<a href="#">Les Packs</a>
 			<a href="<?php echo ROOT;?>devis/index.php">Devis gratuit</a>
 			<a href="<?php echo ROOT;?>contact/index.php" class="popinContact">Contact</a>
-	<!--	<a href="#">Le Blog</a>-->
 		</nav>
 			<img src="<?php echo ROOT;?>images/suivez-nous.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="suivez-nous">
 </div>
 <div id="contact"><!--contact form-->
 	<div id="close"><a>Fermer</a></div>
 	<h2 id="contact_header">Un commentaire ?</h2>
-		<img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
+		<img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Contact" width="300" class="img-form"/>
 		<p class="success">Merci, votre message a bien été envoyé!</p>
 		<p class="error">Une erreur est survenue lors de l'envois du message</p>
 		<form action="traitement.php" method="post" name="contactForm" id="contactForm">
