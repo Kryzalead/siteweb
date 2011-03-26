@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 $token = md5(uniqid(rand(), true));
 $_SESSION['contact']['token'] = $token;
@@ -18,33 +18,52 @@ require('fonctions/config.php');
 </head>
  
 <body>
-
 	<?php include('includes/message-ie.html');?>
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->		
-		<header role="banner">
+		<header class="headerMenu" role="banner">
 			<?php include('includes/header.php');?>
 		</header>
+		
+		
 		
 		<div id="content"><!-- Debut content -->
 		
 			<section id="agence">
-				<h1 class="animer"><a>Qui sommes-nous?</a></h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat ante ut velit ultricies consequat. Suspendisse ultricies, quam id cursus elementum, arcu eros blandit lorem, vitae rhoncus risus ligula sit amet nisl. Cras a nisl neque, sit amet pretium dui. Quisque euismod ultricies imperdiet. Ut velit mauris, viverra sit amet tempus malesuada, ultrices ac libero. Vestibulum eu ante eros, nec aliquet felis. Fusce eu neque risus. Fusce orci tortor, adipiscing nec egestas vel, pellentesque in neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis pellentesque, tellus nec faucibus tristique, nisl odio fermentum augue, vel porttitor leo lorem vitae ipsum.
-					</p>
+				<article>
+					<h1 class="animer"><a>Qui sommes-nous?</a></h1>
+						<p>
+							Mise en place en 2011, <span class="color">Alternative-Webdesign</span> est une <strong>agence web</strong> réussitepondant présente à vos écoutes et donnant forme à vos projets afin qu'ils en soient une réussite.
+						</p>
+					</article>
+					
+					<article>
+						<h2>Une agence dans l'ère d'internet</h2>
+						<p>
+							Alternative-Webdesign se compose d'une équipe dynamique, structurée, fidéle mais surtout passionnée.
+							Grâce à un travail constant et régulier, nos réaliserons vos projets avec les toutes dernières avancées techniques dans le domaine du web. Nous utilisons les dernieres évolutions comme les blogs ainsi que les réseaux sociaux tel que Facebook et Twitter.
+							Ces nouveaux réseaux bien adaptés à vos projets, vous permettrons de mieux vous faire connaître à travers internet.
+						</p>
+					</article>
+					
+					<article>
+						<h2>Une agence basée clients</h2>
+						<p>
+							Nous proposons à nos clients des solutions techniques ainsi que des prestations afin que leur projet prenne vie avec des coûts financiers réduits.
+						</p>
+				</article>
 			</section>
 
 		</div><!-- Fin content -->
 
 		<section class="actu">
-			<?php include('includes/actu.php');?>
+			<?php include('includes/blog_actu.php');?>
 		</section>
 		
-	<footer role="contentinfo">
-		<?php include('includes/footer.php');?>
-	</footer>
+		<footer role="contentinfo">
+			<?php include('includes/footer.php');?>
+		</footer>
 	
 	</div> <!-- FIN WRAPPER -->
 	

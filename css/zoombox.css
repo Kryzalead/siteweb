@@ -53,10 +53,9 @@
 .simple .close{  background:url('../images/zoombox/simpleclose.png') no-repeat;  width:30px;  height:30px;  position:absolute;  top:0;  right:-10px;}
 
 
-#zoombox-cadre {margin:0;padding:0;}
-#zoombox-cadre p{padding-bottom:15px;font:bold 0.85em Arial;text-align:center;color:#09f}
+#zoomboxCadre		{display:block;margin:0;padding:0;}
+#zoomboxCadre p	{padding:0 0 10px;font:bold 0.85em Arial;text-align:center;color:#09F;border-bottom:1px solid silver;}
 
-
-/* ************************************************************* */
-#liens p 		{color:#555;text-align:left;font:normal 0.85em Arial;color:#777;}
-#liens a 		{display:block;color:#690;border-top:1px solid silver;}
+#liens p 						{color:#555;text-align:left;font:normal 0.85em Arial;color:#777;border-bottom:1px solid silver;padding-bottom:10px;}
+#liens a 						{display:inline-block;color:#690;margin:15px 10px 5px;}
+#liens a:hover 			{color:#09F;margin-left:15px;}

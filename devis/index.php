@@ -39,7 +39,7 @@
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->
 
-		<header role="banner">
+		<header class="headerMenu" role="banner">
 			<?php include('../includes/header.php');?>
 		</header>
 		
@@ -122,6 +122,7 @@
                             <div id="floatLeft">
                                 <span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
 								
+
 								<input class="typeSite" type="radio" name="devis[type]" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
                                 <span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
                                 <label for="typeVitrine" id="l_typeVitrine">Site Vitrine : </label><br />
@@ -129,7 +130,7 @@
                                 <input class="typeSite" type="radio" name="devis[type]" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
                                 <span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
                                 <label for="typePro" id="l_typePro">Site Professionnel : </label><br />
-                                
+								
                                 <input class="typeSite" type="radio" name="devis[type]" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
                                 <span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
                                 <label for="typeCommerce" id="l_typeCommerce">Site E-commerce : </label><br />
@@ -247,11 +248,11 @@
                     </p>
                 </fieldset> 
             </form>
-
-        </section>
-	</div><!-- Fin content -->
+        </div><!-- Fin content -->
+	</section>
 	<section class="actu">
-		<?php include('../includes/actu.php');?>
+		<?php include('../includes/blog_actu.php');?>
+	</section>
 	<footer role="contentinfo">
 		<?php include('../includes/footer.php');?>
 	</footer>

@@ -10,9 +10,9 @@
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
-<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles.css" /> 
+<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/style.css" /> 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles_slide.css" /> 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/zoombox.css" /> 
 
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
 <!--[if lt IE 8]><script type="text/javascript" src="scripts/roundies.js"></script><![endif]-->
