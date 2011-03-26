@@ -50,7 +50,7 @@
 			<p>
 				Obtenez le meilleur prix avec <strong>Kryzalead</strong>, remplissez le formulaire ci-dessous, et recevez votre devis en 24h. Le devis est gratuit, et sans obligation. Vérifiez bien votre adresse e-mail, afin de s’assurer qu’elle soit correcte. Si elle ne l’est pas, nous ne pourrons pas vous contacter.
 			</p>
-				<form method="post" action="test.php" id="formSteps">
+				<form method="post" action="traitement.php" id="formSteps">
 				<?php
 				if(!empty($_SESSION['devis']['erreur']['send']))
 					echo '<span id="devisMsgSend">'.$_SESSION['devis']['erreur']['send'].'</span>';
