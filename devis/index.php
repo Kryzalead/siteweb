@@ -229,25 +229,25 @@
                     </p>
                     <p class="inputRadio">
                         Design :<br />
-						<input type="radio" name="devis[design]" value="non" id="noDesign" <?php if($design == 'non') echo 'checked="checked"';?> /><label for="noDesign" id="l_noDesign">Je vous confie la création du design</label><br />
-						<input type="radio" name="devis[design]" value="oui" id="design" <?php if($design == 'oui') echo 'checked="checked"';?>><label for="design" id="l_design">Je vous fournirai le design </label><span class="legend">*</span><br />
+						<input type="radio" name="devis[design]" value="non" id="noDesign" <?php if($design == 'non') echo 'checked="checked"';?> /><label for="noDesign" id="l_noDesign"> Je vous confie la création du design</label><br />
+						<input type="radio" name="devis[design]" value="oui" id="design" <?php if($design == 'oui') echo 'checked="checked"';?>><label for="design" id="l_design"> Je vous fournirai le design </label><span class="legend">*</span><br />
 					</p>
                     <p class="inputRadio">
                         Logo :<br />
-						<input type="radio" name="devis[logo]" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo" id="l_needLogo">Je vous confie la création du logo</label><br />
-                        <input type="radio" name="devis[logo]" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo" id="l_logo" >Je vous fournirai le logo </label><span class="legend">*</span><br />
-						<input type="radio" name="devis[logo]" value="non" id="noLogo" <?php if($logo == 'non') echo 'checked="checked"';?> /><label for="noLogo" id="l_noLogo">Je n'ai pas besoin de logo</label><br />
+						<input type="radio" name="devis[logo]" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo" id="l_needLogo"> Je vous confie la création du logo</label><br />
+                        <input type="radio" name="devis[logo]" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo" id="l_logo" > Je vous fournirai le logo </label><span class="legend">*</span><br />
+						<input type="radio" name="devis[logo]" value="non" id="noLogo" <?php if($logo == 'non') echo 'checked="checked"';?> /><label for="noLogo" id="l_noLogo"> Je n'ai pas besoin de logo</label><br />
                     </p>
                     <p class="inputRadio">
                         Contenu (textes) :<br />
-                        <input type="radio" name="devis[contenu]" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" id="l_noContenu">Je vous confie la création du contenu</label><br />                       
-					   <input type="radio" name="devis[contenu]" value="oui" id="contenu" <?php if($contenu == 'oui') echo 'checked="checked"';?> /><label for="contenu" id="l_contenu">Je fournai le contenu du site </label><span class="legend">*</span><br />
+                        <input type="radio" name="devis[contenu]" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" id="l_noContenu"> Je vous confie la création du contenu</label><br />                       
+					   <input type="radio" name="devis[contenu]" value="oui" id="contenu" <?php if($contenu == 'oui') echo 'checked="checked"';?> /><label for="contenu" id="l_contenu"> Je fournai le contenu du site</label><span class="legend">*</span><br />
                     </p>
                     <p class="inputRadio">
                         Images :<br />
-						<input type="radio" name="devis[img]" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage" id="l_needImage">Je vous confie la création des images</label><br />
-                        <input type="radio" name="devis[img]" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image" id="l_image">Je vous fournirai les images</label><span class="legend">*</span><br />
-						<input type="radio" name="devis[img]" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage" id="l_noImage">Je n'ai pas besoin d'images</label><br />
+						<input type="radio" name="devis[img]" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage" id="l_needImage"> Je vous confie la création des images</label><br />
+                        <input type="radio" name="devis[img]" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image" id="l_image"> Je vous fournirai les images</label><span class="legend">*</span><br />
+						<input type="radio" name="devis[img]" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage" id="l_noImage"> Je n'ai pas besoin d'images</label><br />
 					  <p style="padding-top:20px;">
 							<span class="legend">*</span> : <span class="little">Le(s) fichier(s) Photoshop .PSD, Fireworks .PNG, Illustrator .AI, texte(s) .TXT .RTF .DOC sera(ont) demandé(s) lors de notre entretien.</span>
 						</p>
