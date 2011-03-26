@@ -225,7 +225,7 @@
 	</section>
 		
 		<section class="actu">
-			<?php include('../includes/actu.php');?>
+			<?php include('../includes/blog_actu.php');?>
 		</section>
 		
 	<footer role="contentinfo">

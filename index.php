@@ -32,14 +32,14 @@ require('fonctions/config.php');
 				<article>
 					<h1>L'agence en quelques mots</h1>
 						<p>
-							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C)</strong>.
+							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C) </strong>destiné aux professionnels, particuliers et associations.
 							<a href="<?php echo ROOT;?>agence.html" class="fleche">L'agence</a>
 						</p>
 				</article>
 				
 				<article>
 					<h1>Les offres du moment</h1>
-						<p>A ne pas loupez : </p>
+						<p>A ne pas louper : </p>
 							<?php	// include('fonctions/news_offres.php');?>
 				</article>
 				

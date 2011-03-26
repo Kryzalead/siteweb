@@ -140,44 +140,45 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 /* ------------------------ */
 /*              ACTU             */
 /* ---------------------- */
-#c_actu						{width:1000px;margin:0 auto;}
+#c_actu							{width:1000px;margin:0 auto;}
   
-.actu								{width: 100%; background:url('../images/footer/footer-motif.png') 0 0 repeat; border-top:4px solid #690;}
-.actu:after       				{display: block; clear: both; } 
+.actu								{width:100%; background:url('../images/footer/footer-motif.png') 0 0 repeat; border-top:4px solid #690;}
+.actu:after       				{display:block; clear: both;} 
 .actu article					{margin:20px 50px 20px 0;width:400px;display:inline-block;vertical-align:top;}
 .actu article h1 				{font:bold 1.8em 'oO';width:380px;color:#EEE;border-bottom:1px solid #EEE;text-shadow:0 0 5px #000;margin-bottom:20px;}
 .actu article span 			{display: block;padding-bottom:10px;color:#690;font:normal 1.4em 'oO';}
 .actu article ul 				{list-style-type:none; color:#777;}
-.actu article li 				{margin-bottom:15px}
+.actu article li 					{margin-bottom:15px}
 .actu article li a				{display: block;color:#09F;font-size:1.1em;}
-.actu li a.cv						{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
+.actu li a.cv					{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
 .actu li a:hover.cv			{font-weight:bold;}
 .actu img						{float:left;border:1px dashed #BBB; width:90px;margin:0 10px;}
 
+#actu_blog 					{width:400px;display:inline-block;vertical-align:top;}
 
 /* ------------------------------------- */
 /*      STYLE FORM CONTACT         */
 /* ----------------------------------- */
 #contact											{background-color:#fff;display:none;left:50%;margin-left:-300px;position:absolute;top:90px;width:650px;z-index:9999;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:20px;}
-#contact img.img-form				{float:right;display:inline-block;margin-top:20px;}
-#contact	h2									{font:normal 4.5em 'O_O';}
-#close	a											{background:url('../images/contact/close.png') no-repeat right;cursor:pointer;font:bold 1.5em Arial;color:#202021;text-decoration:none;float:right;padding:5px 30px 5px 5px;}
-#close	a:hover								{background:url('../images/contact/close2.png') no-repeat right;color:#ea0f00;font-size:1.7em;text-decoration:underline;}
-#contact_header							{background:url('../images/contact/symbole.png') no-repeat left;font-family:arial, sans-serif;padding:25px 5px 10px 60px;}
-.success,.inputError,.error				{display:none;}
+#contact img.img-form						{float:right;display:inline-block;margin-top:20px;}
+#contact h2										{font:normal 4.5em 'O_O';}
+#close a											{background:url('../images/contact/close.png') no-repeat right;cursor:pointer;font:bold 1.5em Arial;color:#202021;text-decoration:none;float:right;padding:5px 30px 5px 5px;}
+#close a:hover									{background:url('../images/contact/close2.png') no-repeat right;color:#ea0f00;font-size:1.7em;text-decoration:underline;}
+#contact_header								{background:url('../images/contact/symbole.png') no-repeat left;font-family:arial, sans-serif;padding:25px 5px 10px 60px;}
+.success,.inputError,.error					{display:none;}
 .success											{background-color:#9F6;border:1px solid #0F0;}
-.inputError,.error							{color:red;}
-#mask											{background-color:#202021; display:none; height:100%; position:fixed; width:100%; z-index:9000;}
-#nom,#email,#message 				{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
+.inputError,.error								{color:red;}
+#mask												{background-color:#202021; display:none; height:100%; position:fixed; width:100%; z-index:9000;}
+#nom,#email,#message 						{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
 #nom:hover,#email:hover,#message:hover	{background-color:#c8e789;}
-#message										{width:290px;max-width:330px;height:100px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:5px;overflow:hidden}
-#valid											{width:80px;cursor:pointer;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#d2e8a5}
-#valid:hover									{background-color:#c8e789;color:#690;font: bold 1em Arial;}
+#message				{width:290px;max-width:330px;height:100px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:5px;overflow:hidden}
+#valid					{width:80px;cursor:pointer;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#d2e8a5}
+#valid:hover			{background-color:#c8e789;color:#690;font: bold 1em Arial;}
 
 /* Contact NoJS */
 #contactNoJs												{width:650px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;}
 #contactNoJs img.img-form							{float:right;display:inline-block;margin-top:100px;}
-#contactNoJs	h2										{font:normal 4.5em 'O_O';}
+#contactNoJs h2										{font:normal 4.5em 'O_O';}
 #contactNoJs .inputError								{display: inline}
 #contactNoJs .success,#contactNoJs .error		{display: block}
 #contactNoJsNom,#contactNoJsEmail 			{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin:5px 0;padding:10px 5px;overflow:hidden}
@@ -232,21 +233,33 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 #steps li.current { color:#690;font-weight:bold;}
 
 	/* Style des boutons précédent et suivant*/
-.prev, .next {font:bold 1.3em 'oO';border-color:#7C7C7C #CECECE #CECECE #7C7C7C;-moz-border-radius:10px;-webkit-border-radius:10px; border-radius:10px;background-color:#D2E8A5; padding:5px 20px; color:#690; text-decoration:none;}
+.prev, .next {font:bold 1.3em 'oO';border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-style:solid;border-width:1px;-moz-border-radius:10px;-webkit-border-radius:10px; border-radius:10px;background-color:#D2E8A5; padding:4px 20px; color:#690; text-decoration:none;}
 .prev:hover, .next:hover {font-weight:bold;background-color:#d2e8a5; text-decoration:none; color:#777;}
 .prev {float:left;}
 .next {float:right;}
 
 
+/* ---------------------------- */
+/*     MENTIONS-LEGALES    */
+/* -------------------------- */
+section#mentions-legales					{clear:both;margin:20px 0;}
+section#mentions-legales h2 a 			{font:normal 2em 'oO';padding:40px 0px 0;display:block;}
+section#mentions-legales div 				{margin:15px 0;}
+section#mentions-legales p				{color:#777;text-align:justify;width:640px;}
+section#mentions-legales ul				{list-style-type:none;margin:20px 55px;color:#777}
+section#mentions-legales li					{font-size:1em;}
+
+
+
 /* ---------------------- */
 /*          FOOTER         */
 /* -------------------- */
-footer								{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
+footer							{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
 footer p,a						{color:#999;}
 footer a:hover				{text-decoration:underline;color:#690;}
 #mentions						{width:1000px;margin:0 auto;}
 #mentions p					{text-align:left;font-size:0.85em;}
-#mentions span.ml		{padding-left:235px;}
+#mentions span.ml			{padding-left:235px;}
 .w3c								{float:right;margin:-3px 0 0 10px}
 
 	
