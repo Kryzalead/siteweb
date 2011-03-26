@@ -17,7 +17,7 @@ require('fonctions/config.php');
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->		
-		<header role="banner">
+		<header class="headerMenu" role="banner">
 			<?php include('includes/header.php');?>
 		</header>
 
@@ -33,7 +33,7 @@ require('fonctions/config.php');
 					<h1>L'agence en quelques mots</h1>
 						<p>
 							<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C) </strong>destiné aux professionnels, particuliers et associations.
-							<a href="<?php echo ROOT;?>agence.html" class="fleche">L'agence</a>
+							<a href="<?php echo ROOT;?>agence.php">L'agence</a>
 						</p>
 				</article>
 				

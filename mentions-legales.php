@@ -17,7 +17,7 @@ require('fonctions/config.php');
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->		
-		<header role="banner">
+		<header class="headerMenu" role="banner">
 			<?php include('includes/header.php');?>
 		</header>
 		

@@ -1,4 +1,4 @@
-<div id="zoombox-cadre">
+<div id="zoomboxCadre">
 		<p>Cliquez sur les liens pour faire apparaitre un aperçu en image</p>
 	<div id="liens">
 		<a class="zoombox zgallery1" title="Agence web Kryzalead" href="images/zoombox/projets/kryzalead.png">www.kryzalead.fr</a>

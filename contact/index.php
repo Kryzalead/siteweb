@@ -18,7 +18,7 @@ require('../fonctions/config.php');
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->
 		
-		<header role="banner">
+		<header class="headerMenu" role="banner">
 			<?php include('../includes/header.php');?>
 		</header>
 

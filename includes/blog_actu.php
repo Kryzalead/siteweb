@@ -1,16 +1,14 @@
 <div id="c_actu">
 	<article>
-		<h1>A ne pas louper</h1>
+		<h2>A ne pas louper</h2>
 			<?php	// include('fonctions/news_offres.php');?>
 	</article>
 	
-	<article id="actu_blog">
-		<h1>Actu Blog</h1>
-			<ul>
-				<li>01</li>
-				<li>02</li>
-				<li>03</li>
-				<li>04</li>
-				<li>05</li>
-			</ul>
+	<article id="actuBlog">
+		<h2>Actu blog</h2>  
+			<header class="headerBlog"> 
+				<p>Posté le <time datetime="2011-04-26T11:24:00+01:00">26 avril 2011 à 12h24</time> par <a href="#">Nici</a> - <a href="#comments">3 commentaires</a></p>  
+		</header>
+				<p>Blablaaaaaaaaaa...</p>  
+	</article>
 </div>
