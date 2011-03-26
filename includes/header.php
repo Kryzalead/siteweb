@@ -4,7 +4,7 @@
 		<nav role="navigation">
 			<a href="<?php echo ROOT;?>index.php">Accueil</a>
 			<a href="<?php echo ROOT;?>agence.php">L'agence</a>
-			<a href="#">Réalisations</a>
+			<!--<a href="#">Réalisations</a>-->
 			<a href="#">Les Packs</a>
 			<a href="<?php echo ROOT;?>devis/index.php">Devis gratuit</a>
 			<a href="<?php echo ROOT;?>contact/index.php" class="popinContact">Contact</a>
@@ -14,7 +14,7 @@
 <div id="contact"><!--contact form-->
 	<div id="close"><a>Fermer</a></div>
 	<h2 id="contact_header">Un commentaire ?</h2>
-		<img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Contact" width="300" class="img-form"/>
+		<img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Contact" width="300" class="img-form">
 			<p class="success">Merci, votre message a bien été envoyé!</p>
 			<p class="error">Une erreur est survenue lors de l'envois du message</p>
 			<form action="traitement.php" method="post" name="contactForm" id="contactForm">

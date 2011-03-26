@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 $token = md5(uniqid(rand(), true));
 $_SESSION['contact']['token'] = $token;
