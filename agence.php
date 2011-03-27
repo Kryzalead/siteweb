@@ -1,8 +1,8 @@
 <?php
-session_start();
-$token = md5(uniqid(rand(), true));
-$_SESSION['contact']['token'] = $token;
-require('fonctions/config.php');
+    session_start();
+    $token = md5(uniqid(rand(), true));
+    $_SESSION['contact']['token'] = $token;
+    require('fonctions/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr"> 
@@ -22,38 +22,35 @@ require('fonctions/config.php');
 	<!--[if lte IE 6]><style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }</style><![endif]--> 
 
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->		
-		<header class="headerMenu" role="banner">
-			<?php include('includes/header.php');?>
-		</header>
-		
-		
+	    <header class="headerMenu" role="banner">
+		    <?php include('includes/header.php');?>
+	    </header>
 		
 		<div id="content"><!-- Debut content -->
 		
-			<section id="agence">
-				<article>
-					<h1 class="animer"><a>Qui sommes-nous?</a></h1>
-						<p>
-							Mise en place en 2011, <span class="color">Alternative-Webdesign</span> est une <strong>agence web</strong> réussitepondant présente à vos écoutes et donnant forme à vos projets afin qu'ils en soient une réussite.
-						</p>
-					</article>
-					
-					<article>
-						<h2>Une agence dans l'ère d'internet</h2>
-						<p>
-							Alternative-Webdesign se compose d'une équipe dynamique, structurée, fidéle mais surtout passionnée.
-							Grâce à un travail constant et régulier, nos réaliserons vos projets avec les toutes dernières avancées techniques dans le domaine du web. Nous utilisons les dernieres évolutions comme les blogs ainsi que les réseaux sociaux tel que Facebook et Twitter.
-							Ces nouveaux réseaux bien adaptés à vos projets, vous permettrons de mieux vous faire connaître à travers internet.
-						</p>
-					</article>
-					
-					<article>
-						<h2>Une agence basée clients</h2>
-						<p>
-							Nous proposons à nos clients des solutions techniques ainsi que des prestations afin que leur projet prenne vie avec des coûts financiers réduits.
-						</p>
-				</article>
-			</section>
+		    <section id="agence">
+			<article>
+			    <h1 class="animer"><a>Qui sommes-nous?</a></h1>
+				<p>
+				    Mise en place en 2011, <span class="color">Kryzalead</span> est une jeune <strong>agence web</strong> répondant présente à vos écoutes et donnant forme à vos projets afin qu'ils en soient une réussite.
+				</p>
+			</article>
+				
+			<article>
+			    <h2>Une agence dans l'ère d'internet</h2>
+				<p>
+				    Kryzalead se compose d'une équipe dynamique, structurée, fidéle mais surtout passionnée. Grâce à un travail constant et régulier, nos réaliserons vos projets avec les toutes dernières avancées techniques dans le domaine du web. Nous utilisons les dernieres évolutions comme les blogs ainsi que les réseaux sociaux tel que Facebook et Twitter.
+				    Ces nouveaux réseaux bien adaptés à vos projets, vous permettrons de mieux vous faire connaître à travers internet.
+				</p>
+			</article>
+				
+			<article>
+			    <h2>Une agence basée clients</h2>
+				<p>
+				    Nous proposons à nos clients des solutions techniques ainsi que des prestations afin que leur projet prenne vie avec des <strong>coûts financiers réduits</strong>.
+				</p>
+			</article>
+		    </section>
 
 		</div><!-- Fin content -->
 

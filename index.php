@@ -1,8 +1,8 @@
 <?php
-session_start();
-$token = md5(uniqid(rand(), true));
-$_SESSION['contact']['token'] = $token;
-require('fonctions/config.php');
+    session_start();
+    $token = md5(uniqid(rand(), true));
+    $_SESSION['contact']['token'] = $token;
+    require('fonctions/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr"> 
@@ -12,8 +12,7 @@ require('fonctions/config.php');
 </head>
  
 <body>
-
-	<?php include('includes/message-ie.html');?>
+    <?php include('includes/message-ie.html');?>
 	
 	<div id="wrapper"> <!-- DEBUT WRAPPER -->		
 		<header class="headerMenu" role="banner">
