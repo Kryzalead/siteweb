@@ -255,7 +255,7 @@ header.headerMenu .suivez-nous {
 
 /* line 118, ../style.scss */
 #slogan h2 a {
-  font: bold 3.5em 'O_O';
+  font: bold 3.2em 'O_O';
 }
 
 /* ----------------------- */
@@ -299,7 +299,7 @@ section.presentation {
 
 /* line 132, ../style.scss */
 .presentation article a {
-  display: inline-block;
+  display: block;
   margin: 10px  0 0 15px;
   color: #09F;
   text-decoration: underline;
@@ -668,13 +668,7 @@ section.slideshow {
   font: bold 1em Arial;
 }
 
-/*aside.reseaux_sociaux{float:right;margin:10px 0;width:190px;background-image:url('../images/suivez-nous.png');background-position:right top;background-repeat:no-repeat;height:100px;}
-aside.reseaux_sociaux span{display:none;}
-.twitter:hover span{position:absolute;display:inline;margin:110px 0 0 -40px;}
-.facebook:hover span{position:absolute;display:inline;margin:110px 0 0 -50px;}
-aside.reseaux_sociaux:hover a:hover{text-decoration:none;font-size:1.1em;color:#669900;}
-aside.reseaux_sociaux img {margin:70px 0 0 20px;width:45px;@extend .animer;}
-.reseaux_sociaux a:hover img, .reseaux_sociaux a:focus img {-moz-transform: rotate(20deg);-webkit-transform: rotate(20deg);transform: rotate(20deg);}*/
+
 /* ---------------------- */
 /*      STYLE DEVIS        */
 /* --------------------- */
@@ -695,7 +689,7 @@ section#form_devis h2 a {
 section#form_devis p {
   color: #777;
   text-align: justify;
-  width: 640px;
+  width: 1000px;
 }
 
 /* line 223, ../style.scss */
@@ -733,7 +727,7 @@ section#form_devis legend {
 
 /* line 230, ../style.scss */
 .inputRadio input {
-  margin: 5px 0 0 30px;
+  margin: 5px 5px 5px 30px;
 }
 
 /* line 231, ../style.scss */
@@ -743,6 +737,7 @@ section#form_devis legend {
   width: 200px;
   margin-top: 10px;
   position: relative;
+  color:#777;
 }
 
 /* line 232, ../style.scss */
@@ -787,8 +782,8 @@ input[type="text"], select, textarea {
 }
 
 /* line 237, ../style.scss */
-input[type="radio"] {
-  margin: 0 5px;
+input[type=radio"] {
+  margin-left:15px;
 }
 
 /* line 238, ../style.scss */
@@ -819,6 +814,7 @@ select {
 
 /* line 242, ../style.scss */
 #floatLeft {
+  color:#777;
   float: left;
   margin-bottom: 15px;
 }
@@ -831,7 +827,7 @@ select {
 /* line 244, ../style.scss */
 #descType {
   width: 400px;
-  height: 100px;
+  height: 90px;
   margin-left: 250px;
   border: 1px dashed #690;
 }
