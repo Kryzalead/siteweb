@@ -48,9 +48,8 @@ require('fonctions/config.php');
 				<li>Site internet : <a href="https://www.ovh.com/fr/index.xml" target="_blank">www.ovh.com</a></li>
 			    </ul>
 			</div>
-		    </section>
-
-		</div><!-- Fin content -->
+		</section>
+	    </div><!-- Fin content -->
 
 		<section class="actu">
 		    <?php include('includes/actu.php');?>
