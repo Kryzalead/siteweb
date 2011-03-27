@@ -22,7 +22,7 @@
 		ul.process span.txt{display:block;font-size:1em;padding-left:12px;padding-right:40px;padding-top:20px;text-align:left;width:168px}
 		
 		ul.process li{float:left}
-		ul.process li a{display:inline-block;vertical-align:top;width:228px;height:177px;background:url("images/etapes-de-creation.jpg") 0 0 no-repeat transparent;}
+		ul.process li a{display:inline-block;vertical-align:top;width:220px;height:177px;background:url("images/etapes-de-creation.jpg") 0 0 no-repeat transparent;border:1px solid red}
 		ul.process li a:hover{background:url("images/etapes-de-creation.jpg") no-repeat 0 -177px transparent;height:177;width:228px;}
 		
 		ul.process li a.recherche{background-position:-228px 0;}
