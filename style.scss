@@ -5,16 +5,16 @@ $default-transition-property:all;
 
  
 /* ---------------------------------------------------------- */
-/*					Nom : Site en maintenance				  	   		 */
-/*							 Date : 03-03-2011  							 */
+/*	Nom : Site en maintenance		   		 */
+/*		 Date : 03-03-2011  				 */
 /*	 Auteurs: Demay Jean-Damien // Arana Jonathan          */
-/* 			  Entreprise : www.kryzalead.fr			 	  	    */
-/* 					 Edition: style.css						 		   */
-/*									 Version: 1.0							   */
+/* 		 Entreprise : www.kryzalead.fr	   	    */
+/* 		Edition: style.css			   */
+/*			Version: 1.0			   */
 /* -------------------------------------------------------- */
 
 /* --------------------- */
-/*          RESET          */
+/*          RESET       */
 /* ------------------ */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 
@@ -26,21 +26,21 @@ html,body,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,co
 /* ------------------- */	
 @font-face {
     font-family: 'oO';
-		src: url('../fonts/opificio-webfont.eot');
-		src: url('../fonts/opificio-webfont.eot?iefix') format('eot'),
-			 url('../fonts/opificio-webfont.woff') format('woff'),
-			 url('../fonts/opificio-webfont.ttf') format('truetype'),
-			 url('../fonts/opificio-webfont.svg#webfontrbChTaLI') format('svg');
-				font-weight: normal;font-style: normal;}
+      src: url('../fonts/opificio-webfont.eot');
+      src: url('../fonts/opificio-webfont.eot?iefix') format('eot'),
+	       url('../fonts/opificio-webfont.woff') format('woff'),
+	       url('../fonts/opificio-webfont.ttf') format('truetype'),
+	       url('../fonts/opificio-webfont.svg#webfontrbChTaLI') format('svg');
+		      font-weight: normal;font-style: normal;}
 
 @font-face {
     font-family: 'O_O';
-		src: url('../fonts/jellyka_cuttycupcakes-webfont.eot');
-		src: url('../fonts/jellyka_cuttycupcakes-webfont.eot?iefix') format('eot'),
-			url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
-			url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
-			url('../fonts/jellyka_cuttycupcakes-webfont.svg#webfontThIAGJgq') format('svg');
-				font-weight: normal;font-style: normal;}
+       src: url('../fonts/jellyka_cuttycupcakes-webfont.eot');
+       src: url('../fonts/jellyka_cuttycupcakes-webfont.eot?iefix') format('eot'),
+	       url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
+	       url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
+	       url('../fonts/jellyka_cuttycupcakes-webfont.svg#webfontThIAGJgq') format('svg');
+		       font-weight: normal;font-style: normal;}
 	
 	
 html		{font-size:100%;}
@@ -49,17 +49,17 @@ body		{background-color:#FFF;font-family:"Lucida Grande",Tahoma, "Trebuchet MS",
 /* ---------------------- */
 /*              LIENS             */
 /* -------------------- */
-a 						{text-decoration: none; font-family:Arial;outline: none;} 
-a:focus, a:active 			{outline: none;} 
-a img 					{border: none;} 
+a 					{text-decoration: none; font-family:Arial;outline: none;} 
+a:focus, a:active 		{outline: none;} 
+a img 				{border: none;} 
 
 
 /* ---------------------- */
-/*         TITRES Hx           */
+/*    TITRES Hx      */
 /* -------------------- */
-h2 a,h2 a:visited			{cursor:default;text-decoration:none;@extend .animer;}
-h2 a:hover,h2 a:focus		{text-decoration:none;color:#690}
-h1,h2					{display:inline-block;font-weight:400;}
+h1 a,h1 a:visited,h2 a,h2 a:visited			{cursor:default;text-decoration:none;@extend .animer;}
+h1 a:hover,h1 a:focus, h2 a:hover,h2 a:focus	{text-decoration:none;color:#690;}
+h1,h2								{display:inline-block;font-weight:400;}
 
 
 /* ------------------------ */
@@ -71,9 +71,6 @@ p {margin: .75em 0;}
 /* --------------------------- */
 /* ~ TYPE EN-LIGNE   */
 /* ------------------------ */
-figure			{display: inline-block; vertical-align: top;}
-strong 			{font-weight: bold;}
-
 .color_green		{color:#690}
 .souligne			{text-decoration:underline}
  
@@ -81,9 +78,9 @@ strong 			{font-weight: bold;}
 /* ------------------------ */
 /*   FRAMEWORKS  */
 /* ---------------------- */
-.ombre 				{@include text-shadow;}
-.animer 				{@include transition;}
-.arrondie				{@include border-radius(10px);}
+.ombre 		{@include text-shadow;}
+.animer 		{@include transition;}
+.arrondie		{@include border-radius(10px);}
 
 /* ------------------------ */
 /*       WRAPPER      */
@@ -107,7 +104,7 @@ header.headerMenu nav							{text-align:right;font-size:1.3em;padding-top:10px;}
 header.headerMenu nav a							{color:#FFF;margin:0 6px;}
 header.headerMenu nav a:hover,header nav a:focus		{color:#690;border-bottom:25px solid #690; @extend .animer;}
 header.headerMenu span.accroche					{position:absolute;  font:bold 2.4em 'O_O';color:#690;margin:135px 0 0 -255px;@extend .ombre;}
-header.headerMenu .suivez-nous					{margin:19px 0 0 250px;}
+header.headerMenu .suivez-nous					{margin:4px 0 0 250px;}
   
   
 /* ----------------------- */
@@ -139,7 +136,7 @@ section.presentation {margin:60px auto 0; width:1000px;}
 /* -------------------- */
 /*     AGENCE     */
 /* ----------------- */ 
-section#agence {margin:150px auto 40px; width:1000px;}
+
 
 
 /* ------------------------ */
@@ -148,9 +145,9 @@ section#agence {margin:150px auto 40px; width:1000px;}
 section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 
 
-/* ------------------------ */
-/*              ACTU             */
-/* ---------------------- */
+/* ------------------ */
+/*       ACTU      */
+/* --------------- */
 #c_actu					{width:1000px;margin:0 auto;}
   
 .actu						{width:100%; background:url('../images/footer/footer-motif.png') 0 0 repeat; border-top:4px solid #690;}
@@ -165,7 +162,7 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 .actu li a.cv				{display: block;font:normal 1.2em 'oO';width:70px;margin:30px 0 0 100px;}
 .actu li a:hover.cv			{font-weight:bold;}
 
-/*  Blog  */
+/*   Blog   */
 #actuBlog 					{width:400px;display:inline-block;vertical-align:top;}
 #actuBlog p				{color:#777;}
 #actuBlog header.headerBlog p	{color:#690;}
@@ -191,7 +188,7 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 #contactValid								{margin:10px 0 0 220px;color:#690;font: bold 1.3em 'oO';width:100px;cursor:pointer; background-color:#d2e8a5;@extend .arrondie;}
 #contactValid:hover							{background-color:#c8e789;color:#660;font: bold 1.3em 'oO';letter-spacing:1px;}
 	
-/* Contact NoJS */
+/*  Contact NoJS  */
 #contactNoJs								{width:650px;border:1px solid #ccc;padding:10px 20px;margin-bottom:20px;@extend .arrondie;}
 #contactNoJs img.img-form					{float:right;display:inline-block;margin-top:100px;}
 #contactNoJs h2							{font:normal 4.5em 'O_O';}
@@ -206,8 +203,8 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 
 
 /* ---------------------- */
-/*      STYLE DEVIS        */
-/* --------------------- */
+/*  STYLE DEVIS   */
+/* ------------------- */
 section#form_devis 				{clear:both;margin-bottom:20px;}
 section#form_devis h2 a 			{font:normal 2em 'oO';padding:40px 0px 15px;display:block;}
 section#form_devis p 			{color:#777;text-align:justify;width:640px;}
@@ -242,7 +239,7 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 #steps li.current 	{color:#690;font-weight:bold;}
 
 	/* Style des boutons précédent et suivant*/
-.prev, .next {font:bold 1.3em 'oO';width:100px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-style:solid;border-width:1px;@extend .arrondie;background-color:#D2E8A5; padding:4px 0;text-align:center; color:#690; text-decoration:none;}
+.prev, .next {font:bold 1.3em 'oO';width:100px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-style:solid;border-width:1px;background-color:#D2E8A5; padding:4px 0;text-align:center; color:#690; text-decoration:none;@extend .arrondie;}
 .prev:hover, .next:hover {font-weight:bold;background-color:#c8e789; text-decoration:none; color:#660;}
 .prev {float:left;}
 .next {float:right;}
@@ -267,9 +264,9 @@ footer					{display:inline-block;border-top:3px solid #690;width:100%;background
 footer p,a					{color:#999;}
 footer a:hover				{text-decoration:underline;color:#690;}
 #mentions					{width:1000px;margin:0 auto;}
-#mentions p				{text-align:left;font-size:0.85em;}
-#mentions span.ml			{padding-left:235px;}
-.w3c						{float:right;margin:-3px 0 0 10px}
+#mentions p				{text-align:left;font-size:0.85em;padding-top:3px}
+#mentions span.ml			{padding-left:230px;}
+a.w3c					{display:inline-block;position:absolute;margin:-5px 0 0 10px;}
 
 	
 /* ------------------------ */
