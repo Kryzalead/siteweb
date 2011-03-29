@@ -38,24 +38,24 @@
 		ul.process li.maintenance a{background-position:0 -362px;height:120px;}
 		ul.process li.maintenance a:hover{background-position:-301px -362px;}
 		
-	    
+		#ombreBarre{width:500px; height:14px;background:url('images/ombreBarre.png') 0 0 no-repeat;margin-top:30px;}
 		
 		/*a.carreVert{background:#690;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreVert{background:#AFE542;}
 		a.carreBleu{background:#17B7B7;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreBleu{background:#7BFCFC;}*/
     
-		section#agence 		{margin:30px 0;border:1px solid #2C34CC;display:inline-block;vertical-align:top;}
+		section#agence 		{margin:30px 0;display:inline-block;vertical-align:top;width:600px}
 		section#agence h1 a 		{font:normal 2em 'oO';padding-bottom:10px;cursor:default;}
 		section#agence p 		{color:#777;text-align:justify;}
     
-		section#agence .textAgence h1	{font:normal 2em 'oO';padding-bottom:10px;color:#777;}
+		section#agence .textAgence h1	{font:normal 1.8em 'oO';padding-bottom:10px;color:#999;}
 		section#agence .textAgence p	{width:500px;}
 		    
-		aside.iconesProgs			{margin-top:30px;border:1px solid red;width:310px;height:100px;display:inline-block;vertical-align:top;float:right;}
-		aside.iconesProgs h1		{font:normal 2em 'oO';padding-bottom:10px;}
-		aside.iconesProgs ul			{list-style-type:none;}
+		aside.iconesProgs			{margin-top:30px;width:310px;height:420px;display:inline-block;vertical-align:top;float:right;border:1px solid red}
+		aside.iconesProgs h1		{font:normal 2em 'oO';padding-bottom:5px;color:#09F}
+		aside.iconesProgs ul			{list-style-type:none;margin:25px auto 0;}
 
-		ul.icones						{width:290px;height:400px;border:1px solid red;}
-		ul.icones li a					{float:left;width:75px;height:75px;background:url("images/iconesProg/icones.jpg") 0 0 no-repeat;margin-top:5px}
+		ul.icones						{height:300px;border:1px dashed #999}
+		ul.icones li a					{float:left;width:75px;height:75px;background:url("images/iconesProg/icones.jpg") 0 0 no-repeat;margin-top:5px;}
 		ul.icones li a:hover				{background:url("images/iconesProg/icones.jpg") 0 0 no-repeat;}
 
 		ul.icones li.photoshtopIcone a		{background-position:-158px -80px;margin-right:15px}
@@ -79,7 +79,7 @@
 		ul.icones li.jqueryIcone a			{background-position:-550px -85px;width:140px;}
 		ul.icones li.jqueryIcone a:hover		{background-position:-550px -6px;}
 		
-		ul.icones li.phpIcone a			{background-position:-475px -85px;}
+		ul.icones li.phpIcone a			{background-position:-475px -85px;margin:8px 30px 0 50px;}
 		ul.icones li.phpIcone a:hover		{background-position:-475px -6px;}
 		
 		ul.icones li.ajaxIcone a			{background-position:-780px -85px;width:120px;}
@@ -109,11 +109,13 @@
 			</article>
 			
 			<article class="textAgence">
-			    <h1>Notre boulot oui et? ah oui alors en quelques mots...</h1>
+			    <h1>Notre boulot? ah oui alors en quelques mots...</h1>
 			     <p>
 			       	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ligula sed diam imperdiet interdum ultrices nec leo. Nam porta dignissim mi ac feugiat. Aliquam auctor erat magna, venenatis porttitor dolor. Etiam mollis pellentesque suscipit. Duis congue ullamcorper lorem non volutpat. Cras sapien leo, adipiscing tempus congue nec, fringilla sit amet diam. Vestibulum in scelerisque tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 			     </p>
 			</article>
+			
+			<div id="ombreBarre"></div>
 			
 			<section id="etapes">
 			   <h1 class="processus">Les étapes</h1>
@@ -123,33 +125,30 @@
 				    <li class="realisation"><a></a><span class="txt"><strong>Abracadabra !</strong>Dans le respect du planning qui a été établi, nous donnons vie à votre projet. Vous gardez le contrôle lors des étapes de validation.</span></li>
 				    <li class="miseEnLigne"><a></a><span class="txt"><strong>Notre collaboration ne s’interrompt pas là !</strong>Hébergement, SEO, analyse du trafic, maintenance... Nous vous accompagnons au fil de votre évolution.</span></li>
 				    <li class="maintenance"><a></a><span class="txt"><strong>...........</strong>.................</span></li>
-				</ul> 
+				</ul>
+				<div id="ombreBarre"></div>
 			</section>
 		    </section>
 		    
 		    <aside class="iconesProgs">
-			    <h1>Savoir-faire</h1>
-				<p>Nous sommes experts qualifiés dans ces technologies, logiciels et outils :</p>
-				    <ul class="icones">
-					<li class="photoshtopIcone"><a></a></li>
-					<li class="illustratorIcone"><a></a></li>
-					<li class="flashIcone"><a></a></li>
-					<li class="komodoIcone"><a></a></li>
-					<li class="wordpressIcone"><a></a></li>
-					<li class="w3cIcone"><a></a></li>
-					<li class="ajaxIcone"><a></a></li>
-					<li class="jqueryIcone"><a></a></li>
-					<li class="phpIcone"><a></a></li>
-					<li class="prestashopIcone"><a></a></li>
-				    </ul>				    
+			<h1>Savoir-faire</h1>
+			    <p>Nous sommes qualifiés dans ces technologies, voici quelques logiciels et outils utilisés:</p>
+				<ul class="icones">
+				    <li class="photoshtopIcone"><a></a></li>
+				    <li class="illustratorIcone"><a></a></li>
+				    <li class="flashIcone"><a></a></li>
+				    <li class="komodoIcone"><a></a></li>
+				    <li class="wordpressIcone"><a></a></li>
+				    <li class="w3cIcone"><a></a></li>
+				    <li class="ajaxIcone"><a></a></li>
+				    <li class="jqueryIcone"><a></a></li>
+				    <li class="phpIcone"><a></a></li>
+				    <li class="prestashopIcone"><a></a></li>
+				</ul>
+			    <div id="ombreBarre"></div>
 		    </aside>
 		    
-		
-				
-				
-				
-				
-				
+		    				
 			<!--	
 			<article>
 			    <h2>Une agence dans l'ère du temps... et du Web !</h2>
