@@ -331,12 +331,6 @@ section.presentation {
 /* -------------------- */
 /*     AGENCE     */
 /* ----------------- */
-/* line 139, ../style.scss */
-section#agence {
-  margin: 150px auto 40px;
-  width: 1000px;
-}
-
 /* ------------------------ */
 /*     SLIDESHOW    */
 /* ---------------------- */
@@ -433,7 +427,7 @@ section.slideshow {
   font-weight: bold;
 }
 
-/*   Blog  s */
+/*   Blog   */
 /* line 166, ../style.scss */
 #actuBlog {
   width: 400px;
