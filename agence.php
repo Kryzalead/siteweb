@@ -11,40 +11,39 @@
     <?php include('includes/head.php');?>
 	
 	  <style type="text/css" media="all">
-		#agence {margin:140px 0 40px}
-		#agence h1 a {font:normal 2em 'oO';padding-bottom:10px;display:block;cursor:default;}
-		#agence p {color:#777;text-align:justify;width:700px;}
+	    #agence {margin:140px 0 40px}
+	    #agence h1 a {font:normal 2em 'oO';padding-bottom:10px;display:block;cursor:default;}
+	    #agence p {color:#777;text-align:justify;width:700px;}
+	    
+	    section#etapes{margin-left:20px;}
+	    h1.processus{position:absolute;margin-top:10px;background:url("images/etapes.png") 0px 15px no-repeat transparent;width:80px;height:470px;color:#fff;cursor:default;}
+	    ul.process{color:#777;list-style-type:none;height:470px;}
+	    ul.process span.txt{display:inline-block;background:url("images/fleche.jpg") 0 0 no-repeat;position:absolute;font-size:1em;padding-left:80px;margin:40px 0 0 30px;text-align:justify;width:350px;height:100px;color:#555;cursor:default;}
+	    ul.process strong{color:#636363;font-size:1.2em;margin-bottom:5px;display:block;}
+	    
+	    /* Anime Lignes */
+		ul.process li a{display:inline-block;vertical-align:top;width:344px;height:90px;background:url("images/etapes.png") 0 0 no-repeat transparent;}
+		ul.process li a:hover{background:url("images/etapes.png") -356px 0 no-repeat transparent;}
 		
-		section#etapes{margin-left:50px;}
-		h1.processus{margin-top:20px;text-indent:-9999px;}
-		ul.process{color:#777;list-style-type:none;height:470px;}
-		ul.process span.txt{display:none;position:absolute;font-size:1em;padding:20px;margin:10px 0 0 80px;text-align:justify;width:420px;border:1px dashed #000;color:#555}
-		ul.process strong{color:#636363;font-size:1.2em;margin-bottom:5px;display:block;}
+		ul.process li.premierContact a{background-position:0 0;}
+		ul.process li.premierContact a:hover{background-position:-356px 0;}
 		
+		ul.process li.conception a{background-position:0 -90px;}
+		ul.process li.conception a:hover{background-position:-356px -90px;}
 		
-		/* Anime Lignes */
-		    ul.process li a{display:inline-block;vertical-align:top;width:344px;height:90px;background:url("images/etapes.png") 0 0 no-repeat transparent;}
-		    ul.process li a:hover{background:url("images/etapes.png") -356px 0 no-repeat transparent;}
-		    
-		    ul.process li.premierContact a{background-position:0 0;}
-		    ul.process li.premierContact a:hover{background-position:-356px 0;}
-		    li:hover.premierContact span {display:inline-block;background-color:#E7FCBD}
-		    
-		    ul.process li.conception a{background-position:0 -90px;}
-		    ul.process li.conception a:hover{background-position:-356px -90px}
-		    li:hover.conception span {display:inline-block;background-color:#81A4C6}
-		    
-		    ul.process li.realisation a{background-position:0 -180px;}
-		    ul.process li.realisation a:hover{background-position:-356px -180px}
-		    li:hover.realisation span {display:inline-block;background-color:#E5A5D9}
-		    
-		    ul.process li.miseEnLigne a{background-position:0 -270px;}
-		    ul.process li.miseEnLigne a:hover{background-position:-356px -270px}
-		    li:hover.miseEnLigne span {display:inline-block;background-color:#F7CA8A}
+		ul.process li.realisation a{background-position:0 -180px;}
+		ul.process li.realisation a:hover{background-position:-356px -180px;}
+		
+		ul.process li.miseEnLigne a{background-position:0 -270px;}
+		ul.process li.miseEnLigne a:hover{background-position:-356px -270px;}
 
-		    ul.process li.maintenance a{background-position:0 -362px;height:140px;}
-		    ul.process li.maintenance a:hover{background-position:-356px -362px}
-		    li:hover.maintenance span {display:inline-block;background-color:#FCFBA6}
+		ul.process li.maintenance a{background-position:0 -362px;height:140px;}
+		ul.process li.maintenance a:hover{background-position:-356px -362px;}
+		
+		a.carreVert{background:#690;height:15px;width:15px;display:inline-block;margin-right:5px;}	a:hover.carreVert{background:#AFE542;}
+		a.carreBleu{background:#17B7B7;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreBleu{background:#7BFCFC;}
+		a.carreBleu{background:#17B7B7;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreBleu{background:#7BFCFC;}
+	
 	</style>
 </head>
  
@@ -59,30 +58,34 @@
 		<div id="content"><!-- Debut content -->
 		
 		    <section id="agence">
+			<h1><a>Qui sommes-nous?</a></h1>
 			<article>
-			    <h1 class="animer"><a>Qui sommes-nous?</a></h1>
+			    <p>
+				Tout juste née 2011, <span class="color">Kryzalead</span> est une jeune <strong>agence web</strong> (donc félicitation aux heureux parents) répondant présent à vos attentes en matière de projets Internet, pour que ces derniers soient synonymes de popularité, de notoriété et de réussite.
+			    </p>
+			</article>
+				
+			<article>
+			    <h2>Une agence dans l'ère du temps... et du Web !</h2>
 				<p>
-				    Mise en place en 2011, <span class="color">Kryzalead</span> est une jeune <strong>agence web</strong> répondant présente à vos écoutes et donnant forme à vos projets afin qu'ils en soient une réussite.
+				    <a class="carreVert animer"></a>A la fois Pôle d’ingénierie informatique à la pointe de la technologie et centre de conseils techniques, Kryzalead s'engage à vous accompagnez avant, pendant et même après la conception de votre projet. Nous faisons de votre accompagnement comme du succès de vos projets une priorité absolue.<br/>
+				    Née en 2011, de la passion jumelée de 2 associés, à la fois très compétents et littéralement mordus de programmation (au point d’en oublier presque quotidiennement l’heure du repas, ce qui est peu dire !), <strong>Kryzalead</strong> est une agence web <strong style="color:#690">dynamique, structurée, mais sachant tout de même garder un caractère « maison » similaire à une Start-up, avec une ambiance familiale, ce qui booste son efficacité et son aptitude à la communication d’une façon non négligeable.</strong><br/>
+				    Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <span class="souligne">esthétiques, fidèles, fiables</span> et – chose naturellement logique - <span class="souligne">conformes aux standards</span> actuellement en vigueur sur la « toile », en particulier le fameux standard de normalisation W3C auquel tout site Internet doit se conformer pour pouvoir prétendre être recensé par n’importe quel moteur de recherche, Google en tête (pour ne citer que celui-ci).	
 				</p>
 			</article>
 				
 			<article>
-			    <h2>Une agence dans l'ère d'internet</h2>
+			    <h2>Votre réussite est la nôtre !</h2>
 				<p>
-				    A la fois agence web et agence conseil, Kryzalead s'engage à vous accompagnez avant, pendant et après la conception de votre projet, nous faisons de votre accompagnement une priorité.</p>
-				    
-				<p style="padding:30px 10px;border:1px dashed #ED9912;"><span style="color:#690;font:bold 1.2em Arial">Esprit du texte a garder pour l'intégraliter du site -> Jeune drôle dynamique accrocheur ....</span><br/>
-				    Née en 2011, de la passion jumelée de 2 associés, Alternative-Webdesign est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois esthétiques, fidèles,fiables et conformes aux stantards du web (W3C).
-				    Parce que '<span class="souligne">votre reussite est la notre</span>', nous serons toujours là à vos cotés afin de vous conseillez et vous accompagnez tout au long de vos projets WEB.
-				    Nos domaines de compétences s'etendent aussi bien sur l'identité visuelle, web design, que le développement de site e-commerce, site vitrine, site sur-mesure,etc...
-				    Notre équipe répondra présente non via <s>une bonne cafetiere de café ou d'une bonne siéte</s> mais grace à sa créativité, sa qualification et son enthousiame a concevoir vos projets.</p>
-				
+				   <a class="carreBleu animer"></a>Nous serons toujours présents à vos cotés afin de vous guider, vous conseiller, vous orienter au mieux de vos intérêts et vous accompagnez tout au long de vos projets Web, du début… à la fin. Nos domaines de compétences, très vastes, s'étendent aussi bien sur l'identité visuelle du web design (apparence du site) que le développement de sites de e-business (ou e-commerce), en passant par des sites vitrines, sites sur-mesure, sites touristiques, sites art, 6 sites, sites lance-miss… euh…. Non, celui-ci n’est pas dans la liste, milles excuses. Bref, vous l’aurez compris, ce ne sont pas les possibilités qui viennent à manquer quant à nos domaines de compétences.
+				   Nous ne répondrons nullement « Présent ! » uniquement avec une bonne tasse de café (Capuccino ou expresso ? combien de sucres ?) ou encore derrière une bonne assiette richement garnie (à moins que ce ne soit l’addition qui soit effectivement garnie, mais c’est une toute autre histoire…), mais bien – fort simplement – grâce au fait d’être à l’écoute de vos attentes, des idées que vous souhaitez mettre en place, grâce également à notre niveau de technicité sans cesse à la pointe des dernières avancées en la matière et – cerise sur le gâteau – surtout grâce à notre enthousiasme à concevoir et donc donner naissance à votre projet (quel joli bébé : 3.9 Kilo… octets!)
+				</p>
 			</article>
-				
+			
 			<article>
 			    <h2>Une agence basée clients</h2>
 				<p>
-				    Nous proposons à nos clients des solutions techniques ainsi que des prestations afin que leur projet prenne vie avec des <strong>coûts financiers réduits</strong>.
+				    Nous proposons à nos clients des solutions techniques, mais aussi divers types de prestations pour que chaque projet, d’une part, prenne vie, mais également, question pécuniaire oblige, bien évidemment offrir aussi un coût financier le plus bas possible et le plus compétitif du marché. Notre entreprise est certes à vocation commerciale, mais elle n’en reste pas moins humaine pour autant.
 				</p>
 			</article>
 			

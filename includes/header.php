@@ -1,6 +1,6 @@
 <div id="mask"></div>
 <div class="c_header">
-	<h1 id="logo"><a href="<?php echo ROOT;?>index.php" title="Retour à l'accueil"><img src="<?php echo ROOT;?>images/logo-kryzalead.png" alt="Kryzalead agence web" title="Retour Accueil - Agence web Kryzalead" width="450"><span class="accroche">Agence web - Création de sites internet</span></a></h1>
+	<h1 id="logo"><a href="<?php echo ROOT;?>index.php" title="Retour à l'accueil"><img src="<?php echo ROOT;?>images/logoKryzalead.png" alt="Kryzalead agence web" title="Retour Accueil - Agence web Kryzalead" width="450"><span class="accroche">Agence web - Création de sites internet</span></a></h1>
 		<nav role="navigation">
 			<a href="<?php echo ROOT;?>index.php">Accueil</a>
 			<a href="<?php echo ROOT;?>agence.php">L'agence</a>
@@ -9,7 +9,7 @@
 			<a href="<?php echo ROOT;?>devis/index.php">Devis gratuit</a>
 			<a href="<?php echo ROOT;?>contact/index.php" class="popinContact">Contact</a>
 		</nav>
-			<img src="<?php echo ROOT;?>images/suivez-nous.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="suivez-nous">
+			<img src="<?php echo ROOT;?>images/suivezNous.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="suivez-nous">
 </div>
 <div id="contact"><!--contact form-->
 	<div id="close"><a>Fermer</a></div>
