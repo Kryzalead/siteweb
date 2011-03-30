@@ -11,8 +11,6 @@
     <?php include('includes/head.php');?>
 	
 	  <style type="text/css" media="all">
-	
-	    
 	   section#etapes{margin:100px 0;}
 	    h1.processus{position:absolute;background:url("images/etapes.jpg") 0 8px no-repeat;width:80px;height:490px;color:#fff;cursor:default;}
 	    ul.process{color:#777;list-style-type:none;}
@@ -28,65 +26,6 @@
 		
 		ul.process li.conception a{background-position:0 -90px;}
 		ul.process li.conception a:hover{background-position:-301px -90px;}
-<<<<<<< HEAD
-		
-		ul.process li.realisation a{background-position:0 -180px;}
-		ul.process li.realisation a:hover{background-position:-301px -180px;}
-		
-		ul.process li.miseEnLigne a{background-position:0 -270px;}
-		ul.process li.miseEnLigne a:hover{background-position:-301px -270px;}
-
-		ul.process li.maintenance a{background-position:0 -362px;height:120px;}
-		ul.process li.maintenance a:hover{background-position:-301px -362px;}
-		
-	    
-		
-		/*a.carreVert{background:#690;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreVert{background:#AFE542;}
-		a.carreBleu{background:#17B7B7;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreBleu{background:#7BFCFC;}*/
-    
-		section#agence 		{margin:30px 0;border:1px solid #2C34CC;display:inline-block;vertical-align:top;}
-		section#agence h1 a 		{font:normal 2em 'oO';padding-bottom:10px;cursor:default;}
-		section#agence p 		{color:#777;text-align:justify;}
-    
-		section#agence .textAgence h1	{font:normal 2em 'oO';padding-bottom:10px;color:#777;}
-		section#agence .textAgence p	{width:500px;}
-		    
-		aside.iconesProgs			{margin-top:30px;border:1px solid red;width:310px;height:100px;display:inline-block;vertical-align:top;float:right;}
-		aside.iconesProgs h1		{font:normal 2em 'oO';padding-bottom:10px;}
-		aside.iconesProgs ul			{list-style-type:none;}
-
-		ul.icones						{width:290px;height:400px;border:1px solid red;}
-		ul.icones li a					{float:left;width:75px;height:75px;background:url("images/iconesProg/icones.jpg") 0 0 no-repeat;margin-top:5px}
-		ul.icones li a:hover				{background:url("images/iconesProg/icones.jpg") 0 0 no-repeat;}
-
-		ul.icones li.photoshtopIcone a		{background-position:-158px -80px;margin-right:15px}
-		ul.icones li.photoshtopIcone a:hover	{background-position:-158px 0;}
-		
-		ul.icones li.illustratorIcone a		{background-position:-80px -80px;margin-right:15px}
-		ul.icones li.illustratorIcone a:hover	{background-position:-80px 0;}
-
-	        ul.icones li.flashIcone a			{background-position:0 -80px;margin-right:15px}
-		ul.icones li.flashIcone a:hover		{background-position:0 0;}
-		
-		ul.icones li.komodoIcone a			{background-position:-235px -80px;margin-right:15px}
-		ul.icones li.komodoIcone a:hover	{background-position:-235px 0;}
-		
-		ul.icones li.wordpressIcone a		{background-position:-410px -77px;}
-		ul.icones li.wordpressIcone a:hover	{background-position:-410px 4px;}
-		
-		ul.icones li.w3cIcone a			{background-position:-305px -85px;width:100px;}
-		ul.icones li.w3cIcone a:hover		{background-position:-305px -5px;}
-		
-		ul.icones li.jqueryIcone a			{background-position:-550px -85px;width:140px;}
-		ul.icones li.jqueryIcone a:hover		{background-position:-550px -6px;}
-		
-		ul.icones li.phpIcone a			{background-position:-475px -85px;}
-		ul.icones li.phpIcone a:hover		{background-position:-475px -6px;}
-		
-		ul.icones li.ajaxIcone a			{background-position:-780px -85px;width:120px;}
-		ul.icones li.ajaxIcone a:hover		{background-position:-780px -4px;}
-		
-=======
 		
 		ul.process li.realisation a{background-position:0 -180px;}
 		ul.process li.realisation a:hover{background-position:-301px -180px;}
@@ -169,21 +108,16 @@
 			</article>
 			
 			<article class="textAgence">
-<<<<<<< HEAD
-			    <h1>Notre boulot oui et? ah oui alors en quelques mots...</h1>
-=======
+
 			    <h1>Notre boulot? ah oui alors en quelques mots...</h1>
->>>>>>> origin/master
+
 			     <p>
 			       	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ligula sed diam imperdiet interdum ultrices nec leo. Nam porta dignissim mi ac feugiat. Aliquam auctor erat magna, venenatis porttitor dolor. Etiam mollis pellentesque suscipit. Duis congue ullamcorper lorem non volutpat. Cras sapien leo, adipiscing tempus congue nec, fringilla sit amet diam. Vestibulum in scelerisque tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 			     </p>
 			</article>
 			
-<<<<<<< HEAD
-=======
 			<div id="ombreBarre"></div>
 			
->>>>>>> origin/master
 			<section id="etapes">
 			   <h1 class="processus">Les étapes</h1>
 				<ul class="process"> 
@@ -192,40 +126,12 @@
 				    <li class="realisation"><a></a><span class="txt"><strong>Abracadabra !</strong>Dans le respect du planning qui a été établi, nous donnons vie à votre projet. Vous gardez le contrôle lors des étapes de validation.</span></li>
 				    <li class="miseEnLigne"><a></a><span class="txt"><strong>Notre collaboration ne s’interrompt pas là !</strong>Hébergement, SEO, analyse du trafic, maintenance... Nous vous accompagnons au fil de votre évolution.</span></li>
 				    <li class="maintenance"><a></a><span class="txt"><strong>...........</strong>.................</span></li>
-<<<<<<< HEAD
-				</ul> 
-=======
 				</ul>
 				<div id="ombreBarre"></div>
->>>>>>> origin/master
 			</section>
 		    </section>
 		    
 		    <aside class="iconesProgs">
-<<<<<<< HEAD
-			    <h1>Savoir-faire</h1>
-				<p>Nous sommes experts qualifiés dans ces technologies, logiciels et outils :</p>
-				    <ul class="icones">
-					<li class="photoshtopIcone"><a></a></li>
-					<li class="illustratorIcone"><a></a></li>
-					<li class="flashIcone"><a></a></li>
-					<li class="komodoIcone"><a></a></li>
-					<li class="wordpressIcone"><a></a></li>
-					<li class="w3cIcone"><a></a></li>
-					<li class="ajaxIcone"><a></a></li>
-					<li class="jqueryIcone"><a></a></li>
-					<li class="phpIcone"><a></a></li>
-					<li class="prestashopIcone"><a></a></li>
-				    </ul>				    
-		    </aside>
-		    
-		
-				
-				
-				
-				
-				
-=======
 			<h1>Savoir-faire</h1>
 			    <p>Nous sommes qualifiés dans ces technologies, voici quelques logiciels et outils utilisés:</p>
 				<ul class="icones">
@@ -243,8 +149,6 @@
 			    <div id="ombreBarre"></div>
 		    </aside>
 		    
-		    				
->>>>>>> origin/master
 			<!--	
 			<article>
 			    <h2>Une agence dans l'ère du temps... et du Web !</h2>
