@@ -1,54 +1,49 @@
 @import "compass/css3";
-$default-text-shadow-color:#555;
-$default-text-shadow-blur:3px;
-$default-transition-property:all;
-
- 
-/* ---------------------------------------------------------- */
-/*	Nom : Site en maintenance		   		 */
-/*		 Date : 03-03-2011  				 */
-/*	 Auteurs: Demay Jean-Damien // Arana Jonathan          */
-/* 		 Entreprise : www.kryzalead.fr	   	    */
-/* 		Edition: style.css			   */
-/*			Version: 1.0			   */
-/* -------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/*		Nom : Site en maintenance		 	*/
+/*			Date : 03-03-2011  				*/
+/* Auteurs: Demay Jean-Damien // Arana Jonathan    */
+/* 		 Entreprise : www.kryzalead.fr	   	    	*/
+/* 			  Edition: style.css			        */
+/*			  Version: 1.0			   		*/
+/* --------------------------------------------------------------- */
 
 /* --------------------- */
-/*          RESET       */
-/* ------------------ */
+/*         RESET     */
+/* ----------------- */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 
 /* reset TAGS */
 html,body,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,ol,ul,li,fieldset,form,label,legend,table,caption{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
 
-/* ---------------------- */
+/* --------------------------- */
 /*  STYLES DE BASE  */
-/* ------------------- */	
+/* ----------------------- */	
 @font-face {
     font-family: 'oO';
       src: url('../fonts/opificio-webfont.eot');
       src: url('../fonts/opificio-webfont.eot?iefix') format('eot'),
-	       url('../fonts/opificio-webfont.woff') format('woff'),
-	       url('../fonts/opificio-webfont.ttf') format('truetype'),
-	       url('../fonts/opificio-webfont.svg#webfontrbChTaLI') format('svg');
-		      font-weight: normal;font-style: normal;}
+	     url('../fonts/opificio-webfont.woff') format('woff'),
+	     url('../fonts/opificio-webfont.ttf') format('truetype'),
+	     url('../fonts/opificio-webfont.svg#webfontrbChTaLI') format('svg');
+		    font-weight: normal;font-style: normal;}
 
 @font-face {
     font-family: 'O_O';
        src: url('../fonts/jellyka_cuttycupcakes-webfont.eot');
        src: url('../fonts/jellyka_cuttycupcakes-webfont.eot?iefix') format('eot'),
-	       url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
-	       url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
-	       url('../fonts/jellyka_cuttycupcakes-webfont.svg#webfontThIAGJgq') format('svg');
-		       font-weight: normal;font-style: normal;}
+	     url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
+	     url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
+	     url('../fonts/jellyka_cuttycupcakes-webfont.svg#webfontThIAGJgq') format('svg');
+		     font-weight: normal;font-style: normal;}
 	
 	
 html		{font-size:100%;}
 body		{background-color:#FFF;font-family:"Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;font-size:0.8em;line-height:1.4;color:#444;-webkit-font-smoothing: antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;margin:0;padding:0;}
   
 /* ---------------------- */
-/*              LIENS             */
-/* -------------------- */
+/*         LIENS        */
+/* ------------------- */
 a 					{text-decoration: none; font-family:Arial;outline: none;} 
 a:focus, a:active 		{outline: none;} 
 a img 				{border: none;} 
@@ -71,18 +66,27 @@ p {margin: .75em 0;}
 /* --------------------------- */
 /* ~ TYPE EN-LIGNE   */
 /* ------------------------ */
-.color_green		{color:#690}
-.souligne			{text-decoration:underline}
+blockquote			{padding-left:20px;color:#777;}
+cite					{margin:5px 0 0 660px;display:block;color:#777;font-size:0.9em;}
+blockquote.titre			{background:url('../images/sprite.png') 700px -28px no-repeat;padding:0 20px 0 5px;font-style:normal;}
+blockquote.titre:first-letter	{background:url('../images/sprite.png') 0 0 no-repeat;padding-left:25px;font-size:1.1em;}
+
+.couleurVerte			{color:#690;}
+.souligne				{text-decoration:underline;}
+.txtBarre				{text-decoration:line-through;}
+.gras					{font-weight:bold;}
+.txtLittle				{font-size:0.85em;color:#777;}
  
  
 /* ------------------------ */
 /*   FRAMEWORKS  */
-/* ---------------------- */
-.ombre 		{@include text-shadow;}
-.animer 		{@include transition;}
+/* --------------------- */
+.ombre 		{@include text-shadow(#777,0,1px,3px);}
+.animer 		{@include transition(all);}
 .arrondie		{@include border-radius(10px);}
+.boxOmbre	{@include box-shadow(#777,1px,1px,7px);}
 
-/* ------------------------ */
+/* ------------------------- */
 /*       WRAPPER      */
 /* ---------------------- */	
 #wrapper {margin:0 auto; min-height: 800px;}
@@ -110,8 +114,8 @@ header.headerMenu .suivez-nous					{margin:4px 0 0 250px;}
 /* ----------------------- */
 /*      SLOGAN        */
 /* -------------------- */
-#slogan					{display:inline-block; text-align:right; padding:70px 0 0 140px; }
-#slogan h2 a				{font:bold 3.5em 'O_O'; }
+#slogan			{display:inline-block; text-align:right; padding:70px 0 0 140px;}
+#slogan h2 a		{font:bold 3.5em 'O_O'; }
   
 
 /* ----------------------- */
@@ -121,27 +125,54 @@ section.presentation {margin:60px auto 0; width:1000px;}
 
 
 /*   COLONNES    */
-.presentation                     				{width: 100%; margin: 3.5em 0 0; }
-.presentation:after                  				{display: block; clear: both; }
-.presentation article                				{display: inline-block; vertical-align:top; width: 220px; margin-left:25px; }
-.presentation article h1           				{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777; width:220px; }
-.presentation article a             				{display:block; margin: 10px  0 0 15px; color: #09F; text-decoration: underline;font-weight:bold; }
-.presentation article a:hover				{color: #690; margin-left:20px; }
-.presentation article p            				{margin: 0; color:#777;text-align:justify; }
-.presentation article ul					{list-style-type:none; color:#777; }
-.presentation article li			      			{line-height:1.8em; }
-.presentation article li span					{color:#690;font-size:1.2em; margin:0 0 15px 20px; display:block; letter-spacing:1px;}
+.presentation                     			{width:100%; margin:3.5em 0 0;}
+.presentation:after                  			{display: block; clear: both;}
+.presentation article                			{display: inline-block; vertical-align:top; width: 220px; margin-left:25px;}
+.presentation article h1           			{margin: 0 0 20px; font:normal 1.3em Helvetica;padding-bottom:2px; border-bottom:1px solid #777;width:220px;}
+.presentation article a             			{display:block; margin: 10px  0 0 15px; color: #09F; text-decoration: underline;font-weight:bold;}
+.presentation article a:hover			{color: #690; margin-left:20px;}
+.presentation article p            			{margin: 0; color:#777;text-align:justify;}
+.presentation article ul				{list-style-type:none; color:#777;}
+.presentation article li			      		{line-height:1.8em;}
+.presentation article li span				{color:#690;font-size:1.2em; margin:0 0 15px 20px; display:block; letter-spacing:1px;}
 
 
 /* -------------------- */
 /*     AGENCE     */
-/* ----------------- */ 
+/* ----------------- */
+aside.iconesProgs				{margin-top:30px;padding:5px 10px;width:320px;height:438px;display:inline-block;vertical-align:top;float:right;@extend .arrondie;@extend .boxOmbre;}
+aside.iconesProgs h1			{font:normal 2em 'oO';color:#09F;}
+aside.iconesProgs ul				{list-style-type:none;margin:25px auto 0;}
+aside.iconesProgs p				{text-align:justify;color:#555;padding-right:5px;}
 
+ul.icones						{height:326px;width:300px;}
+ul.icones li a					{float:left;width:75px;height:75px;background:url("../images/iconesProg/icones.jpg") 0 0 no-repeat;margin:5px 0 0 8px;}
+ul.icones li a:hover				{background:url("../images/iconesProg/icones.jpg") 0 0 no-repeat;}
+ul.icones li.photoshtopIcone a		{background-position:-158px -80px;margin-right:15px}
+ul.icones li.photoshtopIcone a:hover	{background-position:-158px 0;}
+ul.icones li.illustratorIcone a		{background-position:-80px -80px;margin-right:15px}
+ul.icones li.illustratorIcone a:hover	{background-position:-80px 0;}
+ul.icones li.flashIcone a			{background-position:0 -80px;margin-right:15px}
+ul.icones li.flashIcone a:hover		{background-position:0 0;}
+ul.icones li.komodoIcone a			{background-position:-235px -80px;margin-right:15px}
+ul.icones li.komodoIcone a:hover	{background-position:-235px 0;}
+ul.icones li.wordpressIcone a		{background-position:-410px -77px;}
+ul.icones li.wordpressIcone a:hover	{background-position:-410px 4px;}
+ul.icones li.w3cIcone a			{background-position:-305px -85px;width:100px;}
+ul.icones li.w3cIcone a:hover		{background-position:-305px -5px;}
+ul.icones li.jqueryIcone a			{background-position:-550px -85px;width:150px;}
+ul.icones li.jqueryIcone a:hover		{background-position:-550px -6px;}
+ul.icones li.phpIcone a			{background-position:-475px -85px;margin:8px 30px 0 50px;}
+ul.icones li.phpIcone a:hover		{background-position:-475px -6px;}
+ul.icones li.ajaxIcone a			{background-position:-780px -85px;width:120px;}
+ul.icones li.ajaxIcone a:hover		{background-position:-780px -4px;}
+ul.icones li.prestashopIcone a		{background-position:-700px -80px;}
+ul.icones li.prestashopIcone a:hover	{background-position:-700px 0;}
 
 
 /* ------------------------ */
 /*     SLIDESHOW    */
-/* ---------------------- */
+/* --------------------- */
 section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 
 
@@ -149,7 +180,6 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 /*       ACTU      */
 /* --------------- */
 #c_actu					{width:1000px;margin:0 auto;}
-  
 .actu						{width:100%; background:url('../images/footer/footer-motif.png') 0 0 repeat; border-top:4px solid #690;}
 .actu:after       				{display:block; clear: both;} 
 .actu article				{margin:20px 50px 20px 0;width:400px;display:inline-block;vertical-align:top;}
@@ -168,11 +198,10 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 #actuBlog header.headerBlog p	{color:#690;}
 
 
-
 /* ------------------------------------- */
 /*    STYLE FORM CONTACT   */
 /* ----------------------------------- */
-#contact									{background-color:#fff;display:none;left:50%;margin-left:-300px;position:absolute;top:90px;width:650px;z-index:9999;@extend .arrondie;border:1px solid #ccc;padding:20px;}
+#contact									{background-color:#fff;display:none;left:50%;margin-left:-300px;position:absolute;top:90px;width:650px;z-index:9999;border:1px solid #ccc;padding:20px;@extend .arrondie;}
 #contact img.img-form						{float:right;display:inline-block;margin-top:20px;}
 #contact h2								{font:normal 4.5em 'O_O';}
 #close a									{background:url('../images/contact/close.png') no-repeat right;cursor:pointer;font:bold 1.5em Arial;color:#202021;text-decoration:none;float:right;padding:5px 30px 5px 5px;}
@@ -199,7 +228,6 @@ section.slideshow {width:1000px;margin:40px auto 90px;clear:both;}
 #contactNoJsMessage						{width:300px;max-width:325px;height:140px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;margin:5px 0;padding:5px;overflow:hidden;@extend .arrondie;}
 #contactNoJsValid							{width:80px;cursor:pointer;background-color:#d2e8a5;@extend .arrondie;}
 #contactNoJsValid:hover						{background-color:#c8e789;color:#690;font: bold 1em Arial;}
-
 
 
 /* ---------------------- */
@@ -233,8 +261,8 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 #descType p		{max-width:320px;margin:0 auto;padding:30px 0;}
 
 	/* Style de la liste des étapes*/
-#steps 					{list-style:none; width:500px; margin:40px 40px 20px;overflow:hidden;border-top:1px solid silver;border-bottom:1px solid silver}
-#steps li				{font-size:1.8em; display:inline-block;padding-left:30px;margin:10px 20px; color:#b0b1b3;}
+#steps 			{list-style:none; width:500px; margin:40px 40px 20px;overflow:hidden;border-top:1px solid silver;border-bottom:1px solid silver}
+#steps li			{font-size:1.8em; display:inline-block;padding-left:30px;margin:10px 20px; color:#b0b1b3;}
 #steps li span		{font-size:11px; display:block;}
 #steps li.current 	{color:#690;font-weight:bold;}
 
@@ -245,21 +273,21 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 .next {float:right;}
 
 
-/* ---------------------------- */
-/*     MENTIONS-LEGALES    */
-/* -------------------------- */
-section#mentions-legales				{clear:both;margin:20px 0;}
-section#mentions-legales h2 a 			{font:normal 2em 'oO';padding:40px 0px 0;display:block;}
-section#mentions-legales div 			{margin:15px 0;}
-section#mentions-legales p				{color:#777;text-align:justify;width:640px;}
-section#mentions-legales ul			{list-style-type:none;margin:20px 55px;color:#777}
-section#mentions-legales li				{font-size:1em;}
+/* ----------------------------------- */
+/*    MENTIONS-LEGALES    */
+/* ------------------------------- */
+section#mentions-legales			{clear:both;margin:20px 0;}
+section#mentions-legales h2 a 		{font:normal 2em 'oO';padding:40px 0px 0;display:block;}
+section#mentions-legales div 		{margin:15px 0;}
+section#mentions-legales p			{color:#777;text-align:justify;width:640px;}
+section#mentions-legales ul		{list-style-type:none;margin:20px 55px;color:#777}
+section#mentions-legales li			{font-size:1em;}
 
 
 
 /* ---------------------- */
-/*          FOOTER         */
-/* -------------------- */
+/*     FOOTER        */
+/* ------------------- */
 footer					{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
 footer p,a					{color:#999;}
 footer a:hover				{text-decoration:underline;color:#690;}
