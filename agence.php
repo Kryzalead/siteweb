@@ -59,14 +59,8 @@
 		section#pointsForts ul		{list-style-type:none;}
 		section#pointsForts li			{width:225px;height:200px;border-left:1px solid #777;display:inline-block;}
 		section#pointsForts li.budget 	{border-right:1px solid #777;}
-		section#pointsForts li a		{display:block;width:70px;height:70px;margin:0 auto;background:url('images/sprite.png') 0 -295px no-repeat;}
-		section#pointsForts li a:hover	{background:url('images/sprite.png') 0 -295px no-repeat;}
 		section#pointsForts span.titre	{font:bold 1.3em 'oO';color:#690;text-align:center;display:block;}
-		
-		section#pointsForts li.relationnel a	{background-position:5px -295px;}
-		section#pointsForts li.innovant a		{background-position:-75px -295px;}
-		section#pointsForts li.fiabilite a		{background-position:-155px -295px;width:100px;}
-		section#pointsForts li.budget a		{background-position:-272px -295px;}
+
 	</style>
 </head>
  
@@ -138,10 +132,10 @@
 		     <section id="pointsForts">
 			<h1>Pourquoi nous faire confiance ?</h1>
 			    <ul>
-				<li class="relationnel"><a></a><span class="titre">Relationnel</span></li>
-				<li class="innovant"><a></a><span class="titre">Innovant</span></li>
-				<li class="fiabilite"><a></a><span class="titre">Fiabilité</span></li>
-				<li class="budget"><a></a><span class="titre">Budget</span></li>
+				<li><img src="images/icones/relationnel.png" width="60" height="60" alt="relation"/><span class="titre">Relationnel</span></li>
+				<li><img src="images/icones/innovation.png" width="60" height="60" alt="innovant"/><span class="titre">Innovant</span></li>
+				<li><img src="images/icones/fiable.png" width="60" height="60" alt="Fiabilité"/><span class="titre">Fiabilité</span></li>
+				<li><img src="images/icones/budget.png" width="60" height="60" alt="Budget"/><span class="titre">Budget</span></li>
 			    </ul>
 		    </section>
 		</div><!-- Fin content -->
@@ -158,6 +152,15 @@
 	
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
+    <script>
+	$(function(){
+	    $('img').hover(function(){
+		    $(this).animate({width: 80,height: 80},800);
+	      },function(){
+		    $(this).animate({width: 60,height: 60},800);
+	    });
+      })
+    </script>
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
