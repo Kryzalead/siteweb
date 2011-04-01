@@ -43,22 +43,21 @@
 		ul.process li.maintenance a{background-position:0 -362px;height:120px;}
 		ul.process li.maintenance a:hover{background-position:-301px -362px;}
 		
-		#ombreBarre{width:500px; height:14px;background:url('images/ombreBarre.png') 0 0 no-repeat;margin-top:30px;}
-		#ombrePetiteBarre{width:300px; height:14px;background:url('images/ombreBarre.png') 0 -27px no-repeat;}
+		#ombreBarre{width:500px; height:14px;background:url('images/sprite.jpg') -280px 0 no-repeat;margin-top:30px;}
+		#ombrePetiteBarre{width:300px; height:14px;background:url('images/sprite.jpg') 0 -27px no-repeat;}
 		
 		a.carreVert{background:#690;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreVert{background:#AFE542;}
-		a.carreBleu{background:#17B7B7;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreBleu{background:#7BFCFC;}
 		
 		article.txtDeveloppement{width:800px;}
 		article.txtDeveloppement blockquote{font:normal 1.8em 'oO';margin-top:30px;}
 		article.txtDeveloppement p{width:550px;}
-		
 		
 		section#pointsForts			{margin:10px 0 20px;}
 		section#pointsForts h1		{font:normal 2em 'oO';margin:10px 0 20px;border-bottom:1px solid #777;width:900px;}
 		section#pointsForts ul		{list-style-type:none;}
 		section#pointsForts li			{width:225px;height:200px;border-left:1px solid #777;display:inline-block;}
 		section#pointsForts li.budget 	{border-right:1px solid #777;}
+		section#pointsForts li img		{position:absolute;}
 		section#pointsForts span.titre	{font:bold 1.3em 'oO';color:#690;text-align:center;display:block;}
 
 	</style>
@@ -132,7 +131,7 @@
 		     <section id="pointsForts">
 			<h1>Pourquoi nous faire confiance ?</h1>
 			    <ul>
-				<li><img src="images/icones/relationnel.png" width="60" height="60" alt="relation"/><span class="titre">Relationnel</span></li>
+				<li><img src="images/icones/relationnel.png" width="60" alt="relation"/><span class="titre">Relationnel</span></li>
 				<li><img src="images/icones/innovation.png" width="60" height="60" alt="innovant"/><span class="titre">Innovant</span></li>
 				<li><img src="images/icones/fiable.png" width="60" height="60" alt="Fiabilité"/><span class="titre">Fiabilité</span></li>
 				<li><img src="images/icones/budget.png" width="60" height="60" alt="Budget"/><span class="titre">Budget</span></li>
