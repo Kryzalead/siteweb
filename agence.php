@@ -131,7 +131,7 @@
 		    
 		     <section id="pointsForts">
 			<h1>Pourquoi nous faire confiance ?</h1>
-			    <ul>
+			    <ul id="imgHover">
 				<li><img src="images/icones/relationnel.png" width="60" height="60" alt="relation"/><span class="titre">Relationnel</span></li>
 				<li><img src="images/icones/innovation.png" width="60" height="60" alt="innovant"/><span class="titre">Innovant</span></li>
 				<li><img src="images/icones/fiable.png" width="60" height="60" alt="Fiabilité"/><span class="titre">Fiabilité</span></li>
@@ -154,7 +154,7 @@
     <script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
     <script>
 	$(function(){
-	    $('img').hover(function(){
+	    $('#imgHover li img').hover(function(){
 		    $(this).animate({width: 80,height: 80},800);
 	      },function(){
 		    $(this).animate({width: 60,height: 60},800);
