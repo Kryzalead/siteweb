@@ -272,7 +272,6 @@ span.carreOrange {
 /* ------------------------ */
 /* line 113, ../style.scss */
 header.headerMenu {
-  position: relative;
   border-bottom: 6px solid #690;
   background-color: #202021;
   width: 100%;
@@ -303,7 +302,7 @@ header.headerMenu nav {
   padding-top: 10px;
   display: inline-block;
   vertical-align: top;
-  margin-left: 115px;
+  margin-left: 105px;
 }
 
 /* line 117, ../style.scss */

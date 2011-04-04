@@ -75,6 +75,7 @@
 	
 	</div> <!-- FIN WRAPPER -->
 	
+	<script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
 	<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-21805318-1']);
