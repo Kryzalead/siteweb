@@ -33,8 +33,8 @@ require('../fonctions/config.php');
 			if(!empty($_SESSION['contactnojs']['erreur']['send']))
 			    echo '<p class="error">'.htmlspecialchars($_SESSION['contactnojs']['erreur']['send']).'</p>';
 		    ?>
-		    <h2 id="contact_header">Un commentaire ?</h2>
-		    <img src="<?php echo ROOT;?>images/contact/cubes.png" alt="Kryzalead agence web - Suivez-nous - Contact" width="300" class="img-form"/>
+		    <h2 id="contact_header"><span id="symboleAt"></span>Un commentaire ?</h2>
+			<div id="bonhommeContact"></div>
 			<form action="traitement.php" method="post" id="contactForm">
 			     <p><label for="contactNoJsNom" >Votre nom : </label>
 				<?php

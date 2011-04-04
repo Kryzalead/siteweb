@@ -18,39 +18,38 @@
 	    <header class="headerMenu" role="banner">
 		<?php include('includes/header.php');?>
 	    </header>
-
-	    <div id="slogan">
-		<h2><a>Votre projet est à l'état de cocon?<br/>
-		Nous sommes là pour l'aider à s'envoler.</a></h2>
-	    </div>
-		
-	    <div id="content"><!-- Debut content -->
-		<section class="presentation">
+	    
+	<div id="content"><!-- Debut content -->
+		<section id="presentation">
+		    <h1><a>Votre projet est à l'état de cocon?<br/>Nous sommes là pour l'aider à s'envoler.</a></h1>
+		    
 		    <article>
-			<h1>L'agence en quelques mots</h1>
+			<h2><span class="carreVert animer"></span>L'agence en quelques mots</h2>
 			    <p>
-				<span class="color">Kryzalead</span> est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois <strong>esthétiques, fidèles, fiables et conformes aux stantards du web (W3C) </strong>destiné aux professionnels, particuliers et associations.
-				<a href="<?php echo ROOT;?>agence.php">L'agence</a>
+				<span class="color">Kryzalead</span> est une jeune agence web, dynamique, structurée et un brin « déjantée » (dans le bon sens du terme, puisqu’également très créatifs), dans l’ère du temps. Le sérieux et la motivation de cette équipe hautement qualifiée permettent des réalisations à la fois esthétiques, fidèles, fiables et conformes aux standards du web (W3C) destiné aux professionnels, particuliers et associations.
+				<a href="<?php echo ROOT;?>agence.php">L'agence<span class="fleche"></span></a>
 			    </p>
 			</article>
 			
 			<article>
-			    <h1>Les offres du moment</h1>
-				<p>A ne pas louper : </p>
-				    <?php	// include('fonctions/news_offres.php');?>
+			    <h2><span class="carreBleu animer"></span>Les offres du moment</h2>
+				<p>A ne pas louper : Patience, ça va venir… </p>
+				    <?php	// include('fonctions/newsOffres.php');?>
 			</article>
 			
 			<article>
-			<h1>Votre devis GRATUIT en ligne</h1>
+			    <h2><span class="carreRose animer"></span>Votre devis GRATUIT</h2>
 				<p>
-				    Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entièrement gratuit et personnalisé ?</strong><br/>
-				    Remplissez le formulaire en quelques clics afin que nous puissions vous le retourner par mail.
-				    <a href="<?php echo ROOT;?>devis/devis.php">Faites votre devis en ligne</a>
+				    <!--Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entièrement gratuit et personnalisé ?</strong><br/>
+				    Remplissez le formulaire en quelques clics afin que nous puissions vous le retourner par mail.-->
+				    Vous avez entre vos mains un projet internet (création de site web? refonte d'un site déjà existant? embryon de projet? Même un p’tit dessin griffonné à la va-vite à l'état de cocon et souhaitez recevoir rapidement un <strong>devis entièrement gratuit et personnalisé ?</strong><br/>
+    					Remplissez le formulaire en quelques clics afin que nous puissions vous fournir un devis dans les délais les plus courts possibles.
+				    <a href="<?php echo ROOT;?>devis/index.php">Faites votre devis en ligne<span class="fleche"></span></a>
 				</p>
 			</article>		
 			
 			<article>
-			    <h1>Projet(s) en cours</h1>
+			    <h2><span class="carreOrange animer"></span>Projet(s) en cours</h2>
 				<?php
 				    $handle = fopen('includes/works.txt','r');
 				    $content = fread($handle,999);
@@ -85,7 +84,6 @@
 	
 	</div> <!-- FIN WRAPPER -->
 	
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="<?php echo ROOT;?>scripts/slide.js" type="text/javascript"></script>
     <script type="text/javascript">
 	$(window).load(function() {

@@ -11,8 +11,9 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/style.css" /> 
-<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/styles_slide.css" /> 
+<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/stylesSlide.css" /> 
 <link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/zoombox.css" /> 
 
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
 <!--[if lt IE 8]><script type="text/javascript" src="scripts/roundies.js"></script><![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>

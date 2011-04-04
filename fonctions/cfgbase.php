@@ -1,6 +1,6 @@
 <?php
 // fichier de création des tables
-mysql_connect('localhost','root','root');
+mysql_connect('localhost','root','');
 mysql_selectdb('kryzalead');
 
 // on supprime la table si elle existe

@@ -9,58 +9,6 @@
  
 <head> 
     <?php include('includes/head.php');?>
-	
-	  <style type="text/css" media="all">
-
-		section#agence 		{margin:20px 0;display:inline-block;vertical-align:top;width:600px;}	 
-		section#agence h1 a 		{font:normal 5em 'O_O';padding-bottom:10px;cursor:default;}
-		section#agence article p	{color:#666666;text-align:justify;}
-		
-		#portraitAgence{background:url('images/sprite.png') 0 -54px no-repeat;width:600px;height:235px;margin:20px 0 10px;}
-	
-		section#etapes{margin-top:20px;}
-		h1.processus{position:absolute;background:url("images/etapes.jpg") 0 8px no-repeat;width:80px;height:490px;color:#fff;cursor:default;}
-		ul.process{font-size:0.9em;color:#777;list-style-type:none;}
-		ul.process li span.txt{background:url("images/fleche.jpg") 10px 40px no-repeat;position:absolute;padding:30px 0 0 60px;text-align:justify;color:#555;cursor:default;width:500px;}
-		ul.process li strong{color:#636363;font-size:1.1em;margin-bottom:5px;display:block;}
-	    
-	    /*  Anime Lignes   */
-		ul.process li a{display:inline-block;vertical-align:top;width:344px;height:90px;background:url("images/etapes.jpg") 0 0 no-repeat;}
-		ul.process li a:hover{background:url("images/etapes.jpg") -356px 0 no-repeat;}
-		
-		ul.process li.premierContact a{background-position:0 0;}
-		ul.process li.premierContact a:hover{background-position:-301px 0;}
-		
-		ul.process li.conception a{background-position:0 -90px;}
-		ul.process li.conception a:hover{background-position:-301px -90px;}
-		
-		ul.process li.realisation a{background-position:0 -180px;}
-		ul.process li.realisation a:hover{background-position:-301px -180px;}
-		
-		ul.process li.miseEnLigne a{background-position:0 -270px;}
-		ul.process li.miseEnLigne a:hover{background-position:-301px -270px;}
-
-		ul.process li.maintenance a{background-position:0 -362px;height:120px;}
-		ul.process li.maintenance a:hover{background-position:-301px -362px;}
-		
-		#ombreBarre{width:500px; height:14px;background:url('images/sprite.jpg') -280px 0 no-repeat;margin-top:30px;}
-		#ombrePetiteBarre{width:300px; height:14px;background:url('images/sprite.jpg') 0 -27px no-repeat;}
-		
-		a.carreVert{background:#690;height:15px;width:15px;display:inline-block;margin-right:5px;} a:hover.carreVert{background:#AFE542;}
-		
-		article.txtDeveloppement{width:800px;}
-		article.txtDeveloppement blockquote{font:normal 1.8em 'oO';margin-top:30px;}
-		article.txtDeveloppement p{width:550px;}
-		
-		section#pointsForts			{margin:10px 0 20px;}
-		section#pointsForts h1		{font:normal 2em 'oO';margin:10px 0 20px;border-bottom:1px solid #777;width:900px;}
-		section#pointsForts ul		{list-style-type:none;}
-		section#pointsForts li			{width:225px;height:200px;border-left:1px solid #777;display:inline-block;}
-		section#pointsForts li.budget 	{border-right:1px solid #777;}
-		section#pointsForts li img		{position:absolute;}
-		section#pointsForts span.titre	{font:bold 1.3em 'oO';color:#690;text-align:center;display:block;}
-
-	</style>
 </head>
  
 <body>
@@ -73,18 +21,18 @@
 	    </header>
 		
 		<div id="content"><!-- DEBUT CONTENT -->
-		
+
 		    <section id="agence">
 			<h1><a>Qui sommes-nous ?</a></h1>
 			    <article>
 				<p>
-				   <a class="carreVert animer"></a><span class="couleurVerte gras">Kryzalead</span> est une agence web répondant présent à vos attentes en matière de projets Internet, pour que ces derniers soient synonymes de <strong>popularité, de notoriété et de réussite</strong>.
+				  <span class="carreVert animer"></span><span class="couleurVerte gras">Kryzalead</span> est une agence web répondant présent à vos attentes en matière de projets Internet, pour que ces derniers soient synonymes de <strong>popularité, de notoriété et de réussite</strong>.
 				</p>
 				<div id="portraitAgence"></div>
 				<p>
 				    Tout juste née en 2011, de la passion jumelée de 2 associés, à la fois compétents et littéralement mordus de programmation <span class="txtLittle">(au point d’en oublier presque l’heure du repas, ce qui est peu dire !)</span><br/>
 				    <span class="couleurVerte">Kryzalead</span> est une agence web <strong>dynamique, structurée,</strong> mais sachant tout de même garder un caractère « maison », avec une ambiance familiale, ce qui booste son efficacité et son aptitude à la communication.<br/>
-				    Notre équipe répondra présente non via une <span class="txtBarre">bonne cafetière de café ou d'une bonne sieste</span> mais grâce à  <strong>sa créativité, sa qualification et son enthousiasme à concevoir vos projets</strong>. 
+				    Notre équipe répondra présente non via une <span class="txtBarre">bonne cafetière de café ou d'une bonne sieste</span> mais grâce à <strong>sa créativité, sa qualification et son enthousiasme à concevoir vos projets</strong>. 
 				</p>
 				    <div id="ombreBarre"></div>
 			    </article>
@@ -92,8 +40,8 @@
 			    <article class="txtDeveloppement">
 				<blockquote class="titre">L’informatique, c’est un bureau, une chaise et un peu de logique</blockquote><cite>François Pérusse</cite>
 				    <p>
-					Bon, ça tombe plutôt bien, on a les bureaux et les chaises...<br/>
-					Trêve de plaisanteries.<br/> Ci-dessous un schéma astucieux et fidéle, d'où naîtra une entente sûre entre vous et nous. Assez simplifier, ce schéma se divise en 5 parties permettant une efficacité à toute épreuve.
+					Bon, ça tombe plutôt bien, on a les bureaux et les chaises...<span class="tabulation txtLittle">- Trêve de plaisanteries -</span><br/>
+					Voici un petit schéma (avec couleurs et tout le toutim) résumant nos compétences en 5 principaux points <span class="txtLittle">(c'est tout de suite plus sympa avec un p'tit dessin)</span>
 				    </p>
 			    </article>
 			
@@ -106,7 +54,7 @@
 				    <li class="miseEnLigne"><a></a><span class="txt"><strong>Maintenant… et après !</strong>Toujours dans l’optique de vous proposer plus de services, nous offrons diverses possibilités, telles que l’hébergement de votre site, S.E.O., l’analyse du trafic de votre site (statistiques visiteurs), maintenance, … Nous vous accompagnons à chaque étape de votre évolution, sereinement, tout en douceur et en souplesse.</span></li>
 				    <li class="maintenance"><a></a><span class="txt"><strong>Toujours au top !</strong>Grâce à nous, votre projet reste en permanence opérationnel. Nous nous chargeons de son bon fonctionnement, de sa fiabilité et – avec vos suggestions – nous le faisons évoluer en toute sécurité.</span></li>
 				</ul>
-				<div id="ombreBarre"></div>
+				    <div id="ombreGrandeBarre"></div>
 			</section>
 		    </section>
 
@@ -131,10 +79,10 @@
 		     <section id="pointsForts">
 			<h1>Pourquoi nous faire confiance ?</h1>
 			    <ul id="imgHover">
-				<li><img src="images/icones/relationnel.png" width="60" height="60" alt="relation" /><span class="titre">Relationnel</span></li>
-				<li><img src="images/icones/innovation.png" width="60" height="60" alt="innovant"/><span class="titre">Innovant</span></li>
-				<li><img src="images/icones/fiable.png" width="60" height="60" alt="Fiabilité"/><span class="titre">Fiabilité</span></li>
-				<li><img src="images/icones/budget.png" width="60" height="60" alt="Budget"/><span class="titre">Budget</span></li>
+				<li><img src="images/icones/relationnel.png" alt="relation Kryzalead" /><span class="titre">Relationnel</span>Nous privilégions le dialogue, donnée capitale dans toute relation. Sans dialogue, rien ne serait possible <span class="txtLittle">(à moins de maitriser le langage des signes, mais imaginez un peu le tableau au téléphone !?)</span>. Dans le calme et la convivialité, nous avancerons côte à côte, et nous vous aiderons à réaliser votre projet tout en douceur, sans « couac » et sans soucis…</li>
+				<li><img src="images/icones/innovation.png" alt="innovant Kryzalead"/><span class="titre">Innovant</span>Toutes nos créations sont 100% originales. Nous créons de A à Z tout ce qu’il faut pour votre projet, sans « repomper » des paquets entiers de fichiers venant d’autres projets pour être réadaptés, comme font bon nombre de nos concurrents (en Flag’, messieurs !), solution de facilité par excellence…</li>
+				<li><img src="images/icones/fiable.png" alt="fiabilité Kryzalead"/><span class="titre">Fiabilité</span>Nous appliquons un protocole très strict en matière de contrôles à chaque étape de développement de votre projet, et ce dès le début de l’analyse technique. Nous vous livrons votre projet dans les délais, et certifié parfaitement opérationnel.<br/> De plus, nous restons en veille pour débusquer les éventuelles erreurs inattendues. Avec nous, vous pouvez dormir sur vos deux oreilles…</li>
+				<li><img src="images/icones/budget.png" alt="budget Kryzalead"/><span class="titre">Budget</span>Nos tarifs sont parmi les plus bas du marché, en terme de rapport qualité/prix. Crise oblige, nous ne voulons en aucun cas que votre projet ne vous ruine. Aussi pensons-nous à vous pour vous offrir les meilleures prestations au meilleur prix.<br/><span class="txtLittle">C’est le p’tit cochon tirelire qui va être content.</span></li>
 			    </ul>
 		    </section>
 		</div><!-- Fin content -->
@@ -149,27 +97,26 @@
 	
 	</div> <!-- FIN WRAPPER -->
 	
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>
-    <script>
+    <script type="text/javascript">
 	$(function(){
 	    $('#imgHover li img').hover(function(){
-		    $(this).stop().animate({width: 80,height: 80},800);
+		    $(this).stop().animate({width:85,height:85},400);
 	      },function(){
-		    $(this).stop().animate({width: 60,height: 60},800);
+		    $(this).stop().animate({width:70,height:70},400);
 	    });
       })
     </script>
-	<!--<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-21805318-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-	</script>-->
+<!--<script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-21805318-1']);
+	    _gaq.push(['_trackPageview']);
+    
+	    (function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+</script>-->
 	</body>
 </html>

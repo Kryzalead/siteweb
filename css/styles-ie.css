@@ -1,36 +1,36 @@
 /* ----------------------- */
-/*       Styles IE 6/7       */
-/* --------------------- */
-div.alert-ie					{width:100%;float:left !important;background-color:#202021;}
-div.alert-ie p				{padding:10px 20px; font-size: 1.1em;  color: #FFF;} 
+/*     Styles IE 6/7   */
+/* ------------------- */
+div.alert-ie			{width:100%;float:left !important;background-color:#202021;}
+div.alert-ie p		{padding:10px 20px; font-size: 1.1em;  color: #FFF;} 
 div.alert-ie strong 	{color: #FF4040;}
-div.alert-ie a				{color: #0099FF;}
+div.alert-ie a		{color: #0099FF;}
 div.alert-ie a:hover	{color: #669900;text-decoration:underline;}
 
   
 /* ----------------------- */
-/*          SLOGAN         */
-/* --------------------- */
+/*       SLOGAN       */
+/* -------------------- */
 #slogan	{margin:0 auto;width:1000px;padding-top:70px;}
 
 
 /* --------------------- */
-/*          SLIDER         */
-/* ------------------ */
-.nivoSlider {z-index:1;position:relative;margin:0 auto;width:900px;height:250px;border:7px solid #EEE; }
+/*       SLIDER      */
+/* ----------------- */
+.nivoSlider                   {z-index:1;position:relative;margin:0 auto;width:900px;height:250px;border:7px solid #EEE; }
 	
-a.nivo-nextNav {background-position:-50px 0;right:-12px;}
-a.nivo-prevNav {left:-15px;}
+a.nivo-nextNav             {background-position:-50px 0;right:-12px;}
+a.nivo-prevNav             {left:-15px;}
 
-a.nivo-prevNav:hover{background-position:0 -52px;}
-a.nivo-nextNav:hover{background-position:-50px -52px;}
+a.nivo-prevNav:hover   {background-position:0 -52px;}
+a.nivo-nextNav:hover   {background-position:-50px -52px;}
 
 
 /* ------------------------- */
-/*            FOOTER           */
-/* ---------------------- */
-footer							{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
-footer p,a					{color:#999;}
+/*        FOOTER        */
+/* --------------------- */
+footer				{display:inline-block;border-top:3px solid #690;width:100%;background-color:#111000;}
+footer p,a				{color:#999;}
 footer a:hover			{text-decoration:underline;color:#690;}
-#mentions					{width:1000px;margin:0 auto;}
-#mentions p				{text-align:left;font-size:0.85em;}
+#mentions				{width:1000px;margin:0 auto;}
+#mentions p			{text-align:left;font-size:0.85em;}
