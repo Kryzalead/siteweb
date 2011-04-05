@@ -70,9 +70,9 @@
 					    <legend>Vos coordonnées</legend>
 						<p>
 						    <span class="descInput">Votre civilité<span class="asterisk">*</span>:</span>
-						    <label for="mlle" id="l_mlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="mlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
-						    <label for="mme" id="l_mme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="mme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
-						    <label for="mr" id="l_mr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="mr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
+						    <label for="mlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="mlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
+						    <label for="mme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="mme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
+						    <label for="mr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="mr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['civilite']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['civilite'].'</span>';
@@ -80,15 +80,15 @@
 						</p>
 						<p>
 						    <span class="descInput">Votre statut<span class="asterisk">*</span>:</span> 
-						    <label for="particulier" id="l_particulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="particulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
-						    <label for="professionnel" id="l_professionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="professionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
+						    <label for="particulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="particulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
+						    <label for="professionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="professionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['statut']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['statut'].'</span>';
 							?>
 						</p>
 						<p>
-						    <label for="nom" id="l_nom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
+						    <label for="nom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
 							<input type="text" name="devis[nom]" id="devisNom" value="<?php echo $nom;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['nom']))
@@ -96,7 +96,7 @@
 							?>
 						</p>
 						<p>
-						    <label for="prenom" id="l_prenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
+						    <label for="prenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
 						    <input type="text" name="devis[prenom]" id="devisPrenom" value="<?php echo $prenom;?>"/>
 						<?php
 							if(!empty($_SESSION['devis']['erreur']['prenom']))
@@ -104,7 +104,7 @@
 						?>
 						</p>
 						<p>
-						    <label for="email" id="l_email" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
+						    <label for="email" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
 							<input type="text" name="devis[email]" id="devisEmail" value="<?php echo $email;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['email']))
@@ -112,7 +112,7 @@
 							?>
 						</p>
 						<p>
-						    <label for="tel" id="l_tel" class="descInput">Votre téléphone :</label>
+						    <label for="tel" class="descInput">Votre téléphone :</label>
 						    <input type="text" name="devis[tel]" id="tel" value="<?php echo $tel;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['tel']))
@@ -120,7 +120,7 @@
 							?>
 						</p>
 						<p>
-						    <label for="desc" id="l_desc" class="descInput">Description de votre activité :</label>
+						    <label for="desc" class="descInput">Description de votre activité :</label>
 						    <textarea id="desc" name="devis[desc]" cols="25" rows="5"><?php echo $desc;?></textarea>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['desc']))
@@ -139,15 +139,15 @@
 			
 							<input class="typeSite" type="radio" name="devis[type]" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
 							<span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
-							<label for="typeVitrine" id="l_typeVitrine">Site Vitrine : </label><br />
+							<label for="typeVitrine">Site Vitrine : </label><br />
 											
 							<input class="typeSite" type="radio" name="devis[type]" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
 							<span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
-							<label for="typePro" id="l_typePro">Site Professionnel : </label><br />
+							<label for="typePro">Site Professionnel : </label><br />
 											
 							<input class="typeSite" type="radio" name="devis[type]" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
 							<span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
-							<label for="typeCommerce" id="l_typeCommerce">Site E-commerce : </label><br />
+							<label for="typeCommerce">Site E-commerce : </label><br />
 						    </div>
 						    <div id="descType">
 							<p>
@@ -161,7 +161,7 @@
 						</p>
 						<div class="clear"></div>
 						<p>
-							<label for="nbrePage" id="l_nbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
+							<label for="nbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
 							<select name="devis[nbrePage]" id="nbrePage">
 							    <option value="0">- - Choisir - -</option>
 							    <option value="1" <?php if($nbrePage == '1') echo 'selected="selected"';?>>Inférieur à 5 pages</option>
@@ -177,30 +177,30 @@
 						<p>
 						    Options principales souhaitées :<br />
 						    <div class="infobulle">
-							<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin" id="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
+							<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
 						    </div>
 						    <div class="infobulle">  
-							<input type="checkbox" name="devis[optContact]" id="optContact" <?php if($optContact == 'on') echo 'checked="checked"';?>/><label for="optContact" id="optContact">Formulaire de contact<span>Permettez à vos visiteurs de vous contacter</span></label>
+							<input type="checkbox" name="devis[optContact]" id="optContact" <?php if($optContact == 'on') echo 'checked="checked"';?>/><label for="optContact" >Formulaire de contact<span>Permettez à vos visiteurs de vous contacter</span></label>
 						    </div>    
 						    <div class="infobulle">      
-							<input type="checkbox" name="devis[optNewsletter]" id="optNewsletter" <?php if($optNewsletter == 'on') echo 'checked="checked"';?>/><label for="optNewsletter" id="optNewsletter">Newsletter<span>Prévenez vos visiteurs des dernières nouveautés de votre site</span></label>
+							<input type="checkbox" name="devis[optNewsletter]" id="optNewsletter" <?php if($optNewsletter == 'on') echo 'checked="checked"';?>/><label for="optNewsletter" >Newsletter<span>Prévenez vos visiteurs des dernières nouveautés de votre site</span></label>
 						    </div>
 						    <div class="infobulle">      
-							<input type="checkbox" name="devis[optGalerie]" id="optGalerie" <?php if($optGalerie == 'on') echo 'checked="checked"';?>/><label for="optGalerie" id="optgalerie">Galerie photo/produits<span>Présentez vos produits en ligne</span></label>
+							<input type="checkbox" name="devis[optGalerie]" id="optGalerie" <?php if($optGalerie == 'on') echo 'checked="checked"';?>/><label for="optGalerie" >Galerie photo/produits<span>Présentez vos produits en ligne</span></label>
 						    </div>    
 						    <div class="infobulle">      
-							<input type="checkbox" name="devis[optBoutique]" id="optBoutique" <?php if($optBoutique == 'on') echo 'checked="checked"';?>/><label for="optBoutique" id="optBoutique">Boutique en ligne<span>Vendez vos produits en ligne</span></label>
+							<input type="checkbox" name="devis[optBoutique]" id="optBoutique" <?php if($optBoutique == 'on') echo 'checked="checked"';?>/><label for="optBoutique" >Boutique en ligne<span>Vendez vos produits en ligne</span></label>
 						    </div>    
 						    <div class="infobulle">      
-							<input type="checkbox" name="devis[optForum]" id="optForum" <?php if($optForum == 'on') echo 'checked="checked"';?>/><label for="optForum" id="optForum">Forum de discussions<span>Discutez avec vos visiteurs</span></label>
+							<input type="checkbox" name="devis[optForum]" id="optForum" <?php if($optForum == 'on') echo 'checked="checked"';?>/><label for="optForum">Forum de discussions<span>Discutez avec vos visiteurs</span></label>
 						    </div>    
 						    <div class="infobulle">      
-							<input type="checkbox" name="devis[optStats]" id="optStats" <?php if($optStats == 'on') echo 'checked="checked"';?>/><label for="optStats" id="optStats">Statistiques<span>Connaître les statistiques de votre site (nombre de visites)</span></label>
+							<input type="checkbox" name="devis[optStats]" id="optStats" <?php if($optStats == 'on') echo 'checked="checked"';?>/><label for="optStats" >Statistiques<span>Connaître les statistiques de votre site (nombre de visites)</span></label>
 						    </div>
 						    <div class="clear"></div>
 						</p>
 						<p style="margin-top:20px;">
-						    <label for="maintenance" id="l_maintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
+						    <label for="maintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
 						    <select name="devis[maintenance]" id="maintenance">
 							<option value="0">- - Choisir - -</option>
 							<option value="1" <?php if($maintenance == 'oui') echo 'selected="selected"';?>>Oui</option>
@@ -212,7 +212,7 @@
 							?>
 						</p>
 						<p style="margin-top:20px;">
-						    <label for="start" id="l_start" class="descInput">Démarrage de votre site :</label>
+						    <label for="start" class="descInput">Démarrage de votre site :</label>
 						    <select name="devis[start]" id="start">
 							<option value="0">- - Choisir --</option>
 							<option value="1" <?php if($start == '1') echo 'selected="selected"';?>>Moins de 3 mois</option>
@@ -221,7 +221,7 @@
 						    </select>
 						</p>
 						<p>
-						    <label for="budget" id="l_budget" class="descInput">Votre budget :</label>
+						    <label for="budget" class="descInput">Votre budget :</label>
 						    <input type="text" name="devis[budget]" id="budget" value="<?php echo $budget;?>"/> euros
 							<?php
 							if(!empty($_SESSION['devis']['erreur']['budget']))
@@ -236,25 +236,25 @@
 						</p>
 						<p class="inputRadio">
 						    Design :<br />
-						    <input type="radio" name="devis[design]" value="non" id="noDesign" <?php if($design == 'non') echo 'checked="checked"';?> /><label for="noDesign" id="l_noDesign"> Je vous confie la création du design</label><br />
-						    <input type="radio" name="devis[design]" value="oui" id="design" <?php if($design == 'oui') echo 'checked="checked"';?>><label for="design" id="l_design"> Je vous fournirai le design </label><span class="legend">*</span><br />
+						    <input type="radio" name="devis[design]" value="non" id="noDesign" <?php if($design == 'non') echo 'checked="checked"';?> /><label for="noDesign"> Je vous confie la création du design</label><br />
+						    <input type="radio" name="devis[design]" value="oui" id="design" <?php if($design == 'oui') echo 'checked="checked"';?>><label for="design"> Je vous fournirai le design </label><span class="legend">*</span><br />
 						    </p>
 						<p class="inputRadio">
 						    Logo :<br />
-						    <input type="radio" name="devis[logo]" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo" id="l_needLogo"> Je vous confie la création du logo</label><br />
-						    <input type="radio" name="devis[logo]" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo" id="l_logo" > Je vous fournirai le logo </label><span class="legend">*</span><br />
-						    <input type="radio" name="devis[logo]" value="non" id="noLogo" <?php if($logo == 'non') echo 'checked="checked"';?> /><label for="noLogo" id="l_noLogo"> Je n'ai pas besoin de logo</label><br />
+						    <input type="radio" name="devis[logo]" value="need" id="needLogo" <?php if($logo == 'need') echo 'checked="checked"';?> /><label for="needLogo"> Je vous confie la création du logo</label><br />
+						    <input type="radio" name="devis[logo]" value="oui" id="logo" <?php if($logo == 'oui') echo 'checked="checked"';?> /><label for="logo"> Je vous fournirai le logo </label><span class="legend">*</span><br />
+						    <input type="radio" name="devis[logo]" value="non" id="noLogo" <?php if($logo == 'non') echo 'checked="checked"';?> /><label for="noLogo"> Je n'ai pas besoin de logo</label><br />
 						</p>
 						<p class="inputRadio">
 						    Contenu (textes) :<br />
-						    <input type="radio" name="devis[contenu]" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" id="l_noContenu"> Je vous confie la création du contenu</label><br />                       
-						    <input type="radio" name="devis[contenu]" value="oui" id="contenu" <?php if($contenu == 'oui') echo 'checked="checked"';?> /><label for="contenu" id="l_contenu"> Je fournai le contenu du site</label><span class="legend">*</span><br />
+						    <input type="radio" name="devis[contenu]" value="non" id="noContenu" <?php if($contenu == 'non') echo 'checked="checked"';?> /><label for="noContenu" > Je vous confie la création du contenu</label><br />                       
+						    <input type="radio" name="devis[contenu]" value="oui" id="contenu" <?php if($contenu == 'oui') echo 'checked="checked"';?> /><label for="contenu"> Je fournai le contenu du site</label><span class="legend">*</span><br />
 						</p>
 						<p class="inputRadio">
 						     Images :<br />
-						    <input type="radio" name="devis[img]" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage" id="l_needImage"> Je vous confie la création des images</label><br />
-						    <input type="radio" name="devis[img]" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image" id="l_image"> Je vous fournirai les images</label><span class="legend">*</span><br />
-						    <input type="radio" name="devis[img]" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage" id="l_noImage"> Je n'ai pas besoin d'images</label><br />
+						    <input type="radio" name="devis[img]" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage"> Je vous confie la création des images</label><br />
+						    <input type="radio" name="devis[img]" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image"> Je vous fournirai les images</label><span class="legend">*</span><br />
+						    <input type="radio" name="devis[img]" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage"> Je n'ai pas besoin d'images</label><br />
 						   <p style="padding-top:20px;">
 							<span class="legend">*</span> : <span class="little">Le(s) fichier(s) Photoshop .PSD, Fireworks .PNG, Illustrator .AI, texte(s) .TXT .RTF .DOC sera(ont) demandé(s) lors de notre entretien.</span>
 						  </p>
