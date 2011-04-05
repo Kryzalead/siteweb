@@ -13,6 +13,7 @@
     <style type="text/css" media="all">
 
 	ul.navigation ul										{list-style-type:none;}
+	nav.slide	{border:1px solid red}
 	.navigation li.toggleSubMenu							{display:inline-block;vertical-align:top;height:135px;width:107px;background:url('images/sprite2.jpg');background-repeat:no-repeat;cursor:pointer;}
 	.navigation a,.navigation span							{padding-top:117px;text-align:center;display:block;font:bold 1.2em 'oO'}
 	.navigation a:hover,.navigation a:focus,.navigation a:active		{text-decoration:none;color:#690;}
