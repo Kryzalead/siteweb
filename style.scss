@@ -274,7 +274,7 @@ article header.actuBlog p	{color:#690;}
 #contactNoJs h2							{font:normal 4.5em 'O_O';}
 #contactNoJs .inputError						{display: inline}
 #contactNoJs .success,#contactNoJs .error		{display: block}
-#contactNoJsNom,#contactNoJsEmail 			{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;@extend .arrondie;margin:5px 0;padding:10px 5px;overflow:hidden}
+#contactNoJsNom,#contactNoJsEmail 			{width:230px;height:7px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;margin:5px 0;padding:10px 5px;overflow:hidden;@extend .arrondie;}
 #contactNoJsMessage:hover,#contactNoJsNom:hover,#contactNoJsEmail:hover	{background-color:#c8e789;}
 #contactNoJsMessage						{width:300px;max-width:325px;height:140px;max-height:200px;border-color:#7C7C7C #CECECE #CECECE #7C7C7C;background-color:#d2e8a5;color:#404040;margin:5px 0;padding:5px;overflow:hidden;@extend .arrondie;}
 #contactNoJsValid							{width:80px;cursor:pointer;background-color:#d2e8a5;@extend .arrondie;}
@@ -329,42 +329,35 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 /* --------------- */
 /*    PACKS   */
 /* ------------ */
-section#packs					{width:1000px;border-bottom:1px solid #999;}
+section#packs					{width:1000px;margin-bottom:250px;border-bottom:1px solid #999;}
 section#packs p				{padding:30px 0;}
 
-/*nav.slide figure					{display:inline-block;vertical-align:top;margin:0;}
-nav.slide figure a 				{display:block;height:135px;width:107px;background:url('../images/sprite2.jpg');background-repeat:no-repeat;cursor:pointer;}
-nav.slide figure a:hover 			{background:url('../images/sprite2.jpg');background-repeat:no-repeat;}
-nav.slide a figcaption  			{padding-top:118px;color: #888;font:bold 1.2em 'oO';text-align:center;}
-nav.slide a:hover figcaption  		{color:#09f;text-shadow:1px 1px 5px #999;}
+ul.navigation ul										{list-style-type:none;}
+.navigation li.toggleSubMenu							{display:inline-block;vertical-align:top;height:135px;width:107px;background:url('../images/sprite2.jpg');background-repeat:no-repeat;cursor:pointer;}
+.navigation a,.navigation span							{padding-top:117px;text-align:center;display:block;font:bold 1.2em 'oO'}
+.navigation a:hover,.navigation a:focus,.navigation a:active		{text-decoration:none;color:#690;}
+.navigation ul.subMenu								{display:block;width:980px;height:300px;font-size:1em;color:#09f;@extend .arrondie;@extend .boxOmbre;}
+.navigation ul.subMenu li								{left:0;bottom:0;width:300px;display:inline-block;vertical-align:top;padding:10px 10px;}
 
-nav.slide figure#packLaunchWeb a	{background-position:7px -610px;}
-nav.slide #packLaunchWeb a:hover	{background-position:7px -481px;}
 
-nav.slide figure#packVitrine a		{background-position:-107px -610px;}
-nav.slide #packVitrine a:hover		{background-position:-107px -481px;}
-
-nav.slide figure#packCatalogue a	{background-position:-345px -610px;}
-nav.slide #packCatalogue a:hover	{background-position:-345px -479px;}
-
-nav.slide figure#packEcommerce a	{background-position:-217px -610px;}
-nav.slide #packEcommerce a:hover	{background-position:-217px -480px;}
-
-nav.slide figure#packMetiers a		{background-position:-589px -610px;}
-nav.slide #packMetiers a:hover		{background-position:-589px -480px;}
-
-nav.slide figure#packSurMesure a	{background-position:-816px -610px;}
-nav.slide #packSurMesure a:hover	{background-position:-816px -480px;}
-
-nav.slide figure#packRefonte a		{background-position:-471px -610px;}
-nav.slide #packRefonte a:hover		{background-position:-471px -480px;}
-
-nav.slide figure#backOffice a		{background-position:-695px -610px;}
-nav.slide #backOffice a:hover		{background-position:-695px -479px;}
-
-nav.slide #packMaintenance a		{background-position:-954px -610px;}
-nav.slide #packMaintenance a:hover 	{background-position:-954px -482px;}*/
-
+.navigation li.packLaunchWeb			{background-position:7px -615px;}
+.navigation li.packLaunchWeb:hover		{background-position:7px -485px;}
+.navigation li.packVitrine				{background-position:-107px -615px;}
+.navigation li.packVitrine:hover			{background-position:-107px -485px;}
+.navigation li.packCatalogue			{background-position:-345px -615px;}
+.navigation li.packCatalogue:hover		{background-position:-345px -485px;}
+.navigation li.packEcommerce			{background-position:-217px -615px;}
+.navigation li.packEcommerce:hover		{background-position:-217px -485px;}
+.navigation li.packMetiers				{background-position:-589px -615px;}
+.navigation li.packMetiers:hover			{background-position:-589px -485px;}
+.navigation li.packSurMesure			{background-position:-816px -615px;}
+.navigation li.packSurMesure:hover		{background-position:-816px -485px;}
+.navigation li.packRefonte				{background-position:-471px -615px;}
+.navigation li.packRefonte:hover			{background-position:-471px -485px;}
+.navigation li.backOffice				{background-position:-695px -615px;}
+.navigation li.backOffice:hover			{background-position:-695px -485px;}
+.navigation li.packMaintenance			{background-position:-954px -615px;}
+.navigation li.packMaintenance:hover 		{background-position:-954px -485px;}
 
 
 /* ----------------------------------- */

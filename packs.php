@@ -11,41 +11,8 @@
     <?php include('includes/head.php');?>
     
     <style type="text/css" media="all">
-
-	ul.navigation ul										{list-style-type:none;}
-	.navigation li.toggleSubMenu							{display:inline-block;vertical-align:top;height:135px;width:107px;background:url('images/sprite2.jpg');background-repeat:no-repeat;cursor:pointer;}
-	.navigation a,.navigation span							{padding-top:117px;text-align:center;display:block;font:bold 1.2em 'oO'}
-	.navigation a:hover,.navigation a:focus,.navigation a:active		{text-decoration:none;color:#690;}
-	.navigation ul.subMenu								{position:absolute;top:570px;left:130px;width:980px;background:#E5E5E5;font-size:1em;color:#09f;border-bottom:1px dashed #999;}
-	.navigation ul.subMenu li								{width:300px;display:inline-block;vertical-align:top;padding:5px 10px;border-right:1px dotted red;}
+	section#packs .slide	{border:1px solid #F200FF;display:block;width:1000px;height:500px;margin:0 auto;}
 	
-
-	.navigation li.packLaunchWeb			{background-position:7px -610px;}
-	.navigation li.packLaunchWeb:hover		{background-position:7px -481px;}
-
-	.navigation li.packVitrine				{background-position:-107px -610px;}
-	.navigation li.packVitrine:hover			{background-position:-107px -481px;}
-
-	.navigation li.packCatalogue			{background-position:-345px -610px;}
-	.navigation li.packCatalogue:hover		{background-position:-345px -479px;}
-	
-	.navigation li.packEcommerce			{background-position:-217px -610px;}
-	.navigation li.packEcommerce:hover		{background-position:-217px -480px;}
-	
-	.navigation li.packMetiers				{background-position:-589px -610px;}
-	.navigation li.packMetiers:hover			{background-position:-589px -480px;}
-	
-	.navigation li.packSurMesure			{background-position:-816px -610px;}
-	.navigation li.packSurMesure:hover		{background-position:-816px -480px;}
-	
-	.navigation li.packRefonte				{background-position:-471px -610px;}
-	.navigation li.packRefonte:hover			{background-position:-471px -480px;}
-	
-	.navigation li.backOffice				{background-position:-695px -610px;}
-	.navigation li.backOffice:hover			{background-position:-695px -479px;}
-	
-	.navigation li.packMaintenance			{background-position:-954px -610px;}
-	.navigation li.packMaintenance:hover 		{background-position:-954px -482px;}
     </style>
 </head>
  

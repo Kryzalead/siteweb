@@ -231,7 +231,7 @@ span.carreOrange {
 }
 
 /* line 95, ../style.scss */
-.arrondie, aside.iconesProgs, #contact, #nom, #email, #message, #contactValid, #contactNoJs, #contactNoJsNom, #contactNoJsEmail, #contactNoJsMessage, #contactNoJsValid, input, textarea, #descType, .prev, .next {
+.arrondie, aside.iconesProgs, #contact, #nom, #email, #message, #contactValid, #contactNoJs, #contactNoJsNom, #contactNoJsEmail, #contactNoJsMessage, #contactNoJsValid, input, textarea, #descType, .prev, .next, .navigation ul.subMenu {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
@@ -241,7 +241,7 @@ span.carreOrange {
 }
 
 /* line 96, ../style.scss */
-.boxOmbre, aside.iconesProgs {
+.boxOmbre, aside.iconesProgs, .navigation ul.subMenu {
   -moz-box-shadow: #777777 1px 1px 7px 0;
   -webkit-box-shadow: #777777 1px 1px 7px 0;
   -o-box-shadow: #777777 1px 1px 7px 0;
@@ -1392,6 +1392,7 @@ lol
 /* line 332, ../style.scss */
 section#packs {
   width: 1000px;
+  margin-bottom: 250px;
   border-bottom: 1px solid #999;
 }
 
@@ -1400,42 +1401,149 @@ section#packs p {
   padding: 30px 0;
 }
 
-/*nav.slide figure					{display:inline-block;vertical-align:top;margin:0;}
-nav.slide figure a 				{display:block;height:135px;width:107px;background:url('../images/sprite2.jpg');background-repeat:no-repeat;cursor:pointer;}
-nav.slide figure a:hover 			{background:url('../images/sprite2.jpg');background-repeat:no-repeat;}
-nav.slide a figcaption  			{padding-top:118px;color: #888;font:bold 1.2em 'oO';text-align:center;}
-nav.slide a:hover figcaption  		{color:#09f;text-shadow:1px 1px 5px #999;}
+/* line 335, ../style.scss */
+ul.navigation ul {
+  list-style-type: none;
+}
 
-nav.slide figure#packLaunchWeb a	{background-position:7px -610px;}
-nav.slide #packLaunchWeb a:hover	{background-position:7px -481px;}
+/* line 336, ../style.scss */
+.navigation li.toggleSubMenu {
+  display: inline-block;
+  vertical-align: top;
+  height: 135px;
+  width: 107px;
+  background: url("../images/sprite2.jpg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
 
-nav.slide figure#packVitrine a		{background-position:-107px -610px;}
-nav.slide #packVitrine a:hover		{background-position:-107px -481px;}
+/* line 337, ../style.scss */
+.navigation a, .navigation span {
+  padding-top: 117px;
+  text-align: center;
+  display: block;
+  font: bold 1.2em 'oO';
+}
 
-nav.slide figure#packCatalogue a	{background-position:-345px -610px;}
-nav.slide #packCatalogue a:hover	{background-position:-345px -479px;}
+/* line 338, ../style.scss */
+.navigation a:hover, .navigation a:focus, .navigation a:active {
+  text-decoration: none;
+  color: #690;
+}
 
-nav.slide figure#packEcommerce a	{background-position:-217px -610px;}
-nav.slide #packEcommerce a:hover	{background-position:-217px -480px;}
+/* line 339, ../style.scss */
+.navigation ul.subMenu {
+  display: block;
+  width: 980px;
+  height: 300px;
+  font-size: 1em;
+  color: #09f;
+}
 
-nav.slide figure#packMetiers a		{background-position:-589px -610px;}
-nav.slide #packMetiers a:hover		{background-position:-589px -480px;}
+/* line 340, ../style.scss */
+.navigation ul.subMenu li {
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 10px;
+}
 
-nav.slide figure#packSurMesure a	{background-position:-816px -610px;}
-nav.slide #packSurMesure a:hover	{background-position:-816px -480px;}
+/* line 343, ../style.scss */
+.navigation li.packLaunchWeb {
+  background-position: 7px -615px;
+}
 
-nav.slide figure#packRefonte a		{background-position:-471px -610px;}
-nav.slide #packRefonte a:hover		{background-position:-471px -480px;}
+/* line 344, ../style.scss */
+.navigation li.packLaunchWeb:hover {
+  background-position: 7px -485px;
+}
 
-nav.slide figure#backOffice a		{background-position:-695px -610px;}
-nav.slide #backOffice a:hover		{background-position:-695px -479px;}
+/* line 345, ../style.scss */
+.navigation li.packVitrine {
+  background-position: -107px -615px;
+}
 
-nav.slide #packMaintenance a		{background-position:-954px -610px;}
-nav.slide #packMaintenance a:hover 	{background-position:-954px -482px;}*/
+/* line 346, ../style.scss */
+.navigation li.packVitrine:hover {
+  background-position: -107px -485px;
+}
+
+/* line 347, ../style.scss */
+.navigation li.packCatalogue {
+  background-position: -345px -615px;
+}
+
+/* line 348, ../style.scss */
+.navigation li.packCatalogue:hover {
+  background-position: -345px -485px;
+}
+
+/* line 349, ../style.scss */
+.navigation li.packEcommerce {
+  background-position: -217px -615px;
+}
+
+/* line 350, ../style.scss */
+.navigation li.packEcommerce:hover {
+  background-position: -217px -485px;
+}
+
+/* line 351, ../style.scss */
+.navigation li.packMetiers {
+  background-position: -589px -615px;
+}
+
+/* line 352, ../style.scss */
+.navigation li.packMetiers:hover {
+  background-position: -589px -485px;
+}
+
+/* line 353, ../style.scss */
+.navigation li.packSurMesure {
+  background-position: -816px -615px;
+}
+
+/* line 354, ../style.scss */
+.navigation li.packSurMesure:hover {
+  background-position: -816px -485px;
+}
+
+/* line 355, ../style.scss */
+.navigation li.packRefonte {
+  background-position: -471px -615px;
+}
+
+/* line 356, ../style.scss */
+.navigation li.packRefonte:hover {
+  background-position: -471px -485px;
+}
+
+/* line 357, ../style.scss */
+.navigation li.backOffice {
+  background-position: -695px -615px;
+}
+
+/* line 358, ../style.scss */
+.navigation li.backOffice:hover {
+  background-position: -695px -485px;
+}
+
+/* line 359, ../style.scss */
+.navigation li.packMaintenance {
+  background-position: -954px -615px;
+}
+
+/* line 360, ../style.scss */
+.navigation li.packMaintenance:hover {
+  background-position: -954px -485px;
+}
+
 /* ----------------------------------- */
 /*    MENTIONS-LEGALES    */
 /* ------------------------------- */
-/* line 373, ../style.scss */
+/* line 366, ../style.scss */
 section#mentions-legales article {
   margin: 10px 0 20px;
   display: inline-block;
@@ -1443,58 +1551,58 @@ section#mentions-legales article {
   width: 600px;
 }
 
-/* line 374, ../style.scss */
+/* line 367, ../style.scss */
 section#mentions-legales article h1 a {
   font: normal 4.5em 'O_O';
   padding-bottom: 25px;
   display: block;
 }
 
-/* line 375, ../style.scss */
+/* line 368, ../style.scss */
 section#mentions-legales article h2 {
   font: bold 1.4em Arial;
   color: #a6ba3b;
   padding: 15px 0;
 }
 
-/* line 376, ../style.scss */
+/* line 369, ../style.scss */
 section#mentions-legales article ul {
   list-style-type: none;
   color: #777;
   text-align: justify;
 }
 
-/* line 377, ../style.scss */
+/* line 370, ../style.scss */
 section#mentions-legales article li {
   font-size: 1em;
   line-height: 1.7em;
   margin-left: 30px;
 }
 
-/* line 378, ../style.scss */
+/* line 371, ../style.scss */
 section#mentions-legales article li a {
   color: #a6ba3b;
   font-weight: bold;
 }
 
-/* line 379, ../style.scss */
+/* line 372, ../style.scss */
 section#mentions-legales article li a:hover {
   color: #2CDDC9;
 }
 
-/* line 380, ../style.scss */
+/* line 373, ../style.scss */
 section#mentions-legales article li a:hover span {
   color: #2CDDC9;
 }
 
-/* line 381, ../style.scss */
+/* line 374, ../style.scss */
 section#mentions-legales article li span {
   color: #a6ba3b;
   font-weight: bold;
   cursor: default;
 }
 
-/* line 382, ../style.scss */
+/* line 375, ../style.scss */
 section#mentions-legales #mentionsImg {
   background: url("../images/sprite.jpg") -610px -55px no-repeat;
   width: 260px;
@@ -1506,7 +1614,7 @@ section#mentions-legales #mentionsImg {
 /* ---------------------- */
 /*     FOOTER        */
 /* ------------------- */
-/* line 388, ../style.scss */
+/* line 381, ../style.scss */
 footer {
   display: inline-block;
   border-top: 3px solid #690;
@@ -1514,36 +1622,36 @@ footer {
   background-color: #111000;
 }
 
-/* line 389, ../style.scss */
+/* line 382, ../style.scss */
 footer p, a {
   color: #999;
 }
 
-/* line 390, ../style.scss */
+/* line 383, ../style.scss */
 footer a:hover {
   text-decoration: underline;
   color: #690;
 }
 
-/* line 391, ../style.scss */
+/* line 384, ../style.scss */
 #mentions {
   width: 1000px;
   margin: 0 auto;
 }
 
-/* line 392, ../style.scss */
+/* line 385, ../style.scss */
 #mentions p {
   text-align: left;
   font-size: 0.85em;
   padding-top: 3px;
 }
 
-/* line 393, ../style.scss */
+/* line 386, ../style.scss */
 #mentions span.ml {
   padding-left: 225px;
 }
 
-/* line 394, ../style.scss */
+/* line 387, ../style.scss */
 #mentions span.w3cLogo {
   background: url("../images/sprite.jpg") -126px 0 no-repeat;
   display: inline-block;
@@ -1558,7 +1666,7 @@ footer a:hover {
 /* --------------------- */
 @media (max-width: 640px) {
   /* passer tous les éléments de largeur fixe en largeur automatique */
-  /* line 403, ../style.scss */
+  /* line 396, ../style.scss */
   body, element1, element2 {
     width: auto !important;
     margin: auto !important;
@@ -1566,13 +1674,13 @@ footer a:hover {
   }
 
   /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */
-  /* line 409, ../style.scss */
+  /* line 402, ../style.scss */
   img, table, td, blockquote, code, pre, textarea, input, object, embed, video {
     max-width: 100% !important;
   }
 
   /* gestion des mots longs */
-  /* line 413, ../style.scss */
+  /* line 406, ../style.scss */
   textarea, table, td, th, code, pre, samp {
     word-wrap: break-word;
     /* césure forcée */
@@ -1581,20 +1689,20 @@ footer a:hover {
   }
 
   /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
-  /* line 418, ../style.scss */
+  /* line 411, ../style.scss */
   element1, element2 {
     float: none !important;
     width: auto !important;
   }
 
   /* masquer les éléments superflus */
-  /* line 423, ../style.scss */
+  /* line 416, ../style.scss */
   .hide_mobile {
     display: none !important;
   }
 
   /* Un message personnalisé */
-  /* line 427, ../style.scss */
+  /* line 420, ../style.scss */
   body:before {
     content: "Version mobile du site";
     display: block;
@@ -1605,7 +1713,7 @@ footer a:hover {
 }
 
 @media only screen and (max-device-width:640px) and (orientation:landscape) {
-  /* line 436, ../style.scss */
+  /* line 429, ../style.scss */
   body {
     -webkit-text-size-adjust: 70% !important;
   }
