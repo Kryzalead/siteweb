@@ -135,24 +135,22 @@
 					    <legend>Votre site</legend>
 						<div class="inputRadio">
 						    <p id="floatLeft">
-								<span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
-				
-								<input class="typeSite" type="radio" name="devis[type]" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
-								<span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
-								<label for="typeVitrine">Site Vitrine : </label><br />
-												
-								<input class="typeSite" type="radio" name="devis[type]" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
-								<span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
-								<label for="typePro">Site Professionnel : </label><br />
-												
-								<input class="typeSite" type="radio" name="devis[type]" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
-								<span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
-								<label for="typeCommerce">Site E-commerce : </label><br />
+							<span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
+			
+							<input class="typeSite" type="radio" name="devis[type]" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
+							<span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
+							<label for="typeVitrine">Site Vitrine : </label><br />
+											
+							<input class="typeSite" type="radio" name="devis[type]" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
+							<span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
+							<label for="typePro">Site Professionnel : </label><br />
+											
+							<input class="typeSite" type="radio" name="devis[type]" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
+							<span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
+							<label for="typeCommerce">Site E-commerce : </label><br />
 						    </p>
 						    <div id="descType">
-								<p>
-									Choisissez un type de site pour avoir des informations
-								</p>
+							<p>Choisissez un type de site pour avoir des informations</p>
 						    </div>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['type']))
@@ -174,10 +172,10 @@
 									    echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['nbrePage'].'</span>';
 								    ?>
 						</p>
-						<div>
+						<div id="optionSouhaitees">
 						    Options principales souhaitées :<br />
 						    <p class="infobulle">
-								<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
+							<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
 						    </p>
 						    <p class="infobulle">  
 							<input type="checkbox" name="devis[optContact]" id="optContact" <?php if($optContact == 'on') echo 'checked="checked"';?>/><label for="optContact" >Formulaire de contact<span>Permettez à vos visiteurs de vous contacter</span></label>

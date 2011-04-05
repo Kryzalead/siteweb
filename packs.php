@@ -51,7 +51,7 @@
 					    </ul>
 					    <ul class="prixPack">
 						<li>
-						    03............
+						    Prix total : <span>679 €</span>
 						</li>
 					    </ul>
 				    </ul> 

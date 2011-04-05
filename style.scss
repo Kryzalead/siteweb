@@ -308,15 +308,17 @@ input[type="checkbox"]{margin-right: 5px}
 input,textarea{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-style:solid;border-width:1px;padding:2px;max-height:150px;max-width:250px;@extend .arrondie;}
 select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECECE;padding: 2px;color:#690;font:bold 1em 'oO';width:165px;text-align:center;}
 
-#floatLeft 			{float: left;margin-bottom:15px;}
+#floatLeft 			{margin:15px 0;position:absolute;}
 #floatLeft input		{margin:10px 0 0px 30px;}
-#descType 		{width:400px;height:100px;margin-left:250px;border:1px dashed #690;@extend .arrondie;}
-#descType p		{max-width:320px;margin:0 auto;padding:30px 0;}
+#descType 		{display:inline-block;vertical-align:top;width:400px;height:100px;margin:15px 0 10px 250px;border:1px dashed #690;@extend .arrondie;}
+#descType p		{padding:35px 40px;}
+#optionSouhaitees p.infobulle	{display:inline-block;vertical-align:top;width:200px;}
+
 
 	/* Style de la liste des étapes*/
 #steps 			{list-style:none; width:500px; margin:40px 40px 20px;overflow:hidden;border-top:1px solid silver;border-bottom:1px solid silver}
 #steps li			{font-size:1.8em; display:inline-block;padding-left:30px;margin:10px 20px; color:#b0b1b3;}
-#steps li span		{font-size:11px; display:block;}lol
+#steps li span		{font-size:11px; display:block;}
 #steps li.current 	{color:#690;font-weight:bold;}
 
 	/* Style des boutons précédent et suivant*/
@@ -338,8 +340,9 @@ ul.navigation ul										{list-style-type:none;}
 .navigation a:hover,.navigation a:focus,.navigation a:active		{text-decoration:none;color:#690;}
 .navigation ul.subMenu								{position:absolute;left:50%;top:60%;margin-left:-490px;width:980px;height:300px;font-size:1em;color:#09f;@extend .arrondie;@extend .boxOmbre;}
 .navigation ul.subMenu ul								{display:inline-block;vertical-align:top;padding:10px;}
-.navigation ul.subMenu li								{background-color:#FFF;width:300px;height:15px;display:inline-block;vertical-align:top;}
-.navigation ul.listePack li								{display:block;border:1px solid red;background-image:url('../images/sprite.jpg') -205px 0 no-repeat;}
+.navigation ul.subMenu li								{background-color:#FFF;width:300px;display:inline-block;vertical-align:top;}
+.navigation ul.listePack li								{display:block;border:1px solid red;background:url('images/sprite.jpg') -205px 0 no-repeat;}
+.navigation ul.prixPack span							{border:1px dotted #000;color:#D4B05E;padding:5px 20px;font-size:1.3em;font-style:italic;}
 
 .navigation li.packLaunchWeb			{background-position:7px -615px;}
 .navigation li.packLaunchWeb:hover		{background-position:7px -485px;}
