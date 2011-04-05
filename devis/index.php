@@ -70,9 +70,9 @@
 					    <legend>Vos coordonnées</legend>
 						<p>
 						    <span class="descInput">Votre civilité<span class="asterisk">*</span>:</span>
-						    <label for="mlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="devisMlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
-						    <label for="mme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="devisMme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
-						    <label for="mr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="devisMr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
+						    <label for="devisMlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="devisMlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
+						    <label for="devisMme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="devisMme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
+						    <label for="devisMr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="devisMr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['civilite']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['civilite'].'</span>';
@@ -80,15 +80,15 @@
 						</p>
 						<p>
 						    <span class="descInput">Votre statut<span class="asterisk">*</span>:</span> 
-						    <label for="particulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="devisParticulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
-						    <label for="professionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="devisProfessionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
+						    <label for="devisParticulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="devisParticulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
+						    <label for="devisProfessionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="devisProfessionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['statut']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['statut'].'</span>';
 							?>
 						</p>
 						<p>
-						    <label for="nom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
+						    <label for="devisNom" class="descInput">Votre nom<span class="asterisk">*</span>:</label>
 							<input type="text" name="devis[nom]" id="devisNom" value="<?php echo $nom;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['nom']))
@@ -96,7 +96,7 @@
 							?>
 						</p>
 						<p>
-						    <label for="prenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
+						    <label for="devisPrenom" class="descInput">Votre prénom<span class="asterisk">*</span>:</label>
 						    <input type="text" name="devis[prenom]" id="devisPrenom" value="<?php echo $prenom;?>"/>
 						<?php
 							if(!empty($_SESSION['devis']['erreur']['prenom']))
@@ -104,7 +104,7 @@
 						?>
 						</p>
 						<p>
-						    <label for="email" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
+						    <label for="devisEmail" class="descInput">Votre e-mail<span class="asterisk">*</span>:</label>
 							<input type="text" name="devis[email]" id="devisEmail" value="<?php echo $email;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['email']))
@@ -112,7 +112,7 @@
 							?>
 						</p>
 						<p>
-						    <label for="tel" class="descInput">Votre téléphone :</label>
+						    <label for="devisTel" class="descInput">Votre téléphone :</label>
 						    <input type="text" name="devis[tel]" id="devisTel" value="<?php echo $tel;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['tel']))
@@ -120,7 +120,7 @@
 							?>
 						</p>
 						<p>
-						    <label for="desc" class="descInput">Description de votre activité :</label>
+						    <label for="devisDesc" class="descInput">Description de votre activité :</label>
 						    <textarea id="devisDesc" name="devis[desc]" cols="25" rows="5"><?php echo $desc;?></textarea>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['desc']))
@@ -134,26 +134,26 @@
 					<fieldset>
 					    <legend>Votre site</legend>
 						<p class="inputRadio">
-						    <div id="floatLeft">
-							<span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
-			
-							<input class="typeSite" type="radio" name="devis[type]" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
-							<span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
-							<label for="typeVitrine">Site Vitrine : </label><br />
-											
-							<input class="typeSite" type="radio" name="devis[type]" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
-							<span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
-							<label for="typePro">Site Professionnel : </label><br />
-											
-							<input class="typeSite" type="radio" name="devis[type]" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
-							<span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
-							<label for="typeCommerce">Site E-commerce : </label><br />
-						    </div>
-						    <div id="descType">
-							<p>
-							    Choisissez un type de site pour avoir des informations
-							</p>
-						    </div>
+						    <p id="floatLeft">
+								<span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
+				
+								<input class="typeSite" type="radio" name="devis[type]" value="typeVitrine" id="typeVitrine" <?php if($type == 'typeVitrine') echo 'checked="checked"';?>/>
+								<span id="desctypeVitrine">Pour présenter votre entreprise, son activité, ses produits et services afin de renforcer son image ou de la developper</span>
+								<label for="typeVitrine">Site Vitrine : </label><br />
+												
+								<input class="typeSite" type="radio" name="devis[type]" value="typePro" id="typePro" <?php if($type == 'typePro') echo 'checked="checked"';?>/>
+								<span id="desctypePro">Pour un site dynamique avec une interface d'administration, pour gérer facilement votre site</span>
+								<label for="typePro">Site Professionnel : </label><br />
+												
+								<input class="typeSite" type="radio" name="devis[type]" value="typeCommerce" id="typeCommerce" <?php if($type == 'typeCommerce') echo 'checked="checked"';?>/>
+								<span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
+								<label for="typeCommerce">Site E-commerce : </label><br />
+						    </p>
+						    <p id="descType">
+								<p>
+									Choisissez un type de site pour avoir des informations
+								</p>
+						    </p>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['type']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['type'].'</span>';
@@ -161,7 +161,7 @@
 						</p>
 						<div class="clear"></div>
 						<p>
-							<label for="nbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
+							<label for="devisNbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
 							<select name="devis[nbrePage]" id="devisNbrePage">
 							    <option value="0">- - Choisir - -</option>
 							    <option value="1" <?php if($nbrePage == '1') echo 'selected="selected"';?>>Inférieur à 5 pages</option>
@@ -176,31 +176,31 @@
 						</p>
 						<p>
 						    Options principales souhaitées :<br />
-						    <div class="infobulle">
-							<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
-						    </div>
-						    <div class="infobulle">  
+						    <p class="infobulle">
+								<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
+						    </p>
+						    <p class="infobulle">  
 							<input type="checkbox" name="devis[optContact]" id="optContact" <?php if($optContact == 'on') echo 'checked="checked"';?>/><label for="optContact" >Formulaire de contact<span>Permettez à vos visiteurs de vous contacter</span></label>
-						    </div>    
-						    <div class="infobulle">      
+						    </p>    
+						    <p class="infobulle">      
 							<input type="checkbox" name="devis[optNewsletter]" id="optNewsletter" <?php if($optNewsletter == 'on') echo 'checked="checked"';?>/><label for="optNewsletter" >Newsletter<span>Prévenez vos visiteurs des dernières nouveautés de votre site</span></label>
-						    </div>
-						    <div class="infobulle">      
+						    </p>
+						    <p class="infobulle">      
 							<input type="checkbox" name="devis[optGalerie]" id="optGalerie" <?php if($optGalerie == 'on') echo 'checked="checked"';?>/><label for="optGalerie" >Galerie photo/produits<span>Présentez vos produits en ligne</span></label>
-						    </div>    
-						    <div class="infobulle">      
+						    </p>    
+						    <p class="infobulle">      
 							<input type="checkbox" name="devis[optBoutique]" id="optBoutique" <?php if($optBoutique == 'on') echo 'checked="checked"';?>/><label for="optBoutique" >Boutique en ligne<span>Vendez vos produits en ligne</span></label>
-						    </div>    
-						    <div class="infobulle">      
+						    </p>    
+						    <p class="infobulle">      
 							<input type="checkbox" name="devis[optForum]" id="optForum" <?php if($optForum == 'on') echo 'checked="checked"';?>/><label for="optForum">Forum de discussions<span>Discutez avec vos visiteurs</span></label>
-						    </div>    
-						    <div class="infobulle">      
+						    </p>    
+						    <p class="infobulle">      
 							<input type="checkbox" name="devis[optStats]" id="optStats" <?php if($optStats == 'on') echo 'checked="checked"';?>/><label for="optStats" >Statistiques<span>Connaître les statistiques de votre site (nombre de visites)</span></label>
-						    </div>
-						    <div class="clear"></div>
+						    </p>
+						    <p class="clear"></p>
 						</p>
 						<p style="margin-top:20px;">
-						    <label for="maintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
+						    <label for="devisMaintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
 						    <select name="devis[maintenance]" id="devisMaintenance">
 							<option value="0">- - Choisir - -</option>
 							<option value="1" <?php if($maintenance == 'oui') echo 'selected="selected"';?>>Oui</option>
@@ -212,7 +212,7 @@
 							?>
 						</p>
 						<p style="margin-top:20px;">
-						    <label for="start" class="descInput">Démarrage de votre site :</label>
+						    <label for="devisStart" class="descInput">Démarrage de votre site :</label>
 						    <select name="devis[start]" id="devisStart">
 							<option value="0">- - Choisir --</option>
 							<option value="1" <?php if($start == '1') echo 'selected="selected"';?>>Moins de 3 mois</option>
@@ -221,7 +221,7 @@
 						    </select>
 						</p>
 						<p>
-						    <label for="budget" class="descInput">Votre budget :</label>
+						    <label for="devisBudget" class="descInput">Votre budget :</label>
 						    <input type="text" name="devis[budget]" id="devisBudget" value="<?php echo $budget;?>"/> euros
 							<?php
 							if(!empty($_SESSION['devis']['erreur']['budget']))
