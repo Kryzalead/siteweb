@@ -70,9 +70,9 @@
 					    <legend>Vos coordonnées</legend>
 						<p>
 						    <span class="descInput">Votre civilité<span class="asterisk">*</span>:</span>
-						    <label for="mlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="mlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
-						    <label for="mme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="mme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
-						    <label for="mr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="mr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
+						    <label for="mlle">Mlle</label><input type="radio" name="devis[civilite]" value="Mlle" id="devisMlle" <?php if($civilite == 'Mlle') echo 'checked="checked"';?>/>
+						    <label for="mme">Mme</label><input type="radio" name="devis[civilite]" value="Mme" id="devisMme" <?php if($civilite == 'Mme') echo 'checked="checked"';?>/>
+						    <label for="mr">Mr</label><input type="radio" name="devis[civilite]" value="Mr" id="devisMr" <?php if($civilite == 'Mr') echo 'checked="checked"';?>/>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['civilite']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['civilite'].'</span>';
@@ -80,8 +80,8 @@
 						</p>
 						<p>
 						    <span class="descInput">Votre statut<span class="asterisk">*</span>:</span> 
-						    <label for="particulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="particulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
-						    <label for="professionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="professionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
+						    <label for="particulier">Particulier</label><input type="radio" name="devis[statut]" value="Particulier" id="devisParticulier" <?php if($statut == 'Particulier') echo 'checked="checked"';?>/>
+						    <label for="professionnel">Professionnel</label><input type="radio" name="devis[statut]" value="Professionnel" id="devisProfessionnel" <?php if($statut == 'Professionnel') echo 'checked="checked"';?>/>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['statut']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['statut'].'</span>';
@@ -113,7 +113,7 @@
 						</p>
 						<p>
 						    <label for="tel" class="descInput">Votre téléphone :</label>
-						    <input type="text" name="devis[tel]" id="tel" value="<?php echo $tel;?>" />
+						    <input type="text" name="devis[tel]" id="devisTel" value="<?php echo $tel;?>" />
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['tel']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['tel'].'</span>';
@@ -121,7 +121,7 @@
 						</p>
 						<p>
 						    <label for="desc" class="descInput">Description de votre activité :</label>
-						    <textarea id="desc" name="devis[desc]" cols="25" rows="5"><?php echo $desc;?></textarea>
+						    <textarea id="devisDesc" name="devis[desc]" cols="25" rows="5"><?php echo $desc;?></textarea>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['desc']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['desc'].'</span>';
@@ -162,7 +162,7 @@
 						<div class="clear"></div>
 						<p>
 							<label for="nbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
-							<select name="devis[nbrePage]" id="nbrePage">
+							<select name="devis[nbrePage]" id="devisNbrePage">
 							    <option value="0">- - Choisir - -</option>
 							    <option value="1" <?php if($nbrePage == '1') echo 'selected="selected"';?>>Inférieur à 5 pages</option>
 							    <option value="2" <?php if($nbrePage == '2') echo 'selected="selected"';?>>Entre 5 à 10 pages</option>
@@ -201,7 +201,7 @@
 						</p>
 						<p style="margin-top:20px;">
 						    <label for="maintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
-						    <select name="devis[maintenance]" id="maintenance">
+						    <select name="devis[maintenance]" id="devisMaintenance">
 							<option value="0">- - Choisir - -</option>
 							<option value="1" <?php if($maintenance == 'oui') echo 'selected="selected"';?>>Oui</option>
 							<option value="2" <?php if($maintenance == 'non') echo 'selected="selected"';?>>Non</option>
@@ -213,7 +213,7 @@
 						</p>
 						<p style="margin-top:20px;">
 						    <label for="start" class="descInput">Démarrage de votre site :</label>
-						    <select name="devis[start]" id="start">
+						    <select name="devis[start]" id="devisStart">
 							<option value="0">- - Choisir --</option>
 							<option value="1" <?php if($start == '1') echo 'selected="selected"';?>>Moins de 3 mois</option>
 							<option value="2" <?php if($start == '2') echo 'selected="selected"';?>>Entre 3 et 6 mois</option>
@@ -222,7 +222,7 @@
 						</p>
 						<p>
 						    <label for="budget" class="descInput">Votre budget :</label>
-						    <input type="text" name="devis[budget]" id="budget" value="<?php echo $budget;?>"/> euros
+						    <input type="text" name="devis[budget]" id="devisBudget" value="<?php echo $budget;?>"/> euros
 							<?php
 							if(!empty($_SESSION['devis']['erreur']['budget']))
 								echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['budget'].'</span>';
