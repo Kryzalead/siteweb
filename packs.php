@@ -9,11 +9,6 @@
 
 <head> 
     <?php include('includes/head.php');?>
-    
-    <style type="text/css" media="all">
-	section#packs .slide	{border:1px solid #F200FF;display:block;width:1000px;height:500px;margin:0 auto;}
-	
-    </style>
 </head>
  
 <body>
@@ -34,16 +29,31 @@
 			<nav role="navigation" class="slide">
 			    <ul class="navigation"> 
 				<li class="toggleSubMenu packLaunchWeb"><span>Launch Web</span> 
-				    <ul class="subMenu openAtLoad"> 
-					<li>
-					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci tortor, posuere a posuere et, euismod in lorem. Nulla facilisi. Curabitur sit amet ultricies purus. Sed auctor posuere mattis. In ac dolor felis, ut cursus dolor. Aenean molestie vehicula metus at lobortis. Aliquam erat volutpat. Vestibulum ligula nibh, faucibus sit amet ornare sed, varius ut nulla. Cras non feugiat neque. Cras lacinia dapibus mi id bibendum. Cras sapien leo, aliquet at viverra in, faucibus at eros.
-					</li>
-					<li>
-					    02.............
-					</li>
-					<li>
-					    03............
-					</li>
+				    <ul class="subMenu openAtLoad">
+					<ul class="descPack">
+					    <li>
+						Dans notre offre petit budget <span class="couleurVerte gras">'Launch web'</span> nous avons inclus :
+					    </li>
+					</ul>
+					    <ul class="listePack">
+						<li>- <a href="#">1 Cahier des charges</a></li>
+						<li>- <a href="#">1 Création graphique</a></li>
+						<li>-  <a href="#">3 Pages web (Accueil et Présentation, vos Produits ou Services, Contact et plan)</a></li>
+						<li>- <a href="#">Installation du site sur le web</a></li>
+						<li>- <a href="#">1 Nom de domaine</a></li>
+						<li>- <a href="#"><b>Un an d'hébergement gratuit</b></a></li>
+						<li>- <a href="#">+ de 10 comptes emails</a></li>
+						<li>- <a href="#">Référencement naturel</a></li>
+						<li>- <a href="#">Statistiques de fréquentation</a></li>
+						<li>- <a href="#">Maintenance (Nous consulter)</a></li>
+						<li>- <a href="#">Espace disque 100Go</a></li>
+						<li>- <a href="#">Protection Antispam et Antivirus</a></li>
+					    </ul>
+					    <ul class="prixPack">
+						<li>
+						    03............
+						</li>
+					    </ul>
 				    </ul> 
 				</li> 
 
