@@ -36,18 +36,18 @@
 					    </li>
 					</ul>
 					    <ul class="listePack">
-						<li>- <a>1 Cahier des charges</a></li>
-						<li>- <a href="#">1 Création graphique</a></li>
-						<li>- <a href="#">3 Pages web (Accueil et Présentation, vos Produits ou Services, Contact et plan)</a></li>
-						<li>- <a href="#">Installation du site sur le web</a></li>
-						<li>- <a href="#">1 Nom de domaine</a></li>
-						<li>- <a href="#"><strong>Un an d'hébergement gratuit</strong></a></li>
-						<li>- <a href="#">+ de 10 comptes emails</a></li>
-						<li>- <a href="#">Référencement naturel</a></li>
-						<li>- <a href="#">Statistiques de fréquentation</a></li>
-						<li>- <a href="#">Maintenance (Nous consulter)</a></li>
-						<li>- <a href="#">Espace disque 100Go</a></li>
-						<li>- <a href="#">Protection Antispam et Antivirus</a></li>
+						<li>1 Cahier des charges</li>
+						<li>1 Création graphique</li>
+						<li>3 Pages web (Accueil et Présentation, vos Produits ou Services, Contact et plan)</li>
+						<li>Installation du site sur le web</li>
+						<li>1 Nom de domaine</li>
+						<li><strong>Un an d'hébergement GRATUIT</strong></li>
+						<li>+ de 10 comptes emails</li>
+						<li>Référencement naturel</li>
+						<li>Statistiques de fréquentation</li>
+						<li>Maintenance (Nous consulter)</li>
+						<li>Espace disque 100Go</li>
+						<li>Protection Antispam et Antivirus</li>
 					    </ul>
 					    <ul class="prixPack">
 						<li>
