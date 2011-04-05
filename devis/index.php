@@ -133,7 +133,7 @@
 					</fieldset>
 					<fieldset>
 					    <legend>Votre site</legend>
-						<p class="inputRadio">
+						<div class="inputRadio">
 						    <p id="floatLeft">
 								<span class="descInput">Type de votre site<span class="asterisk">*</span>:</span><br />
 				
@@ -149,16 +149,16 @@
 								<span id="desctypeCommerce">Pour un site de de catalogue d'achat, commandes, livraisons, paiements via votre site</span>
 								<label for="typeCommerce">Site E-commerce : </label><br />
 						    </p>
-						    <p id="descType">
+						    <div id="descType">
 								<p>
 									Choisissez un type de site pour avoir des informations
 								</p>
-						    </p>
+						    </div>
 							<?php
 								if(!empty($_SESSION['devis']['erreur']['type']))
 									echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['type'].'</span>';
 								?>
-						</p>
+						</div>
 						<div class="clear"></div>
 						<p>
 							<label for="devisNbrePage" class="descInput">Nombre de page<span class="asterisk">*</span>:</label>
@@ -174,7 +174,7 @@
 									    echo '<span class="devisMsgErreur">'.$_SESSION['devis']['erreur']['nbrePage'].'</span>';
 								    ?>
 						</p>
-						<p>
+						<div>
 						    Options principales souhaitées :<br />
 						    <p class="infobulle">
 								<input type="checkbox" name="devis[optAdmin]" id="optAdmin" <?php if($optAdmin == 'on') echo 'checked="checked"';?>/><label for="optAdmin">Site administrable<span>Modifier vous mêmes vos pages via une administration</span></label>   
@@ -198,7 +198,7 @@
 							<input type="checkbox" name="devis[optStats]" id="optStats" <?php if($optStats == 'on') echo 'checked="checked"';?>/><label for="optStats" >Statistiques<span>Connaître les statistiques de votre site (nombre de visites)</span></label>
 						    </p>
 						    <p class="clear"></p>
-						</p>
+						</div>
 						<p style="margin-top:20px;">
 						    <label for="devisMaintenance" class="descInput">Désirez vous nous confier<br />la maintenance de votre site<span class="asterisk">*</span>:</label>
 						    <select name="devis[maintenance]" id="devisMaintenance">
@@ -255,11 +255,11 @@
 						    <input type="radio" name="devis[img]" value="need" id="needImage" <?php if($img == 'need') echo 'checked="checked"';?> /><label for="needImage"> Je vous confie la création des images</label><br />
 						    <input type="radio" name="devis[img]" value="oui" id="image" <?php if($img == 'oui') echo 'checked="checked"';?> /><label for="image"> Je vous fournirai les images</label><span class="legend">*</span><br />
 						    <input type="radio" name="devis[img]" value="non" id="noImage" <?php if($img == 'non') echo 'checked="checked"';?> /><label for="noImage"> Je n'ai pas besoin d'images</label><br />
-						   <p style="padding-top:20px;">
+						</p>
+						<p style="padding-top:20px;">
 							<span class="legend">*</span> : <span class="little">Le(s) fichier(s) Photoshop .PSD, Fireworks .PNG, Illustrator .AI, texte(s) .TXT .RTF .DOC sera(ont) demandé(s) lors de notre entretien.</span>
-						  </p>
+						</p>
 						<input type="submit" name="devis[valid]" id="valid" value="Envoyer" />
-					    </p>
 					</fieldset> 
 				    </form>
 				</section>
