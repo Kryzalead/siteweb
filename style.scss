@@ -337,9 +337,10 @@ ul.navigation ul										{list-style-type:none;}
 .navigation a,.navigation span							{padding-top:117px;text-align:center;display:block;font:bold 1.2em 'oO'}
 .navigation a:hover,.navigation a:focus,.navigation a:active		{text-decoration:none;color:#690;}
 .navigation ul.subMenu								{position:absolute;left:50%;top:60%;margin-left:-490px;width:980px;height:300px;font-size:1em;color:#09f;@extend .arrondie;@extend .boxOmbre;}
-.navigation ul.subMenu li								{background-color:#FFF;width:300px;display:inline-block;vertical-align:top;padding:10px 10px;}
 .navigation ul.subMenu ul								{display:inline-block;vertical-align:top;}
+.navigation ul.subMenu li								{background-color:#FFF;width:300px;display:inline-block;vertical-align:top;padding:10px 10px;}
 .navigation ul.listePack li								{display:block;border:1px solid red;height:10px;}
+.navigation ul.listePack li a								{display:inline;vertical-align:top;border:1px solid #54FF00;}
 
 .navigation li.packLaunchWeb			{background-position:7px -615px;}
 .navigation li.packLaunchWeb:hover		{background-position:7px -485px;}

@@ -14,7 +14,7 @@ $(document).ready( function () {
  
     // On modifie l'évènement "click" sur les liens dans les items de liste 
     // qui portent la classe "toggleSubMenu" : 
-    $(".navigation li.toggleSubMenu > a").hover( function () { 
+    $(".navigation li.toggleSubMenu > a").click( function () { 
         // Si le sous-menu était déjà ouvert, on le referme : 
         if ($(this).next("ul.subMenu:visible").length != 0) { 
             $(this).next("ul.subMenu").slideUp("normal", function () { $(this).parent().removeClass("open") } ); 
