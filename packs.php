@@ -32,16 +32,16 @@
 				    <ul class="subMenu openAtLoad">
 					<ul class="descPack">
 					    <li>
-						Dans notre offre petit budget <span class="couleurVerte gras">'Launch web'</span> nous avons inclus :
+						Dans notre offre petit budget 'Launch web' nous avons inclus :
 					    </li>
 					</ul>
 					    <ul class="listePack">
-						<li>- <a href="#">1 Cahier des charges</a></li>
+						<li>- <a>1 Cahier des charges</a></li>
 						<li>- <a href="#">1 Création graphique</a></li>
-						<li>-  <a href="#">3 Pages web (Accueil et Présentation, vos Produits ou Services, Contact et plan)</a></li>
+						<li>- <a href="#">3 Pages web (Accueil et Présentation, vos Produits ou Services, Contact et plan)</a></li>
 						<li>- <a href="#">Installation du site sur le web</a></li>
 						<li>- <a href="#">1 Nom de domaine</a></li>
-						<li>- <a href="#"><b>Un an d'hébergement gratuit</b></a></li>
+						<li>- <a href="#"><strong>Un an d'hébergement gratuit</strong></a></li>
 						<li>- <a href="#">+ de 10 comptes emails</a></li>
 						<li>- <a href="#">Référencement naturel</a></li>
 						<li>- <a href="#">Statistiques de fréquentation</a></li>
@@ -69,7 +69,7 @@
 				    </ul> 
 				</li>
 				<li class="toggleSubMenu packCatalogue"><span>Catalogue</span> 
-				    <ul class="subMenu openAtLoad"> 
+				    <ul class="subMenu"> 
 					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci tortor, posuere a posuere et, euismod in lorem. Nulla facilisi. Curabitur sit amet ultricies purus. Sed auctor posuere mattis. In ac dolor felis, ut cursus dolor. Aenean molestie vehicula metus at lobortis. Aliquam erat volutpat. Vestibulum ligula nibh, faucibus sit amet ornare sed, varius ut nulla. Cras non feugiat neque. Cras lacinia dapibus mi id bibendum. Cras sapien leo, aliquet at viverra in, faucibus at eros.</li>
 					<li>
 					    02.............
@@ -91,7 +91,7 @@
 				    </ul> 
 				</li>
 				<li class="toggleSubMenu packMetiers"><span>Métiers</span> 
-				    <ul class="subMenu openAtLoad"> 
+				    <ul class="subMenu"> 
 					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci tortor, posuere a posuere et, euismod in lorem. Nulla facilisi. Curabitur sit amet ultricies purus. Sed auctor posuere mattis. In ac dolor felis, ut cursus dolor. Aenean molestie vehicula metus at lobortis. Aliquam erat volutpat. Vestibulum ligula nibh, faucibus sit amet ornare sed, varius ut nulla. Cras non feugiat neque. Cras lacinia dapibus mi id bibendum. Cras sapien leo, aliquet at viverra in, faucibus at eros.</li>
 				 	<li>
 					    02.............
@@ -113,7 +113,7 @@
 				    </ul> 
 				</li>
 				<li class="toggleSubMenu packRefonte"><span>Refonte</span> 
-				    <ul class="subMenu openAtLoad"> 
+				    <ul class="subMenu"> 
 					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci tortor, posuere a posuere et, euismod in lorem. Nulla facilisi. Curabitur sit amet ultricies purus. Sed auctor posuere mattis. In ac dolor felis, ut cursus dolor. Aenean molestie vehicula metus at lobortis. Aliquam erat volutpat. Vestibulum ligula nibh, faucibus sit amet ornare sed, varius ut nulla. Cras non feugiat neque. Cras lacinia dapibus mi id bibendum. Cras sapien leo, aliquet at viverra in, faucibus at eros.</li>
 					<li>
 					    02.............
