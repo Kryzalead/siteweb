@@ -253,8 +253,8 @@ span.carreOrange {
 /* ---------------------- */
 /* line 101, ../style.scss */
 #wrapper {
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* ------------------------ */
@@ -345,7 +345,7 @@ section#presentation {
 
 /* line 127, ../style.scss */
 section#presentation h1 a {
-  font: bold 3.5em 'O_O';
+  font: normal 4.5em 'O_O';
   display: block;
   width: 1000px;
   margin-bottom: 40px;
@@ -364,7 +364,7 @@ section#presentation h1 a {
 /* line 131, ../style.scss */
 #presentation article h2 {
   margin: 0 0 20px;
-  font: normal 1.3em Helvetica;
+  font: normal 1.3em Arial;
   padding-bottom: 2px;
   border-bottom: 1px solid #777;
   width: 220px;
@@ -422,7 +422,7 @@ section#presentation h1 a {
 
 /* -------------------- */
 /*     AGENCE     */
-/* ----------------- */
+/* ---------------- */
 /* line 144, ../style.scss */
 section#agence {
   display: inline-block;
@@ -434,7 +434,6 @@ section#agence {
 section#agence h1 a {
   font: normal 5em 'O_O';
   padding-bottom: 10px;
-  cursor: default;
 }
 
 /* line 146, ../style.scss */
@@ -1143,11 +1142,11 @@ article header.actuBlog p {
 
 /* ---------------------- */
 /*  STYLE DEVIS   */
-/* ------------------- */
+/* ------------------ */
 /* line 287, ../style.scss */
 section#devis h2 a {
   font: normal 4.5em 'O_O';
-  padding: 40px 0px 15px;
+  padding-top: 10px;
   display: block;
 }
 
@@ -1357,7 +1356,7 @@ select {
   font-weight: bold;
 }
 
-/* Style des boutons précédent et suivant*/
+/* Style boutons précédent et suivant*/
 /* line 325, ../style.scss */
 .prev, .next {
   font: bold 1.3em 'oO';
@@ -1398,21 +1397,37 @@ select {
 /* line 334, ../style.scss */
 section#packs {
   width: 1000px;
-  margin-bottom: 250px;
-  border-bottom: 1px solid #999;
+  height: 840px;
+  margin: 0 auto;
 }
 
 /* line 335, ../style.scss */
 section#packs p {
   padding: 30px 0;
+  font: normal 1em Arial;
+}
+
+/* line 336, ../style.scss */
+section#packs nav.slide {
+  border-bottom: 1px solid #999;
+  width: 1000px;
 }
 
 /* line 337, ../style.scss */
-ul.navigation ul {
-  list-style-type: none;
+section#packs h1#imgNosPacks {
+  width: 405px;
+  height: 120px;
+  background: url("../images/sprite2.jpg") -719px -100px no-repeat;
+  margin-left: 250px;
 }
 
-/* line 338, ../style.scss */
+/* line 339, ../style.scss */
+ul.navigation ul {
+  list-style-type: none;
+  display: block;
+}
+
+/* line 340, ../style.scss */
 .navigation li.toggleSubMenu {
   display: inline-block;
   vertical-align: top;
@@ -1423,149 +1438,201 @@ ul.navigation ul {
   cursor: pointer;
 }
 
-/* line 339, ../style.scss */
-.navigation a, .navigation span {
+/* line 341, ../style.scss */
+.navigation a {
+  margin-bottom: 40px;
   padding-top: 117px;
   text-align: center;
   display: block;
   font: bold 1.2em 'oO';
 }
 
-/* line 340, ../style.scss */
+/* line 342, ../style.scss */
 .navigation a:hover, .navigation a:focus, .navigation a:active {
   text-decoration: none;
   color: #690;
 }
 
-/* line 341, ../style.scss */
+/* line 343, ../style.scss */
 .navigation ul.subMenu {
   position: absolute;
   left: 50%;
-  top: 60%;
   margin-left: -490px;
   width: 980px;
-  height: 300px;
   font-size: 1em;
-  color: #09f;
-}
-
-/* line 342, ../style.scss */
-.navigation ul.subMenu ul {
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px;
-}
-
-/* line 343, ../style.scss */
-.navigation ul.subMenu li {
-  background-color: #FFF;
-  width: 300px;
-  display: inline-block;
-  vertical-align: top;
+  color: #888;
 }
 
 /* line 344, ../style.scss */
-.navigation ul.listePack li {
-  display: block;
-  border: 1px solid red;
-  background: url("images/sprite.jpg") -205px 0 no-repeat;
+.navigation ul.subMenu ul {
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* line 345, ../style.scss */
-.navigation ul.prixPack span {
-  border: 1px dotted #000;
-  color: #D4B05E;
-  padding: 5px 20px;
-  font-size: 1.3em;
-  font-style: italic;
+.navigation ul.subMenu li.colonnesPack {
+  width: 320px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #FFF;
+}
+
+/* line 346, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div {
+  padding: 0px 15px;
 }
 
 /* line 347, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div h1 {
+  font: bold 1.6em 'oO';
+  letter-spacing: 4px;
+  padding: 15px 0;
+  display: block;
+  text-align: center;
+  color: #09F;
+}
+
+/* line 348, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div p {
+  display: inline;
+  text-align: justify;
+}
+
+/* line 349, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div.listePack li {
+  color: #09F;
+  border-bottom: 1px dashed #999;
+  margin: 8px auto;
+  width: 280px;
+}
+
+/* line 350, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div ul.prixVitrine {
+  margin: 75px 0 0 40px;
+}
+
+/* line 351, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div ul.prixVitrine li {
+  border-bottom: 1px dashed #999;
+  width: 210px;
+  font: normal 1.1em Arial;
+  line-height: 2.8em;
+  text-align: center;
+}
+
+/* line 352, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div ul.prixVitrine li span.prix {
+  color: #690;
+  font: italic 1.2em Arial;
+}
+
+/* line 355, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div.imgPackLauchWeb {
+  background: url("../images/sprite3.jpg") 0 50px no-repeat;
+  width: 270px;
+  height: 310px;
+}
+
+/* line 356, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div.imgPackVitrine {
+  background: url("../images/sprite3.jpg") 0 -255px no-repeat;
+  width: 295px;
+  height: 340px;
+}
+
+/* line 357, ../style.scss */
+.navigation ul.subMenu li.colonnesPack div.imgPackCatalogue {
+  background: url("../images/sprite3.jpg") -305px 50px no-repeat;
+  width: 280px;
+  height: 310px;
+}
+
+/* line 360, ../style.scss */
 .navigation li.packLaunchWeb {
   background-position: 7px -615px;
 }
 
-/* line 348, ../style.scss */
+/* line 361, ../style.scss */
 .navigation li.packLaunchWeb:hover {
   background-position: 7px -485px;
 }
 
-/* line 349, ../style.scss */
+/* line 362, ../style.scss */
 .navigation li.packVitrine {
   background-position: -107px -615px;
 }
 
-/* line 350, ../style.scss */
+/* line 363, ../style.scss */
 .navigation li.packVitrine:hover {
   background-position: -107px -485px;
 }
 
-/* line 351, ../style.scss */
+/* line 364, ../style.scss */
 .navigation li.packCatalogue {
   background-position: -345px -615px;
 }
 
-/* line 352, ../style.scss */
+/* line 365, ../style.scss */
 .navigation li.packCatalogue:hover {
   background-position: -345px -485px;
 }
 
-/* line 353, ../style.scss */
+/* line 366, ../style.scss */
 .navigation li.packEcommerce {
   background-position: -217px -615px;
 }
 
-/* line 354, ../style.scss */
+/* line 367, ../style.scss */
 .navigation li.packEcommerce:hover {
   background-position: -217px -485px;
 }
 
-/* line 355, ../style.scss */
+/* line 368, ../style.scss */
 .navigation li.packMetiers {
   background-position: -589px -615px;
 }
 
-/* line 356, ../style.scss */
+/* line 369, ../style.scss */
 .navigation li.packMetiers:hover {
   background-position: -589px -485px;
 }
 
-/* line 357, ../style.scss */
+/* line 370, ../style.scss */
 .navigation li.packSurMesure {
   background-position: -816px -615px;
 }
 
-/* line 358, ../style.scss */
+/* line 371, ../style.scss */
 .navigation li.packSurMesure:hover {
   background-position: -816px -485px;
 }
 
-/* line 359, ../style.scss */
+/* line 372, ../style.scss */
 .navigation li.packRefonte {
   background-position: -471px -615px;
 }
 
-/* line 360, ../style.scss */
+/* line 373, ../style.scss */
 .navigation li.packRefonte:hover {
   background-position: -471px -485px;
 }
 
-/* line 361, ../style.scss */
+/* line 374, ../style.scss */
 .navigation li.backOffice {
   background-position: -695px -615px;
 }
 
-/* line 362, ../style.scss */
+/* line 375, ../style.scss */
 .navigation li.backOffice:hover {
   background-position: -695px -485px;
 }
 
-/* line 363, ../style.scss */
+/* line 376, ../style.scss */
 .navigation li.packMaintenance {
   background-position: -954px -615px;
 }
 
-/* line 364, ../style.scss */
+/* line 377, ../style.scss */
 .navigation li.packMaintenance:hover {
   background-position: -954px -485px;
 }
@@ -1573,7 +1640,7 @@ ul.navigation ul {
 /* ----------------------------------- */
 /*    MENTIONS-LEGALES    */
 /* ------------------------------- */
-/* line 370, ../style.scss */
+/* line 383, ../style.scss */
 section#mentions-legales article {
   margin: 10px 0 20px;
   display: inline-block;
@@ -1581,58 +1648,58 @@ section#mentions-legales article {
   width: 600px;
 }
 
-/* line 371, ../style.scss */
+/* line 384, ../style.scss */
 section#mentions-legales article h1 a {
   font: normal 4.5em 'O_O';
   padding-bottom: 25px;
   display: block;
 }
 
-/* line 372, ../style.scss */
+/* line 385, ../style.scss */
 section#mentions-legales article h2 {
   font: bold 1.4em Arial;
   color: #a6ba3b;
   padding: 15px 0;
 }
 
-/* line 373, ../style.scss */
+/* line 386, ../style.scss */
 section#mentions-legales article ul {
   list-style-type: none;
   color: #777;
   text-align: justify;
 }
 
-/* line 374, ../style.scss */
+/* line 387, ../style.scss */
 section#mentions-legales article li {
   font-size: 1em;
   line-height: 1.7em;
   margin-left: 30px;
 }
 
-/* line 375, ../style.scss */
+/* line 388, ../style.scss */
 section#mentions-legales article li a {
   color: #a6ba3b;
   font-weight: bold;
 }
 
-/* line 376, ../style.scss */
+/* line 389, ../style.scss */
 section#mentions-legales article li a:hover {
   color: #2CDDC9;
 }
 
-/* line 377, ../style.scss */
+/* line 390, ../style.scss */
 section#mentions-legales article li a:hover span {
   color: #2CDDC9;
 }
 
-/* line 378, ../style.scss */
+/* line 391, ../style.scss */
 section#mentions-legales article li span {
   color: #a6ba3b;
   font-weight: bold;
   cursor: default;
 }
 
-/* line 379, ../style.scss */
+/* line 392, ../style.scss */
 section#mentions-legales #mentionsImg {
   background: url("../images/sprite.jpg") -610px -55px no-repeat;
   width: 260px;
@@ -1644,7 +1711,7 @@ section#mentions-legales #mentionsImg {
 /* ---------------------- */
 /*     FOOTER        */
 /* ------------------- */
-/* line 385, ../style.scss */
+/* line 398, ../style.scss */
 footer {
   display: inline-block;
   border-top: 3px solid #690;
@@ -1652,36 +1719,36 @@ footer {
   background-color: #111000;
 }
 
-/* line 386, ../style.scss */
+/* line 399, ../style.scss */
 footer p, a {
   color: #999;
 }
 
-/* line 387, ../style.scss */
+/* line 400, ../style.scss */
 footer a:hover {
   text-decoration: underline;
   color: #690;
 }
 
-/* line 388, ../style.scss */
+/* line 401, ../style.scss */
 #mentions {
   width: 1000px;
   margin: 0 auto;
 }
 
-/* line 389, ../style.scss */
+/* line 402, ../style.scss */
 #mentions p {
   text-align: left;
   font-size: 0.85em;
   padding-top: 3px;
 }
 
-/* line 390, ../style.scss */
+/* line 403, ../style.scss */
 #mentions span.ml {
   padding-left: 225px;
 }
 
-/* line 391, ../style.scss */
+/* line 404, ../style.scss */
 #mentions span.w3cLogo {
   background: url("../images/sprite.jpg") -126px 0 no-repeat;
   display: inline-block;
@@ -1696,7 +1763,7 @@ footer a:hover {
 /* --------------------- */
 @media (max-width: 640px) {
   /* passer tous les éléments de largeur fixe en largeur automatique */
-  /* line 400, ../style.scss */
+  /* line 413, ../style.scss */
   body, element1, element2 {
     width: auto !important;
     margin: auto !important;
@@ -1704,13 +1771,13 @@ footer a:hover {
   }
 
   /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */
-  /* line 406, ../style.scss */
+  /* line 419, ../style.scss */
   img, table, td, blockquote, code, pre, textarea, input, object, embed, video {
     max-width: 100% !important;
   }
 
   /* gestion des mots longs */
-  /* line 410, ../style.scss */
+  /* line 423, ../style.scss */
   textarea, table, td, th, code, pre, samp {
     word-wrap: break-word;
     /* césure forcée */
@@ -1719,20 +1786,20 @@ footer a:hover {
   }
 
   /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
-  /* line 415, ../style.scss */
+  /* line 428, ../style.scss */
   element1, element2 {
     float: none !important;
     width: auto !important;
   }
 
   /* masquer les éléments superflus */
-  /* line 420, ../style.scss */
+  /* line 433, ../style.scss */
   .hide_mobile {
     display: none !important;
   }
 
   /* Un message personnalisé */
-  /* line 424, ../style.scss */
+  /* line 437, ../style.scss */
   body:before {
     content: "Version mobile du site";
     display: block;
@@ -1743,7 +1810,7 @@ footer a:hover {
 }
 
 @media only screen and (max-device-width:640px) and (orientation:landscape) {
-  /* line 433, ../style.scss */
+  /* line 446, ../style.scss */
   body {
     -webkit-text-size-adjust: 70% !important;
   }

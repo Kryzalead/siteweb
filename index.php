@@ -61,14 +61,14 @@
 
 		<section class="slideshow">
 		    <div id="slide" class="nivoSlider">
-			    <a href="#link1"><img src="<?php echo ROOT;?>images/slider/pack-launch-web.jpg" alt="Pack 'Launch Web'" title="Pack 'Launch Web'"></a>
-			    <a href="#link2"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-1page.jpg" alt="Pack 'Vitrine 1 page'" title="Pack 'Vitrine 1 page'"></a>
-			    <a href="#link3"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-3pages.jpg" alt="Pack 'Vitrine 3 pages'" title="Pack 'Vitrine 3 pages'"></a>
-			    <a href="#link4"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-5pages.jpg" alt="Pack 'Vitrine 5 pages'" title="Pack 'Vitrine 5 pages'"></a>
-			    <a href="#link5"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-10pages.jpg" alt="Pack 'Vitrine 10 pages'" title="Pack 'Vitrine 10 pages'"></a>
-			    <a href="#link6"><img src="<?php echo ROOT;?>images/slider/pack-catalogue.jpg" alt="Pack 'Catalogue'" title="Pack 'Catalogue'"></a>
-			    <a href="#link7"><img src="<?php echo ROOT;?>images/slider/pack-e-commerce.jpg" alt="Pack 'E-Commerce'" title="Pack 'E-Commerce'"></a>
-			    <a href="#link7"><img src="<?php echo ROOT;?>images/slider/pack-custom.jpg" alt="Pack 'Custom'" title="Pack 'Custom'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-launch-web.jpg" alt="Pack 'Launch Web'" title="Pack 'Launch Web'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-1page.jpg" alt="Pack 'Vitrine 1 page'" title="Pack 'Vitrine 1 page'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-3pages.jpg" alt="Pack 'Vitrine 3 pages'" title="Pack 'Vitrine 3 pages'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-5pages.jpg" alt="Pack 'Vitrine 5 pages'" title="Pack 'Vitrine 5 pages'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-vitrine-10pages.jpg" alt="Pack 'Vitrine 10 pages'" title="Pack 'Vitrine 10 pages'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-catalogue.jpg" alt="Pack 'Catalogue'" title="Pack 'Catalogue'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-e-commerce.jpg" alt="Pack 'E-Commerce'" title="Pack 'E-Commerce'"></a>
+			    <a href="packs.php"><img src="<?php echo ROOT;?>images/slider/pack-custom.jpg" alt="Pack 'Custom'" title="Pack 'Custom'"></a>
 		    </div>
 			<div id="cadre_ombre"></div>
 		</section>
