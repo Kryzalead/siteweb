@@ -182,7 +182,7 @@
 					<li class="colonnesPack">
 					    <div>
 						   <h1>Pack Sur-mesure</h1>
-						   <p>On grimpe un petit peu dans la complexité technique. Si vous désirez faire du « E-commerce »(aussi appelé « E-business », anglicisme oblige), soit du commerce sur la toile, voici l’idéal pour vous. Nous mettons en place tout le nécessaire en place (Présentation, catalogues, systèmes SSL de transactions financières par carte bleue ou compte Paypal) afin que votre entreprise puisse bénéficier d’une clientèle bien plus vaste grâce à l’internationalisation d’Internet. Votre seule et unique tâche derrière sera de compter les petits billets verts qui vont arriver (dans un sens, ça occupe)… et nous dire un petit « merci », même si ce n’est que facultatif (toutefois, ça fait toujours plaisir :D ).</p>
+						   <p>Vous ne trouvez pas l’option qui vous convient dans notre liste ? Bon, pas de soucis, on a ce qu’il vous faut. Comme les plus grands couturiers mondiaux (Armani, Dior, Lacroix, etc…), nous vous offrons… du sur mesure. Non non, vous ne rêvez pas. Si votre projet est dans la catégorie « poids lourds », ou si vous souhaitez opter pour un compromis entre deux options, aucun problème, nous nous adaptons aux nécessités de votre projet. En somme, nous vous offrons le beurre, l’argent du beurre et le sourire de la crémière (voire plus si affinités avec la crémière, hé hé hé…).</p>
 					    </div>
 					</li>
 					<li class="colonnesPack">
@@ -213,7 +213,7 @@
 					<li class="colonnesPack">
 					    <div>
 						   <h1>Pack Métiers</h1>
-						   <p>On grimpe un petit peu dans la complexité technique. Si vous désirez faire du « E-commerce »(aussi appelé « E-business », anglicisme oblige), soit du commerce sur la toile, voici l’idéal pour vous. Nous mettons en place tout le nécessaire en place (Présentation, catalogues, systèmes SSL de transactions financières par carte bleue ou compte Paypal) afin que votre entreprise puisse bénéficier d’une clientèle bien plus vaste grâce à l’internationalisation d’Internet. Votre seule et unique tâche derrière sera de compter les petits billets verts qui vont arriver (dans un sens, ça occupe)… et nous dire un petit « merci », même si ce n’est que facultatif (toutefois, ça fait toujours plaisir :D ).</p>
+						   <p>Léger, rapide, d’une maintenance aisée, professionnel, ce type de sites est absolument parfait pour les auto-entrepreneurs, start-up,  et éventuellement aussi les associations désireuses de se doter d’outils de communication à la fois simples et efficaces. Comme pour chacune de nos catégories proposées, nous sommes prêts à nous plier en 4 (même si ça peut faire mal à cause d’éventuelles courbatures !) pour faire de votre rêve… une réalité.</p>
 					    </div>
 					</li>
 					<li class="colonnesPack">
@@ -249,7 +249,7 @@
 					<li class="colonnesPack">
 					    <div>
 						   <h1>Pack Refonte</h1>
-						   <p>On grimpe un petit peu dans la complexité technique. Si vous désirez faire du « E-commerce »(aussi appelé « E-business », anglicisme oblige), soit du commerce sur la toile, voici l’idéal pour vous. Nous mettons en place tout le nécessaire en place (Présentation, catalogues, systèmes SSL de transactions financières par carte bleue ou compte Paypal) afin que votre entreprise puisse bénéficier d’une clientèle bien plus vaste grâce à l’internationalisation d’Internet. Votre seule et unique tâche derrière sera de compter les petits billets verts qui vont arriver (dans un sens, ça occupe)… et nous dire un petit « merci », même si ce n’est que facultatif (toutefois, ça fait toujours plaisir :D ).</p>
+						   <p>Votre site web tombe en ruine ? Les poutrelles et la toiture menacent de s’écrouler ? Il y a du salpêtre sur les murs ? Pas de panique, nous sommes là (un peu à la manière des GhostBusters). Selon vos souhaits, nous pouvons tout à fait remettre intégralement à neuf votre site web, et l’optimiser au regard des dernières avancées technologiques (notamment l’arrivée de la dernière version de langage en date, à savoir Html-5). Nous pouvons aussi bien, avec votre consentement naturellement, le faire évoluer (ajout de pages, changements de texte, ajout de sécurités, etc…). C’est vous qui voyez » comme dirait R. Laspalès…</p>
 					    </div>
 					</li>
 					<li class="colonnesPack">
@@ -285,7 +285,9 @@
 					<li class="colonnesPack">
 					    <div>
 						   <h1>Pack Back-Office</h1>
-						   <p>On grimpe un petit peu dans la complexité technique. Si vous désirez faire du « E-commerce »(aussi appelé « E-business », anglicisme oblige), soit du commerce sur la toile, voici l’idéal pour vous. Nous mettons en place tout le nécessaire en place (Présentation, catalogues, systèmes SSL de transactions financières par carte bleue ou compte Paypal) afin que votre entreprise puisse bénéficier d’une clientèle bien plus vaste grâce à l’internationalisation d’Internet. Votre seule et unique tâche derrière sera de compter les petits billets verts qui vont arriver (dans un sens, ça occupe)… et nous dire un petit « merci », même si ce n’est que facultatif (toutefois, ça fait toujours plaisir :D ).</p>
+						   <p>Qui dit site web, dit naturellement serveur, et qui dit serveur, dit hébergement. Grâce à nous, il vous est possible directement de mettre en ligne votre projet sur nos serveurs dédiés mis en place tout spécialement à cette intention, et pour un prix vraiment modique. Chose logique, nous assurons en permanence la maintenance de nos propres serveurs, évitant ainsi tout risque de panne, même inopiné.
+							Par ailleurs, pour ceux qui veulent avoir une idée précise du trafic sur leur site Internet, nous proposons une large gamme d’options de gestion, comme la mise en place d’une étude de fréquentation concernant les utilisateurs, vous renseigner sur les provenances géographiques, le volume de fréquentation, ainsi qu’un certain nombre d’autres renseignements (mais pas le numéro de téléphone et/ou les mensurations de la voisine d’en face, désolés !).
+	    					   </p>
 					    </div>
 					</li>
 					<li class="colonnesPack">
@@ -321,7 +323,8 @@
 					<li class="colonnesPack">
 					    <div>
 						   <h1>Pack Maintenance</h1>
-						   <p>On grimpe un petit peu dans la complexité technique. Si vous désirez faire du « E-commerce »(aussi appelé « E-business », anglicisme oblige), soit du commerce sur la toile, voici l’idéal pour vous. Nous mettons en place tout le nécessaire en place (Présentation, catalogues, systèmes SSL de transactions financières par carte bleue ou compte Paypal) afin que votre entreprise puisse bénéficier d’une clientèle bien plus vaste grâce à l’internationalisation d’Internet. Votre seule et unique tâche derrière sera de compter les petits billets verts qui vont arriver (dans un sens, ça occupe)… et nous dire un petit « merci », même si ce n’est que facultatif (toutefois, ça fait toujours plaisir :D ).</p>
+						   <p>Si vous rencontrez un pépin avec votre site web, si ce dernier est en rideau, nous sommes là, avec notre caisse à outils. Vous connaissez les « BugBusters » (chasseurs de bugs) ? Eh bien c’est nous.
+							La maintenance de sites Internet, du fait de notre qualification en tant que développeurs informatiques, n’a absolument aucun secret. Si le serveur boude ou tombe malade (fichus virus informatiques !?), nous lui ferons une petite piqûre de rappel, et chanterons une « berceuse » numérique pour qu’il soit de nouveau sur pieds, tout sourire. On prend soin de votre projet de A à Z…  </p>
 					    </div>
 					</li>
 					<li class="colonnesPack">
