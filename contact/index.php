@@ -8,7 +8,8 @@ require('../fonctions/config.php');
 <!DOCTYPE html>
 <html lang="fr"> 
  
-<head> 
+<head>
+    <title>Contactez-nous - Agence web Kryzalead</title>
     <?php include('../includes/head.php');?>
 </head>
  

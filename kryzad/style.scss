@@ -1,0 +1,53 @@
+@import "compass/css3";
+
+/* --------------------- */
+/*         RESET     */
+/* ----------------- */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+
+/* reset TAGS */
+html,body,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,ol,ul,li,fieldset,form,label,legend,table,caption{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+
+/* --------------------------- */
+/*  STYLES DE BASE  */
+/* ----------------------- */	
+html		{font-size:100%;}
+body		{background-color:#FFF;font-family:Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;font-size:1em;color:#6a6a6a;-webkit-font-smoothing: antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;margin:0;padding:0;}
+  
+/* ---------------------- */
+/*         LIENS        */
+/* ------------------- */
+a 					{text-decoration: none; font-family:Arial;outline: none;} 
+a:focus, a:active 		{outline: none;} 
+a img 				{border: none;} 
+
+
+/* ------------------------ */
+/*   FRAMEWORKS  */
+/* --------------------- */
+.ombre 		{@include text-shadow(#777,0,1px,3px);}
+.animer 		{@include transition(all);}
+.arrondie		{@include border-radius(10px);}
+.boxOmbre	{@include box-shadow(#777,1px,1px,7px);}
+#v-gradient       {@include linear-gradient(color-stops(#AAFF00, #690));}
+
+
+.gradient {width:100%;height:80px;}
+
+
+/* -------------------- */
+/*       ADMIN      */
+/* ---------------- */
+
+header.menuAdmin           {width:100%;height:200px;border-bottom:1px solid #999;background-color:#F2F2F2;}
+header.menuAdmin h1      {font:normal 1.6em Arial;color:#444;padding:25px;}
+
+/* menu js */
+nav .sm     {list-style-type:none;width:100%;height:95px; display:inline-block; overflow:hidden;margin:20px auto 0;}
+nav .sm li   {display:inline-block;vertical-align:top;font-size:0.9em;border-right:1px dotted #BFBFBF;margin-left:5px;}
+
+/* Section repereMenu */
+section.repereMenu               {font-size:0.95em;margin:20px 0;}
+section.repereMenu p            {padding:0;color:#fff;}
+span.fondVert                       {background:#690;padding:0 20px;border:1px dotted #545454;}
+span.fondGris                       {background:#E0E0E0;padding:0 10px;color:#555;border:1px dotted #8E8E8E;}

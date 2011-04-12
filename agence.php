@@ -7,7 +7,8 @@
 <!DOCTYPE html>
 <html lang="fr"> 
  
-<head> 
+<head>
+    <title>Mieux nous connaître - Agence web Kryzalead</title>
     <?php include('includes/head.php');?>
 </head>
  

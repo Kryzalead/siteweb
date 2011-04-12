@@ -8,12 +8,7 @@
  
 <head> 
     <?php include('../includes/head.php');?>
-    <link rel="stylesheet" type="text/css" href="../css/styleLogin.css">
-	<style type="text/css" media="all">
-	#form{padding-left: 100px;}
-	#error{font-size:0.95em;float:left;border:1px solid #c9276d; margin:40px 0 0 550px;padding:10px;width: 350px;-moz-border-radius:10px; webkit-border-radius:10px}
-	#error ul li{list-style-type: none;margin-left: 20px;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/styleLogin.css">
 </head>
  
 <body>
@@ -61,9 +56,9 @@
 	    </footer>
 	    
 	</div> <!-- FIN WRAPPER -->
-    <?php
-    $_SESSION['connexion']['erreur'] = array();
-    ?>
+	<?php
+	    $_SESSION['connexion']['erreur'] = array();
+	?>
 
     <script type="text/javascript" src="<?php echo ROOT;?>scripts/glow.js"></script>
     <script type="text/javascript" src="<?php echo ROOT;?>scripts/formContact.js"></script>

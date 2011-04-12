@@ -29,8 +29,9 @@
 <!DOCTYPE html>
 <html lang="fr"> 
  
-<head> 
-    <?php include('../includes/head.php');?>
+<head>
+	<title>Faites votre devis gratuitement - Agence web Kryzalead</title>
+	<?php include('../includes/head.php');?>
 </head>
  
 <body>

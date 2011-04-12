@@ -310,7 +310,7 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 
 #floatLeft 			{margin:15px 0;position:absolute;}
 #floatLeft input		{margin:10px 0 0px 30px;}
-#descType 		{display:inline-block;vertical-align:top;width:400px;height:100px;margin:15px 0 10px 250px;border:1px dashed #690;@extend .arrondie;}
+#descType 		{display:inline-block;vertical-align:top;border:1px dashed #690;@extend .arrondie;}
 #descType p		{padding:35px 40px;}
 #optionSouhaitees p.infobulle	{display:inline-block;vertical-align:top;width:200px;}
 

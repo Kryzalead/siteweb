@@ -8,17 +8,17 @@ section#formConnexion p {margin:0 auto;width:500px;font:normal 1.4em 1.2em }
     height:203px;
     position:relative;
     margin:50px auto 0;
-    background:url(../images/kryzad/gmap.jpg) top left;}
+    background:url('../images/co_kryzad/gmap.jpg') top left;}
 
 form#loginform{
     width:302px;
     height: 124px;
     padding:61px 28px 18px 28px;
-    background:url(../images/kryzad/bloc.png) top left no-repeat;
+    background:url('../images/co_kryzad/bloc.png') top left no-repeat;
     z-index:5;
     position:absolute;}
 
-#logmask{ background:url(../images/kryzad/rmap.jpg);position:absolute; top:0; left:0;width:358px;height:203px;overflow:hidden;z-index:3;}
+#logmask{background:url('../images/co_kryzad/rmap.jpg');position:absolute; top:0; left:0;width:358px;height:203px;overflow:hidden;z-index:3;}
 
 #login label{
     color:#8C8C8C;
@@ -31,5 +31,5 @@ form#loginform{
     
 input[type=text],input[type=password]{background-color:#516B1D;width:160px;height:17px;border:none;color:#b3b3b3;}
 input[type=text]:hover,input[type=password]:hover{border:1px solid #09f; background-position:left bottom;}
-input[type=submit]{float:right;margin:10px 200px 0 0;background-color:#222;width:90px;height:25px;color:#8c8c8c;opacity:0.8;text-transform:uppercase;cursor:pointer;font-size:9px;border:1px solid #212121;display:block;-moz-border-radius:10px;-webkit-border-radius:10px;padding:5px}
-input[type=submit]:hover{color:#690;font-weight:bold;font-size:0.7em}
+input[type=submit]{float:right;margin:10px 200px 0 0;background-color:#222;width:95px;height:25px;color:#8c8c8c;opacity:0.8;text-transform:uppercase;cursor:pointer;font-size:0.8em;border:1px solid #212121;display:block;@extend .arrondie;}
+input[type=submit]:hover{color:#690;}

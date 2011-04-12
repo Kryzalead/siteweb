@@ -1306,9 +1306,6 @@ select {
 #descType {
   display: inline-block;
   vertical-align: top;
-  width: 400px;
-  height: 100px;
-  margin: 15px 0 10px 250px;
   border: 1px dashed #690;
 }
 
@@ -1715,9 +1712,9 @@ section#mentions-legales #mentionsImg {
 footer {
   display: inline-block;
   border-top: 3px solid #690;
-  width:100%;
-  position:absolute;
-  background-color: #111000;}
+  width: 100%;
+  background-color: #111000;
+}
 
 /* line 399, ../style.scss */
 footer p, a {

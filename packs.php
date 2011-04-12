@@ -7,7 +7,8 @@
 <!DOCTYPE html>
 <html lang="fr"> 
 
-<head> 
+<head>
+    <title>Agence web spécialisée dans la création de sites conformes aux standards W3C - Les packs offres Kryzalead</title> 
     <?php include('includes/head.php');?>
 </head>
  
