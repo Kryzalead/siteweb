@@ -311,8 +311,8 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 
 #floatLeft 			{margin:15px 0;position:absolute;}
 #floatLeft input		{margin:10px 0 0px 30px;}
-#descType 		{display:inline-block;vertical-align:top;border:1px dashed #690;@extend .arrondie;}
-#descType p		{padding:35px 40px;}
+#descType 		{display:inline-block;vertical-align:top;margin:20px 0 10px 250px;height:100px;width:450px;border:1px dashed #690;@extend .arrondie;}
+#descType p		{text-align:center;padding:30px 60px;}
 #optionSouhaitees p.infobulle	{display:inline-block;vertical-align:top;width:200px;}
 
 
@@ -335,7 +335,7 @@ select{border-color:#7C7C7C #CECECE #CECECE #7C7C7C;border-right:1px solid #CECE
 section#packs					{width:1000px;height:840px;margin:0 auto;}
 section#packs p				{padding:30px 0;font:normal 1em Arial;}
 section#packs nav.slide			{border-bottom:1px solid #999;width:1000px;}
-section#packs h1#imgNosPacks		{width:405px;height:120px;background:url('../images/sprite2.jpg') -719px -100px no-repeat;margin-left:250px;}
+section#packs h1#imgNosPacks		{width:405px;height:80px;background:url('../images/sprite2.jpg') -719px -100px no-repeat;margin-left:250px;}
 
 ul.navigation ul											{list-style-type:none;display:block;}
 .navigation li.toggleSubMenu								{display:inline-block;vertical-align:top;height:135px;width:107px;background:url('../images/sprite2.jpg');background-repeat:no-repeat;cursor:pointer;}
@@ -396,12 +396,13 @@ section#mentions-legales #mentionsImg		{background:url('../images/sprite.jpg') -
 /* ------------------------- */
 /*   PLAN DU SITE    */
 /* --------------------- */
-section#planDuSite article				{margin:10px 0 20px;display:inline-block;vertical-align:top;width:200px;}
+section#planDuSite article				{margin:10px 0 20px 100px;display:inline-block;vertical-align:top;}
 section#planDuSite article h1 a	 		{font:normal 4.5em 'O_O';padding-bottom:25px;display:block;}
 section#planDuSite article ul			{list-style-type:disc;color:#777;font-weight:bold;}
 section#planDuSite article li			{font-size:1em;line-height:2em;margin-left:40px;}
 section#planDuSite article li a:hover		{color:#2CDDC9;}
-#planDuSiteImg						{background:url('../images/sprite2.jpg') -718px -182px no-repeat;width:275px;height:270px;display:inline-block;vertical-align:top;margin-left:150px;}
+
+#planDuSiteImg						{background:url('../images/sprite2.jpg') -718px -182px no-repeat;width:275px;height:270px;display:inline-block;vertical-align:top;margin:50px 0 0 150px;}
 
 
 /* ---------------------- */

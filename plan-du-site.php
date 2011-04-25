@@ -35,8 +35,10 @@
 				<li><a href="plan-du-site.php">Plan du site</a></li>
 				<li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.kryzalead.fr%2Findex.php;verbose=1">Valide W3C</a></li>
 			    </ul>
+		    </article>
+			<div id="planDuSiteImg"></div>
 		</section>
-		  <div id="planDuSiteImg"></div>
+		 
 	    </div><!-- Fin content -->
 
 	<section class="actu">

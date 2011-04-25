@@ -1306,12 +1306,16 @@ select {
 #descType {
   display: inline-block;
   vertical-align: top;
+  margin: 20px 0 10px 250px;
+  height: 100px;
+  width: 450px;
   border: 1px dashed #690;
 }
 
 /* line 315, ../style.scss */
 #descType p {
-  padding: 35px 40px;
+  text-align: center;
+  padding: 30px 60px;
 }
 
 /* line 316, ../style.scss */
@@ -1413,7 +1417,7 @@ section#packs nav.slide {
 /* line 338, ../style.scss */
 section#packs h1#imgNosPacks {
   width: 405px;
-  height: 120px;
+  height: 80px;
   background: url("../images/sprite2.jpg") -719px -100px no-repeat;
   margin-left: 250px;
 }
@@ -1710,10 +1714,9 @@ section#mentions-legales #mentionsImg {
 /* --------------------- */
 /* line 399, ../style.scss */
 section#planDuSite article {
-  margin: 10px 0 20px;
+  margin: 10px 0 20px 100px;
   display: inline-block;
   vertical-align: top;
-  width: 200px;
 }
 
 /* line 400, ../style.scss */
@@ -1742,20 +1745,20 @@ section#planDuSite article li a:hover {
   color: #2CDDC9;
 }
 
-/* line 404, ../style.scss */
+/* line 405, ../style.scss */
 #planDuSiteImg {
   background: url("../images/sprite2.jpg") -718px -182px no-repeat;
   width: 275px;
   height: 270px;
   display: inline-block;
   vertical-align: top;
-  margin-left: 150px;
+  margin: 50px 0 0 150px;
 }
 
 /* ---------------------- */
 /*     FOOTER        */
 /* ------------------- */
-/* line 410, ../style.scss */
+/* line 411, ../style.scss */
 footer {
   display: inline-block;
   border-top: 3px solid #690;
@@ -1763,36 +1766,36 @@ footer {
   background-color: #111000;
 }
 
-/* line 411, ../style.scss */
+/* line 412, ../style.scss */
 footer p, a {
   color: #999;
 }
 
-/* line 412, ../style.scss */
+/* line 413, ../style.scss */
 footer a:hover {
   text-decoration: underline;
   color: #690;
 }
 
-/* line 413, ../style.scss */
+/* line 414, ../style.scss */
 #mentions {
   width: 1000px;
   margin: 0 auto;
 }
 
-/* line 414, ../style.scss */
+/* line 415, ../style.scss */
 #mentions p {
   text-align: left;
   font-size: 0.85em;
   padding-top: 3px;
 }
 
-/* line 415, ../style.scss */
+/* line 416, ../style.scss */
 #mentions span.ml {
   padding-left: 225px;
 }
 
-/* line 416, ../style.scss */
+/* line 417, ../style.scss */
 #mentions span.w3cLogo {
   background: url("../images/sprite.jpg") -126px 0 no-repeat;
   display: inline-block;
@@ -1807,7 +1810,7 @@ footer a:hover {
 /* --------------------- */
 @media (max-width: 640px) {
   /* passer tous les éléments de largeur fixe en largeur automatique */
-  /* line 425, ../style.scss */
+  /* line 426, ../style.scss */
   body, element1, element2 {
     width: auto !important;
     margin: auto !important;
@@ -1815,13 +1818,13 @@ footer a:hover {
   }
 
   /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */
-  /* line 431, ../style.scss */
+  /* line 432, ../style.scss */
   img, table, td, blockquote, code, pre, textarea, input, object, embed, video {
     max-width: 100% !important;
   }
 
   /* gestion des mots longs */
-  /* line 435, ../style.scss */
+  /* line 436, ../style.scss */
   textarea, table, td, th, code, pre, samp {
     word-wrap: break-word;
     /* césure forcée */
@@ -1830,20 +1833,20 @@ footer a:hover {
   }
 
   /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
-  /* line 440, ../style.scss */
+  /* line 441, ../style.scss */
   element1, element2 {
     float: none !important;
     width: auto !important;
   }
 
   /* masquer les éléments superflus */
-  /* line 445, ../style.scss */
+  /* line 446, ../style.scss */
   .hide_mobile {
     display: none !important;
   }
 
   /* Un message personnalisé */
-  /* line 449, ../style.scss */
+  /* line 450, ../style.scss */
   body:before {
     content: "Version mobile du site";
     display: block;
@@ -1854,7 +1857,7 @@ footer a:hover {
 }
 
 @media only screen and (max-device-width:640px) and (orientation:landscape) {
-  /* line 458, ../style.scss */
+  /* line 459, ../style.scss */
   body {
     -webkit-text-size-adjust: 70% !important;
   }
