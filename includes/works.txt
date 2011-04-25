@@ -3,7 +3,7 @@
 		<div id="liens">
 			<a class="zoombox zgallery1" title="Agence web Kryzalead" href="images/zoombox/projets/kryzalead.png">www.kryzalead.fr</a>
 				<p>Agence web implantée Charente et Charente-Maritime par 2 jeunes bien motivés</p>
-			<a class="zoombox zgallery1" title="Agence web Kryzalead 2" href="images/zoombox/projets/kryzalead-2.png">www.kryzalead.fr - suite</a>
-				<p>Agence web Kryzalead Kryza's workflow!!!</p>
+			<a class="zoombox zgallery1" title="Antenniste vente livraison et depannage electromenager" href="images/zoombox/projets/virape-17.jpg">www.virape-17.fr</a>
+				<p>Antenniste, Vente, Livraison et Dépannage électromenager sur la Charente-Maritime (17)</p>
 		</div>
 </div>

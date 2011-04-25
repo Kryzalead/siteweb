@@ -1,0 +1,4 @@
+SetEnv PHP_VER 5
+SetEnv REGISTER_GLOBALS 0
+DirectoryIndex index.html index.shtml index.htm index.cgi index.php index.php4 index.php3 index.wml index.asp
+Options Includes ExecCGI MultiViews FollowSymLinks

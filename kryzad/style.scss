@@ -25,10 +25,6 @@ a img 				{border: none;}
 /* ------------------------ */
 /*   FRAMEWORKS  */
 /* --------------------- */
-.ombre 		{@include text-shadow(#777,0,1px,3px);}
-.animer 		{@include transition(all);}
-.arrondie		{@include border-radius(10px);}
-.boxOmbre	{@include box-shadow(#777,1px,1px,7px);}
 #v-gradient       {@include linear-gradient(color-stops(#AAFF00, #690));}
 
 

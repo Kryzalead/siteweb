@@ -4,7 +4,9 @@
     <head>
         <title>Administration - Agence web Kryzalead</title>
             <?php include('../includes/head.php');?>
-            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+                            <link rel="stylesheet" media="all" href="css/styleAdmin.css" /> 
+
     </head>
      
     <body onload="slideMenu.build('sm',300,10,10,0)">
@@ -17,19 +19,19 @@
                     <div class='gradient' id='v-gradient'>
                         <h1>Administration du site internet - Kryzalead -</h1>
                     </div>
-                            <nav role="navigation">
-                                <ul id="sm" class="sm">
-                                    <li><img src="images/menu/accueil.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/pages.png" alt="" />Gestion des Packs <br/> Gérez le contenu de votre site internet rapidement et simplement.</li>
-                                    <li><img src="images/menu/portfolio.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/visiteurs.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/outils.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/retour.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/optionsSup.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/contact.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                    <li><img src="images/menu/quitter.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
-                                </ul>
-                            </nav>
+                        <nav role="navigation">
+                            <ul id="sm" class="sm">
+                                <li><img src="images/menu/accueil.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/pages.png" alt="" />Gestion des Packs <br/> Gérez le contenu de votre site internet rapidement et simplement.</li>
+                                <li><img src="images/menu/portfolio.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/visiteurs.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/outils.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/retour.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/optionsSup.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/contact.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                                <li><img src="images/menu/quitter.png" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis nisl id odio molestie adipiscing.</li>
+                            </ul>
+                        </nav>
                 </header>
                 
                 <div id="content"><!-- Debut content -->

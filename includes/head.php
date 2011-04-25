@@ -6,12 +6,17 @@
 <meta name="geo.placename" content="Charente,16, Charente-Maritime, 17, France" />	
 <meta name="google-site-verification" content=".........................." />  <!-- A FAIRE -->
 <meta name="viewport" content="width=device-width" />
+<meta content="index, follow" name="Robots" />
+<meta name="Identifier-url" content="http://www.kryzalead.fr" />
+<meta name="Language" content="fr" /> 	
+<meta name="Location" content="France" />
+<meta name="Copyright" content="Copyright (C) 2011" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
 
-<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/style.css" /> 
-<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/stylesSlide.css" /> 
-<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/zoombox.css" /> 
+<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/style.css" />
+<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/stylesSlide.css" />
+<link rel="stylesheet" media="all" href="<?php echo ROOT;?>css/zoombox.css" />
 
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
 <!--[if lt IE 8]><script type="text/javascript" src="scripts/roundies.js"></script><![endif]-->

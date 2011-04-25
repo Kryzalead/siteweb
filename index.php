@@ -9,6 +9,7 @@
 
 <head>
     <?php include('includes/head.php');?>
+    <title>Kryzalead. Agence Web  - Création de site internet.</title>
 </head>
  
 <body>
@@ -40,10 +41,8 @@
 			<article>
 			    <h2><span class="carreRose animer"></span>Votre devis GRATUIT</h2>
 				<p>
-				    <!--Vous avez entre vos mains un projet internet (création de site web, refonte d'un site déjà existant,etc...) à l'état de cocon et souhaitez recevoir rapidement <strong>un devis entièrement gratuit et personnalisé ?</strong><br/>
-				    Remplissez le formulaire en quelques clics afin que nous puissions vous le retourner par mail.-->
 				    Vous avez entre vos mains un projet internet (création de site web? refonte d'un site déjà existant? embryon de projet? Même un p’tit dessin griffonné à la va-vite à l'état de cocon et souhaitez recevoir rapidement un <strong>devis entièrement gratuit et personnalisé ?</strong><br/>
-    					Remplissez le formulaire en quelques clics afin que nous puissions vous fournir un devis dans les délais les plus courts possibles.
+    				    Remplissez le formulaire en quelques clics afin que nous puissions vous fournir un devis dans les délais les plus courts possibles.
 				    <a href="<?php echo ROOT;?>devis/index.php">Faites votre devis en ligne<span class="fleche"></span></a>
 				</p>
 			</article>		

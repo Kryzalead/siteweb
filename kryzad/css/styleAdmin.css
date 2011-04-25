@@ -64,13 +64,48 @@ a img {
 /*   FRAMEWORKS  */
 /* --------------------- */
 /* line 28, ../style.scss */
+.ombre {
+  text-shadow: #777777 0 1px 3px;
+}
+
+/* line 29, ../style.scss */
+.animer {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+/* line 30, ../style.scss */
+.arrondie {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 31, ../style.scss */
+.boxOmbre {
+  -moz-box-shadow: #777777 1px 1px 7px 0;
+  -webkit-box-shadow: #777777 1px 1px 7px 0;
+  -o-box-shadow: #777777 1px 1px 7px 0;
+  box-shadow: #777777 1px 1px 7px 0;
+}
+
+/* line 32, ../style.scss */
 #v-gradient {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #aaff00), color-stop(100%, #669900));
   background-image: -moz-linear-gradient(top, #aaff00 0%, #669900 100%);
   background-image: linear-gradient(top, #aaff00 0%, #669900 100%);
 }
 
-/* line 31, ../style.scss */
+/* line 35, ../style.scss */
 .gradient {
   width: 100%;
   height: 80px;
@@ -79,7 +114,7 @@ a img {
 /* -------------------- */
 /*       ADMIN      */
 /* ---------------- */
-/* line 38, ../style.scss */
+/* line 42, ../style.scss */
 header.menuAdmin {
   width: 100%;
   height: 200px;
@@ -87,7 +122,7 @@ header.menuAdmin {
   background-color: #F2F2F2;
 }
 
-/* line 39, ../style.scss */
+/* line 43, ../style.scss */
 header.menuAdmin h1 {
   font: normal 1.6em Arial;
   color: #444;
@@ -95,7 +130,7 @@ header.menuAdmin h1 {
 }
 
 /* menu js */
-/* line 42, ../style.scss */
+/* line 46, ../style.scss */
 nav .sm {
   list-style-type: none;
   width: 100%;
@@ -105,7 +140,7 @@ nav .sm {
   margin: 20px auto 0;
 }
 
-/* line 43, ../style.scss */
+/* line 47, ../style.scss */
 nav .sm li {
   display: inline-block;
   vertical-align: top;
@@ -115,26 +150,26 @@ nav .sm li {
 }
 
 /* Section repereMenu */
-/* line 46, ../style.scss */
+/* line 50, ../style.scss */
 section.repereMenu {
   font-size: 0.95em;
   margin: 20px 0;
 }
 
-/* line 47, ../style.scss */
+/* line 51, ../style.scss */
 section.repereMenu p {
   padding: 0;
   color: #fff;
 }
 
-/* line 48, ../style.scss */
+/* line 52, ../style.scss */
 span.fondVert {
   background: #690;
   padding: 0 20px;
   border: 1px dotted #545454;
 }
 
-/* line 49, ../style.scss */
+/* line 53, ../style.scss */
 span.fondGris {
   background: #E0E0E0;
   padding: 0 10px;
