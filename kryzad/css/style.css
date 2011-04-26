@@ -40,46 +40,116 @@ body {
   padding: 0;
 }
 
+/* ------------------------ */
+/*   FRAMEWORKS  */
+/* --------------------- */
+/* line 21, ../style.scss */
+.ombre, header.menuAdmin h1 {
+  text-shadow: #777777 0 1px 3px;
+}
+
+/* line 22, ../style.scss */
+.animer {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+/* line 23, ../style.scss */
+.arrondie, section#evenements #cadreEvenements, section#actualites #cadreActualite, section#visiteurs #cadreVisiteurs {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 24, ../style.scss */
+.boxOmbre, section#evenements #cadreEvenements, section#actualites #cadreActualite, section#visiteurs #cadreVisiteurs {
+  -moz-box-shadow: #777777 1px 1px 7px 0;
+  -webkit-box-shadow: #777777 1px 1px 7px 0;
+  -o-box-shadow: #777777 1px 1px 7px 0;
+  box-shadow: #777777 1px 1px 7px 0;
+}
+
 /* ---------------------- */
 /*         LIENS        */
 /* ------------------- */
-/* line 20, ../style.scss */
+/* line 30, ../style.scss */
 a {
   text-decoration: none;
   font-family: Arial;
   outline: none;
 }
 
-/* line 21, ../style.scss */
+/* line 31, ../style.scss */
 a:focus, a:active {
   outline: none;
 }
 
-/* line 22, ../style.scss */
+/* line 32, ../style.scss */
 a img {
   border: none;
+}
+
+/* line 35, ../style.scss */
+.gras {
+  font-weight: bold;
+}
+
+/* line 36, ../style.scss */
+.bleu {
+  color: #09F;
+}
+
+/* line 37, ../style.scss */
+.gradient {
+  width: 100%;
+  height: 80px;
+}
+
+/* line 38, ../style.scss */
+.fondGris {
+  background: #E0E0E0;
+  padding: 0 10px;
+  color: #555;
+  border: 1px dotted #8E8E8E;
+}
+
+/* line 39, ../style.scss */
+.fondVert {
+  background: #690;
+  padding: 0 20px;
+  border: 1px dotted #545454;
 }
 
 /* ------------------------ */
 /*   FRAMEWORKS  */
 /* --------------------- */
-/* line 28, ../style.scss */
+/* line 45, ../style.scss */
 #v-gradient {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #aaff00), color-stop(100%, #669900));
   background-image: -moz-linear-gradient(top, #aaff00 0%, #669900 100%);
   background-image: linear-gradient(top, #aaff00 0%, #669900 100%);
 }
 
-/* line 31, ../style.scss */
-.gradient {
-  width: 100%;
-  height: 80px;
+/* line 46, ../style.scss */
+#boxGradient {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #cccccc 100%);
 }
 
 /* -------------------- */
 /*       ADMIN      */
 /* ---------------- */
-/* line 38, ../style.scss */
+/* line 53, ../style.scss */
 header.menuAdmin {
   width: 100%;
   height: 200px;
@@ -87,57 +157,166 @@ header.menuAdmin {
   background-color: #F2F2F2;
 }
 
-/* line 39, ../style.scss */
+/* line 54, ../style.scss */
 header.menuAdmin h1 {
   font: normal 1.6em Arial;
-  color: #444;
+  color: #FFF;
   padding: 25px;
 }
 
 /* menu js */
-/* line 42, ../style.scss */
+/* line 58, ../style.scss */
 nav .sm {
   list-style-type: none;
   width: 100%;
-  height: 95px;
-  display: inline-block;
+  height: 100px;
   overflow: hidden;
   margin: 20px auto 0;
 }
 
-/* line 43, ../style.scss */
-nav .sm li {
+/* line 59, ../style.scss */
+nav ul.sm li {
   display: inline-block;
   vertical-align: top;
   font-size: 0.9em;
   border-right: 1px dotted #BFBFBF;
-  margin-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 10px;
 }
 
-/* Section repereMenu */
-/* line 46, ../style.scss */
-section.repereMenu {
+/* line 60, ../style.scss */
+nav ul.sm li span.titreMenu {
+  font: bold 1.1em Arial;
+  display: block;
+  padding-bottom: 10px;
+}
+
+/* line 61, ../style.scss */
+nav ul.sm li img {
+  float: left;
+  margin-right: 15px;
+}
+
+/* -------------------- */
+/*    CONTENT    */
+/* ---------------- */
+/* SECTION repereMenu */
+/* line 69, ../style.scss */
+section#repereMenu {
+  display: block;
   font-size: 0.95em;
   margin: 20px 0;
 }
 
-/* line 47, ../style.scss */
-section.repereMenu p {
+/* line 70, ../style.scss */
+section#repereMenu p {
+  background: url("../images/sprite.jpg") -5px 0 no-repeat;
+  width: 600px;
+  height: 40px;
+  color: #FFF;
+  padding: 3px 0 0 40px;
+}
+
+/* line 71, ../style.scss */
+section#repereMenu span.decal {
+  padding-left: 80px;
+}
+
+/* SECTION Evenements */
+/* line 77, ../style.scss */
+section#evenements {
+  display: block;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 78, ../style.scss */
+section#evenements h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #777;
+  width: 500px;
+}
+
+/* line 79, ../style.scss */
+section#evenements #cadreEvenements {
+  width: 500px;
+  height: 300px;
+}
+
+/* SECTION Actualites */
+/* line 83, ../style.scss */
+section#actualites {
+  display: block;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 84, ../style.scss */
+section#actualites h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #777;
+  width: 500px;
+}
+
+/* line 85, ../style.scss */
+section#actualites #cadreActualite {
+  width: 500px;
+  height: 250px;
+}
+
+/* SECTION Visiteurs */
+/* line 89, ../style.scss */
+section#visiteurs {
+  display: block;
+  margin: 20px;
+}
+
+/* line 90, ../style.scss */
+section#visiteurs h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #777;
+  width: 500px;
+}
+
+/* line 91, ../style.scss */
+section#visiteurs #cadreVisiteurs {
+  width: 500px;
+  height: 250px;
+}
+
+/* -------------------- */
+/*     FOOTER     */
+/* ---------------- */
+/* line 97, ../style.scss */
+#footer {
+  width: 100%;
+  background: url("../../images/footer/footer-motif.png") 0 0 repeat;
+  border-top: 4px solid #690;
+}
+
+/* line 98, ../style.scss */
+#footer p {
+  color: #FFF;
+  padding: 5px 20px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+/* line 99, ../style.scss */
+#footer p a {
+  color: #09F;
   padding: 0;
-  color: #fff;
 }
 
-/* line 48, ../style.scss */
-span.fondVert {
-  background: #690;
-  padding: 0 20px;
-  border: 1px dotted #545454;
+/* line 100, ../style.scss */
+#footer p a:hover {
+  color: #690;
 }
 
-/* line 49, ../style.scss */
-span.fondGris {
-  background: #E0E0E0;
-  padding: 0 10px;
-  color: #555;
-  border: 1px dotted #8E8E8E;
+/* line 101, ../style.scss */
+#footer p.copyright {
+  float: right;
 }

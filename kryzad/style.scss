@@ -13,22 +13,37 @@ html,body,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,co
 /* ----------------------- */	
 html		{font-size:100%;}
 body		{background-color:#FFF;font-family:Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;font-size:1em;color:#6a6a6a;-webkit-font-smoothing: antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;margin:0;padding:0;}
-  
-/* ---------------------- */
-/*         LIENS        */
-/* ------------------- */
-a 					{text-decoration: none; font-family:Arial;outline: none;} 
-a:focus, a:active 		{outline: none;} 
-a img 				{border: none;} 
 
 
 /* ------------------------ */
 /*   FRAMEWORKS  */
 /* --------------------- */
-#v-gradient       {@include linear-gradient(color-stops(#AAFF00, #690));}
+.ombre 			{@include text-shadow(#777,0,1px,3px);}
+.animer 		{@include transition(all);}
+.arrondie		{@include border-radius(10px);}
+.boxOmbre		{@include box-shadow(#777,1px,1px,7px);}
 
 
-.gradient {width:100%;height:80px;}
+/* ---------------------- */
+/*         LIENS        */
+/* ------------------- */
+a 					{text-decoration: none; font-family:Arial;outline: none;} 
+a:focus, a:active 	{outline: none;} 
+a img 				{border: none;} 
+
+
+.gras		{font-weight:bold;}
+.bleu		{color:#09F;}
+.gradient	{width:100%;height:80px;}
+.fondGris	{background:#E0E0E0;padding:0 10px;color:#555;border:1px dotted #8E8E8E;}
+.fondVert	{background:#690;padding:0 20px;border:1px dotted #545454;}
+
+
+/* ------------------------ */
+/*   FRAMEWORKS  */
+/* --------------------- */
+#v-gradient		{@include linear-gradient(color-stops(#AAFF00, #690));}
+#boxGradient	{@include linear-gradient(color-stops(#FFFFFF, #CCCCCC));}
 
 
 /* -------------------- */
@@ -36,14 +51,51 @@ a img 				{border: none;}
 /* ---------------- */
 
 header.menuAdmin           {width:100%;height:200px;border-bottom:1px solid #999;background-color:#F2F2F2;}
-header.menuAdmin h1      {font:normal 1.6em Arial;color:#444;padding:25px;}
+header.menuAdmin h1      {font:normal 1.6em Arial;color:#FFF;padding:25px;@extend .ombre;}
 
-/* menu js */
-nav .sm     {list-style-type:none;width:100%;height:95px; display:inline-block; overflow:hidden;margin:20px auto 0;}
-nav .sm li   {display:inline-block;vertical-align:top;font-size:0.9em;border-right:1px dotted #BFBFBF;margin-left:5px;}
 
-/* Section repereMenu */
-section.repereMenu               {font-size:0.95em;margin:20px 0;}
-section.repereMenu p            {padding:0;color:#fff;}
-span.fondVert                       {background:#690;padding:0 20px;border:1px dotted #545454;}
-span.fondGris                       {background:#E0E0E0;padding:0 10px;color:#555;border:1px dotted #8E8E8E;}
+/* menu js */	
+nav .sm            		{list-style-type:none;width:100%;height:100px;overflow:hidden;margin:20px auto 0;}
+nav ul.sm li        		{display:inline-block;vertical-align:top;font-size:0.9em;border-right:1px dotted #BFBFBF;cursor:pointer;text-align:center;padding:0 10px;}
+nav ul.sm li span.titreMenu	{font:bold 1.1em Arial;display:block;padding-bottom:10px;}
+nav ul.sm li img    		{float:left;margin-right:15px;}
+
+
+/* -------------------- */
+/*    CONTENT    */
+/* ---------------- */
+
+/* SECTION repereMenu */
+section#repereMenu			{display:block;font-size:0.95em;margin:20px 0;}
+section#repereMenu p			{background:url('../images/sprite.jpg') -5px 0 no-repeat;width:600px;height:40px;color:#FFF;padding:3px 0 0 40px;}
+section#repereMenu span.decal		{padding-left:80px;}
+
+
+
+
+/* SECTION Evenements */
+section#evenements				{display:block;margin:20px;display:inline-block;vertical-align:top;}
+section#evenements h1			{margin-bottom:20px;border-bottom:1px solid #777;width:500px;}
+section#evenements #cadreEvenements	{width:500px;height:300px;@extend .arrondie;@extend .boxOmbre;}
+
+
+/* SECTION Actualites */
+section#actualites				{display:block;margin:20px;display:inline-block;vertical-align:top;}
+section#actualites h1			{margin-bottom:20px;border-bottom:1px solid #777;width:500px;}
+section#actualites #cadreActualite		{width:500px;height:250px;@extend .arrondie;@extend .boxOmbre;}
+
+
+/* SECTION Visiteurs */
+section#visiteurs				{display:block;margin:20px;}
+section#visiteurs h1				{margin-bottom:20px;border-bottom:1px solid #777;width:500px;}
+section#visiteurs #cadreVisiteurs		{width:500px;height:250px;@extend .arrondie;@extend .boxOmbre;}
+
+
+/* -------------------- */
+/*     FOOTER     */
+/* ---------------- */
+#footer					{width:100%;background:url('../../images/footer/footer-motif.png')0 0 repeat;border-top:4px solid #690;}
+#footer p					{color:#FFF;padding:5px 20px;font-size:0.9em;display:inline-block;}
+#footer p a					{color:#09F;padding:0;}
+#footer p a:hover				{color:#690;}
+#footer p.copyright				{float:right;}
